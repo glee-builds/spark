@@ -1,1 +1,3550 @@
-[]
+[
+  {
+    "id": "fa-001",
+    "line": "What was the best part of your day?",
+    "form": "question",
+    "followUps": [
+      "What made that part good?",
+      "What was the rest of it like?"
+    ],
+    "shareBack": "Offer the best part of your own day in a sentence, then ask what tomorrow looks like.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "silence",
+      "deeper"
+    ],
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-002",
+    "line": "You've seemed a little weighed down this week. I'm around whenever you want to talk it through.",
+    "form": "statement",
+    "followUps": [
+      "What's been the heaviest part?",
+      "Do you want ideas, or just someone to listen?"
+    ],
+    "shareBack": "Mention one thing that has weighed on you lately, briefly, then hand the turn back.",
+    "deliveryCue": "Listen and take their side; don't fix.",
+    "depth": "medium",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-003",
+    "line": "What's taking up the most room in your head this week?",
+    "form": "question",
+    "followUps": [
+      "What's the hardest part of that?",
+      "What would make it feel lighter?"
+    ],
+    "shareBack": "Once they have finished, offer what is filling your own head in a sentence, then ask what would help.",
+    "deliveryCue": "Listen; don't fix unless they ask.",
+    "depth": "medium",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "week",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-004",
+    "line": "You were great with everyone tonight. Who did you enjoy talking to most?",
+    "form": "compliment",
+    "followUps": [
+      "What did you two get into?",
+      "Anyone you wish you'd had longer with?"
+    ],
+    "shareBack": "Mention the conversation you enjoyed most, then ask who you should both see again soon.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "party",
+      "holiday",
+      "car"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-005",
+    "line": "Anything you want us to make time for this weekend?",
+    "form": "question",
+    "followUps": [
+      "What would make that easy to fit in?",
+      "Just us, or with other people?"
+    ],
+    "shareBack": "Offer one thing you'd like to fit in too, then ask which should come first.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "fun"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-006",
+    "line": "What are you looking forward to most in the next few weeks?",
+    "form": "question",
+    "followUps": [
+      "What's the best part of that for you?",
+      "Is there anything I can do to help it happen?"
+    ],
+    "shareBack": "Offer one thing you're looking forward to, then ask what they'd add to the calendar.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "deeper"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-007",
+    "line": "Something's been stuck in my head today. Can I think out loud for a minute, then hear what's on yours?",
+    "form": "share",
+    "followUps": [
+      "What's been on yours?",
+      "What part of that bothers you most?"
+    ],
+    "shareBack": "Keep your part to a minute, then give them the longer turn.",
+    "deliveryCue": "When it's their turn, listen; don't fix.",
+    "depth": "medium",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-008",
+    "line": "Is there anything coming up that you'd like more help with from me?",
+    "form": "question",
+    "followUps": [
+      "What would that look like day to day?",
+      "What's the first thing I could take on?"
+    ],
+    "shareBack": "Mention one thing you could use a hand with too, then agree on one small change.",
+    "deliveryCue": "Take the answer as given; don't defend.",
+    "depth": "medium",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "plans",
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-009",
+    "line": "I'm glad we came. Give me a look if you need rescuing from anyone.",
+    "form": "statement",
+    "followUps": [
+      "Who have you enjoyed catching up with?",
+      "How long would you like to stay?"
+    ],
+    "shareBack": "Mention who you've enjoyed talking to, then ask who you should both go and find.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "party",
+      "holiday"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-010",
+    "line": "Who are you hoping to catch up with while we're here?",
+    "form": "question",
+    "followUps": [
+      "What do you want to ask them about?",
+      "Anyone you'd rather we tackled together?"
+    ],
+    "shareBack": "Mention who you want to see, then ask who you should find first.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "party",
+      "holiday"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "connection",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-011",
+    "line": "I was thinking about that trip we took a while back. What's the part you still think about?",
+    "form": "share",
+    "followUps": [
+      "What made that part stick?",
+      "Where should we go next?"
+    ],
+    "shareBack": "Offer the moment you remember best, in a sentence, then ask what they'd do again.",
+    "deliveryCue": "Let them tell it their way; don't correct the details.",
+    "depth": "medium",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "fun",
+      "deeper"
+    ],
+    "topics": [
+      "memories",
+      "travel"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-012",
+    "line": "Thinking of you. No need to reply, I just hope the afternoon's going okay.",
+    "form": "statement",
+    "followUps": [
+      "What was the afternoon like in the end?",
+      "What would make tonight easy?"
+    ],
+    "shareBack": "Tonight, mention one small thing from your own afternoon, then ask about theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-013",
+    "line": "What sounds good for dinner tonight? I can pick something up on the way.",
+    "form": "question",
+    "followUps": [
+      "Anything else you need while I'm out?",
+      "Eat at the table or in front of a show?"
+    ],
+    "shareBack": "Offer what you're in the mood for, then let them choose.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "silence"
+    ],
+    "topics": [
+      "food",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-014",
+    "line": "Good luck with the big thing today. I want to hear all about it tonight.",
+    "form": "statement",
+    "followUps": [
+      "How did it go?",
+      "What part went better than you expected?"
+    ],
+    "shareBack": "After they have told it all, mention one thing from your day, then go back to theirs.",
+    "deliveryCue": "Tonight, ask and listen; don't fix.",
+    "depth": "medium",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "week",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-015",
+    "line": "Thanks for this morning. It made my day easier. What can I take off your plate tonight?",
+    "form": "compliment",
+    "followUps": [
+      "What else is on the list this week?",
+      "What would you rather do with that time?"
+    ],
+    "shareBack": "Mention one thing you'd like help with this week too, then settle who does what.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "home",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-016",
+    "line": "Just saw something that made me think of you. Remind me to tell you tonight.",
+    "form": "share",
+    "followUps": [
+      "What made you laugh today?",
+      "What was the oddest part of your day?"
+    ],
+    "shareBack": "Tell the story in a few sentences tonight, then ask for one from their day.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "stories",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-017",
+    "line": "Want to do something just us this weekend? You pick.",
+    "form": "question",
+    "followUps": [
+      "What would make it feel like a real break?",
+      "Which day suits you better?"
+    ],
+    "shareBack": "Offer one idea of your own as a backup, then go with their choice.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "plans",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-018",
+    "line": "Is there something you've been wanting us to do differently lately?",
+    "form": "question",
+    "followUps": [
+      "What would that look like in a normal week?",
+      "What's one small step we could try first?"
+    ],
+    "shareBack": "Once they have finished, offer one thing you'd like to change too, then pick one to try.",
+    "deliveryCue": "Listen all the way through before you answer.",
+    "depth": "deep",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "connection",
+      "values"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-019",
+    "line": "I don't say it enough, but I see how much you carry for us. Which part is heaviest right now?",
+    "form": "compliment",
+    "followUps": [
+      "What would take some of that off you?",
+      "When did it start feeling like that?"
+    ],
+    "shareBack": "Mention one thing you find heavy too, briefly, then return to what they need.",
+    "deliveryCue": "Thank them first; don't explain or defend.",
+    "depth": "deep",
+    "who": [
+      "partner"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-020",
+    "line": "I've never heard the full story of how I got my name. How did you land on it?",
+    "form": "question",
+    "followUps": [
+      "Who else had a say in it?",
+      "What other names were on the list?"
+    ],
+    "shareBack": "Mention how you feel about your name now, then ask about another family name.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn",
+      "fun"
+    ],
+    "topics": [
+      "family",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-021",
+    "line": "What was this holiday like when you were a kid?",
+    "form": "question",
+    "followUps": [
+      "Who did the cooking back then?",
+      "Which part of it do you miss most?"
+    ],
+    "shareBack": "Offer your own earliest memory of this holiday, then ask what they'd bring back.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "holiday"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "memories",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-022",
+    "line": "I tried making one of your dishes and it wasn't the same. What's the trick?",
+    "form": "advice",
+    "followUps": [
+      "Who taught you to make it?",
+      "What else should I learn while I'm at it?"
+    ],
+    "shareBack": "Mention how your attempt turned out, then ask which dish to try next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn",
+      "fun"
+    ],
+    "topics": [
+      "food",
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-023",
+    "line": "What was your first job like?",
+    "form": "question",
+    "followUps": [
+      "What did you spend your first pay on?",
+      "Who do you still remember from there?"
+    ],
+    "shareBack": "Offer one detail about your own first job, then ask what they did next.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "work",
+      "stories"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-024",
+    "line": "What was the house you grew up in like?",
+    "form": "question",
+    "followUps": [
+      "Which room do you remember best?",
+      "Who else lived there with you?"
+    ],
+    "shareBack": "Mention one thing you remember about your own childhood home, then ask about the street.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "in-law"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "home",
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-025",
+    "line": "Who in the family am I most like, do you think?",
+    "form": "question",
+    "followUps": [
+      "What do I do that reminds you of them?",
+      "What were they like at my age?"
+    ],
+    "shareBack": "Mention who you think you take after, then ask who they take after.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "fun",
+      "learn"
+    ],
+    "topics": [
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-026",
+    "line": "What's a family story I've probably never heard?",
+    "form": "question",
+    "followUps": [
+      "Who told you that one?",
+      "What happened afterwards?"
+    ],
+    "shareBack": "Offer a short family story you love, then ask if they remember it the same way.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn",
+      "fun"
+    ],
+    "topics": [
+      "stories",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-027",
+    "line": "I've got a decision I keep going back and forth on. Can I get your take?",
+    "form": "advice",
+    "followUps": [
+      "What would you want to know before deciding?",
+      "Did you ever face something like this?"
+    ],
+    "shareBack": "Lay the choice out in two sentences, then listen to the whole answer before replying.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "learn",
+      "deeper"
+    ],
+    "topics": [
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-028",
+    "line": "What are you reading or watching at the moment? I need something new.",
+    "form": "question",
+    "followUps": [
+      "What do you like about it?",
+      "What should I try after that?"
+    ],
+    "shareBack": "Offer one thing you've enjoyed lately, then ask what they'd pick next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "break-ice"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-029",
+    "line": "What's been the best part of your week so far?",
+    "form": "question",
+    "followUps": [
+      "What made that stand out?",
+      "What's the rest of the week looking like?"
+    ],
+    "shareBack": "Offer the best part of your own week in a sentence, then ask about the weekend.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence"
+    ],
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-030",
+    "line": "I caught myself doing something exactly the way you do it this week. Where did you learn it?",
+    "form": "compliment",
+    "followUps": [
+      "Who taught you that?",
+      "What else did you pick up from them?"
+    ],
+    "shareBack": "Say what the habit was and when you noticed it, then ask what else they taught you.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "fun",
+      "deeper"
+    ],
+    "topics": [
+      "family",
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-031",
+    "line": "It's really good to see you. I've thought about you more than I've managed to say.",
+    "form": "statement",
+    "followUps": [
+      "What's been keeping you busy lately?",
+      "What's been good for you this year?"
+    ],
+    "shareBack": "Mention one thing from your own year in a sentence, then ask another question about theirs.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "relative"
+    ],
+    "closeness": [
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-032",
+    "line": "I was thinking the other day about the meals at your place when I was small. What do you remember from then?",
+    "form": "share",
+    "followUps": [
+      "Who was always at the table?",
+      "What did you like cooking most?"
+    ],
+    "shareBack": "Offer the one dish or moment you remember best, then ask what else you've forgotten.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "reconnect",
+      "learn"
+    ],
+    "topics": [
+      "memories",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-033",
+    "line": "This must bring back some memories. What were family get-togethers like when you were young?",
+    "form": "statement",
+    "followUps": [
+      "Who was always the life of the room?",
+      "What did everyone eat?"
+    ],
+    "shareBack": "Mention a gathering you remember from childhood, then ask how today compares.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "big-event",
+      "holiday",
+      "party"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "memories",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-034",
+    "line": "What are you proud of that nobody really asks you about?",
+    "form": "question",
+    "followUps": [
+      "What did it take to do that?",
+      "Who knew about it at the time?"
+    ],
+    "shareBack": "Tell them one thing about them that you're proud of, then ask what came next.",
+    "deliveryCue": null,
+    "depth": "deep",
+    "who": [
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "values",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-035",
+    "line": "Is there anything you'd do differently if you were my age again?",
+    "form": "advice",
+    "followUps": [
+      "What made you choose the way you did?",
+      "What are you glad you didn't change?"
+    ],
+    "shareBack": "Mention one choice you're weighing now, briefly, then ask what they'd tell you.",
+    "deliveryCue": null,
+    "depth": "deep",
+    "who": [
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "values",
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-036",
+    "line": "I was telling someone about what we got up to as kids. What's your favorite story from back then?",
+    "form": "share",
+    "followUps": [
+      "Do you remember how it started?",
+      "Who got the blame?"
+    ],
+    "shareBack": "Offer the story you tell most, in a few sentences, then ask if you've got it right.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "fun",
+      "reconnect"
+    ],
+    "topics": [
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-037",
+    "line": "What have you been spending your spare time on lately?",
+    "form": "question",
+    "followUps": [
+      "How did you get into that?",
+      "What do you like most about it?"
+    ],
+    "shareBack": "Offer one thing that has been filling your own spare time, then ask what's next for theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-038",
+    "line": "This is a serious spread. Which dish do you go for first?",
+    "form": "statement",
+    "followUps": [
+      "Is there one you look forward to every year?",
+      "Who made the best thing here?"
+    ],
+    "shareBack": "Mention the dish you're heading for, then ask what you shouldn't miss.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "holiday",
+      "party",
+      "big-event"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "food",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-039",
+    "line": "It's been ages since this many of us were in one room. Who have you caught up with so far?",
+    "form": "statement",
+    "followUps": [
+      "Who were you most glad to see?",
+      "Who should I go and find?"
+    ],
+    "shareBack": "Mention who you've talked to so far, then ask who you should say hello to next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "lost-touch"
+    ],
+    "where": [
+      "big-event",
+      "holiday",
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "reconnect"
+    ],
+    "topics": [
+      "family",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-040",
+    "line": "How was the trip over? Did you come far today?",
+    "form": "question",
+    "followUps": [
+      "What time did you have to set off?",
+      "Are you staying on or heading back tonight?"
+    ],
+    "shareBack": "Mention your own trip in a sentence, then ask what they're looking forward to today.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "lost-touch"
+    ],
+    "where": [
+      "holiday",
+      "big-event",
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "travel"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-041",
+    "line": "You're always the one who gets everyone laughing at these things. Where do you get it from?",
+    "form": "compliment",
+    "followUps": [
+      "Who was the funny one when you were growing up?",
+      "What's the best laugh you've had today?"
+    ],
+    "shareBack": "Mention one thing they said that you still quote, then ask for another story.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "party",
+      "big-event"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "family",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-042",
+    "line": "I heard a song this week that took me straight back to being a kid. What does that for you?",
+    "form": "share",
+    "followUps": [
+      "Where does it take you back to?",
+      "Who were you with back then?"
+    ],
+    "shareBack": "Say which song it was and where it took you, in a sentence, then ask about theirs.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "fun",
+      "deeper"
+    ],
+    "topics": [
+      "memories",
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-043",
+    "line": "You've seemed stretched thin lately. I'd like to hear what's going on whenever you've got the energy.",
+    "form": "statement",
+    "followUps": [
+      "What's taking the most out of you?",
+      "What would help this week?"
+    ],
+    "shareBack": "Mention one thing that has stretched you lately, briefly, then go back to theirs.",
+    "deliveryCue": "Listen; don't jump in with fixes.",
+    "depth": "medium",
+    "who": [
+      "relative",
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "week",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-044",
+    "line": "What's been the highlight of your year so far?",
+    "form": "question",
+    "followUps": [
+      "What made it so good?",
+      "What are you hoping the rest of the year brings?"
+    ],
+    "shareBack": "Offer your own highlight in a sentence, then ask what's coming up next.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "deeper"
+    ],
+    "topics": [
+      "stories",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-045",
+    "line": "What's something you've found lately that you'd recommend to everyone?",
+    "form": "question",
+    "followUps": [
+      "How did you come across it?",
+      "What would I like about it?"
+    ],
+    "shareBack": "Offer one recommendation of your own, then ask for a second.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "entertainment",
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-046",
+    "line": "What are you cooking these days? I'm stuck in a rut and need ideas.",
+    "form": "advice",
+    "followUps": [
+      "How do you make it?",
+      "What's your easy weeknight one?"
+    ],
+    "shareBack": "Mention the one meal you make too often, then ask what they'd swap it for.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "food",
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-047",
+    "line": "Do you have any trips or plans lined up for the next few months?",
+    "form": "question",
+    "followUps": [
+      "What are you most looking forward to about it?",
+      "How did that come about?"
+    ],
+    "shareBack": "Offer one plan of your own, then ask what else is on their list.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "break-ice"
+    ],
+    "topics": [
+      "plans",
+      "travel"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-048",
+    "line": "Do you think we turned out the way the family expected?",
+    "form": "question",
+    "followUps": [
+      "What did they expect of you?",
+      "What surprised you most about how things went?"
+    ],
+    "shareBack": "Offer how you think you turned out, in a sentence, then ask what they'd tell their younger self.",
+    "deliveryCue": null,
+    "depth": "deep",
+    "who": [
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper",
+      "fun"
+    ],
+    "topics": [
+      "family",
+      "values"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-049",
+    "line": "I've heard so much about your cooking. What's the dish everyone asks you for?",
+    "form": "compliment",
+    "followUps": [
+      "Who did you learn it from?",
+      "When do you usually make it?"
+    ],
+    "shareBack": "Mention a dish from your own family table, then ask what they like to eat when someone else cooks.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-050",
+    "line": "What does this holiday usually look like in your family? I'd love to know the traditions.",
+    "form": "question",
+    "followUps": [
+      "Which tradition is your favorite?",
+      "How long has the family done that?"
+    ],
+    "shareBack": "Offer one tradition from your side, then ask which of theirs you should learn first.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "home",
+      "car"
+    ],
+    "goals": [
+      "learn",
+      "break-ice"
+    ],
+    "topics": [
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-051",
+    "line": "What a lovely day for it. Which part have you enjoyed most so far?",
+    "form": "statement",
+    "followUps": [
+      "What are you looking forward to next?",
+      "Who have you managed to catch up with?"
+    ],
+    "shareBack": "Mention the moment you liked best, then ask about the people they came to see.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law",
+      "relative"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "lost-touch"
+    ],
+    "where": [
+      "big-event",
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-052",
+    "line": "Your place is lovely. How long have you lived here?",
+    "form": "compliment",
+    "followUps": [
+      "What do you like best about living here?",
+      "What was it like when you first moved in?"
+    ],
+    "shareBack": "Mention one thing you like about the house or the street, then ask about their favorite spot.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law",
+      "relative"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "home"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "home",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-053",
+    "line": "I'd love a story from when my other half was little. Which one always gets told?",
+    "form": "question",
+    "followUps": [
+      "What were they like at that age?",
+      "Who else was in on it?"
+    ],
+    "shareBack": "Offer one childhood story of your own, briefly, then ask for another of theirs.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "fun",
+      "learn"
+    ],
+    "topics": [
+      "stories",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-054",
+    "line": "What's the area like around where you live? I've never spent much time there.",
+    "form": "question",
+    "followUps": [
+      "What do you like best about it?",
+      "Where would you take a visitor first?"
+    ],
+    "shareBack": "Mention one thing you like about where you live, then ask how long they've been there.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-055",
+    "line": "What should I make sure I see or eat while I'm in your part of the world?",
+    "form": "advice",
+    "followUps": [
+      "Where do you go yourself?",
+      "What do visitors usually miss?"
+    ],
+    "shareBack": "Mention one place you've liked so far, then ask where they'd spend a free afternoon.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "home",
+      "car",
+      "holiday"
+    ],
+    "goals": [
+      "learn",
+      "break-ice"
+    ],
+    "topics": [
+      "travel",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-056",
+    "line": "What was the house like when the whole family lived under one roof?",
+    "form": "question",
+    "followUps": [
+      "Who was the noisy one?",
+      "What did a normal weekend look like?"
+    ],
+    "shareBack": "Offer one detail about the home you grew up in, then ask what they miss about those years.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "family",
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-057",
+    "line": "Thank you for having us. You make it look easy. What can I do to help?",
+    "form": "compliment",
+    "followUps": [
+      "How long have you been hosting this one?",
+      "What's the part you enjoy most?"
+    ],
+    "shareBack": "Mention one thing you're enjoying about the day, then get stuck into the job they give you.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "holiday"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "home",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-058",
+    "line": "Is there a dish that has to be on the table every year?",
+    "form": "question",
+    "followUps": [
+      "Who makes it?",
+      "What happens if someone tries to change it?"
+    ],
+    "shareBack": "Mention the dish your own family insists on, then ask how theirs is made.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law",
+      "relative"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "holiday"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "food",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-059",
+    "line": "How did the family traditions start? Was it your side, or something you made up along the way?",
+    "form": "question",
+    "followUps": [
+      "Which one matters most to you?",
+      "Has it changed much over the years?"
+    ],
+    "shareBack": "Offer one tradition you'd like to keep going, then ask how you can help with theirs.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "home",
+      "car",
+      "party"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "family",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-060",
+    "line": "The hosts have done a wonderful job. Have you had a chance to talk to them yet?",
+    "form": "statement",
+    "followUps": [
+      "What's been your favorite part so far?",
+      "Who else are you hoping to see?"
+    ],
+    "shareBack": "Mention one detail of the day you liked, then ask what they thought of the food.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law",
+      "relative"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "big-event",
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-061",
+    "line": "Made your recipe tonight and thought of you. It came out nearly right.",
+    "form": "share",
+    "followUps": [
+      "What do you think I got wrong?",
+      "What should I try next?"
+    ],
+    "shareBack": "Say how it turned out in a line, then ask when you can cook it together.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "food",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-062",
+    "line": "Are you free for a call this weekend? Nothing urgent, I'd just like to hear your voice.",
+    "form": "question",
+    "followUps": [
+      "Which day suits you best?",
+      "What's been happening at your place this week?"
+    ],
+    "shareBack": "On the call, offer one small piece of your own news, then ask for theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-063",
+    "line": "Saw something today that reminded me of you and it made me smile. No need to reply. Hope you're well.",
+    "form": "reachout",
+    "followUps": [
+      "What have you been up to this year?",
+      "Would a call sometime suit you?"
+    ],
+    "shareBack": "If they reply, mention the memory in a line, then ask one easy question about them.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative"
+    ],
+    "closeness": [
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "memories",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-064",
+    "line": "It's been too long, and that's on me. I'd love to catch up whenever suits you. No rush at all.",
+    "form": "reachout",
+    "followUps": [
+      "When's a good time for a call?",
+      "What's been the best part of your year?"
+    ],
+    "shareBack": "If they reply, offer one line of your own news, then ask about theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative"
+    ],
+    "closeness": [
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-065",
+    "line": "Found an old photo of us today and had to send it. Hope things are good with you.",
+    "form": "reachout",
+    "followUps": [
+      "Do you remember where this was taken?",
+      "Who else was there that day?"
+    ],
+    "shareBack": "If they reply, mention what you remember of that day, then ask what they remember.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative"
+    ],
+    "closeness": [
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect",
+      "fun"
+    ],
+    "topics": [
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-066",
+    "line": "I'm making soup tonight and it's missing something. What would you add?",
+    "form": "advice",
+    "followUps": [
+      "How long do you let it cook?",
+      "What do you serve with it?"
+    ],
+    "shareBack": "Reply with how it turned out, then ask what they're cooking this week.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn",
+      "reconnect"
+    ],
+    "topics": [
+      "food",
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-067",
+    "line": "What's the weather doing where you are today? It's been wild here.",
+    "form": "question",
+    "followUps": [
+      "Have you managed to get out in it?",
+      "What do you have planned for the rest of the day?"
+    ],
+    "shareBack": "Mention one line about your own day, then ask what they're up to this week.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "silence",
+      "reconnect"
+    ],
+    "topics": [
+      "setting",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-068",
+    "line": "I've been thinking about the stories you used to tell. Can I ask you about one next time I'm over?",
+    "form": "share",
+    "followUps": [
+      "Which story do you like telling most?",
+      "Is there one you've never told me?"
+    ],
+    "shareBack": "Mention the story you remember best in a line, then let them pick where to start.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "parent"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn",
+      "reconnect"
+    ],
+    "topics": [
+      "stories",
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-069",
+    "line": "Here's a photo from today. I thought you might like to have it.",
+    "form": "share",
+    "followUps": [
+      "What was your favorite part of the day?",
+      "Shall I send the rest?"
+    ],
+    "shareBack": "Mention the moment you liked best, in a line, then ask about theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect",
+      "fun"
+    ],
+    "topics": [
+      "connection",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-070",
+    "line": "Really good to see you the other day. Let's not leave it so long next time.",
+    "form": "statement",
+    "followUps": [
+      "When are you next around?",
+      "What do you have going on over the next few weeks?"
+    ],
+    "shareBack": "Offer a rough date that suits you, then ask what works for them.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-071",
+    "line": "What was the name of that show you mentioned? I want to try it.",
+    "form": "question",
+    "followUps": [
+      "When does it get good?",
+      "What else are you enjoying?"
+    ],
+    "shareBack": "Reply once you've watched some with what you liked, then ask what to watch next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect",
+      "fun"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-072",
+    "line": "Are you going to the family get-together next month? It'd be good to see you there.",
+    "form": "question",
+    "followUps": [
+      "Are you staying over or just there for the day?",
+      "Is there anything I can bring?"
+    ],
+    "shareBack": "Mention when you're arriving, then ask who else is coming.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "plans",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-073",
+    "line": "Can I pick your brain about something this week? You're the person I thought of first.",
+    "form": "advice",
+    "followUps": [
+      "When's a good time to call?",
+      "How did you learn so much about this?"
+    ],
+    "shareBack": "Give the question in two lines so they can think ahead, then thank them for the time.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "parent",
+      "relative",
+      "in-law"
+    ],
+    "closeness": [
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-074",
+    "line": "Settle something for me: what was the name of that place we always went as kids?",
+    "form": "question",
+    "followUps": [
+      "What do you remember most about it?",
+      "Should we go back sometime?"
+    ],
+    "shareBack": "Mention what you remember of it in a line, then ask what else you've forgotten.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "relative"
+    ],
+    "closeness": [
+      "well",
+      "very-close",
+      "lost-touch"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun",
+      "reconnect"
+    ],
+    "topics": [
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-075",
+    "line": "It was lovely to meet you over the weekend. Thank you for making me feel so welcome.",
+    "form": "statement",
+    "followUps": [
+      "Is there anything I can bring next time?",
+      "What do you have planned for the week?"
+    ],
+    "shareBack": "Mention one moment you enjoyed, in a line, then say you hope to see them again soon.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-076",
+    "line": "Thank you again for dinner. I'm still thinking about that dessert. Any chance of the recipe?",
+    "form": "compliment",
+    "followUps": [
+      "Where did the recipe come from?",
+      "What do you usually serve with it?"
+    ],
+    "shareBack": "Reply with how your attempt turned out, then ask what they'd like you to cook for them.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn",
+      "break-ice"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-077",
+    "line": "We got home safely. Thank you for a lovely day.",
+    "form": "statement",
+    "followUps": [
+      "What was your favorite part of the day?",
+      "When can we have you over to ours?"
+    ],
+    "shareBack": "Mention the moment you enjoyed most, in a line, then suggest when you'll next see them.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law",
+      "parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-078",
+    "line": "Is there anything we can bring next time we come over?",
+    "form": "question",
+    "followUps": [
+      "What does everyone like to drink?",
+      "Would it help if we came early to set up?"
+    ],
+    "shareBack": "Offer one thing you'd be glad to make or bring, then let them choose.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "plans",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-079",
+    "line": "I loved hearing your stories over the weekend. I'd like to hear more next time.",
+    "form": "compliment",
+    "followUps": [
+      "Which story should I ask for next?",
+      "Are there photos to go with them?"
+    ],
+    "shareBack": "Mention the story that stayed with you, in a line, then say when you'll next visit.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "in-law"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well",
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn",
+      "reconnect"
+    ],
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "fa-080",
+    "line": "I'm making a snack. Want one?",
+    "form": "statement",
+    "followUps": [
+      "Sweet or savoury?",
+      "Want to eat it in here or take it with you?"
+    ],
+    "shareBack": "Mention one small thing from your day while you cook, then leave space.",
+    "deliveryCue": "Say it in passing and carry on; let them come to you.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home"
+    ],
+    "goals": [
+      "silence"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-081",
+    "line": "You pick the music. I want to hear what you're into at the moment.",
+    "form": "statement",
+    "followUps": [
+      "What do you like about this one?",
+      "Who put you on to them?"
+    ],
+    "shareBack": "Mention one song you loved at their age, briefly, then let the music play.",
+    "deliveryCue": "Eyes on the road, and no comments on their taste.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "car"
+    ],
+    "goals": [
+      "fun",
+      "learn"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-082",
+    "line": "Saw this and thought of you. No need to reply.",
+    "form": "share",
+    "followUps": [
+      "What's the funniest thing you've seen this week?",
+      "Got one to send back?"
+    ],
+    "shareBack": "If they answer, reply with one line or an emoji, not a question about school.",
+    "deliveryCue": "Send it with the picture or clip and leave it there.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "entertainment",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-083",
+    "line": "Proud of you for today. That's all.",
+    "form": "compliment",
+    "followUps": [
+      "What part are you happiest with?",
+      "What do you want to do to celebrate?"
+    ],
+    "shareBack": "Later, mention the exact thing you noticed them do, then let them take it from there.",
+    "deliveryCue": "Send it and leave it; no question straight after.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-084",
+    "line": "Getting food on my way home. Want anything?",
+    "form": "question",
+    "followUps": [
+      "Same as last time?",
+      "Anything for later as well?"
+    ],
+    "shareBack": "Say what you're getting for yourself, then eat together if they're up for it.",
+    "deliveryCue": "A yes or no is a full answer; don't push for more.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "silence"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-085",
+    "line": "Good luck today. I'm around later if you want to tell me about it.",
+    "form": "statement",
+    "followUps": [
+      "Which part went best?",
+      "What do you need tonight?"
+    ],
+    "shareBack": "If they bring it up, mention a time you were nervous before something, in a sentence.",
+    "deliveryCue": "Wait for them to raise it tonight; don't open with a question.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "week",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-086",
+    "line": "Sorry I was short this morning. That was about me, not you.",
+    "form": "statement",
+    "followUps": [
+      "Is there anything you wanted to say that I cut off?",
+      "Can we start over tonight?"
+    ],
+    "shareBack": "Tonight, say in one sentence what was going on for you, then let them respond or not.",
+    "deliveryCue": "Don't add 'but'. Send it and let it land.",
+    "depth": "medium",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "deeper",
+      "reconnect"
+    ],
+    "topics": [
+      "feelings",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-087",
+    "line": "Drive-through run tonight? My treat.",
+    "form": "question",
+    "followUps": [
+      "Where do you want to go?",
+      "Want to bring anyone?"
+    ],
+    "shareBack": "In the car, mention one small thing from your day, then let them pick the music.",
+    "deliveryCue": "Keep it an offer; no agenda once you're in the car.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "food",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-088",
+    "line": "I had a weird day. Want to hear the dumbest part?",
+    "form": "share",
+    "followUps": [
+      "Has anything like that happened to you?",
+      "What would you have done?"
+    ],
+    "shareBack": "Keep your story under a minute, then leave room for one of theirs.",
+    "deliveryCue": "Side by side works best: cooking, driving, tidying up.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "stories",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-089",
+    "line": "I need your opinion on something. Which of these would you pick?",
+    "form": "advice",
+    "followUps": [
+      "What makes that one better?",
+      "What would you change about it?"
+    ],
+    "shareBack": "Say which one you were leaning toward, then go with theirs if you can.",
+    "deliveryCue": "Ask about something real, and take the answer seriously.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car",
+      "holiday"
+    ],
+    "goals": [
+      "fun",
+      "learn"
+    ],
+    "topics": [
+      "opinions"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-090",
+    "line": "If you want a break from the table, I could use a hand in the kitchen.",
+    "form": "statement",
+    "followUps": [
+      "Who have you ended up stuck next to?",
+      "Want to be in charge of dessert?"
+    ],
+    "shareBack": "Mention who you find hard work at these things, quietly, then share the job.",
+    "deliveryCue": "Say it quietly, as a way out, not a chore.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-091",
+    "line": "What are you watching lately that I'd actually like?",
+    "form": "question",
+    "followUps": [
+      "What's it about, without spoilers?",
+      "Can we watch the first one together?"
+    ],
+    "shareBack": "Mention one show you're in the middle of, then let them choose what goes on.",
+    "deliveryCue": "One question, then stop. Follow up only if they light up.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car",
+      "holiday"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-092",
+    "line": "You don't have to talk to everyone today. Give me a look if you need rescuing.",
+    "form": "statement",
+    "followUps": [
+      "Who are you actually glad to see?",
+      "What would make today easier?"
+    ],
+    "shareBack": "Mention who you'd like rescuing from, then agree on a signal.",
+    "deliveryCue": "Say it on the way there or early on, just the two of you.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "car"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "family",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-093",
+    "line": "You seem worn out this week. I'm not going to quiz you. I'm here if you want to talk.",
+    "form": "statement",
+    "followUps": [
+      "Do you want ideas, or just someone to listen?",
+      "What would make this week easier?"
+    ],
+    "shareBack": "If they open up, mention one time you felt the same, in a sentence, then go back to them.",
+    "deliveryCue": "Say it once, side by side, then leave a long pause.",
+    "depth": "medium",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-094",
+    "line": "Can you show me how this works? I keep getting it wrong.",
+    "form": "advice",
+    "followUps": [
+      "How did you work that out?",
+      "What else can it do?"
+    ],
+    "shareBack": "Mention what you were trying to do with it, then let them drive.",
+    "deliveryCue": "Hand over the phone or controller and let them be the expert.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "holiday"
+    ],
+    "goals": [
+      "learn",
+      "fun"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-095",
+    "line": "Someone needs to pick the movie for after dinner. I vote you.",
+    "form": "statement",
+    "followUps": [
+      "What are the options?",
+      "What should we definitely not watch?"
+    ],
+    "shareBack": "Offer one movie you'd veto, then back their choice in front of everyone.",
+    "deliveryCue": "Say it with a grin, where they can say no easily.",
+    "depth": "light",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "home"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-096",
+    "line": "When I was your age I worried a lot about fitting in. I don't know if it's like that for you.",
+    "form": "share",
+    "followUps": [
+      "What's it like with your friends at the moment?",
+      "What do you wish adults understood about it?"
+    ],
+    "shareBack": "Offer one short, true story from that age, then let them decide whether to add theirs.",
+    "deliveryCue": "Say it and stop. Let the silence do the work.",
+    "depth": "deep",
+    "who": [
+      "teen"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-097",
+    "line": "What was the funniest thing that happened today?",
+    "form": "question",
+    "followUps": [
+      "What happened next?",
+      "Who else was laughing?"
+    ],
+    "shareBack": "Tell them one funny thing from your own day, then ask if anything else made them laugh.",
+    "deliveryCue": "Try at bedtime or one-on-one, not the moment you see them.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "week",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-098",
+    "line": "Who did you sit with at lunch today?",
+    "form": "question",
+    "followUps": [
+      "What did you two talk about?",
+      "What did you have to eat?"
+    ],
+    "shareBack": "Mention who you had lunch with, then ask who they'd like to sit with tomorrow.",
+    "deliveryCue": "Ask after a snack, once they've had a few quiet minutes.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car",
+      "kids-activity"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "connection",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-099",
+    "line": "What was the hardest part of today?",
+    "form": "question",
+    "followUps": [
+      "What did you do when that happened?",
+      "What would help next time?"
+    ],
+    "shareBack": "Mention one small hard thing from your day and what you did, then give them a hug.",
+    "deliveryCue": "Bedtime, lights low. Listen; don't fix it.",
+    "depth": "medium",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-100",
+    "line": "What was your favorite part of practice today?",
+    "form": "question",
+    "followUps": [
+      "What made that part fun?",
+      "What do you want to try next time?"
+    ],
+    "shareBack": "Mention the part you most enjoyed watching, then ask what they'd like for a snack.",
+    "deliveryCue": "Ask on the walk to the car, not in front of the others.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "kids-activity",
+      "car"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "sports",
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-101",
+    "line": "I loved watching you keep trying out there. Which part felt best?",
+    "form": "compliment",
+    "followUps": [
+      "What were you thinking when you did that?",
+      "What do you want to show me next time?"
+    ],
+    "shareBack": "Mention the exact moment you noticed, then let them tell you about it.",
+    "deliveryCue": "Praise the effort, not the score. Say it right after.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "kids-activity",
+      "car"
+    ],
+    "goals": [
+      "fun",
+      "deeper"
+    ],
+    "topics": [
+      "sports",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fa-102",
+    "line": "I'm so glad I got to watch you today.",
+    "form": "statement",
+    "followUps": [
+      "What was the most fun part?",
+      "Who were you playing with?"
+    ],
+    "shareBack": "Mention one thing you liked seeing, then let them choose what to talk about.",
+    "deliveryCue": "Say it and stop; no coaching on the way home.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "kids-activity",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-103",
+    "line": "Who made you laugh today?",
+    "form": "question",
+    "followUps": [
+      "What did they do?",
+      "What did you do then?"
+    ],
+    "shareBack": "Tell them who made you laugh today, then ask who they want to play with tomorrow.",
+    "deliveryCue": "Good in the car or while you're doing something side by side.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "car",
+      "holiday",
+      "kids-activity"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "connection",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-104",
+    "line": "What's your favorite thing on the table?",
+    "form": "question",
+    "followUps": [
+      "What does it taste like?",
+      "What should we try next?"
+    ],
+    "shareBack": "Point out your own favorite, then ask which one they'd like to help make next year.",
+    "deliveryCue": "Ask quietly, beside them, not across the table.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-105",
+    "line": "Who do you want to play with after we eat?",
+    "form": "question",
+    "followUps": [
+      "What game will you play?",
+      "Can anyone join in?"
+    ],
+    "shareBack": "Mention who you're looking forward to talking to, then ask what they need for the game.",
+    "deliveryCue": "Ask before the meal, down at their level.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "plans",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-106",
+    "line": "What are you most excited about today?",
+    "form": "question",
+    "followUps": [
+      "What do you think it will be like?",
+      "What do you want to do first?"
+    ],
+    "shareBack": "Tell them the one thing you're excited about, then ask how you can help with theirs.",
+    "deliveryCue": "Ask at breakfast or in the car on the way.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "car",
+      "home"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-107",
+    "line": "I need a helper. Do you want to stir or set the table?",
+    "form": "question",
+    "followUps": [
+      "How should we do it?",
+      "What should we do next?"
+    ],
+    "shareBack": "Tell them what you used to help with at their age, then ask what job they'd like next.",
+    "deliveryCue": "Give two choices and let them pick; chat while you work.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "home"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "food",
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-108",
+    "line": "Show me what you made today. I want to hear how you did it.",
+    "form": "statement",
+    "followUps": [
+      "Which part took the longest?",
+      "What will you make next?"
+    ],
+    "shareBack": "Point to the one detail you like best, then ask where it should go.",
+    "deliveryCue": "Get down to their level and look properly before you speak.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home",
+      "kids-activity"
+    ],
+    "goals": [
+      "learn",
+      "fun"
+    ],
+    "topics": [
+      "projects"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-109",
+    "line": "I can't decide what to read tonight. Which book should we pick?",
+    "form": "advice",
+    "followUps": [
+      "What do you like about that one?",
+      "Which part should I do the voices for?"
+    ],
+    "shareBack": "Mention a book you loved when you were small, then start reading theirs.",
+    "deliveryCue": "Ask at bedtime, once teeth are done.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "home"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-110",
+    "line": "You were so patient at the table. What was the best part of dinner?",
+    "form": "compliment",
+    "followUps": [
+      "Who did you like talking to?",
+      "What should we have next time?"
+    ],
+    "shareBack": "Tell them your best part, then ask what they want to do now.",
+    "deliveryCue": "Say it afterwards, just the two of you.",
+    "depth": "light",
+    "who": [
+      "child"
+    ],
+    "closeness": [
+      "very-close"
+    ],
+    "where": [
+      "holiday",
+      "home"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "food",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  }
+]
