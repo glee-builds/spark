@@ -6,6 +6,7 @@ Shared rules for all coding projects are in `../CLAUDE.md`, and they apply here.
 
 - **Never commit directly to `main`.** The first commit was the only exception. All work goes on a branch and reaches `main` through a pull request.
 - **Who merges:** for Phases 1 to 3 the owner asked Claude to merge each pull request once the tests pass, so the live link stays current (see `docs/decisions.md`). After Phase 3, the owner merges unless they say otherwise.
+- **A new file the app loads must be added to the `FILES` list in `sw.js`**, or it will be missing offline. A test checks this.
 - **Starters and code go in separate pull requests.** A pull request that adds starters adds one group at a time, so the owner can read the lines out loud.
 
 ## Privacy rule (applies to everything public)
@@ -43,6 +44,9 @@ Nothing that identifies the owner or any other person is stored anywhere public.
 
 ```
 index.html        the one page of the app
+manifest.webmanifest  name, colors, and icons for the home-screen app
+sw.js             the service worker: saves the app's files for offline use
+assets/           the app icons
 styles.css        all styling
 src/
   app.js          the screens and what happens on each tap
@@ -50,6 +54,7 @@ src/
   matching.js     the rules that pick starters (depth ceiling, risky topics, variety)
   library.js      loads the starter files and the support lines
   support.js      picks the wrap-up line, hard-time lines, and reassurance
+  install.js      starts offline support and shows the add-to-home-screen hint
   storage.js      what is remembered on the phone (recently seen starters)
   validate.js     checks a starter follows the format
 data/             the starter library, one JSON file per group of people,

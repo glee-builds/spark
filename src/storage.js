@@ -30,3 +30,12 @@ export function addSeen(ids) {
   const seen = getSeen().filter((id) => !ids.includes(id)).concat(ids);
   write(SEEN_KEY, seen.slice(-SEEN_LIMIT));
 }
+
+// Simple yes/no memory, for example "the install hint was dismissed".
+export function getFlag(key) {
+  return read(key, false) === true;
+}
+
+export function setFlag(key) {
+  write(key, true);
+}
