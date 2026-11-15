@@ -1,1 +1,1807 @@
-[]
+[
+  {
+    "id": "nw-001",
+    "line": "That last session ran long, but I'd have listened to more. What did you make of it?",
+    "form": "question",
+    "followUps": [
+      "Which part will you actually use?",
+      "Was it what you expected going in?"
+    ],
+    "shareBack": "Offer the one point you took from the session, in a sentence, then ask what they are heading to next.",
+    "deliveryCue": "Best in the first few minutes after a session ends.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting",
+      "opinions"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-002",
+    "line": "Mind if I join you? I've been hovering by the coffee long enough.",
+    "form": "share",
+    "followUps": [
+      "What were you talking about before I arrived?",
+      "How has the event been for you so far?"
+    ],
+    "shareBack": "Add one short line on what you have enjoyed so far, then pick up their topic again.",
+    "deliveryCue": "Say it lightly, then listen for a minute before adding much.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking",
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-003",
+    "line": "I don't know many people here yet, so I thought I'd come and say hello. What brought you along?",
+    "form": "share",
+    "followUps": [
+      "Have you been to one of these before?",
+      "What's been the best part so far?"
+    ],
+    "shareBack": "Mention in a sentence how you ended up here, then ask who else they have met.",
+    "deliveryCue": "Good for someone standing alone. Smile and leave a little space.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met"
+    ],
+    "where": [
+      "networking",
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-004",
+    "line": "The food line seems to be where everyone ends up. Spotted anything I shouldn't miss?",
+    "form": "question",
+    "followUps": [
+      "Have you been to one of these before?",
+      "Are you an early-arrival person at these things?"
+    ],
+    "shareBack": "Say what you are hoping is still left, then ask how their day is going so far.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking",
+      "party",
+      "big-event"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "food",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-005",
+    "line": "I liked the question you asked in that session. It was the one I wanted answered. What made you ask it?",
+    "form": "compliment",
+    "followUps": [
+      "Did the answer settle it for you?",
+      "Is that something you deal with a lot?"
+    ],
+    "shareBack": "Offer why the question mattered to you, in a sentence, then ask what else they are going to.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "opinions",
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-006",
+    "line": "Which session are you most looking forward to? I'm still working out my plan.",
+    "form": "question",
+    "followUps": [
+      "What drew you to that one?",
+      "Is there anything you plan to skip?"
+    ],
+    "shareBack": "Name the one session you have circled and why, then ask if they would like to compare notes later.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "plans",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-007",
+    "line": "What kind of work brings you to an event like this?",
+    "form": "question",
+    "followUps": [
+      "What does a normal week of that look like?",
+      "How did you get into it?"
+    ],
+    "shareBack": "Give your own work in one plain sentence, then ask what they hope to take home from the event.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-008",
+    "line": "Working on anything interesting at the moment?",
+    "form": "question",
+    "followUps": [
+      "What's the part you're enjoying most?",
+      "How did that one come about?"
+    ],
+    "shareBack": "Offer one thing you are working on, with one detail they can pick up, then hand the turn back.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking",
+      "video-call"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "projects",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-009",
+    "line": "I came mostly for the afternoon talks, and I'm already glad I did. What's been the best thing you've heard so far?",
+    "form": "share",
+    "followUps": [
+      "What made that one stand out?",
+      "Would you go and hear that speaker again?"
+    ],
+    "shareBack": "Share the one idea you wrote down today, then ask what they are going to next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "setting",
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-010",
+    "line": "Good to see you again. I think we last talked at one of these. What's kept you busy since?",
+    "form": "question",
+    "followUps": [
+      "How did that turn out?",
+      "What's next on your list?"
+    ],
+    "shareBack": "Offer one thing that has changed for you since then, in a sentence, then ask about their plans.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "a-little"
+    ],
+    "where": [
+      "networking",
+      "party"
+    ],
+    "goals": [
+      "reconnect",
+      "break-ice"
+    ],
+    "topics": [
+      "projects",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-011",
+    "line": "You seem to know your way around this event. Is there a talk or a stand I shouldn't miss?",
+    "form": "advice",
+    "followUps": [
+      "What did you like about it?",
+      "How many times have you been?"
+    ],
+    "shareBack": "Say what you came hoping to find, then ask what keeps them coming back.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-012",
+    "line": "I'm new to this group, so I'm still learning who everyone is. How did you get involved?",
+    "form": "share",
+    "followUps": [
+      "What has kept you coming back?",
+      "Who else should I say hello to?"
+    ],
+    "shareBack": "Mention how you heard about the group, in a sentence, then ask what is coming up next for it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "networking",
+      "video-call"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "connection",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-013",
+    "line": "I'm trying to work out how everyone here knows the hosts. What's your connection?",
+    "form": "question",
+    "followUps": [
+      "How long have you known them?",
+      "What were they like back then?"
+    ],
+    "shareBack": "Say how you know the hosts, with one small detail, then ask if they know many others here.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "connection",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-014",
+    "line": "I've gone back for this twice already. Have you tried it, or is there something better I've missed?",
+    "form": "share",
+    "followUps": [
+      "Do you cook much, or mostly appreciate?",
+      "What's the best thing you've eaten lately?"
+    ],
+    "shareBack": "Offer one dish you make or always order, then ask what they would recommend.",
+    "deliveryCue": "Say it with the plate in your hand.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party",
+      "big-event",
+      "networking"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-015",
+    "line": "Anything you're looking forward to in the next few weeks?",
+    "form": "question",
+    "followUps": [
+      "What are you most excited about with that?",
+      "How did that come about?"
+    ],
+    "shareBack": "Offer one thing you are looking forward to, in a sentence, then ask another question about theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-016",
+    "line": "Seen, read or watched anything good lately? I'm short on recommendations.",
+    "form": "question",
+    "followUps": [
+      "What did you like about it?",
+      "What should I start with?"
+    ],
+    "shareBack": "Offer one thing you enjoyed recently and why, in a sentence, then ask what else is on their list.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party",
+      "big-event"
+    ],
+    "goals": [
+      "silence",
+      "fun"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-017",
+    "line": "Is this your kind of party, or are you more of a quiet-dinner person? I can never decide.",
+    "form": "question",
+    "followUps": [
+      "What does a good evening look like for you?",
+      "What's the best gathering you've been to lately?"
+    ],
+    "shareBack": "Say which one you lean toward and why, in a sentence, then ask about their plans for the weekend.",
+    "deliveryCue": "Keep it playful.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "opinions",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-018",
+    "line": "It looks like we're table neighbors for the evening. Do you know anyone else at this table, or are we all new?",
+    "form": "statement",
+    "followUps": [
+      "How do you know the hosts?",
+      "Have you been to this place before?"
+    ],
+    "shareBack": "Say in a sentence who you came with or how you were invited, then ask about their evening so far.",
+    "deliveryCue": "Say it as you sit down.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met"
+    ],
+    "where": [
+      "party",
+      "big-event"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-019",
+    "line": "I always enjoy these more than I expect to. What's been your favorite moment so far?",
+    "form": "share",
+    "followUps": [
+      "What made that one stand out?",
+      "Who have you enjoyed talking to?"
+    ],
+    "shareBack": "Offer your own favorite moment in a sentence, then ask what they are doing afterwards.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party",
+      "big-event"
+    ],
+    "goals": [
+      "silence",
+      "fun"
+    ],
+    "topics": [
+      "setting",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-020",
+    "line": "What's something you've got into lately that you didn't expect to enjoy?",
+    "form": "question",
+    "followUps": [
+      "How did you come across it?",
+      "What's the appeal, now you're in it?"
+    ],
+    "shareBack": "Offer one thing you have picked up lately, with a detail, then ask what they want to try next.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "a-little"
+    ],
+    "where": [
+      "party",
+      "big-event"
+    ],
+    "goals": [
+      "deeper",
+      "fun"
+    ],
+    "topics": [
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-021",
+    "line": "Last time we talked, it sounded like you had a lot on. Has life calmed down or sped up since?",
+    "form": "statement",
+    "followUps": [
+      "What's taking most of your attention now?",
+      "What's been the good part of it?"
+    ],
+    "shareBack": "Say in a sentence how your own last few months have gone, then go back to what they told you.",
+    "deliveryCue": "Say it warmly, then give them time to answer.",
+    "depth": "medium",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "a-little"
+    ],
+    "where": [
+      "party",
+      "big-event",
+      "video-call"
+    ],
+    "goals": [
+      "deeper",
+      "reconnect"
+    ],
+    "topics": [
+      "week",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-022",
+    "line": "I'm still piecing together who belongs to whom. How do you know the couple?",
+    "form": "question",
+    "followUps": [
+      "What were they like when you first met them?",
+      "Do you have a favorite story about them?"
+    ],
+    "shareBack": "Say how you know the couple, with one small detail, then ask who else they know here.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "big-event"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "connection",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-023",
+    "line": "That ceremony was lovely. Was there a part that got you?",
+    "form": "statement",
+    "followUps": [
+      "Had you heard that story before?",
+      "How long have you known the two of them?"
+    ],
+    "shareBack": "Name the moment that stayed with you, in a sentence, then ask how they know the family.",
+    "deliveryCue": "Use soon after the ceremony.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "big-event"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-024",
+    "line": "The speeches were better than most I've heard. Which one was your favorite?",
+    "form": "question",
+    "followUps": [
+      "Did you know that story already?",
+      "Have you ever had to give one yourself?"
+    ],
+    "shareBack": "Say which line made you laugh, then ask how they know the person who gave it.",
+    "deliveryCue": "Use after the speeches.",
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "big-event"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "setting",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-025",
+    "line": "Days like this remind me of the big gatherings I grew up with. What were family events like for you?",
+    "form": "share",
+    "followUps": [
+      "Who was always at the center of them?",
+      "Is there one you still think about?"
+    ],
+    "shareBack": "Offer one short memory of a gathering from your own family, then ask what today reminds them of.",
+    "deliveryCue": "Only once you have talked for a few minutes.",
+    "depth": "medium",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "a-little"
+    ],
+    "where": [
+      "big-event"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "memories",
+      "family"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-026",
+    "line": "While we wait for the others: anything good happen for you this week?",
+    "form": "question",
+    "followUps": [
+      "What made that the good part?",
+      "Is the rest of the week looking as good?"
+    ],
+    "shareBack": "Offer one small good thing from your own week, in a sentence, then ask what they have coming up.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "video-call"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-027",
+    "line": "Looks like we're the early ones. Have you worked with this group before?",
+    "form": "statement",
+    "followUps": [
+      "How did you come to join?",
+      "Who here should I get to know?"
+    ],
+    "shareBack": "Say in a sentence how you ended up on the call, then ask what they hope gets covered.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "video-call"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-028",
+    "line": "Are you joining from home or an office today? I'm at my kitchen table.",
+    "form": "share",
+    "followUps": [
+      "What's the best thing about your setup?",
+      "Do you get out much between calls?"
+    ],
+    "shareBack": "Add one small detail about where you are sitting, then ask how their day is shaping up.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "video-call"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "setting",
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-029",
+    "line": "What are you hoping to get out of this session? I'm mostly here to listen.",
+    "form": "question",
+    "followUps": [
+      "What made you sign up?",
+      "Have you been to one of these before?"
+    ],
+    "shareBack": "Name the one question you would like answered, then ask what they are working toward.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "event-contact"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "video-call",
+      "networking"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "learning",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-030",
+    "line": "I'm early in learning this field. If you were starting now, what would you focus on first?",
+    "form": "advice",
+    "followUps": [
+      "What makes that the place to start?",
+      "What would you leave for later?"
+    ],
+    "shareBack": "Say in a sentence where you are right now and what you have tried, then ask what they would do next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "learning"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-031",
+    "line": "What are you reading or paying attention to at the moment?",
+    "form": "question",
+    "followUps": [
+      "What made you pick that up?",
+      "Has it changed how you see anything?"
+    ],
+    "shareBack": "Mention one thing you are reading or following, in a sentence, then ask what they would suggest next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn",
+      "break-ice"
+    ],
+    "topics": [
+      "learning",
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-032",
+    "line": "I've followed your work for a while, and the way you explain things has helped me. How did you learn to do that?",
+    "form": "compliment",
+    "followUps": [
+      "Did someone teach you, or was it trial and error?",
+      "What did the early attempts look like?"
+    ],
+    "shareBack": "Name the one explanation of theirs that helped you and what you did with it, then hand the turn back.",
+    "deliveryCue": "Be specific about what helped; keep it to one sentence.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn",
+      "break-ice"
+    ],
+    "topics": [
+      "work",
+      "learning"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-033",
+    "line": "Is there a book or a person that shaped how you work? I'm building a reading list.",
+    "form": "question",
+    "followUps": [
+      "What did you take from it?",
+      "When did you come across it?"
+    ],
+    "shareBack": "Offer the one book or person that has shaped you so far, then ask what they would add after it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "learning",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-034",
+    "line": "Your talk gave me a lot to think about, especially the part on what didn't work. What made you include that?",
+    "form": "compliment",
+    "followUps": [
+      "How did people react at the time?",
+      "What would you add if you gave it again?"
+    ],
+    "shareBack": "Say in a sentence what you plan to try because of the talk, then ask what they are working on now.",
+    "deliveryCue": "Keep it brief; others may be waiting to speak to them.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "networking",
+      "video-call"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "work",
+      "opinions"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-035",
+    "line": "What's one habit you'd suggest to someone who wants to get better at this work?",
+    "form": "advice",
+    "followUps": [
+      "How did you build that habit yourself?",
+      "What gets in the way of it?"
+    ],
+    "shareBack": "Mention one habit you already keep and how it is going, then ask what they would add to it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-036",
+    "line": "I'm deciding what to learn next, and you came to mind as someone to ask. What skill has paid off most for you?",
+    "form": "advice",
+    "followUps": [
+      "How did you go about learning it?",
+      "When did you notice it paying off?"
+    ],
+    "shareBack": "Say which two skills you are choosing between, in a sentence, then ask which they would pick.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "learning"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-037",
+    "line": "What's caught your attention at this event so far? I'd trust your pick over the program.",
+    "form": "question",
+    "followUps": [
+      "What was good about it?",
+      "Is there anything you think is overrated?"
+    ],
+    "shareBack": "Say which session you got the most from, then ask what they are going to next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "networking"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "setting",
+      "opinions"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-038",
+    "line": "What's the most useful thing you've learned recently?",
+    "form": "question",
+    "followUps": [
+      "How did you come across it?",
+      "What have you done differently since?"
+    ],
+    "shareBack": "Offer one useful thing you learned lately, in a sentence, then ask what they want to learn next.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn",
+      "silence"
+    ],
+    "topics": [
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-039",
+    "line": "Who did you learn the most from when you were starting out?",
+    "form": "question",
+    "followUps": [
+      "What did they do that others did not?",
+      "Is there something of theirs you still use?"
+    ],
+    "shareBack": "Mention one person who has taught you a lot and what you took from them, then hand the turn back.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "learn",
+      "deeper"
+    ],
+    "topics": [
+      "stories",
+      "learning"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-040",
+    "line": "I won't talk shop all night, but your work has taught me a lot. What are you enjoying outside of it lately?",
+    "form": "compliment",
+    "followUps": [
+      "How did you get into that?",
+      "What do you like most about it?"
+    ],
+    "shareBack": "Offer one thing you enjoy outside work, with a detail, then ask what they would recommend trying.",
+    "deliveryCue": "Keep the thanks to one sentence, then let work go.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "hobbies"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-041",
+    "line": "Thanks for making time; I've been looking forward to this. What would make the conversation useful for you too?",
+    "form": "statement",
+    "followUps": [
+      "What are you curious about at the moment?",
+      "How do you like to run these?"
+    ],
+    "shareBack": "Say in a sentence the one thing you hope to leave with, then ask where they would like to start.",
+    "deliveryCue": "Use in the first minute of a one-on-one.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "work-meeting",
+      "video-call"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "connection",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "nw-042",
+    "line": "It was good to meet you today. One thing you said has stayed with me. Is there one thing you'd suggest I read next?",
+    "form": "advice",
+    "followUps": [
+      "Thank you. What did you take from it?",
+      "May I tell you what I think once I have read it?"
+    ],
+    "shareBack": "Reply with one line on what stayed with you and why, then thank them.",
+    "deliveryCue": "Send the same day. Name the thing they said if you can.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn",
+      "reconnect"
+    ],
+    "topics": [
+      "advice",
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-043",
+    "line": "Thank you for the advice earlier. I tried it and it helped. No need to reply; I just wanted you to know.",
+    "form": "statement",
+    "followUps": [
+      "Is there a next step you would suggest?",
+      "What did you find hardest when you first tried it?"
+    ],
+    "shareBack": "If they reply, say in one line what you tried and what changed.",
+    "deliveryCue": "Send only once you have tried it.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect",
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-044",
+    "line": "I just read something that made me think of your work. May I send it over?",
+    "form": "share",
+    "followUps": [
+      "Does it match what you have seen?",
+      "What would you add to it?"
+    ],
+    "shareBack": "Send it with one line on why it made you think of them, and leave it there.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect",
+      "learn"
+    ],
+    "topics": [
+      "learning",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-045",
+    "line": "Quick question, no rush: what's one thing you're reading or listening to that you'd recommend?",
+    "form": "question",
+    "followUps": [
+      "What did you like about it?",
+      "What should I look out for in it?"
+    ],
+    "shareBack": "Reply with thanks and one thing you have enjoyed lately, in a single line.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "learning",
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-046",
+    "line": "I saw your latest piece of work and learned a lot from it. What was the hardest part to get right?",
+    "form": "compliment",
+    "followUps": [
+      "How did you get past it?",
+      "Would you approach it the same way again?"
+    ],
+    "shareBack": "Reply with the one thing you learned from it, in a line, and thank them.",
+    "deliveryCue": "Name the piece of work so it is clear you looked at it.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn",
+      "reconnect"
+    ],
+    "topics": [
+      "work",
+      "projects"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-047",
+    "line": "Would you be open to a 15-minute call sometime this month? I have two specific questions and I'll keep it short.",
+    "form": "advice",
+    "followUps": [
+      "What day suits you best?",
+      "Would you like the questions in advance?"
+    ],
+    "shareBack": "If they agree, send the two questions in one short message so they can think ahead.",
+    "deliveryCue": "Have the two questions written before you send this.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-048",
+    "line": "Thanks for talking with me today. I'm going to try what you suggested this week. May I tell you how it goes?",
+    "form": "statement",
+    "followUps": [
+      "Is there anything I should watch for as I try it?",
+      "When would be a good time to check back?"
+    ],
+    "shareBack": "When you report back, give one line on what happened and one on what you learned.",
+    "deliveryCue": "Send the same day, while the conversation is fresh.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "learn",
+      "reconnect"
+    ],
+    "topics": [
+      "advice",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-049",
+    "line": "It's been a while. Something you taught me came in handy today and I thought of you. Hope things are going well.",
+    "form": "reachout",
+    "followUps": [
+      "What are you working on these days?",
+      "Is there anything I can do for you?"
+    ],
+    "shareBack": "If they reply, say in one line what happened and how their lesson helped.",
+    "deliveryCue": "Ask nothing in the first message; let them choose how much to reply.",
+    "depth": "light",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection",
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-050",
+    "line": "Something you told me keeps coming back to me. When you faced a big choice, what helped you decide? A line is plenty.",
+    "form": "question",
+    "followUps": [
+      "Did it feel clear at the time?",
+      "Is there something you would weigh differently now?"
+    ],
+    "shareBack": "Reply with the choice you are facing, in one line, and thank them for the steer.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "values"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-051",
+    "line": "How did you decide to move into the work you do now?",
+    "form": "question",
+    "followUps": [
+      "What nearly stopped you?",
+      "When did you know it was the right call?"
+    ],
+    "shareBack": "Say in a sentence what you are weighing in your own work, then ask what they would look at first.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "work-meeting",
+      "video-call",
+      "party"
+    ],
+    "goals": [
+      "learn",
+      "deeper"
+    ],
+    "topics": [
+      "work",
+      "stories"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-052",
+    "line": "Looking back, what do you wish you'd known earlier in your career?",
+    "form": "question",
+    "followUps": [
+      "How did you end up learning it?",
+      "Would you have listened if someone had told you?"
+    ],
+    "shareBack": "Offer one thing you have already learned the hard way, in a sentence, then hand the turn back.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "work-meeting",
+      "video-call",
+      "party"
+    ],
+    "goals": [
+      "learn",
+      "deeper"
+    ],
+    "topics": [
+      "work",
+      "advice"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-053",
+    "line": "Is there a work decision you'd make differently if you had it again?",
+    "form": "question",
+    "followUps": [
+      "What do you know now that you did not then?",
+      "What did it teach you?"
+    ],
+    "shareBack": "Mention one decision of your own you are unsure about, briefly, then ask how they would look at it.",
+    "deliveryCue": "Ask with curiosity, not as a test.",
+    "depth": "medium",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "work-meeting",
+      "video-call"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "work",
+      "stories"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-054",
+    "line": "I'm stuck on a decision about my next step. How do you think through choices like that?",
+    "form": "advice",
+    "followUps": [
+      "What do you look at first?",
+      "Who do you talk it over with?"
+    ],
+    "shareBack": "Lay out your two options in a sentence each, then ask what they would want to know before choosing.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "work-meeting",
+      "video-call"
+    ],
+    "goals": [
+      "learn",
+      "deeper"
+    ],
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "nw-055",
+    "line": "It seems like you've stayed curious about this work for a long time. What keeps it interesting?",
+    "form": "statement",
+    "followUps": [
+      "Was there a time it stopped being interesting?",
+      "What are you curious about right now?"
+    ],
+    "shareBack": "Say what first drew you to the work, in a sentence, then ask what they would explore in your place.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "mentor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "work-meeting",
+      "video-call",
+      "party"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "work",
+      "feelings"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  }
+]
