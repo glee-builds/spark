@@ -1,1 +1,2637 @@
-[]
+[
+  {
+    "id": "ot-001",
+    "line": "I can never decide at places like this. What are you leaning toward?",
+    "form": "question",
+    "followUps": [
+      "Is that your usual kind of order, or a gamble?",
+      "What made that one jump out?"
+    ],
+    "shareBack": "Say what you're torn between in one sentence, then ask which they'd pick for you.",
+    "deliveryCue": "Say it while you're both still looking at the menu.",
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "food",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-002",
+    "line": "I like this place already. Have you been here before, or is it new to you too?",
+    "form": "statement",
+    "followUps": [
+      "What brought you here the first time?",
+      "What kind of places do you usually end up at?"
+    ],
+    "shareBack": "Mention one thing you noticed walking in, then ask what caught their eye.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party",
+      "out-about"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-003",
+    "line": "I always order the same thing and then wish I'd been braver. Are you a try-something-new person?",
+    "form": "share",
+    "followUps": [
+      "What's the best gamble you've made on a menu?",
+      "Is there anything you'd never order?"
+    ],
+    "shareBack": "Name your safe order in a few words, then ask what they think you should try instead.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-004",
+    "line": "What's the best thing you've eaten lately?",
+    "form": "question",
+    "followUps": [
+      "Where was that?",
+      "Did you find it yourself, or did someone take you there?"
+    ],
+    "shareBack": "Offer one good meal of your own in a sentence, then ask if they'd try it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-005",
+    "line": "What does a really good weekend look like for you?",
+    "form": "question",
+    "followUps": [
+      "When did you last get one like that?",
+      "What's the part you'd never skip?"
+    ],
+    "shareBack": "Describe your own good weekend in one sentence, then ask which part they'd join in on.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "plans",
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-006",
+    "line": "I need something new to watch. Have you seen anything good lately?",
+    "form": "advice",
+    "followUps": [
+      "What did you like about it?",
+      "Is that the kind of thing you usually go for?"
+    ],
+    "shareBack": "Mention the last thing you enjoyed watching, then ask if they've seen it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "break-ice"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-007",
+    "line": "You seem like someone with strong opinions about dessert.",
+    "form": "statement",
+    "followUps": [
+      "So what's the right answer here?",
+      "Share one, or one each?"
+    ],
+    "shareBack": "Admit your own dessert weakness in a few words, then let them decide for the table.",
+    "deliveryCue": "Say it with a smile, as a guess, not a verdict.",
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "food",
+      "opinions"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-008",
+    "line": "Found any good spots around here lately? I'm always looking for new ones.",
+    "form": "advice",
+    "followUps": [
+      "What makes a place a keeper for you?",
+      "How did you come across it?"
+    ],
+    "shareBack": "Offer one spot you like and why in a sentence, then ask if it sounds like their kind of place.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "neighborhood",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-009",
+    "line": "You picked a great spot. How did you find it?",
+    "form": "compliment",
+    "followUps": [
+      "What do you usually get here?",
+      "Do you have a few places like this up your sleeve?"
+    ],
+    "shareBack": "Say one thing you like about the place, then ask what they'd show you next.",
+    "deliveryCue": "Only if they chose the place.",
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party",
+      "out-about"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "ot-010",
+    "line": "What's been the best part of your week so far?",
+    "form": "question",
+    "followUps": [
+      "What made that stand out?",
+      "Is that a regular thing or a one-off?"
+    ],
+    "shareBack": "Give your own small highlight in one sentence, then ask what they've got coming up.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-011",
+    "line": "What's something you've gotten into lately that you didn't expect to like?",
+    "form": "question",
+    "followUps": [
+      "How did that start?",
+      "What keeps you coming back to it?"
+    ],
+    "shareBack": "Mention one thing that surprised you the same way, then ask if they'd give it a go.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party",
+      "car",
+      "text"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-012",
+    "line": "What's the best trip you've taken, even a short one?",
+    "form": "question",
+    "followUps": [
+      "What made it so good?",
+      "Would you go back, or was it a one-time thing?"
+    ],
+    "shareBack": "Share one trip of yours in a sentence with one detail, then ask where they'd go next.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party",
+      "car"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "travel",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-013",
+    "line": "It sounded like a full week. What took up most of it?",
+    "form": "statement",
+    "followUps": [
+      "Was that the good kind of busy?",
+      "What would have made it easier?"
+    ],
+    "shareBack": "Offer one thing that filled your own week, briefly, then ask what they want from the weekend.",
+    "deliveryCue": "Listen first; don't jump in with fixes.",
+    "depth": "medium",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "well"
+    ],
+    "where": [
+      "party",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "week",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-014",
+    "line": "I keep thinking about that place we went last time. Where should we try next?",
+    "form": "share",
+    "followUps": [
+      "What was your favorite part of last time?",
+      "Is there somewhere you've been saving up?"
+    ],
+    "shareBack": "Say what you liked most about last time in one sentence, then let them choose.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any",
+      "text"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "plans",
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-015",
+    "line": "Settle something for me: is it ever okay to order for the whole table?",
+    "form": "question",
+    "followUps": [
+      "Has anyone ever done it well for you?",
+      "What would you order for us right now?"
+    ],
+    "shareBack": "Give your own verdict in a few words, then ask what other food rules they hold.",
+    "deliveryCue": "Keep it light; you're teasing, not testing.",
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "fun"
+    ],
+    "topics": [
+      "opinions",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-016",
+    "line": "You're in charge of the music. What are we listening to?",
+    "form": "statement",
+    "followUps": [
+      "How did you get into them?",
+      "Is this your driving music or your everything music?"
+    ],
+    "shareBack": "Name one thing you've had on repeat, then ask if it would make their playlist.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "car"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-017",
+    "line": "Anything you're looking forward to in the next few weeks?",
+    "form": "question",
+    "followUps": [
+      "What are you most excited about with that?",
+      "How did that come about?"
+    ],
+    "shareBack": "Offer one thing you're looking forward to, in a sentence, then ask another question.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-018",
+    "line": "I'm happy to wander. Is there anything around here you've been wanting to check out?",
+    "form": "share",
+    "followUps": [
+      "What made you curious about it?",
+      "Are you a planner or a see-what-happens person?"
+    ],
+    "shareBack": "Point out one thing nearby that caught your eye, then ask which way they'd go.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "setting",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-019",
+    "line": "What's a small thing that reliably makes your day better?",
+    "form": "question",
+    "followUps": [
+      "How did you figure that out?",
+      "When did you last get to do it?"
+    ],
+    "shareBack": "Share your own small thing in one sentence, then ask if they'd add it to their list.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party",
+      "car"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "feelings",
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-020",
+    "line": "Looking forward to tonight. Anything you're in the mood for, food-wise?",
+    "form": "question",
+    "followUps": [
+      "Anything you'd rather steer clear of?",
+      "Do you want to pick, or should I?"
+    ],
+    "shareBack": "Say what you're in the mood for in a few words and leave the final choice open.",
+    "deliveryCue": "Send it a few hours ahead, not at the last minute.",
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "plans",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-021",
+    "line": "Quick question before we plan anything: coffee and a walk, or a proper sit-down dinner?",
+    "form": "question",
+    "followUps": [
+      "Is there a place you already like for that?",
+      "Which day suits you best?"
+    ],
+    "shareBack": "Say which one you'd lean toward and why in a few words, then let them decide.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-022",
+    "line": "I had a really good time tonight. Did you get home okay?",
+    "form": "statement",
+    "followUps": [
+      "What was your favorite part?",
+      "Would you be up for doing it again?"
+    ],
+    "shareBack": "Name one moment you enjoyed in a sentence, then leave room for theirs.",
+    "deliveryCue": "Send it the same evening; keep it short.",
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-023",
+    "line": "Something today reminded me of that story you told, and I'm still laughing about it.",
+    "form": "share",
+    "followUps": [
+      "Has anything topped it since?",
+      "What are you up to later this week?"
+    ],
+    "shareBack": "Say in a few words what set off the memory, then ask when you can hear the next one.",
+    "deliveryCue": "Needs no long reply; a laugh back is enough.",
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun",
+      "reconnect"
+    ],
+    "topics": [
+      "memories",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-024",
+    "line": "Two ideas for Saturday: something outdoors or somewhere cozy. Which sounds better?",
+    "form": "question",
+    "followUps": [
+      "Morning or evening?",
+      "Anything you've been wanting to try?"
+    ],
+    "shareBack": "Say which one you're quietly hoping for, then leave the choice with them.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun",
+      "break-ice"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-025",
+    "line": "Send me a song you've had on repeat. I need something new for the drive.",
+    "form": "advice",
+    "followUps": [
+      "Where did you first hear it?",
+      "What else should I listen to after this?"
+    ],
+    "shareBack": "Send one song back with a few words on why you like it, and ask what they think.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "fun",
+      "learn"
+    ],
+    "topics": [
+      "entertainment"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-026",
+    "line": "I'm picking up coffee on the way. What's your order?",
+    "form": "question",
+    "followUps": [
+      "Is that your everyday order or a treat?",
+      "Anything to eat with it?"
+    ],
+    "shareBack": "Tell them your own order in a few words when you hand theirs over, and ask how you did.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "food",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-027",
+    "line": "Hope today went the way you wanted. Tell me about it when we're together?",
+    "form": "statement",
+    "followUps": [
+      "What was the best bit?",
+      "What would make tonight a good end to it?"
+    ],
+    "shareBack": "Offer one line about your own day only after hearing theirs, then ask about tomorrow.",
+    "deliveryCue": "Use when you know they had something on today.",
+    "depth": "medium",
+    "who": [
+      "date"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "deeper",
+      "reconnect"
+    ],
+    "topics": [
+      "week",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ot-028",
+    "line": "Your front garden looks great this year. What did you plant along the edge?",
+    "form": "compliment",
+    "followUps": [
+      "Is it a lot of work to keep up?",
+      "Where do you get your plants?"
+    ],
+    "shareBack": "Mention one thing you're trying, or failing, to grow, then ask what they'd suggest.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-029",
+    "line": "Looks like you've got a project going out front. What are you building?",
+    "form": "statement",
+    "followUps": [
+      "Are you doing it all yourself?",
+      "How long do you think it'll take?"
+    ],
+    "shareBack": "Mention a job you keep putting off at your place, then ask how they got started.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "projects",
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-030",
+    "line": "I don't think we've properly met. I'm a few doors down. How long have you been on the street?",
+    "form": "share",
+    "followUps": [
+      "What do you like most about living here?",
+      "Has it changed much in that time?"
+    ],
+    "shareBack": "Say how long you've been here in a few words, then ask what you should know about the street.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met"
+    ],
+    "where": [
+      "out-about",
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-031",
+    "line": "Do you have a go-to place around here for takeout? We're stuck in a rut.",
+    "form": "advice",
+    "followUps": [
+      "What do you usually order there?",
+      "Is there anywhere you'd tell us to skip?"
+    ],
+    "shareBack": "Name the place you order from too often, then ask if they've tried it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "food",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-032",
+    "line": "Any plans for the weekend, or are you just glad to be home?",
+    "form": "question",
+    "followUps": [
+      "Is that something you do often?",
+      "What would the perfect version of it look like?"
+    ],
+    "shareBack": "Offer one thing on your own weekend list, in a sentence, then ask another question.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-033",
+    "line": "I'm heading to the hardware store later. Need anything while I'm there?",
+    "form": "statement",
+    "followUps": [
+      "What are you working on at the moment?",
+      "Have you found a good place for that kind of thing?"
+    ],
+    "shareBack": "Say what job is sending you there in a few words, then ask if they've tackled the same thing.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "silence",
+      "break-ice"
+    ],
+    "topics": [
+      "home",
+      "projects"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-034",
+    "line": "Do you know what they're building down the road? I keep wondering.",
+    "form": "question",
+    "followUps": [
+      "What would you like to see go in there?",
+      "Has much else changed around here lately?"
+    ],
+    "shareBack": "Share your own guess or hope for it in a sentence, then ask what the street is missing.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about",
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-035",
+    "line": "That wind last night was something. Did everything hold up on your side?",
+    "form": "statement",
+    "followUps": [
+      "Did it keep you up?",
+      "Do you need a hand with any of it?"
+    ],
+    "shareBack": "Mention one thing that blew over or leaked at your place, then offer help if they need it.",
+    "deliveryCue": "Only after weather that actually did something.",
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "home",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-036",
+    "line": "We finally tried that new place up the road. Have you been yet?",
+    "form": "share",
+    "followUps": [
+      "What did you think of it?",
+      "Where do you usually go instead?"
+    ],
+    "shareBack": "Give your verdict in one sentence with one detail, then ask what else is worth trying nearby.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "break-ice"
+    ],
+    "topics": [
+      "neighborhood",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-037",
+    "line": "Do you know many people here, or are you meeting everyone like I am?",
+    "form": "question",
+    "followUps": [
+      "How do you know the hosts?",
+      "Who should I make sure to say hello to?"
+    ],
+    "shareBack": "Say who you know here in a few words, then ask how they ended up coming.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-038",
+    "line": "Have you tried any of the food yet? I need a recommendation.",
+    "form": "advice",
+    "followUps": [
+      "What should I go for first?",
+      "Did you bring something yourself?"
+    ],
+    "shareBack": "Report back on what you tried in a sentence, then ask what they like to make or bring.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "food",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-039",
+    "line": "How's the house project going? Last I heard you were in the thick of it.",
+    "form": "question",
+    "followUps": [
+      "What's been the hardest part?",
+      "What's left before you can call it done?"
+    ],
+    "shareBack": "Mention a project of your own that ran long, in a sentence, then ask what they'd do differently.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about",
+      "party"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "projects",
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-040",
+    "line": "What's changed most on the street since you moved in?",
+    "form": "question",
+    "followUps": [
+      "Is that for better or worse, do you think?",
+      "What do you hope stays the same?"
+    ],
+    "shareBack": "Share one change you've noticed yourself, briefly, then ask what they'd add to the street.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "deeper",
+      "learn"
+    ],
+    "topics": [
+      "neighborhood",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-041",
+    "line": "What's been keeping you busy lately, apart from the house?",
+    "form": "question",
+    "followUps": [
+      "How did you get into that?",
+      "What's the best part of it?"
+    ],
+    "shareBack": "Offer one thing filling your own time, in a sentence with a detail, then hand it back.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "well"
+    ],
+    "where": [
+      "party",
+      "text"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "hobbies",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-042",
+    "line": "The new paint color looks really good. How did you settle on it?",
+    "form": "compliment",
+    "followUps": [
+      "Did you do it yourselves?",
+      "Is there more on the list after this?"
+    ],
+    "shareBack": "Admit one thing at your place that needs the same treatment, then ask for a tip.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-043",
+    "line": "It's been so quiet on the street this week. I'm not complaining.",
+    "form": "statement",
+    "followUps": [
+      "Has your week been quiet too, or the opposite?",
+      "Is everyone away, do you think?"
+    ],
+    "shareBack": "Say in a few words what your own week has been like, then ask what they have planned.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "neighborhood",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-044",
+    "line": "Are you staying around over the break, or heading somewhere?",
+    "form": "question",
+    "followUps": [
+      "Is that a tradition or something new?",
+      "What are you most looking forward to?"
+    ],
+    "shareBack": "Share your own plan in one sentence, and offer to keep an eye on their place if they're away.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "break-ice"
+    ],
+    "topics": [
+      "plans",
+      "travel"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-045",
+    "line": "Hi, it's your neighbor from across the street. A package of yours landed on our step. Shall I drop it over?",
+    "form": "statement",
+    "followUps": [
+      "When's a good time to bring it by?",
+      "Does that happen to you often?"
+    ],
+    "shareBack": "Add a friendly line about how deliveries go at your place when you hand it over.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-046",
+    "line": "We're away this weekend. Could you keep an eye out for deliveries? Happy to return the favor anytime.",
+    "form": "question",
+    "followUps": [
+      "Is there anything we can do for you while you're away next?",
+      "Are you around or off somewhere too?"
+    ],
+    "shareBack": "Say in a few words where you're off to, and ask if they need anything brought back.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "neighborhood",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-047",
+    "line": "Heading to the store in an hour. Need anything?",
+    "form": "statement",
+    "followUps": [
+      "Anything else while I'm out?",
+      "Are you home this afternoon if I drop it by?"
+    ],
+    "shareBack": "Mention what you're going for in a few words, so the offer feels easy to accept.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "reconnect"
+    ],
+    "topics": [
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-048",
+    "line": "Your garden lights look great from our window. Where did you find them?",
+    "form": "compliment",
+    "followUps": [
+      "Were they hard to put up?",
+      "Are you planning anything else out there?"
+    ],
+    "shareBack": "Say what you've been meaning to do with your own yard, then ask what they'd start with.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-049",
+    "line": "We made far too much soup. Can I bring some over?",
+    "form": "share",
+    "followUps": [
+      "Is tonight good, or tomorrow?",
+      "Anything you don't eat that I should know about?"
+    ],
+    "shareBack": "Tell them what kind it is in a few words, and ask what they've been cooking lately.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect",
+      "fun"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-050",
+    "line": "Haven't seen you out front in a while and thought of you. Hope all's well over there.",
+    "form": "reachout",
+    "followUps": [
+      "Are you around this weekend?",
+      "Anything we can help with at the moment?"
+    ],
+    "shareBack": "If they reply, add one line of your own news and suggest a quick catch-up over the fence.",
+    "deliveryCue": "Needs no answer; don't follow up if they stay quiet.",
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-051",
+    "line": "We're thinking of having a few neighbors over for a drink next weekend. Would you be up for it?",
+    "form": "question",
+    "followUps": [
+      "Does Saturday or Sunday suit you better?",
+      "Is there anyone on the street we should make sure to ask?"
+    ],
+    "shareBack": "Say it'll be easy and informal in a few words, and ask what they like to drink.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "plans",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-052",
+    "line": "Quick one: do you have a plumber or handyman you'd recommend? We need one.",
+    "form": "advice",
+    "followUps": [
+      "What did you have them do?",
+      "Anyone you'd tell us to avoid?"
+    ],
+    "shareBack": "Say what's gone wrong at your place in a few words, and offer your own contacts in return.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "home",
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-053",
+    "line": "Is your power out too, or is it just us?",
+    "form": "question",
+    "followUps": [
+      "Have you heard how long it'll be?",
+      "Do you need candles or anything?"
+    ],
+    "shareBack": "Say what you know so far in one line, and offer to pass on any update you get.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "neighborhood",
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-054",
+    "line": "Which one out there is yours?",
+    "form": "question",
+    "followUps": [
+      "How long have they been doing this?",
+      "Are they enjoying it so far?"
+    ],
+    "shareBack": "Point out your own in a few words, then ask how they heard about this group.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent",
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "kids-activity",
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "kids",
+      "setting"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-055",
+    "line": "Is this your first season with this group, or have you been coming a while?",
+    "form": "question",
+    "followUps": [
+      "What made you choose this one?",
+      "Anything a newer parent should know?"
+    ],
+    "shareBack": "Say how long you've been coming in a few words, then ask what they like about it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "kids-activity"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "kids",
+      "sports"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-056",
+    "line": "The coach has so much patience. I couldn't do it.",
+    "form": "statement",
+    "followUps": [
+      "Have you had this coach before?",
+      "Have you ever been roped into helping out?"
+    ],
+    "shareBack": "Admit in a sentence how you'd cope in charge of that many kids, then ask about them.",
+    "deliveryCue": "Say it quietly; kids and other parents are in earshot.",
+    "depth": "light",
+    "who": [
+      "other-parent",
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "kids-activity"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "setting",
+      "sports"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-057",
+    "line": "We're always hunting for things to do with the kids on rainy weekends. Found anything good around here?",
+    "form": "advice",
+    "followUps": [
+      "What made that one work so well?",
+      "Is it somewhere you'd go back to?"
+    ],
+    "shareBack": "Offer one place that worked for your family, in a sentence, then ask if they've tried it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "kids",
+      "neighborhood"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-058",
+    "line": "Do you have a full weekend of this, or is today the only one?",
+    "form": "question",
+    "followUps": [
+      "What do you do with the gaps in between?",
+      "Does it ever let up?"
+    ],
+    "shareBack": "Run through your own weekend schedule in one sentence, then ask what they do to recover.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent",
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "kids-activity"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "plans",
+      "kids"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-059",
+    "line": "We barely made it on time today. How do you get everyone out the door?",
+    "form": "share",
+    "followUps": [
+      "Does that work every time?",
+      "What's the part that always slows you down?"
+    ],
+    "shareBack": "Confess the one thing that held you up this morning, then ask for their best trick.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "kids-activity"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "kids",
+      "advice"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-060",
+    "line": "How did you end up signing up for this one?",
+    "form": "question",
+    "followUps": [
+      "Did you try anything else first?",
+      "Would you sign up again?"
+    ],
+    "shareBack": "Say how your family landed here in one sentence, then ask what else they've heard is good.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "kids-activity"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "kids",
+      "stories"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-061",
+    "line": "This is a great spot for a party. Have you been here before?",
+    "form": "statement",
+    "followUps": [
+      "What else is there to do here?",
+      "Have you found other good places for this kind of thing?"
+    ],
+    "shareBack": "Mention one party place you've been to, good or bad, then ask where they'd pick.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-062",
+    "line": "How do you know the birthday family? School, or the neighborhood?",
+    "form": "question",
+    "followUps": [
+      "Have the kids known each other long?",
+      "Do you know many of the other parents here?"
+    ],
+    "shareBack": "Say how you know the family in a few words, then ask who else you should meet.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "connection",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-063",
+    "line": "I'm impressed anyone can host this many kids and stay calm.",
+    "form": "statement",
+    "followUps": [
+      "Have you hosted one of these yet?",
+      "What's the best kids' party you've been to?"
+    ],
+    "shareBack": "Share one short party story of your own, then ask what they'd do differently next time.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "fun",
+      "silence"
+    ],
+    "topics": [
+      "setting",
+      "kids"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-064",
+    "line": "What are the kids into right now that you didn't see coming?",
+    "form": "question",
+    "followUps": [
+      "How did that start?",
+      "Have you been pulled into it too?"
+    ],
+    "shareBack": "Offer one surprising craze from your own house, in a sentence, then ask how long theirs has lasted.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "party",
+      "text"
+    ],
+    "goals": [
+      "deeper",
+      "fun"
+    ],
+    "topics": [
+      "kids",
+      "stories"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-065",
+    "line": "What do you do with a Saturday when nothing's on the schedule?",
+    "form": "question",
+    "followUps": [
+      "When did you last get one of those?",
+      "Is that with the whole family or on your own?"
+    ],
+    "shareBack": "Describe your own free Saturday in one sentence, then ask what they'd do with two.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "plans",
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-066",
+    "line": "What's surprised you most about this stage with the kids?",
+    "form": "question",
+    "followUps": [
+      "Is that easier or harder than the stage before?",
+      "What's helped?"
+    ],
+    "shareBack": "Share one thing that caught you off guard, in a sentence, then ask what they're enjoying most.",
+    "deliveryCue": "For a quiet corner, not in front of the kids.",
+    "depth": "medium",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "well"
+    ],
+    "where": [
+      "party"
+    ],
+    "goals": [
+      "deeper"
+    ],
+    "topics": [
+      "kids",
+      "feelings"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-067",
+    "line": "Funny seeing you away from the school gate. Out running errands too?",
+    "form": "statement",
+    "followUps": [
+      "Is this your usual spot for that?",
+      "What's the rest of your day looking like?"
+    ],
+    "shareBack": "Say what you're out for in a few words, then ask if they know a better place for it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "out-about"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "setting",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-068",
+    "line": "Are you signing up for anything next season, or taking a break?",
+    "form": "question",
+    "followUps": [
+      "What tipped the decision?",
+      "Have you heard good things about any of the others?"
+    ],
+    "shareBack": "Say what your family is leaning toward in one sentence, then ask what they'd recommend.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "plans",
+      "kids"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-069",
+    "line": "The snacks you brought last week were a hit. Where did you get them?",
+    "form": "compliment",
+    "followUps": [
+      "Is that your go-to for these things?",
+      "Any other ideas? My turn is coming up."
+    ],
+    "shareBack": "Admit what you were planning to bring, in a few words, then ask if it'll pass.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "kids-activity",
+      "party"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-070",
+    "line": "You seem to know how all this works. Anything I should know about the schedule?",
+    "form": "advice",
+    "followUps": [
+      "What catches new families out?",
+      "Who's the right person to ask if I get stuck?"
+    ],
+    "shareBack": "Say in a few words that you're new to it, thank them, and ask how their first season went.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little"
+    ],
+    "where": [
+      "kids-activity"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-071",
+    "line": "Have you sorted out the school break yet? We're still piecing it together.",
+    "form": "share",
+    "followUps": [
+      "Where did you hear about that?",
+      "Is there anything you'd do again from last time?"
+    ],
+    "shareBack": "Share the one part of your plan that's settled, then ask what they'd suggest for the rest.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "any"
+    ],
+    "goals": [
+      "silence",
+      "learn"
+    ],
+    "topics": [
+      "plans",
+      "kids"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-072",
+    "line": "These early starts are no joke. I'm running on coffee.",
+    "form": "statement",
+    "followUps": [
+      "Are you a morning person, or is this painful for you too?",
+      "Where do you get your coffee on the way?"
+    ],
+    "shareBack": "Say what time your alarm went off, then ask what they're doing once this is over.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent",
+      "neighbor"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "kids-activity"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "setting",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-073",
+    "line": "Is there a good place for coffee near here? I've got an hour to fill.",
+    "form": "advice",
+    "followUps": [
+      "Do you usually stay and watch, or head off?",
+      "Want me to bring you one back?"
+    ],
+    "shareBack": "Say how you usually spend the wait in a few words, then ask what they do with it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "kids-activity",
+      "out-about"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "neighborhood",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-074",
+    "line": "Hi, it's one of the parents from the team. Do you know what time we need to be there Saturday?",
+    "form": "question",
+    "followUps": [
+      "Is it the usual place?",
+      "Are you all going to make it?"
+    ],
+    "shareBack": "Thank them, add one friendly line about your own Saturday, and say you'll see them there.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "plans",
+      "sports"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-075",
+    "line": "We're driving to practice anyway. Want us to pick yours up on the way?",
+    "form": "statement",
+    "followUps": [
+      "What time works for pickup?",
+      "Should we bring them home afterward too?"
+    ],
+    "shareBack": "Say it's no trouble in a few words, and ask if there's another day you could share the driving.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect",
+      "break-ice"
+    ],
+    "topics": [
+      "plans",
+      "kids"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-076",
+    "line": "Thanks for the heads-up about the schedule change. You saved our morning.",
+    "form": "compliment",
+    "followUps": [
+      "Can you make the new time?",
+      "How do you keep on top of all the messages?"
+    ],
+    "shareBack": "Admit in a line how close you came to turning up at the wrong time, then offer to return the favor.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice"
+    ],
+    "topics": [
+      "connection",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-077",
+    "line": "The kids had a great time together today. Should we set up a playdate one weekend?",
+    "form": "question",
+    "followUps": [
+      "Which weekend is easiest for you?",
+      "Park, or one of our houses?"
+    ],
+    "shareBack": "Offer one or two dates that suit you in a line, and leave the choice of place to them.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "kids",
+      "plans"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-078",
+    "line": "Are you going to the thing at school on Friday? We're trying to decide if we'll make it.",
+    "form": "question",
+    "followUps": [
+      "Have you been to one before?",
+      "Want to meet up there?"
+    ],
+    "shareBack": "Say which way you're leaning and why in a few words, then suggest meeting there.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "silence"
+    ],
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-079",
+    "line": "Quick question: where did you get the gear for the team? We still need some.",
+    "form": "advice",
+    "followUps": [
+      "Was there anything you didn't end up needing?",
+      "Did the sizes run true?"
+    ],
+    "shareBack": "Say what you've got and what's missing in a line, and thank them for saving you a trip.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "learn"
+    ],
+    "topics": [
+      "advice",
+      "sports"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-080",
+    "line": "We're heading to the park after pickup tomorrow if you'd like to join. No pressure either way.",
+    "form": "share",
+    "followUps": [
+      "Is there a park you like better?",
+      "Would another day be easier?"
+    ],
+    "shareBack": "Add one detail, such as which park or that you'll bring snacks, and leave it open.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "just-met",
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "break-ice",
+      "fun"
+    ],
+    "topics": [
+      "plans",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested"
+  },
+  {
+    "id": "ot-081",
+    "line": "We haven't crossed paths since the season ended, and I thought of you. Coffee sometime?",
+    "form": "reachout",
+    "followUps": [
+      "Is a weekday morning or a weekend easier?",
+      "Are you signed up for anything this season?"
+    ],
+    "shareBack": "If they reply, give one line of your own news and suggest a specific day.",
+    "deliveryCue": "Keep it short; don't chase if they don't answer.",
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "closeness": [
+      "a-little",
+      "well"
+    ],
+    "where": [
+      "text"
+    ],
+    "goals": [
+      "reconnect"
+    ],
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  }
+]
