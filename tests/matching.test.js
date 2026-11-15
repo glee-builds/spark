@@ -92,12 +92,23 @@ test('starters seen recently come last', () => {
   assert.ok(set.every((s) => !seen.includes(s.id)));
 });
 
-test('a set prefers the chosen level, then lighter ones', () => {
+test('a set opens with an easy light starter, then prefers the chosen level', () => {
   const library = [
     starter({ id: 'te-001', depth: 'light', topics: ['plans'] }),
     starter({ id: 'te-002', depth: 'medium', topics: ['work'] }),
     starter({ id: 'te-003', depth: 'medium', topics: ['hobbies'] }),
+    starter({ id: 'te-004', depth: 'light', topics: ['food'] }),
+  ];
+  const set = pickSet(library, { who: 'colleague', closeness: 'well', where: 'party' }, { level: 1, count: 3 });
+  assert.deepEqual(set.map((s) => s.depth), ['light', 'medium', 'medium']);
+});
+
+test('the easy opener is one written for this place when there is one', () => {
+  const library = [
+    starter({ id: 'te-001', depth: 'light', topics: ['plans'] }),
+    starter({ id: 'te-002', depth: 'light', topics: ['setting'], where: ['party'] }),
+    starter({ id: 'te-003', depth: 'medium', topics: ['work'] }),
   ];
   const set = pickSet(library, { who: 'colleague', closeness: 'well', where: 'party' }, { level: 1, count: 2 });
-  assert.deepEqual(set.map((s) => s.depth), ['medium', 'medium']);
+  assert.equal(set[0].id, 'te-002');
 });
