@@ -2,8 +2,9 @@
 // One "state" object holds the choices; render() draws the current screen.
 
 import { WHO, GROUPS, CLOSENESS, WHERE, DEPTHS, findWho, findWhere, findCloseness } from './config.js';
-import { pickSet, defaultLevel } from './matching.js';
-import { loadLibrary } from './library.js';
+import { pickSet, defaultLevel, depthCeiling } from './matching.js';
+import { pickExit, pickHardTime, pickReassurance } from './support.js';
+import { loadLibrary, loadSupport } from './library.js';
 import { getSeen, addSeen } from './storage.js';
 
 const root = document.getElementById('app');
@@ -13,8 +14,14 @@ const state = {
   who: null,
   closeness: null,
   where: null,
+  level: 0,          // 0 light, 1 medium, 2 deep
+  hardTime: false,   // "They're having a hard time" switch
   starters: [],
+  supportLines: [],  // shown instead of starters when hardTime is on
+  exit: null,
+  reassurance: '',
   library: [],
+  support: null,
 };
 
 // Turn text into safe HTML, so nothing in the data can break the page.
@@ -95,17 +102,63 @@ function starterCard(s) {
   </article>`;
 }
 
+function supportCard(h) {
+  const tip = h.tip ? `<p class="label">Tip</p><p class="cue">${esc(h.tip)}</p>` : '';
+  return `<article class="card support">
+    <p class="line">${esc(h.line)}</p>
+    ${tip}
+  </article>`;
+}
+
+function exitCard() {
+  // No wrap-up line in hard-time mode: staying matters more than leaving well.
+  if (!state.exit || state.hardTime) return '';
+  return `<article class="card exit">
+    <p class="label">When it's time to go</p>
+    <p class="exit-line">${esc(state.exit.line)}</p>
+  </article>`;
+}
+
+function levelName(level) {
+  const name = DEPTHS[level];
+  return name[0].toUpperCase() + name.slice(1);
+}
+
 function resultsScreen() {
   const sub = [findWho(state.who).label, findCloseness(state.closeness).label,
     findWhere(state.where).label].join(' · ');
-  const cards = state.starters.length
-    ? state.starters.map(starterCard).join('')
-    : '<p class="empty">No starters for this combination yet.</p>';
-  return `${header('Try one of these', sub)}
-    <div class="cards">${cards}</div>
+  const ceiling = depthCeiling(selection());
+  let cards;
+  let note;
+  if (state.hardTime) {
+    cards = state.supportLines.map(supportCard).join('');
+    note = 'Skip "How are you?", advice, and "at least". Being there and listening is enough.';
+  } else {
+    cards = state.starters.length
+      ? state.starters.map(starterCard).join('')
+      : '<p class="empty">No starters for this combination yet.</p>';
+    note = state.reassurance;
+  }
+  const lighterOff = state.hardTime || state.level === 0 ? 'disabled' : '';
+  const deeperOff = state.hardTime || state.level >= ceiling ? 'disabled' : '';
+  const dots = DEPTHS.map((_, i) => (i <= state.level ? '●' : '○')).join('');
+  const depthNow = state.hardTime ? '' :
+    `<p class="depth-now" aria-live="polite">${dots} ${levelName(state.level)}</p>`;
+  return `${header(state.hardTime ? 'Be there first' : 'Try one of these', sub)}
+    <button class="switch" data-action="hard-time" aria-pressed="${state.hardTime}">
+      <span class="switch-box" aria-hidden="true">${state.hardTime ? '✓' : ''}</span>
+      <span>They're having a hard time</span>
+    </button>
+    <p class="note">${esc(note)}</p>
+    <div class="cards">${cards}${exitCard()}</div>
+    <button class="link" data-action="restart">Start over</button>
     <div class="bar">
-      <button class="primary" data-action="shuffle">Shuffle</button>
-      <button class="secondary" data-action="restart">Start over</button>
+      ${depthNow}
+      <div class="bar-row">
+        <button class="secondary" data-action="lighter" ${lighterOff}>Lighter</button>
+        <button class="primary" data-action="shuffle">Shuffle</button>
+        <button class="secondary" data-action="deeper" ${deeperOff}>Deeper</button>
+      </div>
     </div>`;
 }
 
@@ -119,11 +172,20 @@ function render() {
 }
 
 function newSet() {
-  state.starters = pickSet(state.library, selection(), {
-    level: defaultLevel(selection()),
-    seen: getSeen(),
-  });
-  addSeen(state.starters.map((s) => s.id));
+  if (state.hardTime) {
+    state.supportLines = pickHardTime(state.support, selection());
+  } else {
+    state.starters = pickSet(state.library, selection(), { level: state.level, seen: getSeen() });
+    addSeen(state.starters.map((s) => s.id));
+  }
+  state.exit = pickExit(state.support, selection());
+  state.reassurance = pickReassurance(state.support, selection());
+}
+
+// A fresh person or place starts again at the default depth, switch off.
+function startResults() {
+  state.level = defaultLevel(selection());
+  state.hardTime = false;
 }
 
 function go(step) {
@@ -159,8 +221,18 @@ root.addEventListener('click', (event) => {
     go('where');
   } else if (action === 'where') {
     state.where = id;
+    startResults();
     go('results');
   } else if (action === 'shuffle') {
+    newSet();
+    render();
+  } else if (action === 'lighter' || action === 'deeper') {
+    const next = state.level + (action === 'deeper' ? 1 : -1);
+    state.level = Math.max(0, Math.min(depthCeiling(selection()), next));
+    newSet();
+    render();
+  } else if (action === 'hard-time') {
+    state.hardTime = !state.hardTime;
     newSet();
     render();
   } else if (action === 'restart') {
@@ -176,14 +248,14 @@ window.addEventListener('popstate', () => {
   const ready = { who: true, how: state.who, where: state.who && state.closeness,
     results: state.who && state.closeness && state.where };
   state.step = ready[step] ? step : 'who';
-  if (state.step === 'results' && !state.starters.length) newSet();
+  if (state.step === 'results' && !state.starters.length) { startResults(); newSet(); }
   render();
 });
 
 async function start() {
   history.replaceState(null, '', '#who');
   render();
-  state.library = await loadLibrary();
+  [state.library, state.support] = await Promise.all([loadLibrary(), loadSupport()]);
 }
 
 start();

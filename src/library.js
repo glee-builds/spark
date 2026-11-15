@@ -11,3 +11,9 @@ export async function loadLibrary() {
   }));
   return parts.flat();
 }
+
+// The extra lines: ways to wrap up, lines for hard times, and reassurances.
+export async function loadSupport() {
+  const response = await fetch('data/support.json');
+  return response.json();
+}

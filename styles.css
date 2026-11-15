@@ -208,22 +208,88 @@ details[open] { padding-bottom: 12px; }
   letter-spacing: 0.02em;
 }
 
+/* ---------- Extra cards and controls on the starters screen ---------- */
+
+.card.exit {
+  background: none;
+  border-style: dashed;
+  padding-bottom: 16px;
+}
+
+.card.exit .label { margin-top: 0; color: var(--muted); }
+
+.exit-line { margin: 0; font-size: 18px; line-height: 1.3; }
+
+.card.support { padding-bottom: 16px; }
+
+.switch {
+  min-height: 48px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.switch-box {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--muted);
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.switch[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+
+.switch[aria-pressed="true"] .switch-box {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.note { margin: 0; font-size: 15px; }
+
+.link {
+  min-height: 48px;
+  align-self: center;
+  padding: 0 16px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  text-decoration: underline;
+}
+
 /* ---------- Bottom bar on the starters screen ---------- */
 
 .bar {
   position: sticky;
   bottom: 0;
   margin: auto -16px calc(-1 * (env(safe-area-inset-bottom) + 20px));
-  padding: 12px 16px calc(env(safe-area-inset-bottom) + 12px);
-  display: flex;
-  gap: 8px;
+  padding: 8px 16px calc(env(safe-area-inset-bottom) + 12px);
   background: var(--bg);
   border-top: 1px solid var(--line);
 }
 
+.depth-now {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.bar-row { display: flex; gap: 8px; }
+
 .primary, .secondary {
   min-height: 52px;
-  padding: 0 18px;
+  padding: 0 14px;
   border-radius: 14px;
   font-weight: 600;
 }
@@ -239,3 +305,5 @@ details[open] { padding-bottom: 12px; }
   background: var(--surface);
   border: 1px solid var(--line);
 }
+
+.secondary:disabled { opacity: 0.4; }

@@ -48,10 +48,12 @@ src/
   app.js          the screens and what happens on each tap
   config.js       the Who, How well, and Where choices and which combinations make sense
   matching.js     the rules that pick starters (depth ceiling, risky topics, variety)
-  library.js      loads the starter files
+  library.js      loads the starter files and the support lines
+  support.js      picks the wrap-up line, hard-time lines, and reassurance
   storage.js      what is remembered on the phone (recently seen starters)
   validate.js     checks a starter follows the format
-data/             the starter library, one JSON file per group of people
+data/             the starter library, one JSON file per group of people,
+                  plus support.json (wrap-up lines, hard-time lines, reassurances)
 tests/            node --test
 docs/
   decisions.md    every decision, dated, with the reason
