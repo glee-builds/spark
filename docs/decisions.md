@@ -20,3 +20,5 @@ Every project decision, when it was made, and why. When a decision changes, don'
 | 2026-11-15 | Testing | Node's built-in test runner (`node --test`) | No dependency to install |
 | 2026-11-15 | Workflow | After the first commit, never commit directly to `main`; every change goes through a branch and a pull request | Keeps a reviewable record of every change |
 | 2026-11-15 | Workflow | For Phases 1 to 3, Claude merges each pull request once the tests pass | Owner's choice, so the live link stays current while the app is built |
+| 2026-11-15 | Testing | GitHub Actions runs `node --test` on every pull request | A broken change or a thin part of the library shows as a red X before merging |
+| 2026-11-15 | Library | Every allowed Who, How well, and Where combination must have at least six starters at its default depth | Checked by a test, so no choice leads to an empty or repetitive screen |
