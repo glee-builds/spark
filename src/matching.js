@@ -67,8 +67,10 @@ function shuffled(list, random) {
 }
 
 // Choose a small, varied set to show.
+// - the first starter is an easy, light one, written for this place when possible,
+//   so there is always a low-effort way in
+// - the rest prefer the chosen level, then lighter ones
 // - prefers starters not seen recently
-// - prefers starters at the chosen level, then lighter ones
 // - prefers starters written for this exact place over general ones
 // - no two starters on the same main topic, when there are enough to choose from
 // - at least one that is not a plain question, when one exists
@@ -82,11 +84,20 @@ export function pickSet(library, selection, options = {}) {
 
   const picked = [];
   const topics = new Set();
+  const add = (s) => { picked.push(s); topics.add(s.topics[0]); };
+
+  if (level > 0) {
+    const easyRank = (s) => (seen.includes(s.id) ? 100 : 0)
+      + (s.where.includes(selection.where) ? 0 : 3);
+    const easy = pool.filter((s) => s.depth === 'light')
+      .sort((a, b) => easyRank(a) - easyRank(b))[0];
+    if (easy) add(easy);
+  }
+
   for (const s of pool) {
     if (picked.length === count) break;
-    if (topics.has(s.topics[0])) continue;
-    picked.push(s);
-    topics.add(s.topics[0]);
+    if (picked.includes(s) || topics.has(s.topics[0])) continue;
+    add(s);
   }
   for (const s of pool) {
     if (picked.length === count) break;
