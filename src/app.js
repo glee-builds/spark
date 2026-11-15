@@ -6,6 +6,7 @@ import { pickSet, defaultLevel, depthCeiling } from './matching.js';
 import { pickExit, pickHardTime, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
 import { getSeen, addSeen } from './storage.js';
+import { startOffline, installHint, dismissHint, install } from './install.js';
 
 const root = document.getElementById('app');
 
@@ -52,12 +53,27 @@ function header(title, sub) {
   </header>`;
 }
 
+// Shown once on the first screen until the app is on the home screen.
+function installCard() {
+  const hint = installHint();
+  if (!hint) return '';
+  const body = hint === 'ios'
+    ? '<p class="hint-text">Keep Spark one tap away: tap <strong>Share</strong>, then <strong>Add to Home Screen</strong>. It works offline from there.</p>'
+    : '<p class="hint-text">Keep Spark one tap away. It works offline once installed.</p>';
+  const installButton = hint === 'button'
+    ? '<button class="hint-button strong" data-action="install">Install</button>' : '';
+  return `<aside class="hint">${body}
+    <div class="hint-row">${installButton}
+      <button class="hint-button" data-action="dismiss-hint">${hint === 'ios' ? 'Got it' : 'Not now'}</button>
+    </div></aside>`;
+}
+
 function whoScreen() {
   const groups = GROUPS.map((group) => `
     <h2 class="group">${esc(group)}</h2>
     <div class="chips">${WHO.filter((w) => w.group === group)
       .map((w) => chip('who', w.id, w.label)).join('')}</div>`).join('');
-  return `${header('Who are you talking to?')}<div class="choices">${groups}</div>`;
+  return `${header('Who are you talking to?')}${installCard()}<div class="choices">${groups}</div>`;
 }
 
 function howScreen() {
@@ -235,6 +251,11 @@ root.addEventListener('click', (event) => {
     state.hardTime = !state.hardTime;
     newSet();
     render();
+  } else if (action === 'dismiss-hint') {
+    dismissHint();
+    render();
+  } else if (action === 'install') {
+    install().then(render);
   } else if (action === 'restart') {
     go('who');
   } else if (action === 'back') {
@@ -252,7 +273,13 @@ window.addEventListener('popstate', () => {
   render();
 });
 
+// Android tells us a moment after loading that the app can be installed.
+document.addEventListener('spark-installable', () => {
+  if (state.step === 'who') render();
+});
+
 async function start() {
+  startOffline();
   history.replaceState(null, '', '#who');
   render();
   [state.library, state.support] = await Promise.all([loadLibrary(), loadSupport()]);

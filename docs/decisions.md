@@ -22,3 +22,5 @@ Every project decision, when it was made, and why. When a decision changes, don'
 | 2026-11-15 | Workflow | For Phases 1 to 3, Claude merges each pull request once the tests pass | Owner's choice, so the live link stays current while the app is built |
 | 2026-11-15 | Testing | GitHub Actions runs `node --test` on every pull request | A broken change or a thin part of the library shows as a red X before merging |
 | 2026-11-15 | Library | Every allowed Who, How well, and Where combination must have at least six starters at its default depth | Checked by a test, so no choice leads to an empty or repetitive screen |
+| 2026-11-15 | Offline | A service worker saves every app file on the first visit, answers from the saved copy, and refreshes it in the background | Opens instantly with no signal. An update shows the second time the app is opened |
+| 2026-11-15 | Install | The app shows its own one-time hint for adding to the home screen | iPhone has no automatic install prompt |
