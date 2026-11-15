@@ -24,3 +24,6 @@ Every project decision, when it was made, and why. When a decision changes, don'
 | 2026-11-15 | Library | Every allowed Who, How well, and Where combination must have at least six starters at its default depth | Checked by a test, so no choice leads to an empty or repetitive screen |
 | 2026-11-15 | Offline | A service worker saves every app file on the first visit, answers from the saved copy, and refreshes it in the background | Opens instantly with no signal. An update shows the second time the app is opened |
 | 2026-11-15 | Install | The app shows its own one-time hint for adding to the home screen | iPhone has no automatic install prompt |
+| 2026-11-15 | Matching | A set shown at medium or deep opens with one light starter, written for the chosen place when possible | Research guideline: anchor on the shared situation first, then go deeper |
+| 2026-11-15 | Design | A starter's tip shows on the card face, not under "More" | Tips often say when a line fits ("Only if you've noticed it"), so they must be seen before the line is used |
+| 2026-11-15 | Design | The Who screen is sized to fit a current phone without scrolling | Fewer seconds to the first tap |

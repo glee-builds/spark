@@ -102,9 +102,11 @@ function depthTag(depth) {
 
 function starterCard(s) {
   const more = s.followUps.slice(1).map((f) => `<p class="follow">${esc(f)}</p>`).join('');
-  const cue = s.deliveryCue ? `<p class="label">Tip</p><p class="cue">${esc(s.deliveryCue)}</p>` : '';
+  // The tip often says when the line fits, so it stays visible on the card.
+  const cue = s.deliveryCue ? `<p class="cue"><span class="cue-mark">Tip</span> ${esc(s.deliveryCue)}</p>` : '';
   return `<article class="card">
     <p class="line">${esc(s.line)}</p>
+    ${cue}
     <p class="label">Then ask</p>
     <p class="follow">${esc(s.followUps[0])}</p>
     <details>
@@ -112,7 +114,6 @@ function starterCard(s) {
       ${more}
       <p class="label">Your turn</p>
       <p class="share">${esc(s.shareBack)}</p>
-      ${cue}
       ${depthTag(s.depth)}
     </details>
   </article>`;

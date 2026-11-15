@@ -59,7 +59,7 @@ button:focus-visible, summary:focus-visible {
   padding: calc(env(safe-area-inset-top) + 16px) 16px calc(env(safe-area-inset-bottom) + 20px);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 /* ---------- Top of every screen ---------- */
@@ -68,7 +68,7 @@ button:focus-visible, summary:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 48px;
+  min-height: 44px;
 }
 
 .brand {
@@ -88,15 +88,15 @@ button:focus-visible, summary:focus-visible {
 }
 
 .title {
-  margin: 4px 0 0;
-  font-size: 26px;
+  margin: 0;
+  font-size: 24px;
   line-height: 1.15;
   letter-spacing: -0.02em;
   outline: none;
 }
 
 .sub, .note, .empty {
-  margin: 6px 0 0;
+  margin: 4px 0 0;
   color: var(--muted);
 }
 
@@ -107,11 +107,11 @@ button:focus-visible, summary:focus-visible {
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .group {
-  margin: 10px 0 0;
+  margin: 6px 0 0;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -128,8 +128,8 @@ button:focus-visible, summary:focus-visible {
 .chips.one { grid-template-columns: 1fr; }
 
 .chip {
-  min-height: 56px;
-  padding: 10px 14px;
+  min-height: 52px;
+  padding: 8px 14px;
   text-align: left;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -181,6 +181,15 @@ button:focus-visible, summary:focus-visible {
 .follow, .share, .cue { margin: 0 0 4px; }
 
 .share, .cue { color: var(--muted); }
+
+.card .line + .cue { margin-top: 8px; font-size: 15px; }
+
+.cue-mark {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
 
 details summary {
   min-height: 44px;
