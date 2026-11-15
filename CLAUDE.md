@@ -44,7 +44,18 @@ Nothing that identifies the owner or any other person is stored anywhere public.
 ```
 index.html        the one page of the app
 styles.css        all styling
-docs/decisions.md every decision, dated, with the reason
+src/
+  app.js          the screens and what happens on each tap
+  config.js       the Who, How well, and Where choices and which combinations make sense
+  matching.js     the rules that pick starters (depth ceiling, risky topics, variety)
+  library.js      loads the starter files
+  storage.js      what is remembered on the phone (recently seen starters)
+  validate.js     checks a starter follows the format
+data/             the starter library, one JSON file per group of people
+tests/            node --test
+docs/
+  decisions.md    every decision, dated, with the reason
+  starter-format.md  how to write a starter, and the writing rules
 CLAUDE.md         this file
 README.md         what the app is and how to preview it
 ```
