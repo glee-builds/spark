@@ -204,7 +204,7 @@
       "Has it been that kind of week overall?"
     ],
     "shareBack": "Mention one thing that's gone right for you lately, then hand it back with a question.",
-    "deliveryCue": "Say it as an observation, with a smile.",
+    "deliveryCue": "Only if they really do. Say it with a smile.",
     "depth": "light",
     "who": [
       "friend"
@@ -640,7 +640,7 @@
   },
   {
     "id": "fr-021",
-    "line": "I've got a decision I keep going round in circles on. Can I talk it through with you?",
+    "line": "I've got a decision I keep going around in circles on. Can I talk it through with you?",
     "form": "advice",
     "followUps": [
       "What would you do in my place?",
@@ -741,7 +741,7 @@
       "What would help this week?"
     ],
     "shareBack": "Mention only that you've had stretches like that too, then leave the space for them.",
-    "deliveryCue": "Say it once, gently, and let them decide.",
+    "deliveryCue": "Only if you've noticed it. Say it once, gently.",
     "depth": "medium",
     "who": [
       "friend"
@@ -2160,14 +2160,14 @@
   },
   {
     "id": "fr-069",
-    "line": "It's been ages, and that's on me too. I think of you more than I say. How's life, in one line?",
+    "line": "It's been forever, and that's on me too. I think of you more than I say. How's life, in one line?",
     "form": "reachout",
     "followUps": [
       "What's the best part of it right now?",
       "Would you be up for a call sometime?"
     ],
     "shareBack": "Give your own one-line version, then suggest a low-effort way to catch up.",
-    "deliveryCue": "Don't over-apologise; one line is enough.",
+    "deliveryCue": "Don't over-apologize; one line is enough.",
     "depth": "medium",
     "who": [
       "friend"
@@ -2196,7 +2196,7 @@
       "How did the year treat you?"
     ],
     "shareBack": "If they reply, share one line of your own news, then ask what they're looking forward to this year.",
-    "deliveryCue": null,
+    "deliveryCue": "Only on their birthday.",
     "depth": "light",
     "who": [
       "friend"
@@ -2256,7 +2256,7 @@
       "What are you making these days?"
     ],
     "shareBack": "If they reply, say who you cooked it for, then ask what's new with them.",
-    "deliveryCue": "Swap in whatever they taught you or put you on to.",
+    "deliveryCue": "Swap in whatever they taught you or introduced you to.",
     "depth": "light",
     "who": [
       "friend"
