@@ -164,7 +164,7 @@
   },
   {
     "id": "fr-006",
-    "line": "Settle something for me: plan a holiday to the minute, or just turn up and see?",
+    "line": "Settle something for me: plan a vacation down to the minute, or just show up and see?",
     "form": "question",
     "followUps": [
       "Has that ever gone badly wrong for you?",
@@ -734,7 +734,7 @@
   },
   {
     "id": "fr-024",
-    "line": "You've seemed a bit quiet lately. No pressure, but I'm around if you want to talk.",
+    "line": "You've seemed a little quiet lately. No pressure, but I'm around if you want to talk.",
     "form": "statement",
     "followUps": [
       "Do you want to talk about it, or would a distraction help more?",
@@ -929,7 +929,7 @@
   },
   {
     "id": "fr-030",
-    "line": "What have you changed your mind about as you've got older?",
+    "line": "What have you changed your mind about as you've gotten older?",
     "form": "question",
     "followUps": [
       "What changed it for you?",
@@ -1251,7 +1251,7 @@
   },
   {
     "id": "fr-040",
-    "line": "That was a lovely ceremony. Which bit got you?",
+    "line": "That was a lovely ceremony. Which part got you?",
     "form": "question",
     "followUps": [
       "Had you heard that story about them before?",
@@ -1352,13 +1352,13 @@
   },
   {
     "id": "fr-043",
-    "line": "I'm glad we finally made this happen. What's been the best bit of your month?",
+    "line": "I'm glad we finally made this happen. What's been the best part of your month?",
     "form": "statement",
     "followUps": [
       "What made it good?",
       "What's coming up next month?"
     ],
-    "shareBack": "Offer your own best bit in a sentence, then ask what else they've been up to.",
+    "shareBack": "Offer your own best part in a sentence, then ask what else they've been up to.",
     "deliveryCue": null,
     "depth": "light",
     "who": [
@@ -1424,7 +1424,7 @@
       "How long are you around for?",
       "Do you get over this way much?"
     ],
-    "shareBack": "Say in a sentence what brought you here, then ask if they have time for a proper catch-up soon.",
+    "shareBack": "Say in a sentence what brought you here, then ask if they have time for a real catch-up soon.",
     "deliveryCue": "Lead with how glad you are to see them.",
     "depth": "light",
     "who": [
@@ -1577,7 +1577,7 @@
     "form": "statement",
     "followUps": [
       "What's the best way to reach you these days?",
-      "Would you be up for a proper catch-up soon?"
+      "Would you be up for a real catch-up soon?"
     ],
     "shareBack": "Say plainly that the gap wasn't about them, then suggest one easy way to meet.",
     "deliveryCue": "No need to explain the gap at length.",
@@ -1982,7 +1982,7 @@
     "line": "Honest answer: how are you doing with everything on your plate right now?",
     "form": "question",
     "followUps": [
-      "What's the heaviest bit?",
+      "What's the heaviest part?",
       "Do you want company, a distraction, or just to vent?"
     ],
     "shareBack": "Keep your own news to a line; offer one specific thing you can do this week.",
@@ -2167,7 +2167,7 @@
       "Would you be up for a call sometime?"
     ],
     "shareBack": "Give your own one-line version, then suggest a low-effort way to catch up.",
-    "deliveryCue": "Don't over-apologize; one line is enough.",
+    "deliveryCue": "Don't over-apologise; one line is enough.",
     "depth": "medium",
     "who": [
       "friend"

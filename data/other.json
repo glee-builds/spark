@@ -646,7 +646,7 @@
   },
   {
     "id": "ot-021",
-    "line": "Quick question before we plan anything: coffee and a walk, or a proper sit-down dinner?",
+    "line": "Quick question before we plan anything: coffee and a walk, or a real sit-down dinner?",
     "form": "question",
     "followUps": [
       "Is there a place you already like for that?",
@@ -839,7 +839,7 @@
     "line": "Hope today went the way you wanted. Tell me about it when we're together?",
     "form": "statement",
     "followUps": [
-      "What was the best bit?",
+      "What was the best part?",
       "What would make tonight a good end to it?"
     ],
     "shareBack": "Offer one line about your own day only after hearing theirs, then ask about tomorrow.",
@@ -2273,7 +2273,7 @@
   },
   {
     "id": "ot-071",
-    "line": "Have you sorted out the school break yet? We're still piecing it together.",
+    "line": "Have you figured out the school break yet? We're still piecing it together.",
     "form": "share",
     "followUps": [
       "Where did you hear about that?",

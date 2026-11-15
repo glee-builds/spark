@@ -1041,7 +1041,7 @@
       "Want to grab something quick now?",
       "Is the rest of your afternoon any calmer?"
     ],
-    "shareBack": "Say how your own lunch plans survived, in a line, then suggest a proper one another day.",
+    "shareBack": "Say how your own lunch plans survived, in a line, then suggest a real one another day.",
     "deliveryCue": null,
     "depth": "light",
     "who": [
@@ -1104,7 +1104,7 @@
   },
   {
     "id": "wk-032",
-    "line": "You seemed a bit flat after that meeting. No need to reply. I'm around if you want to talk it over.",
+    "line": "You seemed a little flat after that meeting. No need to reply. I'm around if you want to talk it over.",
     "form": "statement",
     "followUps": [
       "Do you want to talk it through, or would a distraction be better?",
@@ -1697,7 +1697,7 @@
       "What would make that go really well?",
       "Where do you think we can help most?"
     ],
-    "shareBack": "Mention the piece of upcoming work you're keenest on, in a sentence, then ask how it fits their plans.",
+    "shareBack": "Mention the piece of upcoming work you're most looking forward to, in a sentence, then ask how it fits their plans.",
     "deliveryCue": null,
     "depth": "medium",
     "who": [
