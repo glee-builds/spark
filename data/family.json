@@ -39,7 +39,7 @@
       "Do you want ideas, or just someone to listen?"
     ],
     "shareBack": "Mention one thing that has weighed on you lately, briefly, then hand the turn back.",
-    "deliveryCue": "Listen and take their side; don't fix.",
+    "deliveryCue": "Only if you've noticed it. Then listen; don't fix.",
     "depth": "medium",
     "who": [
       "partner"
@@ -1220,7 +1220,7 @@
   },
   {
     "id": "fa-039",
-    "line": "It's been ages since this many of us were in one room. Who have you caught up with so far?",
+    "line": "It's been forever since this many of us were in one room. Who have you caught up with so far?",
     "form": "statement",
     "followUps": [
       "Who were you most glad to see?",
@@ -1259,7 +1259,7 @@
     "line": "How was the trip over? Did you come far today?",
     "form": "question",
     "followUps": [
-      "What time did you have to set off?",
+      "What time did you have to leave?",
       "Are you staying on or heading back tonight?"
     ],
     "shareBack": "Mention your own trip in a sentence, then ask what they're looking forward to today.",
@@ -1364,7 +1364,7 @@
       "What would help this week?"
     ],
     "shareBack": "Mention one thing that has stretched you lately, briefly, then go back to theirs.",
-    "deliveryCue": "Listen; don't jump in with fixes.",
+    "deliveryCue": "Only if you've noticed it. Listen; don't jump in with fixes.",
     "depth": "medium",
     "who": [
       "relative",
@@ -2632,7 +2632,7 @@
     "form": "statement",
     "followUps": [
       "What do you like about this one?",
-      "Who put you on to them?"
+      "Who introduced you to them?"
     ],
     "shareBack": "Mention one song you loved at their age, briefly, then let the music play.",
     "deliveryCue": "Eyes on the road, and no comments on their taste.",
@@ -2999,7 +2999,7 @@
       "What would make this week easier?"
     ],
     "shareBack": "If they open up, mention one time you felt the same, in a sentence, then go back to them.",
-    "deliveryCue": "Say it once, side by side, then leave a long pause.",
+    "deliveryCue": "Only if you've noticed it. Say it once, then leave a long pause.",
     "depth": "medium",
     "who": [
       "teen"

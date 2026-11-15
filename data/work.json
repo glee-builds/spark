@@ -329,7 +329,7 @@
       "Are you an order-the-same-thing person or do you try new things?",
       "What's the best thing you've eaten lately?"
     ],
-    "shareBack": "Say what you're leaning towards and why, then ask what they'd pick between your two options.",
+    "shareBack": "Say what you're leaning toward and why, then ask what they'd pick between your two options.",
     "deliveryCue": null,
     "depth": "light",
     "who": [
@@ -574,7 +574,7 @@
   },
   {
     "id": "wk-017",
-    "line": "I tried cooking something new at the weekend and it mostly worked. Do you have a dish you always fall back on?",
+    "line": "I tried cooking something new over the weekend and it mostly worked. Do you have a dish you always fall back on?",
     "form": "share",
     "followUps": [
       "Who taught you that one?",
@@ -1111,7 +1111,7 @@
       "What would help most right now?"
     ],
     "shareBack": "If they open up, listen first; later, mention a time a meeting left you feeling the same.",
-    "deliveryCue": "Only for someone you know well. Don't push for an answer.",
+    "deliveryCue": "Only if you saw it, and you know them well. Don't push.",
     "depth": "medium",
     "who": [
       "colleague"
@@ -1283,7 +1283,7 @@
       "Is any of it fun, or is it all juggling?"
     ],
     "shareBack": "Mention a time you had something similar on your plate, in a sentence, then ask what would help.",
-    "deliveryCue": "Say it as an observation and wait.",
+    "deliveryCue": "Only if it's true. Say it as an observation and wait.",
     "depth": "medium",
     "who": [
       "colleague"
