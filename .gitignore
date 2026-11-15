@@ -1,0 +1,8 @@
+# macOS folder metadata
+.DS_Store
+
+# Node packages
+node_modules/
+
+# Secrets (API keys and passwords). Never commit these.
+.env
