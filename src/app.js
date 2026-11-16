@@ -2,19 +2,18 @@
 //
 // The flow is a few short screens, each one fitting on the phone without scrolling:
 //   group (Partner or family, Friends, ...) -> who -> "Right now I want to..." -> starters -> detail
-// The starters screen has an "In person or call / Message" switch at the top.
 // One "state" object holds the choices; render() draws the current screen.
 
 import {
-  WHO, GROUPS, MEDIA, DEPTHS, COMFORT, PLACES, findWho, findGroup, purposeLabel,
+  WHO, GROUPS, DEPTHS, COMFORT, PLACES, findWho, findGroup, purposeLabel,
 } from './config.js';
-import { pickSet, defaultLevel, depthCeiling } from './matching.js';
+import { pickSet, defaultLevel, availableLevels } from './matching.js';
 import { pickExits, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
 import {
   getSeen, addSeen, getRecent, addRecent, getSaved, toggleSaved,
   getComfort, setComfort, clearSeen, clearRecent, getFeedback, markFeedback, clearFeedback,
-  getMedium, setMedium, getPlace, setPlace,
+  getPlace, setPlace,
 } from './storage.js';
 import {
   startOffline, installHint, dismissHint, install, updateReady, checkForUpdate,
@@ -84,8 +83,9 @@ function choice(action, id, label, hint, pressed) {
   </button>`;
 }
 
-function depthDots(level) {
-  return DEPTHS.map((_, i) => (i <= level ? '●' : '○')).join('');
+// Dots for the levels on offer: filled up to the current one.
+function depthDots(level, levels = DEPTHS.map((_, i) => i)) {
+  return levels.map((l) => (l <= level ? '●' : '○')).join('');
 }
 
 function levelName(level) {
@@ -189,31 +189,22 @@ function starterLabel(s, index, from = 'results') {
   return FORM_LABEL[s.form];
 }
 
-function mediumSwitch() {
-  const person = findWho(state.who);
-  if (person.media.length < 2) return '';
-  const buttons = MEDIA.map((m) => `<button class="seg" data-action="medium" data-id="${m.id}"
-    aria-pressed="${state.medium === m.id}">${esc(m.label)}</button>`).join('');
-  return `<div class="segs" role="group" aria-label="In person or message">${buttons}</div>`;
-}
-
 function resultsScreen() {
   const rows = state.starters.map((s, i) => row('starter', i, starterLabel(s, i), s.line));
-  const empty = rows.length ? '' : '<p class="empty">No starters for this yet. Try the other switch above, or go back.</p>';
+  const empty = rows.length ? '' : '<p class="empty">No starters for this yet. Go back and try another.</p>';
   const wrap = state.purpose === 'goodbye' || !state.exits.length ? '' : `
     <button class="row wrap" data-action="open" data-kind="exit" data-index="0">
       <span class="row-text"><span class="row-line small">Wrap up: when it's time to go</span></span>
       <span class="chev" aria-hidden="true">&#8250;</span>
     </button>`;
-  const ceiling = depthCeiling(selection());
-  const lighterOff = state.level === 0 ? 'disabled' : '';
-  const deeperOff = state.level >= ceiling ? 'disabled' : '';
+  const levels = availableLevels(state.library, selection());
+  const lighterOff = levels.some((l) => l < state.level) ? '' : 'disabled';
+  const deeperOff = levels.some((l) => l > state.level) ? '' : 'disabled';
   return `${header({ sub: summary(), right: '<button class="top-link" data-action="restart">Start over</button>' })}
-    ${mediumSwitch()}
     <div class="rows">${rows.join('')}${empty}</div>
     ${wrap}
     <div class="bar">
-      <p class="depth-now" aria-live="polite">${depthDots(state.level)} ${levelName(state.level)}</p>
+      <p class="depth-now" aria-live="polite">${depthDots(state.level, levels)} ${levelName(state.level)}</p>
       <div class="bar-row">
         <button class="secondary" data-action="lighter" ${lighterOff}>Lighter</button>
         <button class="primary" data-action="shuffle">&#8635; New set</button>
@@ -401,19 +392,9 @@ function newSet() {
   state.exits = pickExits(state.support, selection());
 }
 
-// Where the In person / Message switch starts: messages for follow-ups and
-// plans, the only option when there is one, otherwise the last one used.
-function startingMedium() {
-  const person = findWho(state.who);
-  if (person.media.length === 1) return person.media[0];
-  const followUp = state.purpose === 'reconnect' && person.labels && person.labels.reconnect;
-  if (state.purpose === 'plans' || followUp) return 'message';
-  return getMedium();
-}
-
 // A fresh person or purpose starts again at the purpose's depth.
 function startResults() {
-  state.medium = startingMedium();
+  state.medium = 'in-person';
   state.level = defaultLevel(selection());
   newSet();
   addRecent({ who: state.who, purpose: state.purpose });
@@ -486,12 +467,6 @@ root.addEventListener('click', (event) => {
     Object.assign(state, { group: findWho(r.who).group, who: r.who, purpose: r.purpose });
     startResults();
     go('results');
-  } else if (action === 'medium') {
-    if (state.medium === id) return;
-    state.medium = id;
-    setMedium(id);
-    newSet();
-    render();
   } else if (action === 'open') {
     openDetail(button.dataset.kind, Number(button.dataset.index), button.dataset.from);
   } else if (action === 'prev' || action === 'next') {
@@ -500,8 +475,13 @@ root.addEventListener('click', (event) => {
     newSet();
     render();
   } else if (action === 'lighter' || action === 'deeper') {
-    const next = state.level + (action === 'deeper' ? 1 : -1);
-    state.level = Math.max(0, Math.min(depthCeiling(selection()), next));
+    // Move to the next level that actually has different starters.
+    const levels = availableLevels(state.library, selection());
+    const next = action === 'deeper'
+      ? levels.find((l) => l > state.level)
+      : levels.filter((l) => l < state.level).pop();
+    if (next === undefined) return;
+    state.level = next;
     newSet();
     render();
   } else if (action === 'saved') {

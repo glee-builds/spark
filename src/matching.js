@@ -19,11 +19,32 @@ export function depthCeiling({ who, comfort }) {
 // "Check in" and most others start casual, "Go deeper" starts personal.
 // Deep is never the starting point; it is one tap of "Deeper" away.
 export function defaultLevel(selection) {
-  const ceiling = depthCeiling(selection);
+  const ceiling = depthTop(selection);
   const start = (PURPOSES[selection.purpose] || {}).level;
   if (start === 'max') return Math.min(LEVEL.personal, ceiling);
   if (start === 'casual') return Math.min(LEVEL.casual, ceiling);
   return 0;
+}
+
+// The deepest level for this person AND this purpose: a quick hello stays
+// light even with a partner; only "Go deeper" can reach deep.
+export function depthTop(selection) {
+  const cap = LEVEL[(PURPOSES[selection.purpose] || {}).cap || 'deep'];
+  return Math.min(depthCeiling(selection), cap);
+}
+
+// The levels the Lighter / Deeper buttons can move between. A level counts
+// only if it adds starters at exactly that depth, so a tap always changes
+// what's shown. The starting level always counts.
+export function availableLevels(library, selection) {
+  const start = Math.min(defaultLevel(selection), depthTop(selection));
+  const levels = [];
+  for (let level = 0; level <= depthTop(selection); level += 1) {
+    if (level === start) { levels.push(level); continue; }
+    const exact = candidates(library, selection, level).filter((s) => DEPTHS.indexOf(s.depth) === level);
+    if (exact.length > 0) levels.push(level);
+  }
+  return levels;
 }
 
 // True when the starter touches a topic that is too risky for this person.
@@ -50,8 +71,8 @@ export function fits(starter, { who, purpose, medium, place = 'city' }) {
 }
 
 // Every starter that may be shown for this selection, up to the given level.
-export function candidates(library, selection, level = depthCeiling(selection)) {
-  const max = Math.min(level, depthCeiling(selection));
+export function candidates(library, selection, level = depthTop(selection)) {
+  const max = Math.min(level, depthTop(selection));
   return library.filter((s) => fits(s, selection)
     && !isRiskBlocked(s, selection)
     && DEPTHS.indexOf(s.depth) <= max);

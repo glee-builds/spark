@@ -7,11 +7,13 @@
 
 import { readFileSync } from 'node:fs';
 import { WHO, PLACES, LIBRARY_FILES, allCombinations, purposeLabel } from '../src/config.js';
-import { candidates, defaultLevel } from '../src/matching.js';
+import { candidates, defaultLevel, depthTop } from '../src/matching.js';
+import { DEPTHS } from '../src/config.js';
 import { problems } from '../src/validate.js';
 
 export const MIN_STARTERS = 4;          // at the level the purpose starts at
 export const MIN_RESERVED = 3;          // under the "More reserved" comfort setting
+export const MIN_PER_LEVEL = 3;         // at exactly each deeper level the person and purpose allow
 
 const root = new URL('../', import.meta.url);
 const args = process.argv.slice(2);
@@ -38,6 +40,11 @@ for (const combo of combos) {
   const name = `${combo.who} / ${purposeLabel(combo.who, combo.purpose).label} (${combo.purpose}) / ${combo.medium} / ${combo.place}`;
   if (n < MIN_STARTERS) { console.log(`COVERAGE  ${name}: ${n} (need ${MIN_STARTERS})`); bad += 1; }
   else if (r < MIN_RESERVED) { console.log(`RESERVED  ${name}: ${r} under "More reserved" (need ${MIN_RESERVED})`); bad += 1; }
+  // Each level above the start must add real starters, so Deeper always changes the set.
+  for (let level = defaultLevel(combo) + 1; level <= depthTop(combo); level += 1) {
+    const exact = candidates(library, combo, level).filter((s) => DEPTHS.indexOf(s.depth) === level).length;
+    if (exact < MIN_PER_LEVEL) { console.log(`LEVEL     ${name}: ${exact} at ${DEPTHS[level]} (need ${MIN_PER_LEVEL})`); bad += 1; }
+  }
 }
 
 const notQuestions = library.filter((s) => s.form !== 'question').length;

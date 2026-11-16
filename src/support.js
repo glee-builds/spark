@@ -28,9 +28,6 @@ export function pickExits(support, selection, random = Math.random) {
 }
 
 // A short, true reassurance, shown while choosing what to do.
-export function pickReassurance(support, { purpose } = {}, random = Math.random) {
-  const list = purpose === 'reconnect'
-    ? support.reassurance.concat(support.reassuranceText)
-    : support.reassurance;
-  return pickOne(list, random);
+export function pickReassurance(support, selection = {}, random = Math.random) {
+  return pickOne(support.reassurance, random);
 }

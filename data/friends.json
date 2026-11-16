@@ -1362,60 +1362,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "fr-052",
-    "line": "This made me think of you. No reply needed, I just had to send it.",
-    "form": "share",
-    "followUps": [
-      "Have you seen anything like it before?",
-      "What's the best thing anyone's sent you this week?"
-    ],
-    "shareBack": "If they reply, say in a line why it reminded you of them, then ask what they're up to.",
-    "deliveryCue": "Attach the photo, link, or song.",
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "acquaintance"
-    ],
-    "purposes": [
-      "reconnect",
-      "revive",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection",
-      "entertainment"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-053",
-    "line": "That was fun the other night. Let's do it again. Any evening good for you next week?",
-    "form": "statement",
-    "followUps": [
-      "Same place, or somewhere new?",
-      "Who else should we ask along?"
-    ],
-    "shareBack": "Offer two evenings that suit you, then let them pick.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "friend",
-      "acquaintance"
-    ],
-    "purposes": [
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "fr-054",
     "line": "You mentioned a show the other day and I've forgotten the name. What was it?",
     "form": "advice",
@@ -1438,60 +1384,6 @@
     "medium": "any",
     "topics": [
       "entertainment"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-055",
-    "line": "How did the thing you were getting ready for go? I've been wondering.",
-    "form": "question",
-    "followUps": [
-      "Which part went best?",
-      "Are you relieved it's done?"
-    ],
-    "shareBack": "Reply to their answer first; then add one line about your own week and ask what's next for them.",
-    "deliveryCue": "Name the actual thing if you remember it.",
-    "depth": "casual",
-    "who": [
-      "close-friend",
-      "friend",
-      "acquaintance"
-    ],
-    "purposes": [
-      "checkin",
-      "deeper"
-    ],
-    "medium": "message",
-    "topics": [
-      "week",
-      "stories"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-056",
-    "line": "I'm near that place you told me about. What should I order?",
-    "form": "advice",
-    "followUps": [
-      "What do you usually get?",
-      "Want to come next time?"
-    ],
-    "shareBack": "Text back a quick verdict afterwards, then suggest going together.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "friend",
-      "acquaintance"
-    ],
-    "purposes": [
-      "revive",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "food"
     ],
     "riskTags": [],
     "basis": "research-backed"
@@ -1548,375 +1440,6 @@
     "basis": "research-backed"
   },
   {
-    "id": "fr-059",
-    "line": "Thinking of you today. How's this week treating you, anywhere from fine to chaos?",
-    "form": "question",
-    "followUps": [
-      "What's the chaos part?",
-      "Anything I can take off your plate?"
-    ],
-    "shareBack": "Give your own one-word rating and a line of why, then ask what would make the week better.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "checkin"
-    ],
-    "medium": "message",
-    "topics": [
-      "week",
-      "feelings"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-060",
-    "line": "Just remembered the time we got completely lost on that trip. Still makes me laugh.",
-    "form": "share",
-    "followUps": [
-      "What do you remember about it?",
-      "Where should we get lost next?"
-    ],
-    "shareBack": "Add the detail that makes you laugh most, then ask what they're doing this weekend.",
-    "deliveryCue": null,
-    "depth": "casual",
-    "who": [
-      "close-friend",
-      "friend",
-      "group-friends"
-    ],
-    "purposes": [
-      "reconnect",
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "memories"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-061",
-    "line": "No agenda, just missing you. Got ten minutes for a call this week?",
-    "form": "statement",
-    "followUps": [
-      "Which evening is easiest?",
-      "Or should I just try you on the off chance?"
-    ],
-    "shareBack": "Offer two times that suit you, then let them choose.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "reconnect",
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-062",
-    "line": "I never said it properly: thank you for being there when things were rough. It meant a lot.",
-    "form": "compliment",
-    "followUps": [
-      "How have things been on your side since then?",
-      "Can I buy you dinner to say it in person?"
-    ],
-    "shareBack": "If they reply, name the one thing they did that helped most, then ask how they are doing.",
-    "deliveryCue": "Send it without expecting a reply.",
-    "depth": "personal",
-    "who": [
-      "close-friend"
-    ],
-    "purposes": [
-      "deeper"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection",
-      "feelings"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-063",
-    "line": "Honest answer: how are you doing with everything on your plate right now?",
-    "form": "question",
-    "followUps": [
-      "What's the heaviest part?",
-      "Do you want company, a distraction, or just to vent?"
-    ],
-    "shareBack": "Keep your own news to a line; offer one specific thing you can do this week.",
-    "deliveryCue": "Listen; don't fix.",
-    "depth": "personal",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "checkin",
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "feelings"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-064",
-    "line": "Quick one, because I trust your judgment: can I run something past you later?",
-    "form": "advice",
-    "followUps": [
-      "When's a good time?",
-      "Call or text, which is easier?"
-    ],
-    "shareBack": "Keep the ask short when you get to it, thank them, then ask what's going on with them.",
-    "deliveryCue": null,
-    "depth": "casual",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "deeper"
-    ],
-    "medium": "message",
-    "topics": [
-      "advice"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-065",
-    "line": "Walked past our old spot today and thought of you. Hope life's treating you well. No need to reply.",
-    "form": "reachout",
-    "followUps": [
-      "Do you ever get back there?",
-      "What are you up to these days?"
-    ],
-    "shareBack": "If they reply, share one line about your life now, then ask one easy question about theirs.",
-    "deliveryCue": "Send it and let it go; any reply is a bonus.",
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "past"
-    ],
-    "purposes": [
-      "reconnect",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "memories",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-066",
-    "line": "A song came on today that took me straight back to those car rides with you. Had to say hi.",
-    "form": "reachout",
-    "followUps": [
-      "Do you still listen to any of that?",
-      "What are you listening to now?"
-    ],
-    "shareBack": "If they reply, name the song and one thing you remember, then ask how they are doing.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "past"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "memories",
-      "entertainment"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-067",
-    "line": "Found an old photo of us and laughed out loud. Sending it over. Hope you're doing well.",
-    "form": "reachout",
-    "followUps": [
-      "Do you remember where this was?",
-      "Who took it, do you think?"
-    ],
-    "shareBack": "If they reply, say what you remember about that day, then ask what they're up to now.",
-    "deliveryCue": "Attach the photo.",
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "past"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "memories"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-068",
-    "line": "Someone told a joke today that only you would have appreciated. Made me miss you.",
-    "form": "reachout",
-    "followUps": [
-      "Want to hear it?",
-      "Who makes you laugh like that these days?"
-    ],
-    "shareBack": "If they reply, tell the joke, then ask one easy question about their week.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-069",
-    "line": "It's been forever, and that's on me too. I think of you more than I say. How's life, in one line?",
-    "form": "reachout",
-    "followUps": [
-      "What's the best part of it right now?",
-      "Would you be up for a call sometime?"
-    ],
-    "shareBack": "Give your own one-line version, then suggest a low-effort way to catch up.",
-    "deliveryCue": "Don't over-apologize; one line is enough.",
-    "depth": "casual",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "reconnect",
-      "repair"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-070",
-    "line": "Happy birthday! I still think about the one we celebrated together. Hope today's a good one.",
-    "form": "reachout",
-    "followUps": [
-      "Doing anything nice for it?",
-      "How did the year treat you?"
-    ],
-    "shareBack": "If they reply, share one line of your own news, then ask what they're looking forward to this year.",
-    "deliveryCue": "Only on their birthday.",
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "reconnect",
-      "celebrate"
-    ],
-    "medium": "message",
-    "topics": [
-      "memories",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-071",
-    "line": "I'm going to be in your area next month. Any chance you'd be up for a coffee?",
-    "form": "reachout",
-    "followUps": [
-      "Which day would suit you?",
-      "Is there a place near you that you like?"
-    ],
-    "shareBack": "Give your dates in one line and say there's no pressure if the timing is bad.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "past"
-    ],
-    "purposes": [
-      "reconnect",
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-072",
-    "line": "I just made the recipe you taught me and it still works. Thank you, years later.",
-    "form": "reachout",
-    "followUps": [
-      "Are you still cooking it?",
-      "What are you making these days?"
-    ],
-    "shareBack": "If they reply, say who you cooked it for, then ask what's new with them.",
-    "deliveryCue": "Swap in whatever they taught you or introduced you to.",
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "past"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "food",
-      "memories"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
     "id": "fr-073",
     "line": "I'm sorry I went quiet for so long. That's on me, not you.",
     "form": "statement",
@@ -1941,33 +1464,6 @@
     ],
     "riskTags": [],
     "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-074",
-    "line": "I never answered your last message, and I'm sorry. I'd love to hear how you've been.",
-    "form": "reachout",
-    "followUps": [
-      "What's been the best part of the last while?",
-      "Anything big I missed?"
-    ],
-    "shareBack": "Answer anything they ask, keep your own news to a line or two, then ask about what they sounded happiest about.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "past"
-    ],
-    "purposes": [
-      "repair",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
   },
   {
     "id": "fr-075",
@@ -2067,31 +1563,6 @@
       "reconnect"
     ],
     "medium": "in-person",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-079",
-    "line": "I've thought about how things ended between us, and I'm sorry for my part. No need to reply.",
-    "form": "reachout",
-    "followUps": [
-      "How have things been for you?",
-      "Would you be open to a coffee sometime?"
-    ],
-    "shareBack": "If they reply, thank them first. Keep your own news short and let them set the pace.",
-    "deliveryCue": "Send it once and don't push for an answer.",
-    "depth": "personal",
-    "who": [
-      "past",
-      "close-friend"
-    ],
-    "purposes": [
-      "repair"
-    ],
-    "medium": "message",
     "topics": [
       "connection"
     ],
@@ -2242,33 +1713,6 @@
       "support"
     ],
     "medium": "in-person",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-086",
-    "line": "Thinking of you today. No need to reply.",
-    "form": "statement",
-    "followUps": [
-      "What's today been like?",
-      "Would a call help, or just a few texts?"
-    ],
-    "shareBack": "If they reply, keep your side to a line and offer one small, specific thing you can do.",
-    "deliveryCue": "Send it and let it be. Any reply is a bonus.",
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend",
-      "acquaintance",
-      "past"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
     "topics": [
       "connection"
     ],
@@ -2535,105 +1979,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "fr-097",
-    "line": "No words needed. I'm here, and I'm not going anywhere.",
-    "form": "statement",
-    "followUps": [
-      "Want me to call tonight?",
-      "Would a few silly texts help?"
-    ],
-    "shareBack": "Keep sending small, easy messages over the next week. Don't ask for updates.",
-    "deliveryCue": null,
-    "depth": "casual",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-098",
-    "line": "Would a call help, or would you rather I just keep sending you silly things?",
-    "form": "question",
-    "followUps": [
-      "What time would be good for a call?",
-      "Any requests for the silly things?"
-    ],
-    "shareBack": "Do whichever they pick, and keep your own news to a line.",
-    "deliveryCue": null,
-    "depth": "casual",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-099",
-    "line": "I know it's been a long time, but I heard what happened and I'm so sorry. Thinking of you.",
-    "form": "reachout",
-    "followUps": [
-      "Is there anything you need right now?",
-      "Would you be up for a call sometime?"
-    ],
-    "shareBack": "If they reply, listen and keep your side short. Offer one specific thing if it makes sense.",
-    "deliveryCue": "Send it without expecting a reply.",
-    "depth": "casual",
-    "who": [
-      "past"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fr-100",
-    "line": "I'm dropping some food at your door tonight. No need to answer it.",
-    "form": "statement",
-    "followUps": [
-      "Any foods to avoid?",
-      "Want me to do the same next week?"
-    ],
-    "shareBack": "Leave it and go. Text later to say it's there, with no questions attached.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "food"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "fr-101",
     "line": "What's been keeping you busy lately, the good kind or the other kind?",
     "form": "question",
@@ -2652,31 +1997,6 @@
       "checkin"
     ],
     "medium": "any",
-    "topics": [
-      "week"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-102",
-    "line": "Checking in. What's one good thing and one annoying thing from your week?",
-    "form": "question",
-    "followUps": [
-      "Want to vent about the annoying one?",
-      "How did the good one happen?"
-    ],
-    "shareBack": "Send your own good and annoying thing in a line each, then ask what is coming up.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "close-friend",
-      "friend"
-    ],
-    "purposes": [
-      "checkin"
-    ],
-    "medium": "message",
     "topics": [
       "week"
     ],
@@ -2784,33 +2104,6 @@
     "medium": "any",
     "topics": [
       "plans"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-107",
-    "line": "Saw your news. Congrats! That's a big deal.",
-    "form": "statement",
-    "followUps": [
-      "How long have you been working toward it?",
-      "What happens next?"
-    ],
-    "shareBack": "If they reply, say one specific thing that impressed you, then ask what is next for them.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "acquaintance",
-      "past",
-      "friend"
-    ],
-    "purposes": [
-      "celebrate",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -2971,30 +2264,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "fr-114",
-    "line": "Just saw the news. Congratulations! This chat needs the full story.",
-    "form": "statement",
-    "followUps": [
-      "When did you find out?",
-      "How are you celebrating?"
-    ],
-    "shareBack": "Reply to their story with one specific thing you love about it, then suggest a night to celebrate.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "group-friends"
-    ],
-    "purposes": [
-      "celebrate"
-    ],
-    "medium": "message",
-    "topics": [
-      "stories"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "fr-115",
     "line": "That's wonderful news. I'm really glad for you. How did it all come together?",
     "form": "question",
@@ -3118,30 +2387,6 @@
     "medium": "any",
     "topics": [
       "hobbies"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-120",
-    "line": "It was good talking today. Want to grab a coffee before class next week?",
-    "form": "question",
-    "followUps": [
-      "Which day works?",
-      "Is there a place you like near there?"
-    ],
-    "shareBack": "Name a day and a place, then let them suggest something else.",
-    "deliveryCue": "Swap in where you see them.",
-    "depth": "light",
-    "who": [
-      "acquaintance"
-    ],
-    "purposes": [
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -3351,56 +2596,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "fr-129",
-    "line": "Found an old photo of all of us and couldn't stop laughing. Who remembers this night?",
-    "form": "share",
-    "followUps": [
-      "Who took this, do you think?",
-      "What happened after this?"
-    ],
-    "shareBack": "Add the one detail you remember best, then ask when you are all getting together next.",
-    "deliveryCue": "Attach the photo.",
-    "depth": "light",
-    "who": [
-      "group-friends"
-    ],
-    "purposes": [
-      "reconnect",
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "memories"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-130",
-    "line": "I miss this group. Quick roll call: what's everyone up to these days?",
-    "form": "question",
-    "followUps": [
-      "Who's got news?",
-      "When can we actually see each other?"
-    ],
-    "shareBack": "Give your own update in a line, then reply to someone else's before suggesting a date.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "group-friends"
-    ],
-    "purposes": [
-      "reconnect",
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "week"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "fr-131",
     "line": "It's so good to have everyone together again. What's the best thing that's happened since last time?",
     "form": "question",
@@ -3497,30 +2692,6 @@
     "topics": [
       "food",
       "opinions"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-135",
-    "line": "Everyone post the last photo you took that isn't a screenshot. No explaining first.",
-    "form": "statement",
-    "followUps": [
-      "Okay, now explain that one.",
-      "Where was this?"
-    ],
-    "shareBack": "Post yours too with a one-line story, then ask about the strangest one.",
-    "deliveryCue": "Go first if the chat is shy.",
-    "depth": "light",
-    "who": [
-      "group-friends"
-    ],
-    "purposes": [
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "stories"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -3854,57 +3025,6 @@
     "basis": "research-backed"
   },
   {
-    "id": "fr-149",
-    "line": "Good seeing you tonight. Did you end up trying that thing you mentioned?",
-    "form": "question",
-    "followUps": [
-      "How did it go?",
-      "Would you do it again?"
-    ],
-    "shareBack": "Reply to what they say first, then say you'll see them next week.",
-    "deliveryCue": "Swap in the real thing they mentioned.",
-    "depth": "light",
-    "who": [
-      "acquaintance"
-    ],
-    "purposes": [
-      "ice",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "hobbies"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-150",
-    "line": "Saw this and thought of our class. Does this look as hard to you as it does to me?",
-    "form": "share",
-    "followUps": [
-      "Want to try it next week?",
-      "Have you seen anyone pull it off?"
-    ],
-    "shareBack": "If they reply, say which part you'd attempt first, then ask if they're in next week.",
-    "deliveryCue": "Attach the link or photo.",
-    "depth": "light",
-    "who": [
-      "acquaintance"
-    ],
-    "purposes": [
-      "ice",
-      "quick",
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "hobbies"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "fr-151",
     "line": "Have a good one! Good luck with the thing you mentioned.",
     "form": "statement",
@@ -4003,32 +3123,6 @@
     "medium": "in-person",
     "topics": [
       "plans"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fr-155",
-    "line": "Saw something today that only this group would get. Missed you all.",
-    "form": "share",
-    "followUps": [
-      "Who remembers where that started?",
-      "When are we all free next?"
-    ],
-    "shareBack": "If people reply, add one line on why it made you think of them, then suggest a date.",
-    "deliveryCue": "Attach the link or photo.",
-    "depth": "light",
-    "who": [
-      "group-friends"
-    ],
-    "purposes": [
-      "reconnect",
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection",
-      "entertainment"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -4165,28 +3259,437 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "fr-161",
-    "line": "I owe you a sorry for dropping the ball on our plans back then. Hope life's been good to you.",
-    "form": "reachout",
+    "id": "fr-178",
+    "line": "It's been long enough that I don't know what's on your mind these days. What's taking up the most room?",
+    "form": "question",
     "followUps": [
-      "What's been keeping you busy?",
-      "Are you still in the same area?"
+      "How long has that been going on?",
+      "How are you feeling about it?"
     ],
-    "shareBack": "Share one line about what you are up to now, then ask a specific question back.",
+    "shareBack": "Share one thing that's been on your own mind, in a sentence, then ask what would help with theirs.",
     "deliveryCue": null,
-    "depth": "casual",
+    "depth": "personal",
     "who": [
-      "past",
+      "close-friend",
+      "friend",
+      "past"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "any",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-162",
+    "line": "I've missed knowing the real stuff, not just the updates. What's been the hardest part of this year for you?",
+    "form": "share",
+    "followUps": [
+      "What got you through it?",
+      "Is it easier now, or still going?"
+    ],
+    "shareBack": "Name one hard thing from your own year, briefly, then ask what's been good lately too.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
       "close-friend",
       "friend"
     ],
     "purposes": [
-      "repair",
       "reconnect"
     ],
-    "medium": "message",
+    "medium": "in-person",
     "topics": [
+      "feelings",
       "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-163",
+    "line": "What are you hoping the next year or so brings? I realized I don't even know anymore.",
+    "form": "question",
+    "followUps": [
+      "What would that change for you?",
+      "Is anything in the way?"
+    ],
+    "shareBack": "Offer one hope of your own in a sentence, then ask how you could help with theirs.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "close-friend",
+      "friend",
+      "past"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "any",
+    "topics": [
+      "plans",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-164",
+    "line": "Seeing you takes me right back. How do you feel about that whole time now, looking back?",
+    "form": "share",
+    "followUps": [
+      "What do you miss about it, if anything?",
+      "Has how you see it changed?"
+    ],
+    "shareBack": "Say one thing you feel about that time now, kindly, then ask what they took from it.",
+    "deliveryCue": "Keep it light if they keep it light. Let them choose how far to go.",
+    "depth": "personal",
+    "who": [
+      "past"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "memories",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-165",
+    "line": "We've all had a lot happen since last time. I want to hear what's actually been on everyone's mind, not just the news.",
+    "form": "statement",
+    "followUps": [
+      "Who wants to go first?",
+      "How are you feeling about it now?"
+    ],
+    "shareBack": "Go first with one real thing from your own months, in a sentence, then pass it to the next person.",
+    "deliveryCue": "Best once everyone has settled in, not the minute you sit down.",
+    "depth": "personal",
+    "who": [
+      "group-friends"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-166",
+    "line": "What's something each of you is hoping for this year? It doesn't have to be big.",
+    "form": "question",
+    "followUps": [
+      "What would make that happen?",
+      "How can we help?"
+    ],
+    "shareBack": "Share one hope of your own in a sentence, then ask whoever has been quietest.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "group-friends"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "plans",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-167",
+    "line": "What's been the toughest stretch for each of you since we were all together, and what got you through it?",
+    "form": "question",
+    "followUps": [
+      "Is it better now?",
+      "Did anyone here know about that?"
+    ],
+    "shareBack": "Mention one hard stretch of your own and what helped, briefly, then hand it to someone else.",
+    "deliveryCue": "Only with a group that's comfortable being real with each other.",
+    "depth": "personal",
+    "who": [
+      "group-friends"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-168",
+    "line": "I've been thinking about how I made you feel, not just what I did. I'm sorry. Is there anything you want me to hear?",
+    "form": "statement",
+    "followUps": [
+      "What would help now?",
+      "Is there anything I still don't get?"
+    ],
+    "shareBack": "Listen first. Then say in a sentence what you'll do differently, and ask if that sounds right to them.",
+    "deliveryCue": "Say it and then really listen. No explaining yet.",
+    "depth": "personal",
+    "who": [
+      "close-friend",
+      "past"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-169",
+    "line": "When did it really sink in that this was happening?",
+    "form": "question",
+    "followUps": [
+      "Who was the first person you told?",
+      "What did you do right after?"
+    ],
+    "shareBack": "Say how you felt when you heard the news, in a sentence, then ask what's next.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "close-friend",
+      "friend",
+      "acquaintance",
+      "past",
+      "group-friends"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-170",
+    "line": "I love that this happened for you. What's been the best reaction from anyone so far?",
+    "form": "statement",
+    "followUps": [
+      "Did anyone surprise you?",
+      "Who were you most excited to tell?"
+    ],
+    "shareBack": "Tell them what you thought when you heard, briefly, then ask what they're most looking forward to.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "close-friend",
+      "friend",
+      "acquaintance",
+      "past"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-171",
+    "line": "I want the behind-the-scenes version. What part of getting here would surprise people?",
+    "form": "question",
+    "followUps": [
+      "When did you think it might not happen?",
+      "Who helped most along the way?"
+    ],
+    "shareBack": "Say one thing about their effort that you noticed, in a sentence, then ask what comes next.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "close-friend",
+      "friend",
+      "acquaintance",
+      "past",
+      "group-friends"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-172",
+    "line": "Okay, the whole table wants the story. Start from the moment you found out.",
+    "form": "statement",
+    "followUps": [
+      "What did you do first?",
+      "Who knew before tonight?"
+    ],
+    "shareBack": "Add one memory of them working toward this, in a sentence, then raise a glass and pass it back.",
+    "deliveryCue": "Say it once everyone is listening, so they get the floor.",
+    "depth": "casual",
+    "who": [
+      "group-friends"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-173",
+    "line": "What's one thing you wish someone had told you when you started here?",
+    "form": "advice",
+    "followUps": [
+      "How long did it take you to figure that out?",
+      "Anything else I should know?"
+    ],
+    "shareBack": "Mention one thing you've figured out so far, in a sentence, then ask what they'd still like to get better at.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "acquaintance"
+    ],
+    "purposes": [
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "learning",
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "fr-174",
+    "line": "This has turned into my favorite hour of the week. What keeps you coming back?",
+    "form": "share",
+    "followUps": [
+      "How long have you been doing it?",
+      "What did you do before this?"
+    ],
+    "shareBack": "Say in a sentence what this hour does for you, then ask what else they're into lately.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "acquaintance"
+    ],
+    "purposes": [
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-175",
+    "line": "What are you into outside of this? I realize I only ever see you here.",
+    "form": "question",
+    "followUps": [
+      "How did you get into that?",
+      "What do you like most about it?"
+    ],
+    "shareBack": "Name one thing you're into outside of here, in a sentence, then ask a question about theirs.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "acquaintance"
+    ],
+    "purposes": [
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-176",
+    "line": "I've been thinking about you since I heard. What's been the hardest part, if you feel like saying?",
+    "form": "statement",
+    "followUps": [
+      "How are the people around you holding up?",
+      "What has helped, even a little?"
+    ],
+    "shareBack": "Don't share a story of your own. Say you're glad they told you, and offer one specific thing you can do.",
+    "deliveryCue": "Fine if they change the subject. Follow their lead.",
+    "depth": "personal",
+    "who": [
+      "acquaintance",
+      "past"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-177",
+    "line": "What's helping you get through the days right now, even a little?",
+    "form": "question",
+    "followUps": [
+      "Is there more of that I could help with?",
+      "What does a good day look like at the moment?"
+    ],
+    "shareBack": "Offer one specific, small thing you could do this week, then let them say yes or no.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "close-friend",
+      "friend",
+      "acquaintance",
+      "past"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "feelings"
     ],
     "riskTags": [],
     "basis": "expert-opinion"

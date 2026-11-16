@@ -1,34 +1,35 @@
 // The choices on each screen, and which combinations make sense.
 // Everything here is a generic category. The app never stores names.
 //
-// The flow: Who (a tile, then a person) -> "Right now I want to..." -> starters,
-// with an "In person or call / Message" switch on the starters screen.
+// The flow: Who (a tile, then a person) -> "Right now I want to..." -> starters.
+// In person only (decided 2026-11-15); message starters are archived in data/archive/.
 // See _briefs/spark/reports/Refining the three questions.md for why.
 
 // How personal a starter is, lightest first. See docs/starter-format.md.
 export const DEPTHS = ['light', 'casual', 'personal', 'deep'];
 
-export const MEDIA = [
-  { id: 'in-person', label: 'In person or call' },
-  { id: 'message', label: 'Message' },
-];
+// Spark is for in-person conversations (and calls). Kept as a list so the
+// matching rules and tests stay general.
+export const MEDIA = [{ id: 'in-person', label: 'In person or call' }];
 
 // "Right now I want to..." Each person sees 7 or fewer of these.
 // level: where the starters begin. light = light; casual = casual if allowed;
-// max = personal, or lower if this person's ceiling is lower. Deep is always one
-// tap of "Deeper" away, never the starting point.
+// max = personal, or lower if this person's ceiling is lower.
+// cap:   the deepest this purpose ever goes, whoever the person is. A quick hello
+//        stays light; checking in can get personal; only "Go deeper" reaches deep.
+//        Deep is never the starting point: it is one tap of "Deeper" away.
 export const PURPOSES = {
-  ice: { label: 'Break the ice', hint: 'new, or not close yet', level: 'light' },
-  quick: { label: 'Say something quick', hint: 'a minute or less', level: 'light' },
-  deeper: { label: 'Go deeper', hint: 'past small talk', level: 'max' },
-  revive: { label: 'Revive it', hint: "it's gone flat or tense", level: 'casual' },
-  checkin: { label: 'Check in', hint: 'how are they, really?', level: 'casual' },
-  reconnect: { label: 'Reconnect', hint: "it's been a while", level: 'light' },
-  support: { label: 'Be there', hint: "they're going through something hard", level: 'casual' },
-  repair: { label: 'Patch things up', hint: 'after a fight, or to apologize', level: 'casual' },
-  plans: { label: 'Make plans', hint: 'suggest getting together', level: 'light' },
-  celebrate: { label: 'Celebrate their news', hint: 'a win, a milestone, good news', level: 'light' },
-  goodbye: { label: 'Say goodbye or wrap up', hint: "leaving, or they're leaving", level: 'light' },
+  ice: { label: 'Break the ice', hint: 'new, or not close yet', level: 'light', cap: 'casual' },
+  quick: { label: 'Say something quick', hint: 'a minute or less', level: 'light', cap: 'light' },
+  deeper: { label: 'Go deeper', hint: 'past small talk', level: 'max', cap: 'deep' },
+  revive: { label: 'Revive it', hint: "it's gone flat or tense", level: 'casual', cap: 'casual' },
+  checkin: { label: 'Check in', hint: 'how are they, really?', level: 'casual', cap: 'personal' },
+  reconnect: { label: 'Reconnect', hint: "it's been a while", level: 'light', cap: 'personal' },
+  support: { label: 'Be there', hint: "they're going through something hard", level: 'casual', cap: 'personal' },
+  repair: { label: 'Patch things up', hint: 'after a fight, or to apologize', level: 'casual', cap: 'personal' },
+  plans: { label: 'Make plans', hint: 'suggest getting together', level: 'light', cap: 'light' },
+  celebrate: { label: 'Celebrate their news', hint: 'a win, a milestone, good news', level: 'light', cap: 'casual' },
+  goodbye: { label: 'Say goodbye or wrap up', hint: "leaving, or they're leaving", level: 'light', cap: 'casual' },
 };
 
 // Labels that read better for some people.
@@ -54,10 +55,10 @@ export const GROUPS = [
 //   workOk    questions about their work are fine
 //   kidsOk    questions about their kids are fine
 //   purposes  the "Right now I want to..." options, in order (7 or fewer)
-//   media     'in-person' and/or 'message'
+//   media     ['in-person'] (Spark is in person only)
 //   labels    purpose labels worded for this person
 //   file      the data file that holds their starters
-const BOTH = ['in-person', 'message'];
+const BOTH = ['in-person'];   // in person only
 
 export const WHO = [
   // Partner or family
@@ -71,7 +72,7 @@ export const WHO = [
   { id: 'in-law', label: 'In-law', group: 'family', ceiling: 'personal', careful: true, file: 'family',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'checkin', 'support', 'celebrate'], media: BOTH },
   { id: 'child', label: 'Young child', group: 'family', ceiling: 'deep', kidsOk: true, file: 'kids',
-    purposes: ['revive', 'checkin', 'deeper', 'support', 'repair', 'plans', 'celebrate'], media: ['in-person'],
+    purposes: ['revive', 'checkin', 'deeper', 'support', 'repair', 'plans', 'celebrate'], media: BOTH,
     labels: { ...ONE_WORD, plans: { label: 'Plan something together', hint: 'an outing, a project' } } },
   { id: 'teen', label: 'Teenager (13–17)', group: 'family', ceiling: 'deep', file: 'kids',
     purposes: ['revive', 'checkin', 'deeper', 'support', 'repair', 'plans', 'celebrate'], media: BOTH,
@@ -146,7 +147,7 @@ export const WHO = [
     purposes: ['ice', 'quick', 'revive', 'celebrate', 'goodbye'], media: BOTH },
   { id: 'group-new', label: 'People I just met', group: 'group', ceiling: 'light', careful: true, workOk: true,
     file: 'networking',
-    purposes: ['ice', 'quick', 'revive', 'goodbye'], media: ['in-person'],
+    purposes: ['ice', 'quick', 'revive', 'goodbye'], media: BOTH,
     labels: { ice: { label: 'Join the group', hint: 'or start one' } } },
 ];
 

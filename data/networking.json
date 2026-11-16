@@ -1088,243 +1088,6 @@
     "basis": "untested"
   },
   {
-    "id": "nw-042",
-    "line": "It was good to meet you today. One thing you said has stayed with me. Is there one thing you'd suggest I read next?",
-    "form": "advice",
-    "followUps": [
-      "What did you take from it yourself?",
-      "May I tell you what I think once I've read it?"
-    ],
-    "shareBack": "Reply with one line on what stayed with you and why, then thank them.",
-    "deliveryCue": "Send the same day. Name the thing they said if you can.",
-    "depth": "light",
-    "who": [
-      "mentor",
-      "someone-new"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "advice",
-      "learning"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "nw-043",
-    "line": "Thank you for the advice earlier. I tried it and it helped. No need to reply; I just wanted you to know.",
-    "form": "statement",
-    "followUps": [
-      "Is there a next step you would suggest?",
-      "What did you find hardest when you first tried it?"
-    ],
-    "shareBack": "If they reply, say in one line what you tried and what changed.",
-    "deliveryCue": "Send only once you have tried it.",
-    "depth": "light",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "reconnect",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "advice",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-044",
-    "line": "I just read something that made me think of your work. May I send it over?",
-    "form": "share",
-    "followUps": [
-      "Does it match what you have seen?",
-      "What would you add to it?"
-    ],
-    "shareBack": "Send it with one line on why it made you think of them, and leave it there.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "mentor",
-      "someone-new"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "learning",
-      "work"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-045",
-    "line": "Quick question, no rush: what's one thing you're reading or listening to that you'd recommend?",
-    "form": "question",
-    "followUps": [
-      "What did you like about it?",
-      "What should I look out for in it?"
-    ],
-    "shareBack": "Reply with thanks and one thing you have enjoyed lately, in a single line.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "quick",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "learning",
-      "entertainment"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-046",
-    "line": "I saw your latest piece of work and learned a lot from it. What was the hardest part to get right?",
-    "form": "compliment",
-    "followUps": [
-      "How did you get past it?",
-      "Would you approach it the same way again?"
-    ],
-    "shareBack": "Reply with the one thing you learned from it, in a line, and thank them.",
-    "deliveryCue": "Name the piece of work so it is clear you looked at it.",
-    "depth": "light",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "ice",
-      "reconnect",
-      "deeper"
-    ],
-    "medium": "message",
-    "topics": [
-      "work",
-      "projects"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "research-backed"
-  },
-  {
-    "id": "nw-047",
-    "line": "Would you be open to a 15-minute call sometime this month? I have two specific questions and I'll keep it short.",
-    "form": "advice",
-    "followUps": [
-      "What day suits you best?",
-      "Would you like the questions in advance?"
-    ],
-    "shareBack": "If they agree, send the two questions in one short message so they can think ahead.",
-    "deliveryCue": "Have the two questions written before you send this.",
-    "depth": "light",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "advice",
-      "plans"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "nw-048",
-    "line": "Thanks for talking with me today. I'm going to try what you suggested this week. May I tell you how it goes?",
-    "form": "statement",
-    "followUps": [
-      "Is there anything I should watch for as I try it?",
-      "When would be a good time to check back?"
-    ],
-    "shareBack": "When you report back, give one line on what happened and one on what you learned.",
-    "deliveryCue": "Send the same day, while the conversation is fresh.",
-    "depth": "light",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "reconnect",
-      "goodbye"
-    ],
-    "medium": "message",
-    "topics": [
-      "advice",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-049",
-    "line": "It's been a while. Something you taught me came in handy today and I thought of you. Hope things are going well.",
-    "form": "reachout",
-    "followUps": [
-      "What are you working on these days?",
-      "Is there anything I can do for you?"
-    ],
-    "shareBack": "If they reply, say in one line what happened and how their lesson helped.",
-    "deliveryCue": "Ask nothing in the first message; let them choose how much to reply.",
-    "depth": "light",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "reconnect",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection",
-      "memories"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "nw-050",
-    "line": "Something you told me keeps coming back to me. When you faced a big choice, what helped you decide? A line is plenty.",
-    "form": "question",
-    "followUps": [
-      "Did it feel clear at the time?",
-      "Is there something you would weigh differently now?"
-    ],
-    "shareBack": "Reply with the choice you are facing, in one line, and thank them for the steer.",
-    "deliveryCue": null,
-    "depth": "personal",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "deeper"
-    ],
-    "medium": "message",
-    "topics": [
-      "advice",
-      "values"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "nw-051",
     "line": "How did you decide to move into the work you do now?",
     "form": "question",
@@ -1696,106 +1459,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "nw-065",
-    "line": "Hi! I think we're at the same table for Saturday's dinner. Looking forward to meeting you.",
-    "form": "statement",
-    "followUps": [
-      "Have you been to one of these before?",
-      "Do you know many people going?"
-    ],
-    "shareBack": "If they reply, say in a line how you know the hosts or organizers, then ask how they do.",
-    "deliveryCue": "Swap in the real event. Send a day or two before.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "ice"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-066",
-    "line": "Hi, we're in the same class this term. Did you catch what's due for next week?",
-    "form": "question",
-    "followUps": [
-      "How are you finding it so far?",
-      "Have you taken anything with this teacher before?"
-    ],
-    "shareBack": "Mention in a line what drew you to the class, then ask what they're hoping to get from it.",
-    "deliveryCue": "For a class group chat, or a direct message to a classmate.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "ice",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "learning"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-067",
-    "line": "Saw your question in the event chat. I was wondering the same thing. Did you ever find out?",
-    "form": "question",
-    "followUps": [
-      "Are you going to that session?",
-      "Is this your first time at this one?"
-    ],
-    "shareBack": "Say in a line what you're most hoping to catch at the event, then ask about their plan.",
-    "deliveryCue": "In an event app or group chat, before or during the event.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "ice"
-    ],
-    "medium": "message",
-    "topics": [
-      "setting",
-      "learning"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-068",
-    "line": "Hi, looks like we'll both be at Thursday's workshop. Any idea what to bring, or are we winging it?",
-    "form": "question",
-    "followUps": [
-      "What made you sign up?",
-      "Have you done one of these before?"
-    ],
-    "shareBack": "Say in a line what you're hoping to learn there, then ask what they're hoping for.",
-    "deliveryCue": "Swap in the real event.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "ice"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans",
-      "learning"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "nw-069",
     "line": "Nice to share the wait with someone. Good luck with the rest of your day.",
     "form": "statement",
@@ -1815,82 +1478,6 @@
     "medium": "in-person",
     "topics": [
       "week"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-070",
-    "line": "Good to meet you tonight. Enjoy the rest of your weekend.",
-    "form": "statement",
-    "followUps": [
-      "Did you end up staying late?",
-      "Anything good planned for the weekend?"
-    ],
-    "shareBack": "If they reply, add one line on what you enjoyed about meeting them, then leave it there.",
-    "deliveryCue": "Send that night or the next morning.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "quick",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-071",
-    "line": "Saw this and thought of what you said the other night. No need to reply, just passing it on.",
-    "form": "share",
-    "followUps": [
-      "Did you end up going?",
-      "What did you think of it?"
-    ],
-    "shareBack": "If they reply, say in a line why it made you think of them, then ask one thing about it.",
-    "deliveryCue": "Add the link, and name what they said if you can.",
-    "depth": "light",
-    "who": [
-      "someone-new",
-      "mentor"
-    ],
-    "purposes": [
-      "quick",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-072",
-    "line": "Hope tomorrow goes well! You sounded ready for it.",
-    "form": "statement",
-    "followUps": [
-      "How did it go?",
-      "What was the best part?"
-    ],
-    "shareBack": "If they write back afterward, say in a line that you're glad, then ask what's next.",
-    "deliveryCue": "Only if they mentioned something coming up.",
-    "depth": "light",
-    "who": [
-      "someone-new",
-      "mentor"
-    ],
-    "purposes": [
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -2019,31 +1606,6 @@
     "topics": [
       "hobbies",
       "week"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-078",
-    "line": "Picking up from the party: did you ever try that place you mentioned?",
-    "form": "question",
-    "followUps": [
-      "Was it as good as you hoped?",
-      "What should I order if I go?"
-    ],
-    "shareBack": "Say in a line whether you've been, then ask what they'd recommend.",
-    "deliveryCue": "Swap in the real place or plan they mentioned.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "revive",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "food"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -2202,32 +1764,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "nw-085",
-    "line": "I keep thinking about what you said the other night. What got you started on it?",
-    "form": "question",
-    "followUps": [
-      "What's kept you at it?",
-      "Is there more to that story?"
-    ],
-    "shareBack": "If they reply, offer one line on why it stuck with you, then ask one more thing about it.",
-    "deliveryCue": "Name what they said so it is clear you were listening.",
-    "depth": "light",
-    "who": [
-      "someone-new",
-      "mentor"
-    ],
-    "purposes": [
-      "deeper",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "stories"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
     "id": "nw-086",
     "line": "I think we met at the last one of these. Did that trip you were planning happen?",
     "form": "question",
@@ -2331,108 +1867,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "nw-090",
-    "line": "Great to meet you at the conference. I looked up the book you mentioned; it's on my list now.",
-    "form": "statement",
-    "followUps": [
-      "What did you like most about it?",
-      "Anything else you would add to the list?"
-    ],
-    "shareBack": "If they reply, say in a line what drew you to it, then ask one more thing about it.",
-    "deliveryCue": "Send within a day or two. Swap in the real detail.",
-    "depth": "light",
-    "who": [
-      "someone-new",
-      "mentor"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "learning"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-091",
-    "line": "It was really nice talking with you on Saturday. Good luck with everything you have coming up.",
-    "form": "statement",
-    "followUps": [
-      "How did it all go?"
-    ],
-    "shareBack": "If they reply, add one line about your week, then ask one thing about theirs.",
-    "deliveryCue": "Swap in what they mentioned, if you can.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "reconnect",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-092",
-    "line": "We met at the workshop a few months ago, and something you said came up today. Hope things are going well!",
-    "form": "reachout",
-    "followUps": [
-      "What have you been up to since then?",
-      "Did you end up going back?"
-    ],
-    "shareBack": "If they reply, say in a line what came up and how their point helped.",
-    "deliveryCue": "Ask nothing in the first message; let them choose how much to reply.",
-    "depth": "light",
-    "who": [
-      "someone-new",
-      "mentor"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection",
-      "memories"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "nw-093",
-    "line": "Enjoyed meeting you at the class. Same time next week?",
-    "form": "question",
-    "followUps": [
-      "Did you get through the homework?",
-      "Want to grab seats together?"
-    ],
-    "shareBack": "If they reply, say in a line what you liked about the class, then ask what they thought.",
-    "deliveryCue": "For a weekly class or club.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "reconnect",
-      "plans",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans",
-      "learning"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "nw-094",
     "line": "I'd like to keep talking about this. Want to swap numbers?",
     "form": "question",
@@ -2528,79 +1962,6 @@
     "topics": [
       "connection",
       "projects"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-098",
-    "line": "I'm going to the next meetup on the 12th. Want to find each other there?",
-    "form": "question",
-    "followUps": [
-      "Do you know anyone else going?"
-    ],
-    "shareBack": "If they say yes, suggest a spot to meet, in one line.",
-    "deliveryCue": "Swap in the real date and event.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-099",
-    "line": "Here's the place I mentioned. If you try it, tell me what you think!",
-    "form": "share",
-    "followUps": [
-      "Did you end up going?",
-      "What did you order?"
-    ],
-    "shareBack": "When they reply, say in a line what you usually order, then ask what they thought.",
-    "deliveryCue": "Send with the link, the day after you meet.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "plans",
-      "reconnect",
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "food"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-100",
-    "line": "No pressure at all, but would you want to grab lunch sometime this month? I enjoyed talking.",
-    "form": "question",
-    "followUps": [
-      "Does a weekday or the weekend suit you better?"
-    ],
-    "shareBack": "Suggest one place and two times, then leave it with them.",
-    "deliveryCue": "Offer two days so it is easy to say yes or pass.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans",
-      "connection"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -2717,55 +2078,6 @@
       "goodbye"
     ],
     "medium": "any",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-106",
-    "line": "Signing off for the night. This was fun. Let's pick it up at the next one.",
-    "form": "statement",
-    "followUps": [
-      "Are you going to the next one?"
-    ],
-    "shareBack": "If they reply, say in a line which one you are planning to go to.",
-    "deliveryCue": "To close a message thread with someone from a group or event.",
-    "depth": "light",
-    "who": [
-      "someone-new"
-    ],
-    "purposes": [
-      "goodbye",
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-107",
-    "line": "Thanks again for the good conversation. Enjoy the rest of the week.",
-    "form": "statement",
-    "followUps": [
-      "Anything fun planned for the weekend?"
-    ],
-    "shareBack": "If they reply, add one line about your own week.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "someone-new",
-      "mentor"
-    ],
-    "purposes": [
-      "goodbye",
-      "quick"
-    ],
-    "medium": "message",
     "topics": [
       "connection"
     ],
@@ -2944,31 +2256,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "nw-115",
-    "line": "Thank you again for today. I'll let you know how it goes. No need to reply.",
-    "form": "statement",
-    "followUps": [
-      "Is there anything you would want me to watch for?"
-    ],
-    "shareBack": "If they reply, thank them in one line and leave it there.",
-    "deliveryCue": "Send the same day.",
-    "depth": "light",
-    "who": [
-      "mentor"
-    ],
-    "purposes": [
-      "goodbye",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "advice",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "nw-116",
     "line": "Would you be open to a short coffee sometime this month? There's one question I'd really value your view on.",
     "form": "advice",
@@ -3126,85 +2413,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "nw-122",
-    "line": "Hi, I saw the opening on your team. It lines up closely with my last two years of work. Are you the right person to ask?",
-    "form": "question",
-    "followUps": [
-      "Is there a good time to talk this week?"
-    ],
-    "shareBack": "If they reply, send two lines on your fit and a link, nothing more.",
-    "deliveryCue": "Swap in what actually lines up. Keep the first message short.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "ice"
-    ],
-    "medium": "message",
-    "topics": [
-      "work"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-123",
-    "line": "Thanks for reaching out. The role looks interesting. What's the team working on right now?",
-    "form": "question",
-    "followUps": [
-      "What's the timeline for the role?",
-      "What would the first few months focus on?"
-    ],
-    "shareBack": "Reply with one line on what drew you to the role, then suggest a time to talk.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "ice"
-    ],
-    "medium": "message",
-    "topics": [
-      "work",
-      "projects"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-124",
-    "line": "Hi, we met briefly at the career fair. You mentioned the team's new project, and I've been reading up on it since.",
-    "form": "statement",
-    "followUps": [
-      "Is the team still hiring for it?"
-    ],
-    "shareBack": "If they reply, give one line on your fit and ask about next steps.",
-    "deliveryCue": "Send within a few days. Swap in what they told you.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "ice",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "work",
-      "projects"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "nw-125",
     "line": "Thanks for fitting me in today. I know interview days get busy.",
     "form": "statement",
@@ -3248,105 +2456,6 @@
     "medium": "in-person",
     "topics": [
       "setting",
-      "work"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-127",
-    "line": "Thanks for the update. Looking forward to Thursday.",
-    "form": "statement",
-    "followUps": [
-      "Is there anything I should prepare?"
-    ],
-    "shareBack": "If they reply, confirm the time in one line.",
-    "deliveryCue": "Swap in the real day.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-128",
-    "line": "Thanks for setting this up. Is there anything I should read before we talk?",
-    "form": "question",
-    "followUps": [
-      "Who will I be meeting with?"
-    ],
-    "shareBack": "Reply with one line confirming you'll be ready.",
-    "deliveryCue": null,
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "quick",
-      "ice"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans",
-      "work"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-129",
-    "line": "Just confirming I'm all set for tomorrow at 10. Thanks for your help with the scheduling.",
-    "form": "statement",
-    "followUps": [
-      "Is there anyone else I should expect on the call?"
-    ],
-    "shareBack": "If they reply, thank them in one line.",
-    "deliveryCue": "Swap in the real time.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "quick"
-    ],
-    "medium": "message",
-    "topics": [
-      "plans"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-130",
-    "line": "A quick thank you for the tips before the interview. They helped.",
-    "form": "statement",
-    "followUps": [
-      "Is there any word on next steps?"
-    ],
-    "shareBack": "If they reply, say in a line what went well.",
-    "deliveryCue": "Send the same day as the interview.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "quick",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
       "work"
     ],
     "riskTags": [
@@ -3452,83 +2561,6 @@
     "topics": [
       "work",
       "stories"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-135",
-    "line": "Thank you for your time today. Our talk about the new project made me even keener on the role.",
-    "form": "statement",
-    "followUps": [
-      "Is there anything else I can send you?"
-    ],
-    "shareBack": "If they reply, answer in one line and leave it there.",
-    "deliveryCue": "Send within a day. Swap in one thing you actually discussed.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "work",
-      "projects"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-136",
-    "line": "I've now applied for the role we talked about at the fair. Any advice on what to stress?",
-    "form": "advice",
-    "followUps": [
-      "Is there anyone on the team I should know about?"
-    ],
-    "shareBack": "If they reply, thank them and say in one line how you will use it.",
-    "deliveryCue": "Name the role and where you met.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "work",
-      "advice"
-    ],
-    "riskTags": [
-      "work"
-    ],
-    "basis": "research-backed"
-  },
-  {
-    "id": "nw-137",
-    "line": "Just checking in on the role. I'm still very interested, and happy to send anything that would help.",
-    "form": "statement",
-    "followUps": [
-      "Is there an updated timeline?"
-    ],
-    "shareBack": "If they reply, thank them in one line and leave it there.",
-    "deliveryCue": "Wait about a week past the date they gave before sending.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "work"
     ],
     "riskTags": [
       "work"
@@ -3737,29 +2769,6 @@
     "riskTags": [
       "work"
     ],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "nw-146",
-    "line": "Thanks again for all your help through the process. I hope our paths cross again.",
-    "form": "statement",
-    "followUps": [
-      "Would you mind if I reached out about future roles?"
-    ],
-    "shareBack": "If they reply, thank them in one line and leave it there.",
-    "deliveryCue": "After a decision, either way.",
-    "depth": "light",
-    "who": [
-      "recruiter"
-    ],
-    "purposes": [
-      "goodbye"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
     "basis": "expert-opinion"
   },
   {
@@ -4204,6 +3213,423 @@
       "setting"
     ],
     "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-165",
+    "line": "That speaker had some strong opinions. Which one did you agree with, and which one made you wince?",
+    "form": "question",
+    "followUps": [
+      "Did it change your mind about anything?",
+      "Who would you rather have heard from?"
+    ],
+    "shareBack": "Name the point you agreed with, in a sentence, then ask what they are hoping to hear next.",
+    "deliveryCue": "Use it right after a talk or a panel.",
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "opinions",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-166",
+    "line": "I nearly skipped tonight, and I'm glad I didn't. What's the best thing you've ever gotten out of an event like this?",
+    "form": "share",
+    "followUps": [
+      "How did that come about?",
+      "Do you still keep in touch with them?"
+    ],
+    "shareBack": "Say what made tonight worth it for you, in a sentence, then ask what they are hoping for tonight.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-167",
+    "line": "Everyone here seems to have a side project. What's something you've gotten into lately that has nothing to do with work?",
+    "form": "question",
+    "followUps": [
+      "How did you get started?",
+      "What's been the most fun part?"
+    ],
+    "shareBack": "Mention one thing you have picked up lately, in a sentence, then ask what keeps them at it.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "hobbies",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-168",
+    "line": "Your point earlier about starting small stuck with me. When has that approach paid off for you?",
+    "form": "compliment",
+    "followUps": [
+      "What made you try it that first time?"
+    ],
+    "shareBack": "Say where you might use it, in a sentence, then ask what they would watch out for.",
+    "deliveryCue": "Swap in the real point they made.",
+    "depth": "casual",
+    "who": [
+      "mentor"
+    ],
+    "purposes": [
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "advice"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-169",
+    "line": "Good to run into you again. Last time you'd just started that course. What's the best thing you've learned from it?",
+    "form": "question",
+    "followUps": [
+      "Would you recommend it?",
+      "What's been harder than you expected?"
+    ],
+    "shareBack": "Mention one thing you have been learning, in a sentence, then ask what they are trying next.",
+    "deliveryCue": "Swap in what they told you about last time.",
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-170",
+    "line": "I finally read the book you mentioned when we met, and I keep thinking about it. What drew you to it?",
+    "form": "share",
+    "followUps": [
+      "Is there another one you would put next to it?"
+    ],
+    "shareBack": "Say which part stayed with you, in a sentence, then ask what they are reading now.",
+    "deliveryCue": "Swap in what they actually recommended.",
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "entertainment",
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-171",
+    "line": "Good to see you again. What's the best thing that's happened since we were both last here?",
+    "form": "question",
+    "followUps": [
+      "How did that come about?",
+      "What are you looking forward to next?"
+    ],
+    "shareBack": "Share one good thing from your side, in a sentence, then ask a follow-up about theirs.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-172",
+    "line": "I've been thinking about what you said last time about saying no to projects. Do you still see it that way?",
+    "form": "statement",
+    "followUps": [
+      "How did you come to that view?",
+      "Is there a time it was hard to stick to?"
+    ],
+    "shareBack": "Say how it played out when you tried it, in a sentence, then ask what they would add.",
+    "deliveryCue": "Swap in the real idea they shared.",
+    "depth": "casual",
+    "who": [
+      "mentor",
+      "someone-new"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "opinions",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-173",
+    "line": "It's been a while. What's taking up most of your head these days, work or otherwise?",
+    "form": "question",
+    "followUps": [
+      "Is that a good kind of busy?",
+      "What would make it easier?"
+    ],
+    "shareBack": "Say what is on your own mind, in a sentence, then ask a follow-up about theirs.",
+    "deliveryCue": "Ask it once you have said hello, not as the very first line.",
+    "depth": "personal",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-174",
+    "line": "When we last talked you were weighing a big change. Now that some time has passed, how do you feel about it?",
+    "form": "question",
+    "followUps": [
+      "What tipped the decision?",
+      "What surprised you once it was made?"
+    ],
+    "shareBack": "Say one change you have made since, in a sentence, then ask what is next for them.",
+    "deliveryCue": "Only if they mentioned a change last time.",
+    "depth": "personal",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-175",
+    "line": "Last time you sounded excited about the new role, and a little unsure. I have wondered how it has settled.",
+    "form": "statement",
+    "followUps": [
+      "What has been better than you expected?",
+      "What are you still getting used to?"
+    ],
+    "shareBack": "Say you are glad to hear it, then ask what they are hoping to do next in it.",
+    "deliveryCue": "Only if they told you about a new role.",
+    "depth": "personal",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "feelings"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-176",
+    "line": "Since we last spoke, what's been stretching you most in your work?",
+    "form": "question",
+    "followUps": [
+      "What would make it feel more manageable?",
+      "Who has been helpful with it?"
+    ],
+    "shareBack": "Name one thing stretching you, in a sentence, then ask what has helped them most.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "mentor",
+      "someone-new"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "learning"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-177",
+    "line": "Before I head off: you mentioned a few places worth trying. If I only get to one, which should it be?",
+    "form": "question",
+    "followUps": [
+      "What should I order there?"
+    ],
+    "shareBack": "Say when you might go, in a sentence, then thank them and say goodbye.",
+    "deliveryCue": "Use it when they've recommended places or things to try.",
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "food",
+      "opinions"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-178",
+    "line": "I'm going to head out, but what you said about taking proper breaks is going to stay with me.",
+    "form": "statement",
+    "followUps": [
+      "Did you learn that the hard way?"
+    ],
+    "shareBack": "Say how you might try it, in a sentence, then thank them and say goodbye.",
+    "deliveryCue": "Swap in the real thing they said.",
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "opinions",
+      "advice"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-179",
+    "line": "I have to run, but quick question first: what's the one thing from tonight you'll still remember next week?",
+    "form": "question",
+    "followUps": [
+      "Is that what you came for, or a surprise?"
+    ],
+    "shareBack": "Name yours in a sentence, then say goodbye warmly.",
+    "deliveryCue": "Use it near the end of an event.",
+    "depth": "casual",
+    "who": [
+      "someone-new",
+      "mentor"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "setting",
+      "opinions"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "nw-180",
+    "line": "Thank you for this. Of everything you said, the bit about learning in public is what I'm taking home. Was that hard-won?",
+    "form": "compliment",
+    "followUps": [
+      "What made you start doing it?"
+    ],
+    "shareBack": "Say when you will try it, in a sentence, then thank them again and let them go.",
+    "deliveryCue": "Swap in the real point they made.",
+    "depth": "casual",
+    "who": [
+      "mentor"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
     "basis": "expert-opinion"
   }
 ]

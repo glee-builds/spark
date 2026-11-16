@@ -49,161 +49,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "fa-082",
-    "line": "Saw this and thought of you. No need to reply.",
-    "form": "share",
-    "followUps": [
-      "What's the funniest thing you've seen this week?",
-      "Got one to send back?"
-    ],
-    "shareBack": "If they answer, reply with one line or an emoji, not a question about school or work.",
-    "deliveryCue": "Send it with the picture or clip and leave it there.",
-    "depth": "light",
-    "who": [
-      "teen",
-      "grown-child"
-    ],
-    "purposes": [
-      "revive",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "entertainment",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fa-083",
-    "line": "Proud of you for today. That's all.",
-    "form": "compliment",
-    "followUps": [
-      "What part are you happiest with?",
-      "What do you want to do to celebrate?"
-    ],
-    "shareBack": "Later, mention the exact thing you noticed them do, then let them take it from there.",
-    "deliveryCue": "Send it and leave it; no question straight after.",
-    "depth": "light",
-    "who": [
-      "teen",
-      "grown-child"
-    ],
-    "purposes": [
-      "celebrate"
-    ],
-    "medium": "message",
-    "topics": [
-      "feelings"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "fa-084",
-    "line": "Getting food on my way home. Want anything?",
-    "form": "question",
-    "followUps": [
-      "Same as last time?",
-      "Anything for later as well?"
-    ],
-    "shareBack": "Say what you're getting for yourself, then eat together if they're up for it.",
-    "deliveryCue": "A yes or no is a full answer; don't push for more.",
-    "depth": "light",
-    "who": [
-      "teen"
-    ],
-    "purposes": [
-      "revive",
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "food"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fa-085",
-    "line": "Good luck today. I'm around later if you want to tell me about it.",
-    "form": "statement",
-    "followUps": [
-      "Which part went best?",
-      "What do you need tonight?"
-    ],
-    "shareBack": "If they bring it up, mention a time you were nervous before something, in a sentence.",
-    "deliveryCue": "Wait for them to raise it later; don't open with a question.",
-    "depth": "light",
-    "who": [
-      "teen",
-      "grown-child"
-    ],
-    "purposes": [
-      "checkin",
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "week",
-      "feelings"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fa-086",
-    "line": "Sorry I was short this morning. That was about me, not you.",
-    "form": "statement",
-    "followUps": [
-      "Is there anything you wanted to say that I cut off?",
-      "Can we start over tonight?"
-    ],
-    "shareBack": "Tonight, say in one sentence what was going on for you, then let them respond or not.",
-    "deliveryCue": "Don't add 'but'. Send it and let it land.",
-    "depth": "casual",
-    "who": [
-      "teen"
-    ],
-    "purposes": [
-      "repair"
-    ],
-    "medium": "message",
-    "topics": [
-      "feelings",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "fa-087",
-    "line": "Drive-through run tonight? My treat.",
-    "form": "question",
-    "followUps": [
-      "Where do you want to go?",
-      "Want to bring anyone?"
-    ],
-    "shareBack": "In the car, mention one small thing from your day, then let them pick the music.",
-    "deliveryCue": "Keep it an offer; no agenda once you're in the car.",
-    "depth": "light",
-    "who": [
-      "teen"
-    ],
-    "purposes": [
-      "plans",
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "food",
-      "plans"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "fa-088",
     "line": "I had a weird day. Want to hear the dumbest part?",
     "form": "share",
@@ -1546,58 +1391,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "ki-031",
-    "line": "Thinking about you today. Hope the big thing goes well. No need to reply.",
-    "form": "statement",
-    "followUps": [
-      "How did it end up going?",
-      "Want to do something to unwind tonight?"
-    ],
-    "shareBack": "If they reply, answer with one line about your own day, not another question.",
-    "deliveryCue": "Swap in the real event. Send it before, not during.",
-    "depth": "light",
-    "who": [
-      "teen",
-      "grown-child"
-    ],
-    "purposes": [
-      "checkin",
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "week"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "ki-032",
-    "line": "Send me your day in one emoji. Mine's a coffee cup.",
-    "form": "share",
-    "followUps": [
-      "What's the story behind that one?",
-      "Better or worse than yesterday?"
-    ],
-    "shareBack": "Explain your own emoji in one line, then let the thread rest.",
-    "deliveryCue": "Any emoji back is a win; don't push for more.",
-    "depth": "light",
-    "who": [
-      "teen",
-      "grown-child"
-    ],
-    "purposes": [
-      "checkin",
-      "revive"
-    ],
-    "medium": "message",
-    "topics": [
-      "week"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "ki-033",
     "line": "I keep wondering what I'd tell myself at your age. What would you tell a kid a few years younger?",
     "form": "share",
@@ -1801,30 +1594,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "ki-041",
-    "line": "No need to reply. I love you and I'm on your side.",
-    "form": "statement",
-    "followUps": [
-      "Want me to pick you up?",
-      "Anything you need from me tonight?"
-    ],
-    "shareBack": "If they reply, answer with one warm line, not a question about what happened.",
-    "deliveryCue": "Send it and leave it. Don't follow up with another text.",
-    "depth": "light",
-    "who": [
-      "teen"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "ki-042",
     "line": "Want to go for a drive? You pick the music, and we don't have to talk.",
     "form": "question",
@@ -1974,31 +1743,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "ki-048",
-    "line": "Peace offering: I'm getting your favorite on the way home.",
-    "form": "statement",
-    "followUps": [
-      "Want to talk later, or just eat?",
-      "Anything else you want?"
-    ],
-    "shareBack": "When you are together, say sorry in a sentence and let the food do the rest.",
-    "deliveryCue": "Pair it with a real apology in person; the food doesn't replace it.",
-    "depth": "light",
-    "who": [
-      "teen"
-    ],
-    "purposes": [
-      "repair"
-    ],
-    "medium": "message",
-    "topics": [
-      "food",
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "ki-049",
     "line": "I'd like a day with just the two of us. You pick, I'll pay.",
     "form": "statement",
@@ -2120,30 +1864,6 @@
     "topics": [
       "travel",
       "plans"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "ki-054",
-    "line": "Heard the news. That's huge! Tell me everything when you're home.",
-    "form": "compliment",
-    "followUps": [
-      "What was it like when you found out?",
-      "Who else have you told?"
-    ],
-    "shareBack": "Tell them what you felt when you heard, in a sentence, then let them do the talking.",
-    "deliveryCue": "Text it right away; save the questions for in person.",
-    "depth": "light",
-    "who": [
-      "teen"
-    ],
-    "purposes": [
-      "celebrate"
-    ],
-    "medium": "message",
-    "topics": [
-      "stories"
     ],
     "riskTags": [],
     "basis": "research-backed"
@@ -2426,33 +2146,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "ki-066",
-    "line": "Found an old photo of you at the beach. Do you remember that trip?",
-    "form": "share",
-    "followUps": [
-      "What do you remember most about it?",
-      "Should we go back sometime?"
-    ],
-    "shareBack": "Mention the moment you remember from that trip, then send the photo.",
-    "deliveryCue": "Swap in the real photo and send it with the text.",
-    "depth": "light",
-    "who": [
-      "teen",
-      "grown-child"
-    ],
-    "purposes": [
-      "revive",
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "memories",
-      "travel"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
     "id": "ki-067",
     "line": "What are you cooking these days? I need new ideas.",
     "form": "advice",
@@ -2680,80 +2373,6 @@
     "basis": "expert-opinion"
   },
   {
-    "id": "ki-076",
-    "line": "No agenda, just want to hear your voice. Got ten minutes this week?",
-    "form": "reachout",
-    "followUps": [
-      "What's been taking up most of your time?",
-      "When's a good time?"
-    ],
-    "shareBack": "On the call, share one small thing from home, then let them steer.",
-    "deliveryCue": "Let them pick the time, and keep it short if they are busy.",
-    "depth": "light",
-    "who": [
-      "grown-child"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "ki-077",
-    "line": "It's been too long since we caught up properly. Free for a call this weekend?",
-    "form": "reachout",
-    "followUps": [
-      "What's the best time?",
-      "Anything you want to tell me about first?"
-    ],
-    "shareBack": "On the call, share one thing from home that made you think of them, then let them steer.",
-    "deliveryCue": "Short and easy to say yes to. Suggest a time.",
-    "depth": "light",
-    "who": [
-      "grown-child"
-    ],
-    "purposes": [
-      "reconnect",
-      "plans"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection",
-      "plans"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
-    "id": "ki-078",
-    "line": "Your team won last night. Thought of you.",
-    "form": "reachout",
-    "followUps": [
-      "Did you watch it?",
-      "Who are they playing next?"
-    ],
-    "shareBack": "Mention one moment from the game you liked, then let the thread go where it goes.",
-    "deliveryCue": "Swap in something you know they care about.",
-    "depth": "light",
-    "who": [
-      "grown-child"
-    ],
-    "purposes": [
-      "reconnect"
-    ],
-    "medium": "message",
-    "topics": [
-      "sports"
-    ],
-    "riskTags": [],
-    "basis": "research-backed"
-  },
-  {
     "id": "ki-079",
     "line": "It's good to have you home. What's the first thing you want to do while you're here?",
     "form": "question",
@@ -2801,54 +2420,6 @@
     "topics": [
       "memories",
       "neighborhood"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "ki-081",
-    "line": "Thinking of you today, and I'm on your side. No need to reply.",
-    "form": "statement",
-    "followUps": [
-      "Want to talk tonight, or would a distraction be better?",
-      "Is there anything I can send you?"
-    ],
-    "shareBack": "If they reply, answer with one warm line. Save your own news for another day.",
-    "deliveryCue": "Send it and leave it. One text is enough.",
-    "depth": "light",
-    "who": [
-      "grown-child"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
-    ],
-    "riskTags": [],
-    "basis": "expert-opinion"
-  },
-  {
-    "id": "ki-082",
-    "line": "Would a call help, or would you rather I just keep sending you silly things?",
-    "form": "question",
-    "followUps": [
-      "What time works for a call?",
-      "Want the silly things anyway?"
-    ],
-    "shareBack": "Do whichever they pick, and keep your own updates short for now.",
-    "deliveryCue": "Either answer is a real answer. Follow their lead.",
-    "depth": "light",
-    "who": [
-      "grown-child"
-    ],
-    "purposes": [
-      "support"
-    ],
-    "medium": "message",
-    "topics": [
-      "connection"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
@@ -3195,6 +2766,541 @@
     ],
     "purposes": [
       "deeper"
+    ],
+    "medium": "any",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-097",
+    "line": "Is there a worry you carry around that you haven't told anyone yet?",
+    "form": "question",
+    "followUps": [
+      "How long have you had that worry?",
+      "What would help it feel smaller?"
+    ],
+    "shareBack": "Tell them about a worry you had at their age, in a sentence, and how it turned out.",
+    "deliveryCue": "At bedtime, lights low. Whatever they say, thank them for telling you.",
+    "depth": "deep",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "deeper"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-098",
+    "line": "When do you feel the most loved by me?",
+    "form": "question",
+    "followUps": [
+      "What else makes you feel that way?",
+      "Is there a time you wish I did that more?"
+    ],
+    "shareBack": "Tell them one moment you felt so lucky to be with them, then give them a hug.",
+    "deliveryCue": "One-on-one, maybe at bedtime. Remember the answer and do it again.",
+    "depth": "deep",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "deeper"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-099",
+    "line": "I'm so lucky I get to be your grown-up. What's one thing you wish we did together more?",
+    "form": "share",
+    "followUps": [
+      "What do you like best about it?",
+      "When could we do it next?"
+    ],
+    "shareBack": "Say one thing you love doing with them, then pick a day to do their idea.",
+    "deliveryCue": "Say it when it's calm, just the two of you.",
+    "depth": "deep",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "deeper"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-100",
+    "line": "When I got mad earlier, how did that feel for you?",
+    "form": "question",
+    "followUps": [
+      "What did you want me to do instead?",
+      "Do you feel better now?"
+    ],
+    "shareBack": "Tell them what you were feeling in simple words, then say sorry again and ask for a hug.",
+    "deliveryCue": "Wait until you're both calm. Listen without explaining yourself.",
+    "depth": "personal",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-101",
+    "line": "I've been thinking about our fight. I think I hurt your feelings, and I'm really sorry.",
+    "form": "statement",
+    "followUps": [
+      "Did I get that right?",
+      "What would help you feel better?"
+    ],
+    "shareBack": "Say what you will try next time, in one sentence, then ask what they would like to do together.",
+    "deliveryCue": "Get down to their eye level. Keep it short.",
+    "depth": "personal",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-102",
+    "line": "Sometimes I get grumpy when I'm tired, and that's not your fault. What can we both do next time we get upset?",
+    "form": "share",
+    "followUps": [
+      "What helps you calm down?",
+      "Should we have a secret signal?"
+    ],
+    "shareBack": "Offer one thing you will do next time, like taking a breath, then agree on a plan together.",
+    "deliveryCue": "Say it at a calm time, like bedtime, not right after the fight.",
+    "depth": "personal",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-103",
+    "line": "What was the trickiest part, and how did you figure it out?",
+    "form": "question",
+    "followUps": [
+      "What did you try first?",
+      "What would you tell a friend who wants to try it?"
+    ],
+    "shareBack": "Tell them one time you figured out something tricky, in a sentence, then ask what they want to try next.",
+    "deliveryCue": "Ask once the excitement settles, maybe in the car home.",
+    "depth": "casual",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-104",
+    "line": "Who do you want to tell first, and what will you say?",
+    "form": "question",
+    "followUps": [
+      "What part will you tell them first?",
+      "What do you think they will say?"
+    ],
+    "shareBack": "Say who you are going to tell about it, and that you are proud of them.",
+    "deliveryCue": "Right after the news, while they're still excited.",
+    "depth": "casual",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-105",
+    "line": "I'm going to tell everyone at dinner about this. Help me tell it right: what happened first?",
+    "form": "statement",
+    "followUps": [
+      "And then what happened?",
+      "What was the very best moment?"
+    ],
+    "shareBack": "Repeat the story back to them in your own words, and let them fix anything you got wrong.",
+    "deliveryCue": "Let them be the storyteller. Swap in the real moment.",
+    "depth": "casual",
+    "who": [
+      "child"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-106",
+    "line": "I can't fix this, and I won't try to. But if you want to tell me how it feels, I'm here.",
+    "form": "statement",
+    "followUps": [
+      "What has been the worst part?",
+      "What would help even a little right now?"
+    ],
+    "shareBack": "Skip advice and your own story. Say \"That makes sense,\" then offer one small thing, like food or a drive.",
+    "deliveryCue": "Say it once, side by side if you can, then let them decide.",
+    "depth": "personal",
+    "who": [
+      "teen",
+      "grown-child"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-107",
+    "line": "You don't have to be okay with me. Tell me the worst part, or nothing at all, and I'll still be here.",
+    "form": "statement",
+    "followUps": [
+      "How long has it felt like this?",
+      "Do you want company tonight, or a call tomorrow?"
+    ],
+    "shareBack": "Offer one specific thing you can do this week, then follow their lead.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-108",
+    "line": "I keep replaying what I said to you, and I don't like how I sounded. You matter more to me than being right.",
+    "form": "statement",
+    "followUps": [
+      "Is there anything you want to say back?",
+      "What could I do differently next time?"
+    ],
+    "shareBack": "If they answer, say what you will try next time in a sentence, then let it rest.",
+    "deliveryCue": "Say it once, side by side if you can. Don't push for an answer.",
+    "depth": "personal",
+    "who": [
+      "teen"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection",
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-109",
+    "line": "I'd like to understand what that fight was really about for you. No lecture. I'll just listen, whenever you're ready.",
+    "form": "statement",
+    "followUps": [
+      "What did I miss?",
+      "What would have felt fair to you?"
+    ],
+    "shareBack": "Repeat back what you heard in your own words before saying anything about your side.",
+    "deliveryCue": "Offer it, then leave it. Car rides or late snacks work well.",
+    "depth": "personal",
+    "who": [
+      "teen"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-110",
+    "line": "I want the full director's cut of how that went, every detail, whenever you feel like telling it.",
+    "form": "statement",
+    "followUps": [
+      "What was the best moment?",
+      "Was there a part that almost went wrong?"
+    ],
+    "shareBack": "Say the moment you were proudest of them, in a sentence, then ask what they want to do next.",
+    "deliveryCue": "Say it in passing. Let them pick the moment.",
+    "depth": "casual",
+    "who": [
+      "teen",
+      "grown-child"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-111",
+    "line": "Be honest: were you nervous at all? Because you looked completely calm.",
+    "form": "compliment",
+    "followUps": [
+      "How did you keep it together?",
+      "What were you thinking right before?"
+    ],
+    "shareBack": "Admit one time you were nervous and hid it, in a sentence, then ask how they want to celebrate.",
+    "deliveryCue": "Only if it's true. Keep it light.",
+    "depth": "casual",
+    "who": [
+      "teen",
+      "grown-child"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "ki-112",
+    "line": "What's the part of this you're proudest of that nobody else knows about?",
+    "form": "question",
+    "followUps": [
+      "When did that happen?",
+      "Who helped you through it?"
+    ],
+    "shareBack": "Tell them one thing you noticed along the way that made you proud, then ask what comes next.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-113",
+    "line": "I found an old photo of us from a family trip. What do you remember most from back then?",
+    "form": "share",
+    "followUps": [
+      "Who else was there?",
+      "Is there a place from back then you would go back to?"
+    ],
+    "shareBack": "Say what you remember about that day in a sentence, then ask if they want a copy.",
+    "deliveryCue": "Swap in the real photo or trip, and show it if you have it.",
+    "depth": "casual",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "any",
+    "topics": [
+      "memories"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "ki-114",
+    "line": "What's the best thing that's happened since we last talked? I want the good stuff first.",
+    "form": "question",
+    "followUps": [
+      "How did that come about?",
+      "What's next with it?"
+    ],
+    "shareBack": "Offer one good thing from your own last few months, in a sentence, then ask a follow-up about theirs.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "any",
+    "topics": [
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-115",
+    "line": "Tell me about your favorite spot near you these days. I want to picture where you spend your time.",
+    "form": "statement",
+    "followUps": [
+      "What do you usually get there?",
+      "Would you take me if I visited?"
+    ],
+    "shareBack": "Say one place near you that you have come to love, then ask what else they have found.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "any",
+    "topics": [
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-116",
+    "line": "I've missed you, and I'm not keeping score. What's been the hardest part of these last few months?",
+    "form": "statement",
+    "followUps": [
+      "How are you feeling about it now?",
+      "Is there anything I can do?"
+    ],
+    "shareBack": "Say one honest thing about your own few months, in a sentence, then ask about them again.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "ki-117",
+    "line": "Now that we've covered the news, I'd love to know how you're actually feeling about things.",
+    "form": "statement",
+    "followUps": [
+      "What has been weighing on you?",
+      "What has been going well that I should know about?"
+    ],
+    "shareBack": "Listen first. If they ask, share one feeling of your own in a sentence, then hand it back.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-118",
+    "line": "Is there anything going on that you haven't had anyone to talk through with? I'd be glad to listen.",
+    "form": "question",
+    "followUps": [
+      "What part is hardest to figure out?",
+      "Do you want my take, or just an ear?"
+    ],
+    "shareBack": "Ask before giving any opinion, and keep your own story to a sentence if they want it.",
+    "deliveryCue": null,
+    "depth": "personal",
+    "who": [
+      "grown-child"
+    ],
+    "purposes": [
+      "reconnect"
     ],
     "medium": "any",
     "topics": [

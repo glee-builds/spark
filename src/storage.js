@@ -110,17 +110,6 @@ export function clearFeedback() {
   write(FEEDBACK_KEY, {});
 }
 
-// The last "In person or call / Message" choice, used as the starting point.
-const MEDIUM_KEY = 'spark.medium';
-
-export function getMedium() {
-  return read(MEDIUM_KEY, 'in-person');
-}
-
-export function setMedium(value) {
-  write(MEDIUM_KEY, value);
-}
-
 // "Where I live": 'city', 'suburb', or 'rural'. Kept on this phone only.
 const PLACE_KEY = 'spark.place';
 

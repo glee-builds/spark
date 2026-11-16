@@ -65,6 +65,7 @@ src/
   validate.js     checks a starter follows the format
 data/             the starter library: family, kids, friends, work, networking, other,
                   plus support.json (wrap-up lines, reassurances)
+  archive/        retired message starters; not loaded, not offline
 tests/            node --test
 docs/
   decisions.md    every decision, dated, with the reason

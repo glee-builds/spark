@@ -2,7 +2,9 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { depthCeiling, defaultLevel, isRiskBlocked, fits, candidates, pickSet } from '../src/matching.js';
+import {
+  depthCeiling, depthTop, defaultLevel, availableLevels, isRiskBlocked, fits, candidates, pickSet,
+} from '../src/matching.js';
 
 function starter(overrides = {}) {
   return {
@@ -113,4 +115,22 @@ test('a starter tagged for some places shows only there; untagged starters show 
   assert.equal(fits(yard, { ...COLLEAGUE, place: 'city' }), false);
   assert.equal(fits(yard, { ...COLLEAGUE, place: 'suburb' }), true);
   assert.equal(fits(starter(), { ...COLLEAGUE, place: 'city' }), true);
+});
+
+test('each purpose has a cap: a quick hello stays light, only "Go deeper" reaches deep', () => {
+  assert.equal(depthTop({ who: 'partner', purpose: 'quick' }), 0);
+  assert.equal(depthTop({ who: 'partner', purpose: 'checkin' }), 2);
+  assert.equal(depthTop({ who: 'partner', purpose: 'deeper' }), 3);
+  assert.equal(depthTop({ who: 'colleague', purpose: 'deeper' }), 2);
+});
+
+test('Deeper only offers levels that add starters at that depth', () => {
+  const sel = { who: 'close-friend', purpose: 'checkin', medium: 'in-person' };
+  const library = [
+    starter({ id: 'te-001', depth: 'light' }),
+    starter({ id: 'te-002', depth: 'casual' }),
+  ];
+  assert.deepEqual(availableLevels(library, sel), [0, 1]);
+  library.push(starter({ id: 'te-003', depth: 'personal' }));
+  assert.deepEqual(availableLevels(library, sel), [0, 1, 2]);
 });

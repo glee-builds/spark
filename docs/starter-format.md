@@ -6,9 +6,14 @@ How the starter library is written. Each file in `data/` (family, kids, friends,
 node tools/check-library.mjs data/family.json
 ```
 
-It checks the format of every starter, and that every person / purpose / medium the screens allow has at least **4 starters at the level the purpose starts at** and at least **3 under the "More reserved" setting**. Then run `node --test` and `node tools/stamp.mjs`.
+It checks the format of every starter, and, for every person / purpose and each "Where I live" setting:
 
-The flow these tags serve: **Who** (a tile, then a person) → **"Right now I want to…"** (a purpose) → starters, with an **In person or call / Message** switch. The people, their purposes and their depth limits are defined in `src/config.js`; read the `WHO` list there.
+- at least **4 starters at the level the purpose starts at**, and **3 under "More reserved"**;
+- at least **3 starters at exactly each deeper level** the person and purpose allow, so tapping Deeper always brings new lines.
+
+Then run `node --test` and `node tools/stamp.mjs`.
+
+The flow these tags serve: **Who** (a tile, then a person) → **"Right now I want to…"** (a purpose) → starters. **Spark is in person only** (face to face or a call). Message starters are archived in `data/archive/messages.json` and not loaded. The people, their purposes and their depth limits are defined in `src/config.js`; read the `WHO` list there.
 
 ## A bundle
 
@@ -34,14 +39,14 @@ The flow these tags serve: **Who** (a tile, then a person) → **"Right now I wa
 |---|---|
 | `id` | Unique, never reused. Two letters for the file (`fa` family, `ki` kids, `fr` friends, `wk` work, `nw` networking, `ot` other), a hyphen, three digits. Existing starters keep their id even when retagged, because saved starters and Worked / Fell flat marks point at it |
 | `line` | What the user says or sends. One or two short sentences, at most 140 characters. Natural spoken English (American) |
-| `form` | `question`, `statement` (an observation or tentative read), `compliment` (specific, then a question), `share` (a short disclosure with a hook, handing the turn back), `advice` (asks for their advice or experience), `reachout` (a message after a gap; medium must be `message`) |
+| `form` | `question`, `statement` (an observation or tentative read), `compliment` (specific, then a question), `share` (a short disclosure with a hook, handing the turn back), `advice` (asks for their advice or experience), `reachout` (archived; not used) |
 | `followUps` | One or two follow-up questions for after they answer. Each at most 90 characters |
 | `shareBack` | One instruction for what the user offers about themself after the follow-ups, then hand the turn back. At most 140 characters |
 | `deliveryCue` | `null`, or one short tip on how or when to say it (at most 90 characters). Required for `child` and `teen`. Use it to say when a line fits ("Only if you've noticed it", "Swap in the real detail") |
 | `depth` | `light`, `casual`, `personal`, or `deep` (see "How deep the app goes" below) |
 | `who` | One or more person ids from `WHO` in `src/config.js`. Only list a person if the line sounds right said to them |
 | `purposes` | One or more of `ice`, `quick`, `deeper`, `revive`, `checkin`, `reconnect`, `support`, `repair`, `plans`, `celebrate`, `goodbye` (see below). Only list a purpose the person actually has |
-| `medium` | `in-person` (said face to face or on a call), `message` (written as a text), or `any` (works said or sent, word for word) |
+| `medium` | `in-person` (said face to face or on a call), or `any` (also works as a text, word for word). No `message` starters |
 | `topics` | One or two of: `setting`, `food`, `plans`, `week`, `work`, `projects`, `hobbies`, `entertainment`, `travel`, `family`, `kids`, `memories`, `learning`, `opinions`, `values`, `feelings`, `home`, `neighborhood`, `sports`, `stories`, `advice`, `connection` |
 | `riskTags` | Zero or more of `work`, `money`, `politics`, `religion`, `health`, `appearance`, `relationship-status`, `children`, `origin`. Tag honestly. Risk-tagged starters are hidden for "careful" people (see `WHO`), except `work` for work people and `children` for other parents and young children |
 | `basis` | `research-backed` (the pattern is tested: follow-up-led, compliment, advice within their expertise, reach-out after a gap), `expert-opinion`, or `untested` |
@@ -74,6 +79,8 @@ Four levels, lightest first. When unsure between two, choose the deeper one: the
 | `deep` | Values, fears, regrets, identity, the relationship itself | "What do you want more of in your life right now?" |
 
 Each person has a depth ceiling (`ceiling` in `WHO`): family and close friends go to `deep`; most others stop at `personal`; a few (recruiters, groups of new people, coworker groups) stay `light`. "More reserved" lowers the ceiling one step for anyone but family and close friends.
+
+Each purpose also has a cap, the deepest it ever goes: `quick` and `plans` stay `light`; `ice`, `revive`, `celebrate`, `goodbye` go to `casual`; `checkin`, `reconnect`, `support`, `repair` go to `personal`; only `deeper` reaches `deep` (for family and close friends).
 
 The purpose sets where a set starts: `ice`, `quick`, `reconnect`, `plans`, `celebrate`, `goodbye` start `light`; `revive`, `checkin`, `support`, `repair` start `casual`; `deeper` starts `personal` (or the person's ceiling, if lower). `deep` is never the starting point: it is one tap of Deeper away. A starter shows only when its depth is at or below where the set starts, so **light starters count for every purpose**.
 
