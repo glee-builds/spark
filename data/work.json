@@ -12,22 +12,18 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
       "boss",
-      "client"
+      "report",
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "plans"
     ],
@@ -47,21 +43,17 @@
     "depth": "light",
     "who": [
       "colleague",
-      "client"
+      "work-friend",
+      "report",
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "week"
     ],
@@ -81,22 +73,18 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
       "boss",
-      "client"
+      "report",
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "revive",
+      "checkin"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "week"
     ],
@@ -119,23 +107,11 @@
       "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "revive"
     ],
-    "where": [
-      "work-meeting",
-      "networking",
-      "out-about",
-      "car",
-      "party"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "in-person",
     "topics": [
       "food",
       "setting"
@@ -157,21 +133,15 @@
     "who": [
       "colleague",
       "boss",
-      "client"
+      "report",
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick"
     ],
-    "where": [
-      "video-call"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "in-person",
     "topics": [
       "setting"
     ],
@@ -191,22 +161,17 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
       "boss",
-      "client"
+      "report",
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "silence",
-      "fun"
-    ],
+    "medium": "any",
     "topics": [
       "entertainment"
     ],
@@ -227,21 +192,13 @@
     "who": [
       "colleague",
       "boss",
-      "client"
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "networking"
-    ],
-    "goals": [
-      "break-ice",
-      "learn"
-    ],
+    "medium": "in-person",
     "topics": [
       "setting",
       "opinions"
@@ -263,21 +220,13 @@
     "who": [
       "colleague",
       "boss",
-      "client"
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "networking"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "in-person",
     "topics": [
       "setting",
       "plans"
@@ -299,21 +248,13 @@
     "who": [
       "colleague",
       "boss",
-      "client"
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "party"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "in-person",
     "topics": [
       "setting",
       "food"
@@ -334,22 +275,16 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
       "boss",
-      "client"
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "revive"
     ],
-    "where": [
-      "party"
-    ],
-    "goals": [
-      "break-ice",
-      "fun"
-    ],
+    "medium": "in-person",
     "topics": [
       "food"
     ],
@@ -369,22 +304,17 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
       "boss",
+      "report",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "plans",
       "travel"
@@ -406,22 +336,15 @@
     "who": [
       "colleague",
       "boss",
-      "client"
+      "report",
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick"
     ],
-    "where": [
-      "work-meeting",
-      "video-call"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "in-person",
     "topics": [
       "plans",
       "week"
@@ -445,20 +368,10 @@
       "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "work-meeting",
-      "networking",
-      "party"
-    ],
-    "goals": [
-      "break-ice"
-    ],
+    "medium": "in-person",
     "topics": [
       "travel",
       "setting"
@@ -479,21 +392,17 @@
     "depth": "light",
     "who": [
       "colleague",
-      "client"
+      "work-friend",
+      "report",
+      "client",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "break-ice",
-      "fun"
-    ],
+    "medium": "any",
     "topics": [
       "food"
     ],
@@ -514,21 +423,14 @@
     "who": [
       "colleague",
       "boss",
+      "report",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick"
     ],
-    "where": [
-      "video-call"
-    ],
-    "goals": [
-      "break-ice",
-      "silence"
-    ],
+    "medium": "in-person",
     "topics": [
       "setting",
       "week"
@@ -548,24 +450,17 @@
     "deliveryCue": "Keep it playful.",
     "depth": "light",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend",
+      "report",
+      "group-coworkers"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
     ],
-    "where": [
-      "work-meeting",
-      "out-about",
-      "party",
-      "car"
-    ],
-    "goals": [
-      "fun",
-      "break-ice"
-    ],
+    "medium": "in-person",
     "topics": [
       "food"
     ],
@@ -585,21 +480,14 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
+      "report",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "fun",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "food",
       "hobbies"
@@ -609,7 +497,7 @@
   },
   {
     "id": "wk-018",
-    "line": "What's keeping your team busy at the moment?",
+    "line": "What's keeping your team busy right now?",
     "form": "question",
     "followUps": [
       "Which part of that are you enjoying?",
@@ -620,21 +508,14 @@
     "depth": "light",
     "who": [
       "colleague",
+      "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "break-ice",
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "work",
       "projects"
@@ -657,21 +538,14 @@
     "depth": "light",
     "who": [
       "colleague",
+      "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "projects",
       "plans"
@@ -694,24 +568,16 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
+      "boss",
+      "report",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "celebrate"
     ],
-    "where": [
-      "work-meeting",
-      "video-call",
-      "networking",
-      "party"
-    ],
-    "goals": [
-      "break-ice",
-      "learn"
-    ],
+    "medium": "in-person",
     "topics": [
       "work",
       "learning"
@@ -736,17 +602,11 @@
       "colleague",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little"
-    ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "break-ice",
+    "purposes": [
+      "ice",
       "reconnect"
     ],
+    "medium": "message",
     "topics": [
       "connection",
       "work"
@@ -769,21 +629,15 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
+      "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "quick",
+      "reconnect"
     ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "reconnect",
-      "learn"
-    ],
+    "medium": "message",
     "topics": [
       "connection",
       "learning"
@@ -803,21 +657,14 @@
     "deliveryCue": null,
     "depth": "light",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "quick",
+      "plans"
     ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "break-ice",
-      "fun"
-    ],
+    "medium": "message",
     "topics": [
       "food",
       "connection"
@@ -838,21 +685,14 @@
     "depth": "light",
     "who": [
       "colleague",
+      "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "quick",
+      "reconnect"
     ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "reconnect",
-      "deeper"
-    ],
+    "medium": "message",
     "topics": [
       "work",
       "connection"
@@ -874,21 +714,14 @@
     "deliveryCue": null,
     "depth": "light",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "ice",
+      "plans"
     ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "break-ice",
-      "reconnect"
-    ],
+    "medium": "message",
     "topics": [
       "food",
       "plans"
@@ -909,19 +742,14 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
-    ],
-    "where": [
-      "text"
-    ],
-    "goals": [
+    "purposes": [
+      "quick",
       "reconnect"
     ],
+    "medium": "message",
     "topics": [
       "travel",
       "connection"
@@ -941,20 +769,12 @@
     "deliveryCue": "Swap in your own real reminder. Ask for nothing.",
     "depth": "light",
     "who": [
-      "colleague",
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "text"
-    ],
-    "goals": [
+    "purposes": [
       "reconnect"
     ],
+    "medium": "message",
     "topics": [
       "connection",
       "memories"
@@ -976,18 +796,10 @@
     "who": [
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "reconnect"
     ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "reconnect",
-      "learn"
-    ],
+    "medium": "message",
     "topics": [
       "work",
       "connection"
@@ -1010,20 +822,16 @@
     "depth": "light",
     "who": [
       "colleague",
+      "work-friend",
+      "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "text"
-    ],
-    "goals": [
+    "purposes": [
+      "quick",
+      "celebrate",
       "reconnect"
     ],
+    "medium": "message",
     "topics": [
       "work",
       "connection"
@@ -1045,21 +853,14 @@
     "deliveryCue": null,
     "depth": "light",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "quick",
+      "revive"
     ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "fun",
-      "silence"
-    ],
+    "medium": "message",
     "topics": [
       "food",
       "week"
@@ -1081,18 +882,11 @@
     "who": [
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
-    ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "break-ice",
+    "purposes": [
+      "plans",
       "reconnect"
     ],
+    "medium": "message",
     "topics": [
       "plans",
       "work"
@@ -1114,19 +908,15 @@
     "deliveryCue": "Only if you saw it, and you know them well. Don't push.",
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend",
+      "report"
     ],
-    "closeness": [
-      "well",
-      "very-close"
+    "purposes": [
+      "support",
+      "checkin"
     ],
-    "where": [
-      "text"
-    ],
-    "goals": [
-      "deeper",
-      "reconnect"
-    ],
+    "medium": "message",
     "topics": [
       "feelings",
       "connection"
@@ -1136,7 +926,7 @@
   },
   {
     "id": "wk-033",
-    "line": "What are you working on at the moment that you're actually enjoying?",
+    "line": "What are you working on right now that you're actually enjoying?",
     "form": "question",
     "followUps": [
       "What is it about that one that you like?",
@@ -1146,20 +936,14 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend",
+      "report"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "deeper",
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "projects",
       "work"
@@ -1181,20 +965,14 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend",
+      "report"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
+    "purposes": [
       "deeper"
     ],
+    "medium": "any",
     "topics": [
       "learning",
       "work"
@@ -1217,20 +995,13 @@
     "depth": "medium",
     "who": [
       "colleague",
+      "work-friend",
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
+    "purposes": [
       "deeper"
     ],
+    "medium": "any",
     "topics": [
       "work",
       "advice"
@@ -1252,19 +1023,14 @@
     "deliveryCue": "Ask only when they have a few minutes.",
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "deeper",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "advice",
       "work"
@@ -1286,20 +1052,15 @@
     "deliveryCue": "Only if it's true. Say it as an observation and wait.",
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend",
+      "report"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "checkin",
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "deeper",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "projects",
       "feelings"
@@ -1321,18 +1082,14 @@
     "deliveryCue": "Give them time; let them choose how much to say.",
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
+    "purposes": [
+      "checkin",
       "deeper"
     ],
+    "medium": "any",
     "topics": [
       "feelings",
       "week"
@@ -1352,19 +1109,14 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend",
+      "report"
     ],
-    "closeness": [
-      "well",
-      "very-close"
+    "purposes": [
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "deeper",
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "plans",
       "work"
@@ -1384,22 +1136,14 @@
     ],
     "shareBack": "Share where you honestly stand on your own path, in a sentence or two, then go back to theirs.",
     "deliveryCue": "For a private moment. Listen; don't steer.",
-    "depth": "deep",
+    "depth": "medium",
     "who": [
-      "colleague"
+      "work-friend"
     ],
-    "closeness": [
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "car",
-      "party",
-      "out-about"
-    ],
-    "goals": [
+    "purposes": [
       "deeper"
     ],
+    "medium": "in-person",
     "topics": [
       "values",
       "plans"
@@ -1421,19 +1165,14 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
+    "purposes": [
       "deeper",
-      "fun"
+      "revive"
     ],
+    "medium": "any",
     "topics": [
       "memories",
       "projects"
@@ -1455,22 +1194,14 @@
     "deliveryCue": "Best over food or a drink.",
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "party",
-      "car",
-      "out-about"
-    ],
-    "goals": [
-      "fun",
+    "purposes": [
+      "revive",
       "deeper"
     ],
+    "medium": "in-person",
     "topics": [
       "stories",
       "work"
@@ -1493,20 +1224,15 @@
     "depth": "medium",
     "who": [
       "colleague",
+      "work-friend",
+      "report",
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
+    "purposes": [
       "deeper",
-      "silence"
+      "revive"
     ],
+    "medium": "any",
     "topics": [
       "hobbies",
       "week"
@@ -1526,21 +1252,14 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "car"
-    ],
-    "goals": [
-      "fun",
+    "purposes": [
+      "revive",
       "deeper"
     ],
+    "medium": "in-person",
     "topics": [
       "travel",
       "stories"
@@ -1552,30 +1271,22 @@
   },
   {
     "id": "wk-045",
-    "line": "Looking back, is there a call you made here that you'd make differently now?",
+    "line": "Looking back, which call you made here taught you the most?",
     "form": "question",
     "followUps": [
       "What do you know now that you didn't then?",
       "Has it changed how you decide things?"
     ],
-    "shareBack": "Share one decision of your own you'd revisit, briefly, then ask what they'd tell someone facing it.",
-    "deliveryCue": "Private setting only. Listen; don't fix.",
-    "depth": "deep",
+    "shareBack": "Share one decision of your own that taught you something, briefly, then ask what they would tell someone facing it.",
+    "deliveryCue": "Best in a private moment. Listen; don't fix.",
+    "depth": "medium",
     "who": [
-      "colleague"
+      "work-friend"
     ],
-    "closeness": [
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "car",
-      "party",
-      "out-about"
-    ],
-    "goals": [
+    "purposes": [
       "deeper"
     ],
+    "medium": "in-person",
     "topics": [
       "values",
       "memories"
@@ -1597,19 +1308,14 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
-      "colleague"
+      "colleague",
+      "work-friend"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "deeper"
-    ],
+    "medium": "any",
     "topics": [
       "advice",
       "work"
@@ -1632,20 +1338,16 @@
     "depth": "medium",
     "who": [
       "colleague",
+      "work-friend",
+      "report",
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "checkin",
+      "revive",
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "deeper",
-      "reconnect"
-    ],
+    "medium": "any",
     "topics": [
       "week",
       "work"
@@ -1668,20 +1370,16 @@
     "depth": "medium",
     "who": [
       "colleague",
+      "work-friend",
+      "boss",
+      "report",
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
+    "purposes": [
       "deeper",
-      "silence"
+      "revive"
     ],
+    "medium": "any",
     "topics": [
       "stories",
       "opinions"
@@ -1703,17 +1401,11 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "deeper"
-    ],
+    "medium": "any",
     "topics": [
       "plans",
       "work"
@@ -1737,16 +1429,10 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "opinions",
       "work"
@@ -1770,16 +1456,11 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper",
+      "plans"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "advice",
       "work"
@@ -1801,23 +1482,13 @@
     "deliveryCue": "Name the part you really liked.",
     "depth": "light",
     "who": [
-      "boss"
+      "boss",
+      "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "work-meeting",
-      "video-call",
-      "networking",
-      "party"
-    ],
-    "goals": [
-      "break-ice",
-      "learn"
-    ],
+    "medium": "in-person",
     "topics": [
       "work",
       "learning"
@@ -1839,21 +1510,17 @@
     "deliveryCue": null,
     "depth": "light",
     "who": [
+      "colleague",
+      "work-friend",
       "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice",
+      "revive",
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "learning",
       "entertainment"
@@ -1875,17 +1542,11 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "deeper"
-    ],
+    "medium": "any",
     "topics": [
       "learning",
       "stories"
@@ -1909,16 +1570,11 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper",
+      "plans"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "advice",
       "learning"
@@ -1940,20 +1596,15 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
+      "colleague",
       "boss",
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
+    "purposes": [
       "deeper",
-      "learn"
+      "revive"
     ],
+    "medium": "any",
     "topics": [
       "work",
       "opinions"
@@ -1977,17 +1628,11 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
+    "purposes": [
       "deeper",
-      "silence"
+      "revive"
     ],
+    "medium": "any",
     "topics": [
       "opinions",
       "work"
@@ -2012,17 +1657,11 @@
       "boss",
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "deeper"
-    ],
+    "medium": "any",
     "topics": [
       "stories",
       "work"
@@ -2047,18 +1686,10 @@
       "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "party",
-      "networking"
-    ],
-    "goals": [
-      "break-ice"
-    ],
+    "medium": "in-person",
     "topics": [
       "setting"
     ],
@@ -2079,18 +1710,13 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice",
+      "plans",
+      "revive",
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "break-ice"
-    ],
+    "medium": "any",
     "topics": [
       "learning",
       "advice"
@@ -2112,16 +1738,10 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "deeper"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "learning",
       "work"
@@ -2145,17 +1765,10 @@
     "who": [
       "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well"
-    ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
+    "purposes": [
       "deeper"
     ],
+    "medium": "any",
     "topics": [
       "opinions",
       "work"
@@ -2177,21 +1790,15 @@
     "deliveryCue": null,
     "depth": "medium",
     "who": [
-      "boss",
-      "colleague"
+      "colleague",
+      "work-friend",
+      "boss"
     ],
-    "closeness": [
-      "a-little",
-      "well",
-      "very-close"
+    "purposes": [
+      "deeper",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "deeper"
-    ],
+    "medium": "any",
     "topics": [
       "advice",
       "work"
@@ -2216,18 +1823,10 @@
       "boss",
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "work-meeting",
-      "video-call"
-    ],
-    "goals": [
-      "break-ice"
-    ],
+    "medium": "in-person",
     "topics": [
       "week",
       "connection"
@@ -2249,19 +1848,10 @@
     "who": [
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "work-meeting",
-      "party",
-      "networking"
-    ],
-    "goals": [
-      "break-ice"
-    ],
+    "medium": "in-person",
     "topics": [
       "travel",
       "setting"
@@ -2283,18 +1873,10 @@
     "who": [
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "break-ice",
-      "learn"
-    ],
+    "medium": "any",
     "topics": [
       "work",
       "connection"
@@ -2318,18 +1900,11 @@
     "who": [
       "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice",
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "break-ice"
-    ],
+    "medium": "any",
     "topics": [
       "learning",
       "advice"
@@ -2351,23 +1926,13 @@
     "deliveryCue": "Use when you are the visitor.",
     "depth": "light",
     "who": [
-      "client",
-      "colleague"
+      "colleague",
+      "client"
     ],
-    "closeness": [
-      "just-met",
-      "a-little",
-      "well"
+    "purposes": [
+      "ice"
     ],
-    "where": [
-      "work-meeting",
-      "party",
-      "networking"
-    ],
-    "goals": [
-      "break-ice",
-      "fun"
-    ],
+    "medium": "in-person",
     "topics": [
       "food",
       "travel"
@@ -2389,17 +1954,10 @@
     "who": [
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "learn",
-      "deeper"
-    ],
+    "medium": "any",
     "topics": [
       "stories",
       "work"
@@ -2423,17 +1981,10 @@
     "who": [
       "client"
     ],
-    "closeness": [
-      "a-little",
-      "well"
+    "purposes": [
+      "revive"
     ],
-    "where": [
-      "any"
-    ],
-    "goals": [
-      "deeper",
-      "silence"
-    ],
+    "medium": "any",
     "topics": [
       "work",
       "stories"
@@ -2442,5 +1993,2422 @@
       "work"
     ],
     "basis": "untested"
+  },
+  {
+    "id": "wk-071",
+    "line": "Good to see you. Is today a busy one or a quiet one?",
+    "form": "question",
+    "followUps": [
+      "What's taking up most of it?",
+      "Anything good at the end of it?"
+    ],
+    "shareBack": "Say in a few words what your own day looks like, then wish them luck with theirs.",
+    "deliveryCue": "For the elevator or the hallway. A short answer is fine.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report",
+      "client"
+    ],
+    "purposes": [
+      "quick",
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-072",
+    "line": "Whatever you're heating up smells a lot better than my lunch.",
+    "form": "statement",
+    "followUps": [
+      "Is that a recipe of yours?",
+      "Do you usually bring lunch in?"
+    ],
+    "shareBack": "Admit what you brought today, in a few words, then ask for one easy lunch idea.",
+    "deliveryCue": "Say it lightly by the microwave and leave it there if they're in a hurry.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report",
+      "group-coworkers"
+    ],
+    "purposes": [
+      "quick",
+      "ice",
+      "revive"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-073",
+    "line": "I'm grabbing a coffee before this starts. Can I get you one?",
+    "form": "question",
+    "followUps": [
+      "How do you take it?",
+      "Is this your first meeting of the day or one of many?"
+    ],
+    "shareBack": "On the way back, mention how your morning has gone in a line, then ask what's left on theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report"
+    ],
+    "purposes": [
+      "quick"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-074",
+    "line": "Thanks for the quick turnaround on this. It made my afternoon a lot easier.",
+    "form": "statement",
+    "followUps": [
+      "Was it a pain to pull together?",
+      "Is there anything you need back from me?"
+    ],
+    "shareBack": "If they reply, say in one line what it let you do, then leave it there.",
+    "deliveryCue": "Swap in the real thing they did.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report",
+      "client"
+    ],
+    "purposes": [
+      "quick"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-075",
+    "line": "Nice work in that meeting. You handled the tough question really well.",
+    "form": "statement",
+    "followUps": [
+      "Did you see it coming?",
+      "How did you decide what to say?"
+    ],
+    "shareBack": "Say in one line what you took from how they handled it, then leave it there.",
+    "deliveryCue": "Name the real moment. Only say it if it's true.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report"
+    ],
+    "purposes": [
+      "quick",
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-076",
+    "line": "Hope the rest of your afternoon is a quieter one.",
+    "form": "statement",
+    "followUps": [
+      "Anything good waiting at the end of the day?",
+      "Is tomorrow any calmer?"
+    ],
+    "shareBack": "If they answer, mention one small thing you're looking forward to tonight, then wish them a good evening.",
+    "deliveryCue": "Needs no reply.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report",
+      "client"
+    ],
+    "purposes": [
+      "quick",
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-077",
+    "line": "Long day, or just getting started?",
+    "form": "question",
+    "followUps": [
+      "What's the big thing on today's list?",
+      "Anything fun after work?"
+    ],
+    "shareBack": "Say where your own day stands in a few words, then wish them a good one.",
+    "deliveryCue": "Good for an elevator ride or a coffee line.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report",
+      "client"
+    ],
+    "purposes": [
+      "quick",
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-078",
+    "line": "Just saw your note. Thanks, this is exactly what I needed.",
+    "form": "statement",
+    "followUps": [
+      "Do you want me to flag anything back to you?",
+      "Was this one easy to track down?"
+    ],
+    "shareBack": "If they reply, say in a line what you'll do with it next, then leave it there.",
+    "deliveryCue": "Needs no reply.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "client"
+    ],
+    "purposes": [
+      "quick"
+    ],
+    "medium": "message",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-079",
+    "line": "Who's up for a coffee run in ten minutes?",
+    "form": "question",
+    "followUps": [
+      "Where should we go?",
+      "Does anyone want something brought back?"
+    ],
+    "shareBack": "On the walk, mention one thing from your morning, then ask someone about theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "quick",
+      "revive"
+    ],
+    "medium": "message",
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-080",
+    "line": "While we wait for a few more people: does anyone have a good recommendation for the weekend?",
+    "form": "question",
+    "followUps": [
+      "Have you been there yourself?",
+      "What should someone order or see first?"
+    ],
+    "shareBack": "Offer one place or thing you liked recently, in a sentence, then ask who else has one.",
+    "deliveryCue": "For the first minute of a call or meeting, before it fills up.",
+    "depth": "light",
+    "who": [
+      "group-coworkers",
+      "colleague",
+      "boss",
+      "client"
+    ],
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "plans",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-081",
+    "line": "What's everyone ordering? I need someone to decide for me.",
+    "form": "question",
+    "followUps": [
+      "Is that what you always get here?",
+      "Anyone tried the special?"
+    ],
+    "shareBack": "Say what you're torn between, then ask the table to settle it.",
+    "deliveryCue": "For a team lunch, as the menus come out.",
+    "depth": "light",
+    "who": [
+      "group-coworkers",
+      "work-friend",
+      "colleague"
+    ],
+    "purposes": [
+      "ice",
+      "revive"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-082",
+    "line": "What took up most of your time this week, and was it the stuff you wanted to be doing?",
+    "form": "question",
+    "followUps": [
+      "What would you rather have spent it on?",
+      "What got in the way?"
+    ],
+    "shareBack": "Name the part of your own week that went sideways, briefly, then ask what would help next week.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "checkin",
+      "deeper"
+    ],
+    "medium": "any",
+    "topics": [
+      "week",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-083",
+    "line": "If you could hand one thing on your plate to someone else, what would it be?",
+    "form": "question",
+    "followUps": [
+      "What makes that one the drag?",
+      "Is there a way we could make it lighter?"
+    ],
+    "shareBack": "Admit the one task you'd hand off yourself, in a sentence, then come back to theirs.",
+    "deliveryCue": "Ask it lightly; it's an invitation, not a test.",
+    "depth": "medium",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "checkin",
+      "deeper"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-084",
+    "line": "On a scale from calm to chaos, where is this week landing for you?",
+    "form": "question",
+    "followUps": [
+      "What tipped it that way?",
+      "What would move it one notch calmer?"
+    ],
+    "shareBack": "Say where your own week lands, in a few words, then ask what would help theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "checkin",
+      "quick"
+    ],
+    "medium": "any",
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-085",
+    "line": "Before we get into the project: anything this week that went better or worse than you expected?",
+    "form": "question",
+    "followUps": [
+      "What do you think made the difference?",
+      "Is there anything I should know about it?"
+    ],
+    "shareBack": "Share one thing from your own week that surprised you, briefly, then ask what they need from you.",
+    "deliveryCue": "For the start of a 1:1. Let them choose which one to answer.",
+    "depth": "medium",
+    "who": [
+      "report"
+    ],
+    "purposes": [
+      "checkin",
+      "deeper"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "week",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-086",
+    "line": "Is there anything I could take off your plate or clear out of your way this week?",
+    "form": "question",
+    "followUps": [
+      "What's the thing slowing you down most?",
+      "Who should I talk to about it?"
+    ],
+    "shareBack": "Say in a line what you can actually do by when, then ask if that would help.",
+    "deliveryCue": "Only offer what you can really do.",
+    "depth": "light",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "checkin",
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-087",
+    "line": "What's one thing that would make next week easier for you?",
+    "form": "question",
+    "followUps": [
+      "Is that something I can help with?",
+      "What's been making it hard?"
+    ],
+    "shareBack": "Mention one thing you're changing about your own next week, briefly, then ask how you can help with theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "checkin",
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "week",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-088",
+    "line": "You said it's all good, and I believe you. If one thing were a little less good, what would it be?",
+    "form": "question",
+    "followUps": [
+      "How long has that been going on?",
+      "What would make it better?"
+    ],
+    "shareBack": "If they open up, thank them, then say what you'll do about it and when.",
+    "deliveryCue": "For a 1:1 that keeps getting \"all good\". Say it lightly, then wait.",
+    "depth": "medium",
+    "who": [
+      "report"
+    ],
+    "purposes": [
+      "checkin",
+      "deeper"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "feelings"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-089",
+    "line": "No need to reply right away. Is there anything you're waiting on from me?",
+    "form": "question",
+    "followUps": [
+      "When do you need it by?",
+      "Is anything else stuck?"
+    ],
+    "shareBack": "If they name something, say in a line when you'll have it done, then thank them for flagging it.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "report"
+    ],
+    "purposes": [
+      "checkin",
+      "quick"
+    ],
+    "medium": "message",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-090",
+    "line": "I want to learn how you like to work. Do you prefer quick check-ins, or fewer and longer ones?",
+    "form": "question",
+    "followUps": [
+      "What's worked best with past managers?",
+      "How do you like to get feedback?"
+    ],
+    "shareBack": "Say in a sentence how you like to work, then ask what you should know about them.",
+    "deliveryCue": "Good for the first weeks of managing someone.",
+    "depth": "light",
+    "who": [
+      "report"
+    ],
+    "purposes": [
+      "ice",
+      "checkin"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-091",
+    "line": "What's one thing about how this team works that you'd keep exactly as it is?",
+    "form": "question",
+    "followUps": [
+      "What makes it work?",
+      "Is there one thing you'd change?"
+    ],
+    "shareBack": "Name the thing you'd protect yourself, in a sentence, then ask what they'd change.",
+    "deliveryCue": null,
+    "depth": "medium",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "deeper",
+      "revive"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "opinions"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-092",
+    "line": "I can take something off your list this week. What would help most?",
+    "form": "question",
+    "followUps": [
+      "Would it help if I took the next update?",
+      "Is there anyone I should talk to for you?"
+    ],
+    "shareBack": "If they can't think of anything, offer one concrete task you could take, then let them decide.",
+    "deliveryCue": "Offer one specific thing if they can't think of any.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-093",
+    "line": "I can cover that for you if it would help. Just say the word.",
+    "form": "statement",
+    "followUps": [
+      "When would you need it by?",
+      "Is there anything else I should know about it?"
+    ],
+    "shareBack": "Keep the focus on them. If they say yes, confirm what you'll do and when, in a line.",
+    "deliveryCue": "Name the real task. Only offer what you can do.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-094",
+    "line": "That meeting was a tough one, and you held your ground well. Want to talk it through, or leave it till tomorrow?",
+    "form": "statement",
+    "followUps": [
+      "Which part is still bugging you?",
+      "Is there anything I can do before the next one?"
+    ],
+    "shareBack": "Listen first. Later, if it helps, mention one meeting that rattled you too, in a sentence.",
+    "deliveryCue": "Say it privately, soon after. Either answer is fine.",
+    "depth": "medium",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "support",
+      "checkin"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "feelings"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-095",
+    "line": "No need to go into it. I just wanted you to know I noticed, and I'm around.",
+    "form": "statement",
+    "followUps": [
+      "Would a coffee help, or would you rather keep your head down today?",
+      "Is there anything I can take off your plate?"
+    ],
+    "shareBack": "Don't share your own story yet. If they talk, listen, then offer one specific thing you can do.",
+    "deliveryCue": "Only if you've really noticed something. Don't press.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-096",
+    "line": "I heard things have been hard. I'm sorry. No need to reply.",
+    "form": "statement",
+    "followUps": [
+      "Is there anything at work I can take off your hands?",
+      "Would a quiet coffee help sometime this week?"
+    ],
+    "shareBack": "If they reply, thank them and offer one specific thing, in a line. No advice.",
+    "deliveryCue": "Send it once. Silence is a fine answer.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "message",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-097",
+    "line": "Do you feel like talking about it, or would a distraction be better?",
+    "form": "question",
+    "followUps": [
+      "What would help most right now?",
+      "Want me to just sit with you for a bit?"
+    ],
+    "shareBack": "Follow their lead. If they want a distraction, offer one light thing from your own week.",
+    "deliveryCue": "Either answer is fine. Follow their lead.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-098",
+    "line": "That sounds really hard. I'm sorry you're dealing with it.",
+    "form": "statement",
+    "followUps": [
+      "Do you want to talk about it, or would a break help more?",
+      "Is there anything at work I can take on?"
+    ],
+    "shareBack": "Leave room. If you speak again, offer one specific kind of help rather than your own story.",
+    "deliveryCue": "Say it, then leave room. No need to fill the silence.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-099",
+    "line": "Want to take a walk and get out of here for ten minutes? We don't have to talk about it.",
+    "form": "question",
+    "followUps": [
+      "Coffee or just air?",
+      "Do you want company, or would some quiet be better?"
+    ],
+    "shareBack": "On the walk, let them lead. If they stay quiet, mention one small, light thing from your week.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "work-friend",
+      "colleague",
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-100",
+    "line": "Thinking of you today. Lunch is on me whenever you want it, no talking required.",
+    "form": "statement",
+    "followUps": [
+      "What day works for you?",
+      "Anywhere you've been craving?"
+    ],
+    "shareBack": "At lunch, let them lead the talk. If they want distraction, offer a light story of your own.",
+    "deliveryCue": "Needs no reply.",
+    "depth": "light",
+    "who": [
+      "work-friend"
+    ],
+    "purposes": [
+      "support",
+      "plans"
+    ],
+    "medium": "message",
+    "topics": [
+      "connection",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-101",
+    "line": "Take the time you need. Tell me which deadlines matter most and I'll move the rest.",
+    "form": "statement",
+    "followUps": [
+      "Is there anything you want me to tell the team, or keep quiet?",
+      "Who can pick up the urgent pieces?"
+    ],
+    "shareBack": "Keep the focus on them. Say in a line what you'll handle and when you'll check back.",
+    "deliveryCue": "Only promise what you can really move.",
+    "depth": "light",
+    "who": [
+      "report"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-102",
+    "line": "Congratulations on the promotion. It's well earned. What part of the new role are you most looking forward to?",
+    "form": "compliment",
+    "followUps": [
+      "When did you find out?",
+      "What do you want to do first?"
+    ],
+    "shareBack": "Say in a sentence one thing you've seen them do that shows why, then ask what they need to get started.",
+    "deliveryCue": "Swap in their real news.",
+    "depth": "light",
+    "who": [
+      "report",
+      "work-friend",
+      "boss"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-103",
+    "line": "The launch went really well, and your part in it showed. What was the moment you knew it would work?",
+    "form": "compliment",
+    "followUps": [
+      "What was the hardest part to get right?",
+      "What would you do the same way next time?"
+    ],
+    "shareBack": "Name the specific piece of their work you noticed, in a line, then ask what's next for them.",
+    "deliveryCue": "Name their real contribution.",
+    "depth": "light",
+    "who": [
+      "report",
+      "work-friend"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "projects"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-104",
+    "line": "I wanted to say it plainly: the way you handled that client call was excellent. How did you prepare for it?",
+    "form": "compliment",
+    "followUps": [
+      "Was there a moment you weren't sure about?",
+      "What would you tell someone new about calls like that?"
+    ],
+    "shareBack": "Say in a sentence what you'll borrow from how they did it, then hand it back.",
+    "deliveryCue": "Swap in the real win. Be specific about what was good.",
+    "depth": "light",
+    "who": [
+      "report",
+      "work-friend"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-105",
+    "line": "Just heard the news. Congratulations! This is a big one. How are you celebrating?",
+    "form": "compliment",
+    "followUps": [
+      "When does it start?",
+      "What are you most excited about?"
+    ],
+    "shareBack": "If they reply, say one thing you're glad about for them, in a line, then leave it open.",
+    "deliveryCue": "Send it the same day you hear.",
+    "depth": "light",
+    "who": [
+      "work-friend",
+      "report",
+      "boss",
+      "client"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "message",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-106",
+    "line": "I heard about the award. Congratulations. What did it take to get there?",
+    "form": "compliment",
+    "followUps": [
+      "Who else on your team was part of it?",
+      "What's the next goal?"
+    ],
+    "shareBack": "Mention the detail that impressed you most, in a line, then ask what comes next.",
+    "deliveryCue": "Swap in their real news.",
+    "depth": "light",
+    "who": [
+      "client",
+      "boss",
+      "report",
+      "work-friend"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "stories"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-107",
+    "line": "Congratulations on the news. I saw the announcement. What does it mean for your team?",
+    "form": "compliment",
+    "followUps": [
+      "What's the first thing you'll do with it?",
+      "How long has it been in the works?"
+    ],
+    "shareBack": "Say what caught your eye in the announcement, in a line, then ask how you can help.",
+    "deliveryCue": "Only if you've read it. Mention one real detail.",
+    "depth": "light",
+    "who": [
+      "client",
+      "boss"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-108",
+    "line": "I saw the news about your team's launch. Congratulations. What was the hardest part to get right?",
+    "form": "compliment",
+    "followUps": [
+      "How is the team marking it?",
+      "What's next now that it's out?"
+    ],
+    "shareBack": "Name the piece of the launch you liked most, in a line, then ask what they're proudest of.",
+    "deliveryCue": "Swap in their real launch.",
+    "depth": "light",
+    "who": [
+      "client",
+      "boss",
+      "work-friend"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "projects"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-109",
+    "line": "Congratulations on the new role. The team's lucky to have you in it. What are you hoping to do first?",
+    "form": "compliment",
+    "followUps": [
+      "What surprised you about the move?",
+      "What will you miss from the old role?"
+    ],
+    "shareBack": "Say in a line what you're glad about from your side, then offer one way you can help.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "boss",
+      "work-friend"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-110",
+    "line": "Big week for this team. Congratulations, everyone. What was the hardest part to pull off?",
+    "form": "compliment",
+    "followUps": [
+      "Who saved the day at the last minute?",
+      "What should we do differently next time?"
+    ],
+    "shareBack": "Name one person's specific contribution, briefly, then ask who else deserves a shout-out.",
+    "deliveryCue": "Swap in what the team actually pulled off.",
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "projects"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-111",
+    "line": "There's cake in the kitchen for the launch. Come grab some before it disappears.",
+    "form": "statement",
+    "followUps": [
+      "Who picked the flavor?",
+      "Anyone have a favorite moment from launch week?"
+    ],
+    "shareBack": "In the kitchen, thank one person for one specific thing, then ask how their week is going.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "celebrate",
+      "quick"
+    ],
+    "medium": "message",
+    "topics": [
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-112",
+    "line": "Can we take a minute to celebrate? This launch happened because of everyone in this room.",
+    "form": "statement",
+    "followUps": [
+      "Who wants to tell the story of the night before it went out?",
+      "What are you proudest of?"
+    ],
+    "shareBack": "Thank one or two people for something specific, then hand the floor to the room.",
+    "deliveryCue": "Say it at the start of a meeting, before the agenda.",
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "projects"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-113",
+    "line": "Congratulations on the launch, everyone! What was your favorite moment from it?",
+    "form": "question",
+    "followUps": [
+      "Who else should we be thanking?",
+      "What's the first thing you're doing with the free time?"
+    ],
+    "shareBack": "Share your own favorite moment in a line, then ask who else deserves a thank-you.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "message",
+    "topics": [
+      "work",
+      "projects"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-114",
+    "line": "Before we start: a quick thank-you to everyone who stayed late last week. It really paid off.",
+    "form": "statement",
+    "followUps": [
+      "Did anyone get to catch up on sleep?",
+      "What made the difference in the end?"
+    ],
+    "shareBack": "Name one specific thing that went well, in a sentence, then move on to the agenda.",
+    "deliveryCue": "Swap in what really happened. Keep it short.",
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-115",
+    "line": "Raise your coffee for the launch, everyone. What's the first thing you're doing with your free time?",
+    "form": "question",
+    "followUps": [
+      "Anyone taking a real day off?",
+      "What's been waiting the longest?"
+    ],
+    "shareBack": "Say what you're doing with yours in a line, then ask the quietest person what theirs is.",
+    "deliveryCue": "Keep it light. Good at a team lunch or standup.",
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "celebrate",
+      "revive"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-116",
+    "line": "Want to grab lunch somewhere other than our desks this week? Thursday works for me.",
+    "form": "question",
+    "followUps": [
+      "Anywhere you've been wanting to try?",
+      "What time is good for you?"
+    ],
+    "shareBack": "At lunch, ask about their week first, then offer one thing from yours.",
+    "deliveryCue": "Swap in a day you can really do.",
+    "depth": "light",
+    "who": [
+      "work-friend"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "food",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-117",
+    "line": "There's a talk after work on Thursday that looks good. Want to go together? No pressure if you're swamped.",
+    "form": "question",
+    "followUps": [
+      "Have you heard the speaker before?",
+      "Want to grab food after?"
+    ],
+    "shareBack": "Say in a line what drew you to it, then ask what they hope to get out of it.",
+    "deliveryCue": "Swap in the real event.",
+    "depth": "light",
+    "who": [
+      "work-friend"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "plans",
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-118",
+    "line": "Coffee walk at three? I need a break from this screen.",
+    "form": "question",
+    "followUps": [
+      "Usual place or somewhere new?",
+      "How's your afternoon shaping up?"
+    ],
+    "shareBack": "On the walk, ask about their day first, then offer one thing from yours.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "work-friend"
+    ],
+    "purposes": [
+      "plans",
+      "quick"
+    ],
+    "medium": "message",
+    "topics": [
+      "food",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-119",
+    "line": "We keep saying we'll get a drink after work. Is this Friday the one?",
+    "form": "question",
+    "followUps": [
+      "Where should we go?",
+      "Want to ask anyone else along?"
+    ],
+    "shareBack": "If it's a no, offer one other date, then leave it with them.",
+    "deliveryCue": "Leave an easy out. Coffee works just as well.",
+    "depth": "light",
+    "who": [
+      "work-friend"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-120",
+    "line": "Want to grab a coffee after this and properly catch up?",
+    "form": "question",
+    "followUps": [
+      "How long have you got?",
+      "Anything you want to talk through?"
+    ],
+    "shareBack": "Over coffee, let them go first, then share one thing from your own week.",
+    "deliveryCue": "Say it at the end of a meeting, on the way out.",
+    "depth": "light",
+    "who": [
+      "work-friend"
+    ],
+    "purposes": [
+      "plans",
+      "quick"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-121",
+    "line": "I'm trying the new lunch place on Friday. Want to come along?",
+    "form": "question",
+    "followUps": [
+      "Have you heard anything about it?",
+      "What time suits you?"
+    ],
+    "shareBack": "At lunch, ask what they've been up to first, then offer one thing from yours.",
+    "deliveryCue": "Swap in a real place nearby.",
+    "depth": "light",
+    "who": [
+      "work-friend"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "food",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-122",
+    "line": "Could I get 20 minutes with you in the next couple of weeks? I'd like your advice on where to grow next.",
+    "form": "advice",
+    "followUps": [
+      "What would be most useful for me to bring?",
+      "Is there a time that's usually quieter for you?"
+    ],
+    "shareBack": "In the meeting, say in two sentences where you think you could grow, then ask what they see.",
+    "deliveryCue": "Make it easy to say \"later\": offer two time windows.",
+    "depth": "light",
+    "who": [
+      "boss"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-123",
+    "line": "I'm hoping to meet someone on the product side. Would you be comfortable introducing me to anyone there?",
+    "form": "advice",
+    "followUps": [
+      "Is there someone you think I should talk to first?",
+      "Would a short note from me make it easier?"
+    ],
+    "shareBack": "Say in one line why you want the intro, then offer to write a blurb they can forward.",
+    "deliveryCue": "Swap in the real team. Say why in a line.",
+    "depth": "light",
+    "who": [
+      "boss"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-124",
+    "line": "I'm applying for a new role and would be grateful if you'd be a reference. Would that work for you?",
+    "form": "advice",
+    "followUps": [
+      "What would be helpful for me to send you?",
+      "Is there anything you'd want me to highlight?"
+    ],
+    "shareBack": "Send the job details and two or three things you'd like them to speak to, then thank them.",
+    "deliveryCue": "Best for a former boss. Make no a comfortable answer.",
+    "depth": "light",
+    "who": [
+      "boss"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-125",
+    "line": "It's been a while since we worked together. I'm weighing a career decision and would value 15 minutes of your thinking. Any chance?",
+    "form": "reachout",
+    "followUps": [
+      "Would a call or a coffee be easier?",
+      "Is next week too soon?"
+    ],
+    "shareBack": "If they say yes, send a two-line summary of the decision ahead of time, then thank them.",
+    "deliveryCue": "For a former boss. Name the decision in a line if you can.",
+    "depth": "light",
+    "who": [
+      "boss"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "message",
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-126",
+    "line": "You've taken teams through changes like this before. When you have a moment, could I ask how you'd approach it?",
+    "form": "advice",
+    "followUps": [
+      "What did you wish you'd known the first time?",
+      "What would you watch for early on?"
+    ],
+    "shareBack": "Describe your situation in two sentences, without names, then ask what they'd do first.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "boss"
+    ],
+    "purposes": [
+      "plans",
+      "deeper"
+    ],
+    "medium": "any",
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-127",
+    "line": "Do you have ten minutes after this? I'd like to get your take on something.",
+    "form": "question",
+    "followUps": [
+      "Is now good, or later today?",
+      "Would a quick call work better?"
+    ],
+    "shareBack": "When you meet, state the question in two sentences, then listen before adding more.",
+    "deliveryCue": "Say it as the meeting ends. Let them pick the time.",
+    "depth": "light",
+    "who": [
+      "boss"
+    ],
+    "purposes": [
+      "plans",
+      "quick"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "advice",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-128",
+    "line": "Last time we spoke, you were about to start the new rollout. How did the first few weeks go?",
+    "form": "question",
+    "followUps": [
+      "What surprised you most?",
+      "Is there anything we could make easier?"
+    ],
+    "shareBack": "Share a short update on your side since you last talked, then ask what's next for them.",
+    "deliveryCue": "Swap in the real thing they told you last time.",
+    "depth": "light",
+    "who": [
+      "client",
+      "boss"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "projects"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-129",
+    "line": "Good to see you again. Did the plan you mentioned last time work out?",
+    "form": "question",
+    "followUps": [
+      "What was the hardest part?",
+      "What's next for it?"
+    ],
+    "shareBack": "Offer a one-line update on what you were working on then, then ask a follow-up about theirs.",
+    "deliveryCue": "Only if you remember the plan. Name it if you can.",
+    "depth": "light",
+    "who": [
+      "client",
+      "boss"
+    ],
+    "purposes": [
+      "reconnect",
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "plans",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-130",
+    "line": "I've been thinking about the problem you raised when we met. I have one idea, if a quick call would be useful.",
+    "form": "statement",
+    "followUps": [
+      "Would this week or next suit you better?",
+      "Has anything changed since we talked?"
+    ],
+    "shareBack": "On the call, give the idea in two sentences, then ask how it fits what they're seeing.",
+    "deliveryCue": "Only if you really have an idea worth their time.",
+    "depth": "light",
+    "who": [
+      "client"
+    ],
+    "purposes": [
+      "reconnect",
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "advice"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-131",
+    "line": "Following up on our chat: I've attached the notes and the two options we discussed. Happy to talk through either.",
+    "form": "statement",
+    "followUps": [
+      "Does one of the options look closer to what you need?",
+      "Is anyone else on your side who should see this?"
+    ],
+    "shareBack": "If they reply, say which option you'd lean toward and why, in a line, then ask what they think.",
+    "deliveryCue": "Send within a day. Attach what you promised.",
+    "depth": "light",
+    "who": [
+      "client"
+    ],
+    "purposes": [
+      "reconnect",
+      "plans"
+    ],
+    "medium": "message",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-132",
+    "line": "It's been a few months since we properly caught up. What's changed on your side since then?",
+    "form": "question",
+    "followUps": [
+      "What's taking most of your attention now?",
+      "Is there anything coming up we should plan for?"
+    ],
+    "shareBack": "Give a one-line update from your side, then ask which of their changes matters most.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "client"
+    ],
+    "purposes": [
+      "reconnect"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "week"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-133",
+    "line": "Thanks for jumping on. Before we start, how did last week's event turn out?",
+    "form": "question",
+    "followUps": [
+      "What was the best part of it?",
+      "Would you do it again?"
+    ],
+    "shareBack": "Say in a line what you heard about it or how your own week went, then move to the agenda.",
+    "deliveryCue": "Swap in the real thing they had going on.",
+    "depth": "light",
+    "who": [
+      "client",
+      "boss"
+    ],
+    "purposes": [
+      "reconnect",
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "setting"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-134",
+    "line": "Would it help to set up 30 minutes next week to go through the options? Tuesday or Wednesday both work for me.",
+    "form": "question",
+    "followUps": [
+      "Who else should be on it?",
+      "Is there anything you'd like me to prepare?"
+    ],
+    "shareBack": "Confirm the time in a line and say what you'll bring, then thank them.",
+    "deliveryCue": "Swap in days you can really do.",
+    "depth": "light",
+    "who": [
+      "client",
+      "boss"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-135",
+    "line": "Before we wrap up: what would be a useful next step from your side?",
+    "form": "question",
+    "followUps": [
+      "When would be a good time to pick it up again?",
+      "Who else should I loop in?"
+    ],
+    "shareBack": "Say what you'll do next and by when, in a sentence, then thank them for the time.",
+    "deliveryCue": "For the last five minutes of a meeting.",
+    "depth": "light",
+    "who": [
+      "client"
+    ],
+    "purposes": [
+      "plans",
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-136",
+    "line": "I'll be near your office on the 12th. Would coffee be useful, or is a call easier?",
+    "form": "question",
+    "followUps": [
+      "Is there somewhere you like nearby?",
+      "Is there anything you'd want to cover?"
+    ],
+    "shareBack": "Say in a line what you'd like to hear about, then let them pick the format.",
+    "deliveryCue": "Swap in the real date. Either answer is fine.",
+    "depth": "light",
+    "who": [
+      "client"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "plans",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-137",
+    "line": "Should I send a short summary and a couple of times to follow up? Then you can pick what suits.",
+    "form": "question",
+    "followUps": [
+      "Is there anything you'd want in the summary?",
+      "Anyone else who should get it?"
+    ],
+    "shareBack": "Send it the same day, with two time options, and thank them for the time.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "client",
+      "boss"
+    ],
+    "purposes": [
+      "plans",
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-138",
+    "line": "Thanks again for today. I'll send the proposal by Friday. Would a quick call the week after work for you?",
+    "form": "question",
+    "followUps": [
+      "Which days are easiest for you?",
+      "Is there anything you'd like me to include?"
+    ],
+    "shareBack": "If they reply, confirm the time in a line, then leave it there.",
+    "deliveryCue": "Swap in the real deliverable and date.",
+    "depth": "light",
+    "who": [
+      "client"
+    ],
+    "purposes": [
+      "plans",
+      "reconnect"
+    ],
+    "medium": "message",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-139",
+    "line": "I should get back to it, but I'm glad we talked about that. Good luck with the rest of the week.",
+    "form": "statement",
+    "followUps": [
+      "When's the big deadline?",
+      "Will you tell me how it goes?"
+    ],
+    "shareBack": "Name one thing they said that you'll remember, in a few words, then go.",
+    "deliveryCue": "Say it warmly as you stand up. Give the real reason you're leaving.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "client"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "week",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-140",
+    "line": "I'll let you get back to it. I want to hear how that turns out.",
+    "form": "statement",
+    "followUps": [
+      "When will you know?",
+      "Want to grab coffee after?"
+    ],
+    "shareBack": "Mention the specific thing you want to hear about, in a few words, then wrap up.",
+    "deliveryCue": "Name the thing they told you about.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "client"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-141",
+    "line": "I have to jump back into something, but this was a nice break. Talk soon.",
+    "form": "statement",
+    "followUps": [
+      "Same time tomorrow?",
+      "Want me to send you that link?"
+    ],
+    "shareBack": "If they reply, end on one warm line about something they said, then sign off.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "group-coworkers"
+    ],
+    "purposes": [
+      "goodbye",
+      "quick"
+    ],
+    "medium": "message",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-142",
+    "line": "Good place to stop. Thanks, everyone. That was a useful hour.",
+    "form": "statement",
+    "followUps": [
+      "Does anyone need anything before we go?",
+      "Same time next week?"
+    ],
+    "shareBack": "Name the one next step and who has it, in a sentence, then end on time.",
+    "deliveryCue": "Say it a minute before the end, not after.",
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-143",
+    "line": "I'll let you get to your next meeting. Thanks, this was really useful.",
+    "form": "statement",
+    "followUps": [
+      "Is there anything you need from me before next time?",
+      "Should I send a quick summary?"
+    ],
+    "shareBack": "Say in a line what you'll do with what you heard, then leave on time.",
+    "deliveryCue": "Mention one thing that was useful if you can.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "boss",
+      "client"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-144",
+    "line": "Thanks for the time today. I'll send notes by tomorrow.",
+    "form": "statement",
+    "followUps": [
+      "Is there anyone else who should get them?",
+      "Anything you'd like me to add?"
+    ],
+    "shareBack": "Thank them for one specific thing they offered, then follow through on the notes.",
+    "deliveryCue": "Only promise a time you can keep.",
+    "depth": "light",
+    "who": [
+      "boss",
+      "client"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-145",
+    "line": "I'm sorry to see you go, and really glad for you. Where's the best place to stay in touch?",
+    "form": "question",
+    "followUps": [
+      "What are you most looking forward to in the new role?",
+      "When do you start?"
+    ],
+    "shareBack": "Say in a line one thing you'll miss about working with them, then wish them luck.",
+    "deliveryCue": "For someone leaving the company.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-146",
+    "line": "I'll miss working with you. You set the bar for running a good meeting. What are you most looking forward to next?",
+    "form": "compliment",
+    "followUps": [
+      "What will you miss most from here?",
+      "Can I take you for a goodbye coffee before you go?"
+    ],
+    "shareBack": "Share one moment of working together you remember, in a sentence, then ask how to stay in touch.",
+    "deliveryCue": "Swap in the real thing they did well.",
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection",
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "research-backed"
+  },
+  {
+    "id": "wk-147",
+    "line": "Thank you for everything you taught me here. I hope I can still come to you for advice now and then.",
+    "form": "statement",
+    "followUps": [
+      "What's the best way to reach you?",
+      "What are you most looking forward to?"
+    ],
+    "shareBack": "Name one lesson you'll keep using, in a sentence, then wish them well.",
+    "deliveryCue": "For a boss who is leaving, or when you are.",
+    "depth": "light",
+    "who": [
+      "boss"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection",
+      "learning"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-148",
+    "line": "I have to head back, but this was a good idea. Let's do it again next month.",
+    "form": "statement",
+    "followUps": [
+      "Who wants to pick the place next time?",
+      "Same day work for everyone?"
+    ],
+    "shareBack": "Thank whoever set it up, in a line, then head out.",
+    "deliveryCue": "For leaving a team lunch or coffee.",
+    "depth": "light",
+    "who": [
+      "group-coworkers",
+      "work-friend",
+      "colleague"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "plans",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-149",
+    "line": "Going to miss having you on this team. Keep us posted on where you land, and come back for lunch sometime.",
+    "form": "statement",
+    "followUps": [
+      "When's your last day?",
+      "What are you most excited about?"
+    ],
+    "shareBack": "Add one specific thing they did for the team, in a sentence, then wish them luck.",
+    "deliveryCue": "For a coworker leaving. Works in a card or the team chat.",
+    "depth": "light",
+    "who": [
+      "group-coworkers",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-150",
+    "line": "Before we let you go: what's one thing you hope this team keeps doing after you've left?",
+    "form": "question",
+    "followUps": [
+      "And one thing we should stop?",
+      "What will you miss most?"
+    ],
+    "shareBack": "Thank them for one specific thing, in a sentence, then let the room add theirs.",
+    "deliveryCue": "For a farewell lunch or the last team meeting.",
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "work",
+      "connection"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-151",
+    "line": "Signing off for the day. Thanks for the help on that one, everyone.",
+    "form": "statement",
+    "followUps": [
+      "Anything you need from me first thing tomorrow?",
+      "Who's in the office tomorrow?"
+    ],
+    "shareBack": "If anyone replies, answer in a line and wish them a good evening.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "goodbye",
+      "quick"
+    ],
+    "medium": "message",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-152",
+    "line": "Congratulations on the new role, and thanks for everything here. Make sure we have a way to reach you.",
+    "form": "statement",
+    "followUps": [
+      "When's your last day?",
+      "What are you most looking forward to?"
+    ],
+    "shareBack": "Add one specific thing you'll remember, in a line, then wish them well.",
+    "deliveryCue": "For a farewell thread or card.",
+    "depth": "light",
+    "who": [
+      "group-coworkers",
+      "colleague",
+      "work-friend",
+      "boss"
+    ],
+    "purposes": [
+      "goodbye"
+    ],
+    "medium": "message",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-153",
+    "line": "That's all from me. Have a good weekend, everyone.",
+    "form": "statement",
+    "followUps": [
+      "Anyone doing anything fun?",
+      "See you all Monday?"
+    ],
+    "shareBack": "If someone mentions a plan, ask one follow-up, then sign off.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "group-coworkers",
+      "colleague"
+    ],
+    "purposes": [
+      "goodbye",
+      "quick"
+    ],
+    "medium": "any",
+    "topics": [
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-154",
+    "line": "What's something you're looking forward to this year, at work or outside it?",
+    "form": "question",
+    "followUps": [
+      "What's drawing you to that?",
+      "How long has it been on the list?"
+    ],
+    "shareBack": "Name one thing you're looking forward to, in a sentence, then ask what would make theirs go well.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report"
+    ],
+    "purposes": [
+      "deeper",
+      "ice"
+    ],
+    "medium": "any",
+    "topics": [
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-155",
+    "line": "Is there a skill you've been wanting to pick up lately?",
+    "form": "question",
+    "followUps": [
+      "What got you interested in it?",
+      "How would you start?"
+    ],
+    "shareBack": "Mention one thing you'd like to learn yourself, in a line, then ask how they'd go about theirs.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report"
+    ],
+    "purposes": [
+      "deeper",
+      "revive"
+    ],
+    "medium": "any",
+    "topics": [
+      "learning",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-156",
+    "line": "What's a tool or habit you couldn't do your job without?",
+    "form": "question",
+    "followUps": [
+      "How did you find it?",
+      "Would you recommend it to someone new?"
+    ],
+    "shareBack": "Offer one of your own in a sentence, then ask whether they think it would work for them.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "colleague",
+      "work-friend",
+      "boss",
+      "report"
+    ],
+    "purposes": [
+      "deeper",
+      "revive"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "learning"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-157",
+    "line": "What kind of work would you like more of next quarter?",
+    "form": "question",
+    "followUps": [
+      "What draws you to that?",
+      "What would make room for it?"
+    ],
+    "shareBack": "Say what you'd like more of yourself, in a line, then ask how you could help with theirs.",
+    "deliveryCue": "Good for a 1:1. Follow up on what they say next time.",
+    "depth": "light",
+    "who": [
+      "report",
+      "colleague",
+      "work-friend"
+    ],
+    "purposes": [
+      "deeper",
+      "checkin"
+    ],
+    "medium": "any",
+    "topics": [
+      "work",
+      "plans"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "wk-158",
+    "line": "Huge congratulations to the team on this one. Thank you for every late night that went into it.",
+    "form": "statement",
+    "followUps": [
+      "Who wants to pick the place for a celebration lunch?",
+      "What was the turning point?"
+    ],
+    "shareBack": "Thank one person by role for one specific thing, then ask how everyone wants to mark it.",
+    "deliveryCue": "Swap in what the team pulled off.",
+    "depth": "light",
+    "who": [
+      "group-coworkers"
+    ],
+    "purposes": [
+      "celebrate"
+    ],
+    "medium": "message",
+    "topics": [
+      "work"
+    ],
+    "riskTags": [
+      "work"
+    ],
+    "basis": "expert-opinion"
   }
 ]
