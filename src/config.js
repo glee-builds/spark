@@ -159,6 +159,14 @@ export const RISK_TAGS = ['work', 'money', 'politics', 'religion', 'health', 'ap
 export const BASES = ['research-backed', 'expert-opinion', 'untested'];
 export const LIBRARY_FILES = ['family', 'kids', 'friends', 'work', 'networking', 'other'];
 
+// "Where I live" on the settings screen. Starters that assume a kind of place
+// (a front yard, an apartment lobby) are tagged with the places they fit.
+export const PLACES = [
+  { id: 'city', label: 'City', hint: 'Apartments, sidewalks, transit' },
+  { id: 'suburb', label: 'Suburb or town', hint: 'Houses, yards, driving' },
+  { id: 'rural', label: 'Rural', hint: 'Open space, long drives' },
+];
+
 // The comfort setting on the settings screen.
 export const COMFORT = [
   { id: 'standard', label: 'Standard', hint: 'Balanced for most people' },

@@ -4,7 +4,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { LIBRARY_FILES, allCombinations } from '../src/config.js';
+import { LIBRARY_FILES, PLACES, allCombinations as everyCombination } from '../src/config.js';
 import { problems } from '../src/validate.js';
 import { candidates, defaultLevel, pickSet } from '../src/matching.js';
 
@@ -13,6 +13,11 @@ function load(name) {
 }
 
 export const library = LIBRARY_FILES.flatMap(load);
+
+// Every person / purpose / medium, for each "Where I live" setting.
+function allCombinations() {
+  return everyCombination().flatMap((c) => PLACES.map((p) => ({ ...c, place: p.id })));
+}
 
 test('every starter follows docs/starter-format.md', () => {
   assert.deepEqual(library.flatMap(problems), []);
@@ -25,7 +30,7 @@ test('every starter has its own id', () => {
 
 test('every person, purpose, and medium has at least four starters where the purpose starts', () => {
   const thin = allCombinations().map((c) => [c, candidates(library, c, defaultLevel(c)).length])
-    .filter(([, n]) => n < 4).map(([c, n]) => `${c.who} / ${c.purpose} / ${c.medium}: ${n}`);
+    .filter(([, n]) => n < 4).map(([c, n]) => `${c.who} / ${c.purpose} / ${c.medium} / ${c.place}: ${n}`);
   assert.deepEqual(thin, []);
 });
 
