@@ -1,5 +1,6 @@
 /* Spark: all styling in one file. Colors are set once here as variables,
-   with a second set for dark mode. */
+   with a second set for dark mode. Every screen is laid out to fit on a
+   phone without scrolling. */
 
 :root {
   --bg: #faf7f2;
@@ -10,7 +11,7 @@
   --accent: #b4410e;
   --accent-ink: #ffffff;
   --accent-soft: #fbe9df;
-  --radius: 16px;
+  --radius: 14px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -33,6 +34,7 @@ html, body { height: 100%; }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--bg);
   color: var(--ink);
   font-size: 17px;
@@ -47,19 +49,34 @@ button {
   cursor: pointer;
 }
 
-button:focus-visible, summary:focus-visible {
+button:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
 
+button:disabled { opacity: 0.35; cursor: default; }
+
 .app {
   max-width: 520px;
   min-height: 100%;
+  min-height: 100dvh;
   margin: 0 auto;
-  padding: calc(env(safe-area-inset-top) + 16px) 16px calc(env(safe-area-inset-bottom) + 20px);
+  padding: calc(env(safe-area-inset-top) + 8px) 16px calc(env(safe-area-inset-bottom) + 14px);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+}
+
+/* A short slide-in between screens. Off for people who prefer less motion. */
+.app.enter > * { animation: enter 160ms ease-out; }
+
+@keyframes enter {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app.enter > * { animation: none; }
 }
 
 /* ---------- Top of every screen ---------- */
@@ -68,36 +85,37 @@ button:focus-visible, summary:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 44px;
+  min-height: 48px;
 }
 
 .brand {
   font-size: 17px;
   font-weight: 700;
-  letter-spacing: -0.01em;
   color: var(--accent);
 }
 
-.back {
+.back, .top-link {
   min-height: 48px;
   padding: 0 12px;
-  margin-right: -12px;
+  margin: 0 -12px;
   border: 0;
   background: none;
   color: var(--muted);
+  font-size: 16px;
 }
 
 .title {
   margin: 0;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.15;
   letter-spacing: -0.02em;
   outline: none;
 }
 
-.sub, .note, .empty {
+.sub, .empty {
   margin: 4px 0 0;
   color: var(--muted);
+  font-size: 15px;
 }
 
 /* ---------- Choice screens ---------- */
@@ -107,70 +125,128 @@ button:focus-visible, summary:focus-visible {
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-}
-
-.group {
-  margin: 6px 0 0;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--muted);
-}
-
-.chips {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
 
-.chips.one { grid-template-columns: 1fr; }
-
-.chip {
-  min-height: 52px;
-  padding: 8px 14px;
+.tile {
+  min-height: 68px;
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 8px;
   text-align: left;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: var(--radius);
+}
+
+.tile-label { font-size: 19px; font-weight: 700; }
+
+.tile-hint { grid-column: 1; font-size: 14px; color: var(--muted); }
+
+.tile .chev { grid-column: 2; grid-row: 1 / span 2; }
+
+.chev { color: var(--muted); font-size: 24px; line-height: 1; }
+
+.chip {
+  min-height: 54px;
+  padding: 8px 16px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2px;
 }
 
-.chip:active { background: var(--accent-soft); border-color: var(--accent); }
+.tile:active, .chip:active, .row:active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
 
 .chip-label { font-weight: 600; line-height: 1.2; }
 
 .chip-hint { font-size: 14px; color: var(--muted); }
 
-/* ---------- Starters ---------- */
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.reassure {
+  margin: 8px 0 0;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-size: 15px;
 }
 
-.card {
-  background: var(--surface);
+/* ---------- The starters list ---------- */
+
+.tools { display: flex; gap: 8px; }
+
+.toggle {
+  min-height: 48px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 18px 18px 6px;
+  font-size: 15px;
 }
 
-.line {
+.toggle-box {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--muted);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.toggle[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+
+.toggle[aria-pressed="true"] .toggle-box {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.note { margin: 0; color: var(--muted); font-size: 15px; }
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  width: 100%;
+  min-height: 56px;
+  padding: 10px 12px 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.row-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.row-label, .label {
   margin: 0;
-  font-size: 22px;
-  line-height: 1.25;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
-.label {
-  margin: 14px 0 2px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -178,114 +254,26 @@ button:focus-visible, summary:focus-visible {
   color: var(--accent);
 }
 
-.follow, .share, .cue { margin: 0 0 4px; }
-
-.share, .cue { color: var(--muted); }
-
-.card .line + .cue { margin-top: 8px; font-size: 15px; }
-
-.cue-mark {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
+.row-line {
+  font-size: 18px;
+  line-height: 1.28;
+  font-weight: 600;
 }
 
-details summary {
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  color: var(--muted);
-  font-size: 15px;
-  list-style: none;
-  cursor: pointer;
-}
-
-details summary::-webkit-details-marker { display: none; }
-
-details summary::after { content: " ▾"; white-space: pre; }
-
-details[open] summary::after { content: " ▴"; }
-
-details[open] { padding-bottom: 12px; }
-
-.depth {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 13px;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-
-/* ---------- Extra cards and controls on the starters screen ---------- */
-
-.card.exit {
+.row.wrap {
+  min-height: 48px;
   background: none;
   border-style: dashed;
-  padding-bottom: 16px;
+  border-left: 1px dashed var(--line);
 }
 
-.card.exit .label { margin-top: 0; color: var(--muted); }
+.row.wrap .row-label { color: var(--muted); }
 
-.exit-line { margin: 0; font-size: 18px; line-height: 1.3; }
+.row-line.small { font-size: 16px; font-weight: 500; }
 
-.card.support { padding-bottom: 16px; }
+/* ---------- Bottom bar ---------- */
 
-.switch {
-  min-height: 48px;
-  padding: 0 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-align: left;
-  background: none;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-}
-
-.switch-box {
-  width: 22px;
-  height: 22px;
-  flex: none;
-  display: grid;
-  place-items: center;
-  border: 2px solid var(--muted);
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.switch[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
-
-.switch[aria-pressed="true"] .switch-box {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-}
-
-.note { margin: 0; font-size: 15px; }
-
-.link {
-  min-height: 48px;
-  align-self: center;
-  padding: 0 16px;
-  border: 0;
-  background: none;
-  color: var(--muted);
-  text-decoration: underline;
-}
-
-/* ---------- Bottom bar on the starters screen ---------- */
-
-.bar {
-  position: sticky;
-  bottom: 0;
-  margin: auto -16px calc(-1 * (env(safe-area-inset-bottom) + 20px));
-  padding: 8px 16px calc(env(safe-area-inset-bottom) + 12px);
-  background: var(--bg);
-  border-top: 1px solid var(--line);
-}
+.bar { margin-top: auto; padding-top: 4px; }
 
 .depth-now {
   margin: 0 0 6px;
@@ -299,7 +287,7 @@ details[open] { padding-bottom: 12px; }
 .primary, .secondary {
   min-height: 52px;
   padding: 0 14px;
-  border-radius: 14px;
+  border-radius: var(--radius);
   font-weight: 600;
 }
 
@@ -311,11 +299,54 @@ details[open] { padding-bottom: 12px; }
 }
 
 .secondary {
+  min-width: 56px;
   background: var(--surface);
   border: 1px solid var(--line);
 }
 
-.secondary:disabled { opacity: 0.4; }
+/* ---------- One starter, in full ---------- */
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.say {
+  margin: 0 0 6px;
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.say.small { font-size: 20px; font-weight: 600; }
+
+.tipbox {
+  margin: 0 0 6px;
+  padding: 10px 12px;
+  background: var(--accent-soft);
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.tipbox strong {
+  margin-right: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent);
+}
+
+.detail .label { margin-top: 8px; }
+
+.follows { margin: 0; padding-left: 20px; }
+
+.follows li { margin: 2px 0; }
+
+.plain { margin: 0; color: var(--muted); }
+
+.depth { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 
 /* ---------- "Add to home screen" hint ---------- */
 
@@ -323,7 +354,7 @@ details[open] { padding-bottom: 12px; }
   padding: 12px 14px;
   background: var(--accent-soft);
   border: 1px solid var(--accent);
-  border-radius: 14px;
+  border-radius: var(--radius);
 }
 
 .hint-text { margin: 0; font-size: 15px; }

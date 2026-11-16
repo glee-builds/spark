@@ -27,3 +27,7 @@ Every project decision, when it was made, and why. When a decision changes, don'
 | 2026-11-15 | Matching | A set shown at medium or deep opens with one light starter, written for the chosen place when possible | Research guideline: anchor on the shared situation first, then go deeper |
 | 2026-11-15 | Design | A starter's tip shows on the card face, not under "More" | Tips often say when a line fits ("Only if you've noticed it"), so they must be seen before the line is used |
 | 2026-11-15 | Design | The Who screen is sized to fit a current phone without scrolling | Fewer seconds to the first tap |
+| 2026-11-15 | Design | Who is now two short steps: a group (Family, Friends, Work, Networking, Other), then the person. Friends has one person, so that step is skipped | Owner asked for a first screen with no scrolling |
+| 2026-11-15 | Design | The starters screen is a list of lines with a short label each; tapping one opens the detail (tip, follow-ups, your turn), with arrows to flip between starters. The list drops starters from the end until it fits the screen (never fewer than two) | Owner asked for suggestions readable at a glance without scrolling. Replaces the 2026-11-15 "tip shows on the card face" row: the tip is now on the detail screen |
+| 2026-11-15 | Design | The reassurance line moves to the Where screen | Frees space on the starters screen, and lands just before the conversation |
+| 2026-11-15 | Workflow | Claude also merges the pull requests for Phases 4 and 5 once the tests pass | Owner asked Claude to complete the remaining phases |
