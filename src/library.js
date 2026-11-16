@@ -1,7 +1,9 @@
 // Loads the starter library: one JSON file per group of people.
 // The files ship with the app, so this works offline once the page is cached.
 
-export const LIBRARY_FILES = ['family', 'friends', 'work', 'networking', 'other'];
+import { LIBRARY_FILES } from './config.js';
+
+export { LIBRARY_FILES };
 
 export async function loadLibrary() {
   const parts = await Promise.all(LIBRARY_FILES.map(async (name) => {
@@ -12,7 +14,7 @@ export async function loadLibrary() {
   return parts.flat();
 }
 
-// The extra lines: ways to wrap up, lines for hard times, and reassurances.
+// The extra lines: ways to wrap up, and reassurances.
 export async function loadSupport() {
   const response = await fetch('data/support.json');
   return response.json();

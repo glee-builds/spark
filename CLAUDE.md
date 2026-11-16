@@ -8,6 +8,7 @@ Shared rules for all coding projects are in `../CLAUDE.md`, and they apply here.
 - **Who merges:** for Phases 1 to 5 the owner asked Claude to merge each pull request once the tests pass, so the live link stays current (see `docs/decisions.md`). For later work, the owner merges unless they say otherwise.
 - **A new file the app loads must be added to the `FILES` list in `sw.js`**, or it will be missing offline. A test checks this.
 - **After changing any app file, run `node tools/stamp.mjs`.** It updates the version in `sw.js` so phones fetch the update. A test fails if you forget.
+- **After editing starters, run `node tools/check-library.mjs data/<file>.json`.** It lists format problems and any person / purpose / medium with too few starters.
 - **Starters and code go in separate pull requests.** A pull request that adds starters adds one group at a time, so the owner can read the lines out loud.
 
 ## Privacy rule (applies to everything public)
@@ -49,19 +50,21 @@ index.html        the one page of the app
 manifest.webmanifest  name, colors, and icons for the home-screen app
 sw.js             the service worker: saves the app's files for offline use
 assets/           the app icons
-tools/stamp.mjs   stamps sw.js with a fingerprint of the app files
+tools/
+  stamp.mjs         stamps sw.js with a fingerprint of the app files
+  check-library.mjs checks starter files: format, and enough starters for every choice
 styles.css        all styling
 src/
   app.js          the screens and what happens on each tap
-  config.js       the Who, How well, and Where choices and which combinations make sense
-  matching.js     the rules that pick starters (depth ceiling, risky topics, variety)
+  config.js       the people, the "Right now I want to..." purposes, and which combinations exist
+  matching.js     the rules that pick starters (depth ceiling, purpose, medium, risky topics, variety)
   library.js      loads the starter files and the support lines
-  support.js      picks the wrap-up line, hard-time lines, and reassurance
+  support.js      picks the wrap-up lines and the reassurance
   install.js      starts offline support and shows the add-to-home-screen hint
   storage.js      what is remembered on the phone (seen starters, recent choices, saved starters, comfort, worked / fell flat)
   validate.js     checks a starter follows the format
-data/             the starter library, one JSON file per group of people,
-                  plus support.json (wrap-up lines, hard-time lines, reassurances)
+data/             the starter library: family, kids, friends, work, networking, other,
+                  plus support.json (wrap-up lines, reassurances)
 tests/            node --test
 docs/
   decisions.md    every decision, dated, with the reason
