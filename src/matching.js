@@ -1,7 +1,7 @@
 // The rules that decide which starters fit. Plain rules, no AI.
 // A "selection" is { who, closeness, where } using ids from config.js.
 
-import { DEPTHS, findWho, findWhere } from './config.js';
+import { DEPTHS, GOALS, findWho, findWhere } from './config.js';
 
 const BASE_CEILING = {
   'just-met': 0, 'a-little': 1, 'well': 1, 'very-close': 2, 'lost-touch': 1,
@@ -74,10 +74,15 @@ function shuffled(list, random) {
 // - prefers starters written for this exact place over general ones
 // - no two starters on the same main topic, when there are enough to choose from
 // - at least one that is not a plain question, when one exists
+// - with an aim (goal), starters tagged for that aim come first
 export function pickSet(library, selection, options = {}) {
-  const { level = defaultLevel(selection), seen = [], count = 4, random = Math.random } = options;
+  const {
+    level = defaultLevel(selection), seen = [], count = 4, random = Math.random, goal = null,
+  } = options;
   const pool = shuffled(candidates(library, selection, level), random);
+  const offGoal = (s) => (goal && !s.goals.includes(goal) ? 20 : 0);
   const rank = (s) => (seen.includes(s.id) ? 100 : 0)
+    + offGoal(s)
     + (level - DEPTHS.indexOf(s.depth)) * 10
     + (s.where.includes(selection.where) ? 0 : 3);
   pool.sort((a, b) => rank(a) - rank(b));
@@ -88,6 +93,7 @@ export function pickSet(library, selection, options = {}) {
 
   if (level > 0) {
     const easyRank = (s) => (seen.includes(s.id) ? 100 : 0)
+      + offGoal(s)
       + (s.where.includes(selection.where) ? 0 : 3);
     const easy = pool.filter((s) => s.depth === 'light')
       .sort((a, b) => easyRank(a) - easyRank(b))[0];
@@ -110,4 +116,11 @@ export function pickSet(library, selection, options = {}) {
     if (other) picked[picked.length - 1] = other;
   }
   return picked;
+}
+
+// The aims worth offering for this selection: those with at least three
+// starters that could be shown.
+export function availableGoals(library, selection) {
+  const pool = candidates(library, selection);
+  return GOALS.filter((goal) => pool.filter((s) => s.goals.includes(goal)).length >= 3);
 }

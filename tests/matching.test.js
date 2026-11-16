@@ -2,7 +2,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { depthCeiling, defaultLevel, isRiskBlocked, fits, candidates, pickSet } from '../src/matching.js';
+import { depthCeiling, defaultLevel, isRiskBlocked, fits, candidates, pickSet, availableGoals } from '../src/matching.js';
 
 function starter(overrides = {}) {
   return {
@@ -111,4 +111,20 @@ test('the easy opener is one written for this place when there is one', () => {
   ];
   const set = pickSet(library, { who: 'colleague', closeness: 'well', where: 'party' }, { level: 1, count: 2 });
   assert.equal(set[0].id, 'te-002');
+});
+
+test('an aim puts starters tagged for it first', () => {
+  const library = ['plans', 'food', 'work', 'hobbies', 'travel', 'week'].map((topic, i) => starter({
+    id: `te-00${i}`, topics: [topic], goals: i < 3 ? ['fun'] : ['break-ice'],
+  }));
+  const set = pickSet(library, { who: 'colleague', closeness: 'well', where: 'party' }, { goal: 'fun', count: 3, level: 0 });
+  assert.ok(set.every((s) => s.goals.includes('fun')));
+});
+
+test('only aims with at least three starters are offered', () => {
+  const library = [
+    starter({ id: 'te-001', goals: ['fun'] }), starter({ id: 'te-002', goals: ['fun'] }),
+    starter({ id: 'te-003', goals: ['fun', 'learn'] }), starter({ id: 'te-004', goals: ['learn'] }),
+  ];
+  assert.deepEqual(availableGoals(library, { who: 'colleague', closeness: 'well', where: 'party' }), ['fun']);
 });

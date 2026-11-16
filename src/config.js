@@ -92,6 +92,16 @@ export const GROUPS = [
 
 export const FORMS = ['question', 'statement', 'compliment', 'share', 'advice', 'reachout'];
 export const GOALS = ['break-ice', 'deeper', 'fun', 'silence', 'learn', 'reconnect'];
+
+// What the user is going for. Shown on the "Aim" screen.
+export const GOAL_LABELS = {
+  'break-ice': 'Break the ice',
+  deeper: 'Go deeper',
+  fun: 'Have fun',
+  silence: 'Fill a silence',
+  learn: 'Learn from them',
+  reconnect: 'Reconnect',
+};
 export const TOPICS = ['setting', 'food', 'plans', 'week', 'work', 'projects', 'hobbies',
   'entertainment', 'travel', 'family', 'kids', 'memories', 'learning', 'opinions', 'values',
   'feelings', 'home', 'neighborhood', 'sports', 'stories', 'advice', 'connection'];

@@ -4,8 +4,8 @@
 //   group (Family, Friends, ...) -> who -> how well -> where -> starters -> detail
 // One "state" object holds the choices; render() draws the current screen.
 
-import { WHO, GROUPS, CLOSENESS, WHERE, DEPTHS, findWho, findWhere, findCloseness } from './config.js';
-import { pickSet, defaultLevel, depthCeiling } from './matching.js';
+import { WHO, GROUPS, CLOSENESS, WHERE, DEPTHS, GOAL_LABELS, findWho, findWhere, findCloseness } from './config.js';
+import { pickSet, defaultLevel, depthCeiling, availableGoals } from './matching.js';
 import { pickExits, pickHardTime, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
 import { getSeen, addSeen, getRecent, addRecent } from './storage.js';
@@ -14,12 +14,13 @@ import { startOffline, installHint, dismissHint, install, updateReady } from './
 const root = document.getElementById('app');
 
 const state = {
-  step: 'group',     // group | who | how | where | results | detail
+  step: 'group',     // group | who | how | where | results | aim | detail
   group: null,
   who: null,
   closeness: null,
   where: null,
   level: 0,          // 0 light, 1 medium, 2 deep
+  goal: null,        // the chosen aim, or null for any
   hardTime: false,   // "They're having a hard time" switch
   starters: [],
   supportLines: [],  // shown instead of starters when hardTime is on
@@ -185,9 +186,14 @@ function resultsScreen() {
     : `${depthDots(state.level)} ${levelName(state.level)}`;
   return `${header({ sub: summary(), right: '<button class="top-link" data-action="restart">Start over</button>' })}
     <div class="tools">
-      <button class="toggle" data-action="hard-time" aria-pressed="${state.hardTime}">
+      <button class="aim" data-action="aim" ${state.hardTime ? 'disabled' : ''}>
+        Aim: <strong>${esc(state.goal ? GOAL_LABELS[state.goal] : 'Any')}</strong>
+        <span class="chev" aria-hidden="true">&#8250;</span>
+      </button>
+      <button class="toggle" data-action="hard-time" aria-pressed="${state.hardTime}"
+        aria-label="They're having a hard time">
         <span class="toggle-box" aria-hidden="true">${state.hardTime ? '&#10003;' : ''}</span>
-        They're having a hard time
+        Hard time
       </button>
     </div>
     ${note}
@@ -201,6 +207,16 @@ function resultsScreen() {
         <button class="secondary" data-action="deeper" ${deeperOff}>Deeper</button>
       </div>
     </div>`;
+}
+
+// ---------- Choosing an aim ----------
+
+function aimScreen() {
+  const goals = availableGoals(state.library, selection());
+  const options = [choice('goal', '', 'Any', 'A mix, picked for the person and place')]
+    .concat(goals.map((g) => choice('goal', g, GOAL_LABELS[g])));
+  return `${header({ title: 'What are you going for?', sub: summary() })}
+    <div class="choices">${options.join('')}</div>`;
 }
 
 // ---------- One starter, in full ----------
@@ -285,7 +301,7 @@ function fitToScreen() {
 function render() {
   const screens = {
     group: groupScreen, who: whoScreen, how: howScreen, where: whereScreen,
-    results: resultsScreen, detail: detailScreen,
+    results: resultsScreen, aim: aimScreen, detail: detailScreen,
   };
   root.innerHTML = screens[state.step]();
   root.dataset.step = state.step;
@@ -309,7 +325,9 @@ function newSet() {
   if (state.hardTime) {
     state.supportLines = pickHardTime(state.support, selection());
   } else {
-    state.starters = pickSet(state.library, selection(), { level: state.level, seen: getSeen() });
+    state.starters = pickSet(state.library, selection(), {
+      level: state.level, seen: getSeen(), goal: state.goal,
+    });
     state.freshSet = true;
   }
   state.exits = pickExits(state.support, selection());
@@ -319,6 +337,7 @@ function newSet() {
 function startResults() {
   state.level = defaultLevel(selection());
   state.hardTime = false;
+  state.goal = null;
   newSet();
 }
 
@@ -388,6 +407,12 @@ root.addEventListener('click', (event) => {
     addRecent(selection());
     startResults();
     go('results');
+  } else if (action === 'aim') {
+    go('aim');
+  } else if (action === 'goal') {
+    state.goal = id || null;
+    newSet();
+    history.back();
   } else if (action === 'open') {
     openDetail(button.dataset.kind, Number(button.dataset.index));
   } else if (action === 'prev' || action === 'next') {
@@ -426,6 +451,7 @@ window.addEventListener('popstate', () => {
     how: Boolean(state.who),
     where: Boolean(state.who && state.closeness),
     results: Boolean(chosen),
+    aim: Boolean(chosen),
     detail: Boolean(chosen && state.detail),
   };
   state.step = ready[step] ? step : 'group';
