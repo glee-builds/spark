@@ -94,6 +94,8 @@ button:disabled { opacity: 0.35; cursor: default; }
   color: var(--accent);
 }
 
+.top-link.save[aria-pressed="true"] { color: var(--accent); font-weight: 600; }
+
 .back, .top-link {
   min-height: 48px;
   padding: 0 12px;

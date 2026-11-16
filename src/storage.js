@@ -54,3 +54,18 @@ export function addRecent(choice) {
   const recent = [choice, ...getRecent().filter((r) => !same(r))];
   write(RECENT_KEY, recent.slice(0, RECENT_LIMIT));
 }
+
+// Starters the user saved, by id, newest first.
+const SAVED_KEY = 'spark.saved';
+
+export function getSaved() {
+  return read(SAVED_KEY, []);
+}
+
+// Saves or unsaves one starter. Returns true if it is now saved.
+export function toggleSaved(id) {
+  const saved = getSaved();
+  const now = !saved.includes(id);
+  write(SAVED_KEY, now ? [id, ...saved] : saved.filter((x) => x !== id));
+  return now;
+}

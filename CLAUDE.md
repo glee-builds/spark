@@ -58,7 +58,7 @@ src/
   library.js      loads the starter files and the support lines
   support.js      picks the wrap-up line, hard-time lines, and reassurance
   install.js      starts offline support and shows the add-to-home-screen hint
-  storage.js      what is remembered on the phone (recently seen starters, recent choices)
+  storage.js      what is remembered on the phone (recently seen starters, recent choices, saved starters)
   validate.js     checks a starter follows the format
 data/             the starter library, one JSON file per group of people,
                   plus support.json (wrap-up lines, hard-time lines, reassurances)
