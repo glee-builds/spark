@@ -15,9 +15,11 @@ function clamp(n, low, high) { return Math.max(low, Math.min(high, n)); }
 
 // The deepest level (0 light, 1 medium, 2 deep) allowed for this selection.
 // Closeness sets it, the place moves it one step, and some roles cap it.
-export function depthCeiling({ who, closeness, where }) {
+// The "More reserved" comfort setting lowers it one step for anyone not very close.
+export function depthCeiling({ who, closeness, where, comfort }) {
   const place = findWhere(where);
-  let level = clamp(BASE_CEILING[closeness] + (place ? place.adjust : 0), 0, 2);
+  const reserved = comfort === 'reserved' && closeness !== 'very-close' ? 1 : 0;
+  let level = clamp(BASE_CEILING[closeness] + (place ? place.adjust : 0) - reserved, 0, 2);
   const person = findWho(who);
   if (person && person.cap) level = Math.min(level, DEPTHS.indexOf(person.cap));
   return level;
@@ -29,9 +31,10 @@ export function defaultLevel(selection) {
 }
 
 // True when the starter touches a topic that is too risky for this person.
-export function isRiskBlocked(starter, { who, closeness, where }) {
+export function isRiskBlocked(starter, { who, closeness, where, comfort }) {
   const careful = closeness === 'just-met' || closeness === 'a-little'
-    || CAREFUL_PEOPLE.includes(who);
+    || CAREFUL_PEOPLE.includes(who)
+    || (comfort === 'reserved' && closeness !== 'very-close');
   if (!careful) return false;
   return starter.riskTags.some((tag) => {
     if (tag === 'work' && (WORK_PEOPLE.includes(who) || WORK_PLACES.includes(where))) return false;
@@ -81,8 +84,12 @@ export function pickSet(library, selection, options = {}) {
   } = options;
   const pool = shuffled(candidates(library, selection, level), random);
   const offGoal = (s) => (goal && !s.goals.includes(goal) ? 20 : 0);
+  // "Direct" comfort: plain questions first, fewer guesses about how someone feels.
+  const indirect = (s) => (selection.comfort === 'direct'
+    && (s.form === 'statement' || s.topics.includes('feelings')) ? 8 : 0);
   const rank = (s) => (seen.includes(s.id) ? 100 : 0)
     + offGoal(s)
+    + indirect(s)
     + (level - DEPTHS.indexOf(s.depth)) * 10
     + (s.where.includes(selection.where) ? 0 : 3);
   pool.sort((a, b) => rank(a) - rank(b));
@@ -111,7 +118,8 @@ export function pickSet(library, selection, options = {}) {
   }
 
   const isQuestion = (s) => s.form === 'question';
-  if (picked.length > 1 && picked.every(isQuestion)) {
+  // (Skipped for "Direct", which asks for plain questions.)
+  if (selection.comfort !== 'direct' && picked.length > 1 && picked.every(isQuestion)) {
     const other = pool.find((s) => !isQuestion(s) && !picked.includes(s));
     if (other) picked[picked.length - 1] = other;
   }

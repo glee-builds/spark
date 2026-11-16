@@ -50,3 +50,14 @@ test('at least a third of the library is not a plain question', () => {
   const other = library.filter((s) => s.form !== 'question').length;
   assert.ok(other / library.length >= 1 / 3);
 });
+
+test('every combination still has at least four starters under each comfort setting', () => {
+  const thin = [];
+  for (const comfort of ['reserved', 'direct']) {
+    for (const combo of allCombinations().map((c) => ({ ...c, comfort }))) {
+      const count = candidates(library, combo, defaultLevel(combo)).length;
+      if (count < 4) thin.push(`${comfort}: ${combo.who} / ${combo.closeness} / ${combo.where}: ${count}`);
+    }
+  }
+  assert.deepEqual(thin, []);
+});

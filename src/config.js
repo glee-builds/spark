@@ -123,3 +123,10 @@ export function allCombinations() {
   }
   return out;
 }
+
+// The comfort setting on the settings screen.
+export const COMFORT = [
+  { id: 'standard', label: 'Standard', hint: 'Balanced for most people' },
+  { id: 'reserved', label: 'More reserved', hint: "Lighter topics; nothing personal unless you're very close" },
+  { id: 'direct', label: 'Direct', hint: 'Plain questions; fewer guesses about how someone feels' },
+];

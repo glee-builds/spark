@@ -128,3 +128,20 @@ test('only aims with at least three starters are offered', () => {
   ];
   assert.deepEqual(availableGoals(library, { who: 'colleague', closeness: 'well', where: 'party' }), ['fun']);
 });
+
+test('"More reserved" lowers the ceiling and hides risky topics for anyone not very close', () => {
+  const sel = { who: 'friend', closeness: 'well', where: 'car', comfort: 'reserved' };
+  assert.equal(depthCeiling(sel), 1);
+  assert.equal(depthCeiling({ ...sel, closeness: 'very-close' }), 2);
+  assert.equal(isRiskBlocked(starter({ riskTags: ['money'] }), sel), true);
+});
+
+test('"Direct" puts plain questions ahead of guesses about feelings', () => {
+  const library = [
+    starter({ id: 'te-001', form: 'statement', topics: ['feelings'] }),
+    starter({ id: 'te-002', form: 'question', topics: ['plans'] }),
+    starter({ id: 'te-003', form: 'question', topics: ['hobbies'] }),
+  ];
+  const set = pickSet(library, { who: 'colleague', closeness: 'well', where: 'party', comfort: 'direct' }, { level: 0, count: 2 });
+  assert.ok(set.every((s) => s.form === 'question'));
+});
