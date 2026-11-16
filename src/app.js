@@ -4,17 +4,22 @@
 //   group (Family, Friends, ...) -> who -> how well -> where -> starters -> detail
 // One "state" object holds the choices; render() draws the current screen.
 
-import { WHO, GROUPS, CLOSENESS, WHERE, DEPTHS, GOAL_LABELS, findWho, findWhere, findCloseness } from './config.js';
+import {
+  WHO, GROUPS, CLOSENESS, WHERE, DEPTHS, GOAL_LABELS, COMFORT, findWho, findWhere, findCloseness,
+} from './config.js';
 import { pickSet, defaultLevel, depthCeiling, availableGoals } from './matching.js';
 import { pickExits, pickHardTime, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
-import { getSeen, addSeen, getRecent, addRecent, getSaved, toggleSaved } from './storage.js';
+import {
+  getSeen, addSeen, getRecent, addRecent, getSaved, toggleSaved,
+  getComfort, setComfort, clearSeen, clearRecent,
+} from './storage.js';
 import { startOffline, installHint, dismissHint, install, updateReady } from './install.js';
 
 const root = document.getElementById('app');
 
 const state = {
-  step: 'group',     // group | who | how | where | results | aim | detail | saved
+  step: 'group',     // group | who | how | where | results | aim | detail | saved | settings
   group: null,
   who: null,
   closeness: null,
@@ -28,6 +33,7 @@ const state = {
   detail: null,      // { kind: 'starter' | 'support' | 'exit', index, from: 'results' | 'saved' }
   savedView: [],     // the saved starters, as they were when the Saved screen opened
   freshSet: false,   // true until a new set has been fitted and marked as seen
+  notice: '',        // a short confirmation on the settings screen
   library: [],
   support: null,
 };
@@ -47,7 +53,7 @@ function esc(text) {
 }
 
 function selection() {
-  return { who: state.who, closeness: state.closeness, where: state.where };
+  return { who: state.who, closeness: state.closeness, where: state.where, comfort: getComfort() };
 }
 
 function summary() {
@@ -115,7 +121,9 @@ function recentRows() {
 
 function topLinks() {
   const saved = getSaved().length;
-  return saved ? `<button class="top-link" data-action="saved">&#9733; Saved (${saved})</button>` : '';
+  const savedLink = saved ? `<button class="top-link" data-action="saved">&#9733; Saved (${saved})</button>` : '';
+  return `<span class="top-links">${savedLink}
+    <button class="top-link" data-action="settings">Settings</button></span>`;
 }
 
 function groupScreen() {
@@ -235,6 +243,28 @@ function savedScreen() {
     <div class="rows">${rows.join('')}${empty}</div>`;
 }
 
+// ---------- Settings ----------
+
+function settingsScreen() {
+  const current = getComfort();
+  const comfort = COMFORT.map((c) => `
+    <button class="chip" data-action="comfort" data-id="${c.id}" aria-pressed="${c.id === current}">
+      <span class="chip-label">${c.id === current ? '&#10003; ' : ''}${esc(c.label)}</span>
+      <span class="chip-hint">${esc(c.hint)}</span>
+    </button>`).join('');
+  return `${header({ title: 'Settings' })}
+    <p class="label">Comfort</p>
+    <div class="settings-group">${comfort}</div>
+    <p class="label">Start fresh</p>
+    <div class="settings-group">
+      <button class="chip" data-action="clear-seen"><span class="chip-label">Show starters I've seen again</span></button>
+      <button class="chip" data-action="clear-recent"><span class="chip-label">Clear the "Again" list</span></button>
+    </div>
+    ${state.notice ? `<p class="note" role="status">${esc(state.notice)}</p>` : ''}
+    <p class="about">Starters follow published conversation research and coaching advice.
+      Nothing you tap leaves this phone.</p>`;
+}
+
 // ---------- One starter, in full ----------
 
 // The list the open detail belongs to, for the arrows.
@@ -333,6 +363,7 @@ function render() {
   const screens = {
     group: groupScreen, who: whoScreen, how: howScreen, where: whereScreen,
     results: resultsScreen, aim: aimScreen, detail: detailScreen, saved: savedScreen,
+    settings: settingsScreen,
   };
   root.innerHTML = screens[state.step]();
   root.dataset.step = state.step;
@@ -458,6 +489,21 @@ root.addEventListener('click', (event) => {
     openDetail(button.dataset.kind, Number(button.dataset.index), button.dataset.from);
   } else if (action === 'saved') {
     openSaved();
+  } else if (action === 'settings') {
+    state.notice = '';
+    go('settings');
+  } else if (action === 'comfort') {
+    setComfort(id);
+    state.notice = 'Saved. New starters will follow this setting.';
+    render();
+  } else if (action === 'clear-seen') {
+    clearSeen();
+    state.notice = 'Done. Starters you have seen can come up again.';
+    render();
+  } else if (action === 'clear-recent') {
+    clearRecent();
+    state.notice = 'Done. The "Again" list is empty.';
+    render();
   } else if (action === 'save') {
     toggleSaved(currentList()[state.detail.index].id);
     render();
@@ -499,6 +545,7 @@ window.addEventListener('popstate', () => {
     results: Boolean(chosen),
     aim: Boolean(chosen),
     saved: true,
+    settings: true,
     detail: Boolean(state.detail && (state.detail.from === 'saved' ? state.savedView.length : chosen)),
   };
   state.step = ready[step] ? step : 'group';

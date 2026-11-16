@@ -69,3 +69,23 @@ export function toggleSaved(id) {
   write(SAVED_KEY, now ? [id, ...saved] : saved.filter((x) => x !== id));
   return now;
 }
+
+// The comfort setting: 'standard', 'reserved', or 'direct'.
+const COMFORT_KEY = 'spark.comfort';
+
+export function getComfort() {
+  return read(COMFORT_KEY, 'standard');
+}
+
+export function setComfort(value) {
+  write(COMFORT_KEY, value);
+}
+
+// "Start fresh" buttons on the settings screen.
+export function clearSeen() {
+  write(SEEN_KEY, []);
+}
+
+export function clearRecent() {
+  write(RECENT_KEY, []);
+}

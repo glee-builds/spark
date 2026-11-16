@@ -94,6 +94,8 @@ button:disabled { opacity: 0.35; cursor: default; }
   color: var(--accent);
 }
 
+.top-links { display: flex; gap: 20px; }
+
 .top-link.save[aria-pressed="true"] { color: var(--accent); font-weight: 600; }
 
 .back, .top-link {
@@ -197,6 +199,14 @@ button:disabled { opacity: 0.35; cursor: default; }
   font-weight: 600;
   font-size: 16px;
 }
+
+/* ---------- Settings ---------- */
+
+.settings-group { display: flex; flex-direction: column; gap: 8px; }
+
+.chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+
+.about { margin: auto 0 0; font-size: 14px; color: var(--muted); }
 
 /* ---------- The starters list ---------- */
 
