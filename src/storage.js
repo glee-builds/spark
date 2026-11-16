@@ -89,3 +89,22 @@ export function clearSeen() {
 export function clearRecent() {
   write(RECENT_KEY, []);
 }
+
+// How a starter went, marked by the user: { id: 'worked' | 'flat' }.
+const FEEDBACK_KEY = 'spark.feedback';
+
+export function getFeedback() {
+  return read(FEEDBACK_KEY, {});
+}
+
+// Sets the mark, or clears it when the same mark is tapped again.
+export function markFeedback(id, mark) {
+  const feedback = getFeedback();
+  if (feedback[id] === mark) delete feedback[id];
+  else feedback[id] = mark;
+  write(FEEDBACK_KEY, feedback);
+}
+
+export function clearFeedback() {
+  write(FEEDBACK_KEY, {});
+}
