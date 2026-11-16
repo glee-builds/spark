@@ -5,7 +5,8 @@
 // with an "In person or call / Message" switch on the starters screen.
 // See _briefs/spark/reports/Refining the three questions.md for why.
 
-export const DEPTHS = ['light', 'medium', 'deep'];
+// How personal a starter is, lightest first. See docs/starter-format.md.
+export const DEPTHS = ['light', 'casual', 'personal', 'deep'];
 
 export const MEDIA = [
   { id: 'in-person', label: 'In person or call' },
@@ -13,17 +14,18 @@ export const MEDIA = [
 ];
 
 // "Right now I want to..." Each person sees 7 or fewer of these.
-// level: where the starters begin. light = light; medium = medium if allowed;
-// max = as deep as this person allows.
+// level: where the starters begin. light = light; casual = casual if allowed;
+// max = personal, or lower if this person's ceiling is lower. Deep is always one
+// tap of "Deeper" away, never the starting point.
 export const PURPOSES = {
   ice: { label: 'Break the ice', hint: 'new, or not close yet', level: 'light' },
   quick: { label: 'Say something quick', hint: 'a minute or less', level: 'light' },
   deeper: { label: 'Go deeper', hint: 'past small talk', level: 'max' },
-  revive: { label: 'Revive it', hint: "it's gone flat or tense", level: 'medium' },
-  checkin: { label: 'Check in', hint: 'how are they, really?', level: 'medium' },
+  revive: { label: 'Revive it', hint: "it's gone flat or tense", level: 'casual' },
+  checkin: { label: 'Check in', hint: 'how are they, really?', level: 'casual' },
   reconnect: { label: 'Reconnect', hint: "it's been a while", level: 'light' },
-  support: { label: 'Be there', hint: "they're going through something hard", level: 'medium' },
-  repair: { label: 'Patch things up', hint: 'after a fight, or to apologize', level: 'medium' },
+  support: { label: 'Be there', hint: "they're going through something hard", level: 'casual' },
+  repair: { label: 'Patch things up', hint: 'after a fight, or to apologize', level: 'casual' },
   plans: { label: 'Make plans', hint: 'suggest getting together', level: 'light' },
   celebrate: { label: 'Celebrate their news', hint: 'a win, a milestone, good news', level: 'light' },
   goodbye: { label: 'Say goodbye or wrap up', hint: "leaving, or they're leaving", level: 'light' },
@@ -47,7 +49,7 @@ export const GROUPS = [
 
 // Each person:
 //   group     which tile they sit under
-//   ceiling   the deepest level ever shown (light / medium / deep)
+//   ceiling   the deepest level ever shown (light / casual / personal / deep)
 //   careful   hide risky topics (money, health, family status...) for this person
 //   workOk    questions about their work are fine
 //   kidsOk    questions about their kids are fine
@@ -66,7 +68,7 @@ export const WHO = [
     purposes: ['checkin', 'deeper', 'reconnect', 'support', 'repair', 'plans', 'celebrate'], media: BOTH },
   { id: 'relative', label: 'Sibling or other relative', group: 'family', ceiling: 'deep', file: 'family',
     purposes: ['ice', 'checkin', 'deeper', 'reconnect', 'support', 'repair', 'celebrate'], media: BOTH },
-  { id: 'in-law', label: 'In-law', group: 'family', ceiling: 'medium', careful: true, file: 'family',
+  { id: 'in-law', label: 'In-law', group: 'family', ceiling: 'personal', careful: true, file: 'family',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'checkin', 'support', 'celebrate'], media: BOTH },
   { id: 'child', label: 'Young child', group: 'family', ceiling: 'deep', kidsOk: true, file: 'kids',
     purposes: ['revive', 'checkin', 'deeper', 'support', 'repair', 'plans', 'celebrate'], media: ['in-person'],
@@ -80,31 +82,31 @@ export const WHO = [
   // Friends
   { id: 'close-friend', label: 'Close friend', group: 'friends', ceiling: 'deep', file: 'friends',
     purposes: ['checkin', 'deeper', 'reconnect', 'support', 'repair', 'plans', 'celebrate'], media: BOTH },
-  { id: 'friend', label: 'Friend', group: 'friends', ceiling: 'medium', file: 'friends',
+  { id: 'friend', label: 'Friend', group: 'friends', ceiling: 'personal', file: 'friends',
     purposes: ['checkin', 'deeper', 'revive', 'reconnect', 'support', 'plans', 'celebrate'], media: BOTH },
-  { id: 'acquaintance', label: 'Acquaintance (class, gym, club)', group: 'friends', ceiling: 'medium',
+  { id: 'acquaintance', label: 'Acquaintance (class, gym, club)', group: 'friends', ceiling: 'personal',
     careful: true, file: 'friends',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'plans', 'support', 'celebrate'], media: BOTH },
-  { id: 'past', label: 'Someone from my past (ex, old classmate)', group: 'friends', ceiling: 'medium',
+  { id: 'past', label: 'Someone from my past (ex, old classmate)', group: 'friends', ceiling: 'personal',
     careful: true, file: 'friends',
     purposes: ['reconnect', 'quick', 'revive', 'repair', 'plans', 'support', 'celebrate'], media: BOTH },
 
   // Work & career
-  { id: 'colleague', label: 'Colleague', group: 'work', ceiling: 'medium', careful: true, workOk: true, file: 'work',
+  { id: 'colleague', label: 'Colleague', group: 'work', ceiling: 'personal', careful: true, workOk: true, file: 'work',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'checkin', 'support', 'goodbye'], media: BOTH },
-  { id: 'work-friend', label: 'Work friend', group: 'work', ceiling: 'medium', workOk: true, file: 'work',
+  { id: 'work-friend', label: 'Work friend', group: 'work', ceiling: 'personal', workOk: true, file: 'work',
     purposes: ['quick', 'checkin', 'deeper', 'support', 'plans', 'celebrate', 'goodbye'], media: BOTH },
-  { id: 'boss', label: 'Boss or senior leader (current or former)', group: 'work', ceiling: 'medium',
+  { id: 'boss', label: 'Boss or senior leader (current or former)', group: 'work', ceiling: 'personal',
     careful: true, workOk: true, file: 'work',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'plans', 'celebrate', 'goodbye'], media: BOTH, labels: ASK_TIME },
-  { id: 'report', label: 'Someone I manage', group: 'work', ceiling: 'medium', careful: true, workOk: true,
+  { id: 'report', label: 'Someone I manage', group: 'work', ceiling: 'personal', careful: true, workOk: true,
     file: 'work',
     purposes: ['ice', 'quick', 'checkin', 'deeper', 'revive', 'support', 'celebrate'], media: BOTH },
-  { id: 'client', label: 'Client or customer', group: 'work', ceiling: 'medium', careful: true, workOk: true,
+  { id: 'client', label: 'Client or customer', group: 'work', ceiling: 'personal', careful: true, workOk: true,
     file: 'work',
     purposes: ['ice', 'quick', 'revive', 'reconnect', 'plans', 'celebrate', 'goodbye'], media: BOTH,
     labels: { ...FOLLOW_UP, plans: { label: 'Set up next steps', hint: 'a meeting, a coffee' } } },
-  { id: 'mentor', label: 'Someone I want to learn from', group: 'work', ceiling: 'medium', careful: true,
+  { id: 'mentor', label: 'Someone I want to learn from', group: 'work', ceiling: 'personal', careful: true,
     workOk: true, file: 'networking',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'reconnect', 'plans', 'goodbye'], media: BOTH,
     labels: { ...FOLLOW_UP, ...ASK_TIME } },
@@ -113,30 +115,30 @@ export const WHO = [
     purposes: ['ice', 'quick', 'revive', 'reconnect', 'goodbye'], media: BOTH, labels: FOLLOW_UP },
 
   // Single tiles
-  { id: 'someone-new', label: 'Someone new', group: 'new', ceiling: 'medium', careful: true, workOk: true,
+  { id: 'someone-new', label: 'Someone new', group: 'new', ceiling: 'personal', careful: true, workOk: true,
     file: 'networking',
     purposes: ['ice', 'quick', 'revive', 'deeper', 'reconnect', 'plans', 'goodbye'], media: BOTH,
     labels: { ...FOLLOW_UP, plans: { label: 'Stay in touch', hint: 'swap details, suggest meeting' } } },
-  { id: 'date', label: 'Date or match', group: 'date', ceiling: 'medium', careful: true, file: 'other',
+  { id: 'date', label: 'Date or match', group: 'date', ceiling: 'personal', careful: true, file: 'other',
     purposes: ['ice', 'deeper', 'revive', 'reconnect', 'plans', 'goodbye'], media: BOTH,
     labels: { plans: { label: 'Ask them out', hint: 'or plan the next date' } } },
 
   // Neighbors & community
-  { id: 'neighbor', label: 'Neighbor', group: 'community', ceiling: 'medium', careful: true, file: 'other',
+  { id: 'neighbor', label: 'Neighbor', group: 'community', ceiling: 'personal', careful: true, file: 'other',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'support', 'repair', 'plans'], media: BOTH },
-  { id: 'other-parent', label: 'Another parent', group: 'community', ceiling: 'medium', careful: true,
+  { id: 'other-parent', label: 'Another parent', group: 'community', ceiling: 'personal', careful: true,
     kidsOk: true, file: 'other',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'support', 'plans', 'celebrate'], media: BOTH,
     labels: { plans: { label: 'Set up a playdate', hint: 'or a meet-up' } } },
-  { id: 'community', label: 'Someone from church, team, or club', group: 'community', ceiling: 'medium',
+  { id: 'community', label: 'Someone from church, team, or club', group: 'community', ceiling: 'personal',
     careful: true, file: 'other',
     purposes: ['ice', 'quick', 'deeper', 'revive', 'checkin', 'support', 'plans'], media: BOTH },
 
   // A group
-  { id: 'group-family', label: 'Family', group: 'group', ceiling: 'medium', file: 'family',
+  { id: 'group-family', label: 'Family', group: 'group', ceiling: 'personal', file: 'family',
     purposes: ['revive', 'deeper', 'checkin', 'plans', 'celebrate'], media: BOTH,
     labels: { revive: { label: 'Get everyone talking', hint: 'past the usual updates' } } },
-  { id: 'group-friends', label: 'Friends', group: 'group', ceiling: 'medium', file: 'friends',
+  { id: 'group-friends', label: 'Friends', group: 'group', ceiling: 'personal', file: 'friends',
     purposes: ['revive', 'deeper', 'reconnect', 'plans', 'celebrate'], media: BOTH,
     labels: { revive: { label: 'Wake up the chat', hint: 'or a quiet table' } } },
   { id: 'group-coworkers', label: 'Coworkers', group: 'group', ceiling: 'light', careful: true, workOk: true,

@@ -38,7 +38,7 @@ The flow these tags serve: **Who** (a tile, then a person) → **"Right now I wa
 | `followUps` | One or two follow-up questions for after they answer. Each at most 90 characters |
 | `shareBack` | One instruction for what the user offers about themself after the follow-ups, then hand the turn back. At most 140 characters |
 | `deliveryCue` | `null`, or one short tip on how or when to say it (at most 90 characters). Required for `child` and `teen`. Use it to say when a line fits ("Only if you've noticed it", "Swap in the real detail") |
-| `depth` | `light` (setting, tastes, plans), `medium` (experiences, opinions, stories, what excites or stresses), `deep` (values, fears, regrets, the relationship itself) |
+| `depth` | `light`, `casual`, `personal`, or `deep` (see "How deep the app goes" below) |
 | `who` | One or more person ids from `WHO` in `src/config.js`. Only list a person if the line sounds right said to them |
 | `purposes` | One or more of `ice`, `quick`, `deeper`, `revive`, `checkin`, `reconnect`, `support`, `repair`, `plans`, `celebrate`, `goodbye` (see below). Only list a purpose the person actually has |
 | `medium` | `in-person` (said face to face or on a call), `message` (written as a text), or `any` (works said or sent, word for word) |
@@ -64,7 +64,18 @@ The flow these tags serve: **Who** (a tile, then a person) → **"Right now I wa
 
 ## How deep the app goes
 
-Each person has a depth ceiling (`ceiling` in `WHO`). The purpose sets where a set starts: `ice`, `quick`, `reconnect`, `plans`, `celebrate`, `goodbye` start light; `revive`, `checkin`, `support`, `repair` start at medium (if the person allows it); `deeper` starts at the person's ceiling. A starter shows only when its depth is at or below where the set starts, so **light starters count for every purpose**, and a medium starter does not count toward `ice`.
+Four levels, lightest first. When unsure between two, choose the deeper one: the app starts light, and the user taps Deeper for more.
+
+| Level | What it covers | Example |
+|---|---|---|
+| `light` | The setting, plans, tastes, easy facts | "Anything fun planned for the weekend?" |
+| `casual` | Opinions, favorites, recent stories, what they're into. Easy to answer, nothing private | "What's the best thing you've eaten lately?" |
+| `personal` | What's on their mind, stresses, hopes, how they're really doing, how they feel about something | "What's taking up the most room in your head this week?" |
+| `deep` | Values, fears, regrets, identity, the relationship itself | "What do you want more of in your life right now?" |
+
+Each person has a depth ceiling (`ceiling` in `WHO`): family and close friends go to `deep`; most others stop at `personal`; a few (recruiters, groups of new people, coworker groups) stay `light`. "More reserved" lowers the ceiling one step for anyone but family and close friends.
+
+The purpose sets where a set starts: `ice`, `quick`, `reconnect`, `plans`, `celebrate`, `goodbye` start `light`; `revive`, `checkin`, `support`, `repair` start `casual`; `deeper` starts `personal` (or the person's ceiling, if lower). `deep` is never the starting point: it is one tap of Deeper away. A starter shows only when its depth is at or below where the set starts, so **light starters count for every purpose**.
 
 ## Writing rules
 

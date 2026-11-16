@@ -214,7 +214,7 @@ function resultsScreen() {
       <p class="depth-now" aria-live="polite">${depthDots(state.level)} ${levelName(state.level)}</p>
       <div class="bar-row">
         <button class="secondary" data-action="lighter" ${lighterOff}>Lighter</button>
-        <button class="primary" data-action="shuffle">Shuffle</button>
+        <button class="primary" data-action="shuffle">&#8635; New set</button>
         <button class="secondary" data-action="deeper" ${deeperOff}>Deeper</button>
       </div>
     </div>`;

@@ -906,7 +906,7 @@
     ],
     "shareBack": "If they open up, listen first; later, mention a time a meeting left you feeling the same.",
     "deliveryCue": "Only if you saw it, and you know them well. Don't push.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "colleague",
       "work-friend",
@@ -934,7 +934,7 @@
     ],
     "shareBack": "Name the piece of your own work you're enjoying most, in a sentence, then ask what they'd like more of.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend",
@@ -963,7 +963,7 @@
     ],
     "shareBack": "Offer one small trick or habit that helped you, then ask whether they've tried anything like it.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend",
@@ -992,7 +992,7 @@
     ],
     "shareBack": "Admit one thing you find hard about running meetings, then ask what they'd try in your place.",
     "deliveryCue": "Only say it if it's true of them.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend",
@@ -1021,7 +1021,7 @@
     ],
     "shareBack": "Say what you were planning to write, briefly, then ask what they'd change.",
     "deliveryCue": "Ask only when they have a few minutes.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend"
@@ -1050,7 +1050,7 @@
     ],
     "shareBack": "Mention a time you had something similar on your plate, in a sentence, then ask what would help.",
     "deliveryCue": "Only if it's true. Say it as an observation and wait.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "colleague",
       "work-friend",
@@ -1080,7 +1080,7 @@
     ],
     "shareBack": "Offer the one thing you keep coming back to this week, briefly, then return to theirs.",
     "deliveryCue": "Give them time; let them choose how much to say.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "colleague",
       "work-friend"
@@ -1107,7 +1107,7 @@
     ],
     "shareBack": "Name one thing you'd like more of yourself, in a sentence, then ask how you could help with theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "colleague",
       "work-friend",
@@ -1136,7 +1136,7 @@
     ],
     "shareBack": "Share where you honestly stand on your own path, in a sentence or two, then go back to theirs.",
     "deliveryCue": "For a private moment. Listen; don't steer.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "work-friend"
     ],
@@ -1163,7 +1163,7 @@
     ],
     "shareBack": "Offer the one moment you remember best, in a sentence, then ask if they saw it the same way.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend"
@@ -1192,7 +1192,7 @@
     ],
     "shareBack": "Tell your own oddest job in one sentence, with one detail, then ask for the rest of their story.",
     "deliveryCue": "Best over food or a drink.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend"
@@ -1221,7 +1221,7 @@
     ],
     "shareBack": "Mention the one thing that helps you switch off, in a sentence, then ask what they'd recommend trying.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend",
@@ -1250,7 +1250,7 @@
     ],
     "shareBack": "Offer your own best or worst work trip in a sentence, then ask where they'd like to be sent next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend"
@@ -1279,7 +1279,7 @@
     ],
     "shareBack": "Share one decision of your own that taught you something, briefly, then ask what they would tell someone facing it.",
     "deliveryCue": "Best in a private moment. Listen; don't fix.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "work-friend"
     ],
@@ -1306,7 +1306,7 @@
     ],
     "shareBack": "Mention one thing you're still figuring out here, then ask what they'd do in your position.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend"
@@ -1335,7 +1335,7 @@
     ],
     "shareBack": "Offer a short update on what you mentioned last time too, then ask what's next for them.",
     "deliveryCue": "Swap in the real thing they told you last time.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend",
@@ -1367,7 +1367,7 @@
     ],
     "shareBack": "Name one thing that surprised you on the upside, in a sentence, then ask what they're hoping for next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend",
@@ -1397,7 +1397,7 @@
     ],
     "shareBack": "Mention the piece of upcoming work you're most looking forward to, in a sentence, then ask how it fits their plans.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1425,7 +1425,7 @@
     ],
     "shareBack": "Say which priority makes most sense from where you sit, then ask what they'd like your team to keep in mind.",
     "deliveryCue": "Sound curious, not challenging.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1452,7 +1452,7 @@
     ],
     "shareBack": "Describe your upcoming conversation in a sentence, without names, then ask what they'd watch for.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1538,7 +1538,7 @@
     ],
     "shareBack": "Offer one lesson you've picked up recently, in a sentence, then ask if it matches their experience.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1566,7 +1566,7 @@
     ],
     "shareBack": "Mention one thing you already do when presenting, then ask whether they'd keep it or drop it.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1594,7 +1594,7 @@
     ],
     "shareBack": "Name the part of your own work you enjoy most, in a sentence, then ask a follow-up about theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "boss",
@@ -1624,7 +1624,7 @@
     ],
     "shareBack": "Offer one specific thing you've noticed working better, then ask whether they see it the same way.",
     "deliveryCue": "Only say it if you believe it.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1652,7 +1652,7 @@
     ],
     "shareBack": "Give your own route in, in one sentence with one detail, then ask what they'd tell someone starting now.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss",
       "client"
@@ -1734,7 +1734,7 @@
     ],
     "shareBack": "Say what you tend to watch in your own work, briefly, then ask what else you should be noticing.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1761,7 +1761,7 @@
     ],
     "shareBack": "Say what the decision made easier for you, in a sentence, then ask what they're watching next.",
     "deliveryCue": "Swap in a real decision you agreed with.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "boss"
     ],
@@ -1788,7 +1788,7 @@
     ],
     "shareBack": "Add what has and hasn't worked for you, in a sentence, then ask which of their habits to try first.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "colleague",
       "work-friend",
@@ -1950,7 +1950,7 @@
     ],
     "shareBack": "Say what first caught your attention about their work, in a sentence, then ask what's next for it.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "client"
     ],
@@ -1977,7 +1977,7 @@
     ],
     "shareBack": "Mention the one piece of their year you noticed from outside, then ask what they're aiming at next.",
     "deliveryCue": "Say it as an observation and let them fill in the rest.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "client"
     ],
@@ -2317,7 +2317,7 @@
     ],
     "shareBack": "Name the part of your own week that went sideways, briefly, then ask what would help next week.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "report",
       "colleague",
@@ -2347,7 +2347,7 @@
     ],
     "shareBack": "Admit the one task you'd hand off yourself, in a sentence, then come back to theirs.",
     "deliveryCue": "Ask it lightly; it's an invitation, not a test.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "report",
       "colleague",
@@ -2403,7 +2403,7 @@
     ],
     "shareBack": "Share one thing from your own week that surprised you, briefly, then ask what they need from you.",
     "deliveryCue": "For the start of a 1:1. Let them choose which one to answer.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "report"
     ],
@@ -2488,7 +2488,7 @@
     ],
     "shareBack": "If they open up, thank them, then say what you'll do about it and when.",
     "deliveryCue": "For a 1:1 that keeps getting \"all good\". Say it lightly, then wait.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "report"
     ],
@@ -2570,7 +2570,7 @@
     ],
     "shareBack": "Name the thing you'd protect yourself, in a sentence, then ask what they'd change.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "report",
       "colleague",
@@ -2656,7 +2656,7 @@
     ],
     "shareBack": "Listen first. Later, if it helps, mention one meeting that rattled you too, in a sentence.",
     "deliveryCue": "Say it privately, soon after. Either answer is fine.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "report",
       "colleague",

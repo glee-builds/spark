@@ -396,7 +396,7 @@
     ],
     "shareBack": "Mention one thing you've picked up or want to try, then ask how they'd start.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "acquaintance",
       "friend"
@@ -422,7 +422,7 @@
     ],
     "shareBack": "Mention something similar you've done or want to do, then ask what they'd recommend.",
     "deliveryCue": "Use it when you remember something they mentioned.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -450,7 +450,7 @@
     ],
     "shareBack": "Offer your own highlight in a sentence, then ask what they'd still like to fit in this year.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "acquaintance",
       "friend",
@@ -478,7 +478,7 @@
     ],
     "shareBack": "Mention one thing that's been on your own mind, briefly, then go back to theirs.",
     "deliveryCue": "Listen first; don't jump to fixing.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend"
@@ -505,7 +505,7 @@
     ],
     "shareBack": "Offer the one moment you remember best, then ask which trip of ours was their favorite.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -533,7 +533,7 @@
     ],
     "shareBack": "Offer something you haven't told them about yet, in a sentence, then ask what comes after that.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend"
@@ -559,7 +559,7 @@
     ],
     "shareBack": "Lay it out in a minute or two, thank them, then ask what they're weighing up right now.",
     "deliveryCue": "Keep your side short so it stays a two-way talk.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend"
@@ -584,7 +584,7 @@
     ],
     "shareBack": "Say what you'd have done in their place, honestly, then ask how it's sitting with them now.",
     "deliveryCue": "Name the actual situation so it's specific.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend"
@@ -610,7 +610,7 @@
     ],
     "shareBack": "Mention in a sentence how your own work has been, then ask what they do to switch off.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend"
@@ -638,7 +638,7 @@
     ],
     "shareBack": "Mention only that you've had stretches like that too, then leave the space for them.",
     "deliveryCue": "Only if you've noticed it. Say it once, gently.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend"
@@ -664,7 +664,7 @@
     ],
     "shareBack": "Offer one thing you're wrestling with too, briefly, then return to theirs.",
     "deliveryCue": "Listen; don't fix unless they ask.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend"
@@ -690,7 +690,7 @@
     ],
     "shareBack": "Tell them something you've noticed them do well this year, then offer one of your own.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend",
@@ -717,7 +717,7 @@
     ],
     "shareBack": "Add the one detail you remember that they might have forgotten, then ask for another story.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -965,7 +965,7 @@
     ],
     "shareBack": "Offer one road trip memory in a sentence, then ask where they'd drive if they had a free week.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "friend",
       "group-friends"
@@ -1072,7 +1072,7 @@
     ],
     "shareBack": "Offer your own favorite in a sentence, then ask who they've been hoping to see today.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -1154,7 +1154,7 @@
     ],
     "shareBack": "Give your own one-line update, then go back to the thing they sounded most excited about.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -1292,7 +1292,7 @@
     ],
     "shareBack": "Give your own headline in a sentence, then ask about the thing they mentioned first.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "friend",
       "past"
@@ -1318,7 +1318,7 @@
     ],
     "shareBack": "Say plainly that the gap wasn't about them, then suggest one easy way to meet.",
     "deliveryCue": "No need to explain the gap at length.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -1344,7 +1344,7 @@
     ],
     "shareBack": "Offer one small memory from there, then ask what their version of that place is now.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -1452,7 +1452,7 @@
     ],
     "shareBack": "Reply to their answer first; then add one line about your own week and ask what's next for them.",
     "deliveryCue": "Name the actual thing if you remember it.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -1531,7 +1531,7 @@
     ],
     "shareBack": "Say in a line how you've used it since, then ask what they've been thinking about lately.",
     "deliveryCue": "Quote the thing they said so it's specific.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "acquaintance",
       "friend"
@@ -1583,7 +1583,7 @@
     ],
     "shareBack": "Add the detail that makes you laugh most, then ask what they're doing this weekend.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -1636,7 +1636,7 @@
     ],
     "shareBack": "If they reply, name the one thing they did that helped most, then ask how they are doing.",
     "deliveryCue": "Send it without expecting a reply.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend"
     ],
@@ -1661,7 +1661,7 @@
     ],
     "shareBack": "Keep your own news to a line; offer one specific thing you can do this week.",
     "deliveryCue": "Listen; don't fix.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend"
@@ -1687,7 +1687,7 @@
     ],
     "shareBack": "Keep the ask short when you get to it, thank them, then ask what's going on with them.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend"
@@ -1818,7 +1818,7 @@
     ],
     "shareBack": "Give your own one-line version, then suggest a low-effort way to catch up.",
     "deliveryCue": "Don't over-apologize; one line is enough.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend"
@@ -2083,7 +2083,7 @@
     ],
     "shareBack": "If they reply, thank them first. Keep your own news short and let them set the pace.",
     "deliveryCue": "Send it once and don't push for an answer.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "past",
       "close-friend"
@@ -2108,7 +2108,7 @@
     ],
     "shareBack": "Hear their side fully before adding anything, then say one thing you will do differently.",
     "deliveryCue": "Own your part only. No \"but\".",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend"
     ],
@@ -2133,7 +2133,7 @@
     ],
     "shareBack": "Say in a sentence what you'd do differently, then ask what they'd like to happen next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend"
     ],
@@ -2158,7 +2158,7 @@
     ],
     "shareBack": "Don't defend yourself. Say one thing you've learned, then leave the next step to them.",
     "deliveryCue": "Then give them time.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "past"
@@ -2184,7 +2184,7 @@
     ],
     "shareBack": "Accept whatever they say without arguing, then ask one easy question about their life now.",
     "deliveryCue": "No excuses, and don't expect forgiveness on the spot.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "past"
     ],
@@ -2490,7 +2490,7 @@
     ],
     "shareBack": "Follow whichever they pick. If they talk, listen; if not, suggest one easy thing to do together.",
     "deliveryCue": "Either answer is fine. Follow their lead.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend",
@@ -2516,7 +2516,7 @@
     ],
     "shareBack": "Share one memory of your own only if you knew them, then go back to listening.",
     "deliveryCue": "For a loss. Use the person's name if you know it.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend",
@@ -2544,7 +2544,7 @@
     ],
     "shareBack": "Keep sending small, easy messages over the next week. Don't ask for updates.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend"
@@ -2569,7 +2569,7 @@
     ],
     "shareBack": "Do whichever they pick, and keep your own news to a line.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "close-friend",
       "friend"
@@ -2594,7 +2594,7 @@
     ],
     "shareBack": "If they reply, listen and keep your side short. Offer one specific thing if it makes sense.",
     "deliveryCue": "Send it without expecting a reply.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "past"
     ],
@@ -2693,7 +2693,7 @@
     ],
     "shareBack": "Keep your own news short. Offer one specific thing you could do.",
     "deliveryCue": "Listen. Don't fix unless they ask.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend"
@@ -2719,7 +2719,7 @@
     ],
     "shareBack": "Say honestly what has been on your own mind in a sentence, then go back to them.",
     "deliveryCue": "Ask when you have time to hear the answer.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "close-friend",
       "friend"
@@ -3583,7 +3583,7 @@
     ],
     "shareBack": "Tell a short one of your own after a couple of others, then ask who can top it.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "group-friends",
       "friend"
@@ -3637,7 +3637,7 @@
     ],
     "shareBack": "Add yours in a line after a few others, then ask what everyone's hoping for next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "group-friends"
     ],
@@ -3661,7 +3661,7 @@
     ],
     "shareBack": "Offer one of your own in a sentence, then ask a follow-up about theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "group-friends",
       "friend",
@@ -3687,7 +3687,7 @@
     ],
     "shareBack": "Share yours in a sentence, then ask someone quieter for theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "group-friends"
     ],
@@ -3738,7 +3738,7 @@
     ],
     "shareBack": "Name one piece of advice from someone here that stuck with you, then ask who else has one.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "group-friends"
     ],
@@ -3939,7 +3939,7 @@
     ],
     "shareBack": "Offer one surprise of your own in a sentence, then ask what they are looking forward to.",
     "deliveryCue": "Say it playfully.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "past",
       "friend",
@@ -4134,6 +4134,59 @@
     "medium": "any",
     "topics": [
       "learning"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-160",
+    "line": "I never properly said sorry for missing your big day. I still feel bad about it, and I'm sorry.",
+    "form": "statement",
+    "followUps": [
+      "How did it all go?",
+      "What was the best part?"
+    ],
+    "shareBack": "Say in a sentence why it mattered to you to say it, with no excuse, then ask about them.",
+    "deliveryCue": "Say it plainly, with no \"but\" after it.",
+    "depth": "casual",
+    "who": [
+      "past",
+      "close-friend",
+      "friend"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fr-161",
+    "line": "I owe you a sorry for dropping the ball on our plans back then. Hope life's been good to you.",
+    "form": "reachout",
+    "followUps": [
+      "What's been keeping you busy?",
+      "Are you still in the same area?"
+    ],
+    "shareBack": "Share one line about what you are up to now, then ask a specific question back.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "past",
+      "close-friend",
+      "friend"
+    ],
+    "purposes": [
+      "repair",
+      "reconnect"
+    ],
+    "medium": "message",
+    "topics": [
+      "connection"
     ],
     "riskTags": [],
     "basis": "expert-opinion"

@@ -267,7 +267,7 @@
     ],
     "shareBack": "Mention one thing that surprised you the same way, then ask if they'd give it a go.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date",
       "neighbor",
@@ -295,7 +295,7 @@
     ],
     "shareBack": "Share one trip of yours in a sentence with one detail, then ask where they'd go next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date",
       "neighbor",
@@ -324,7 +324,7 @@
     ],
     "shareBack": "Offer one thing that filled your own week, briefly, then ask what they want from the weekend.",
     "deliveryCue": "Listen first; don't jump in with fixes.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date"
     ],
@@ -481,7 +481,7 @@
     ],
     "shareBack": "Share your own small thing in one sentence, then ask if they'd add it to their list.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date",
       "community"
@@ -681,7 +681,7 @@
     ],
     "shareBack": "Offer one line about your own day only after hearing theirs, then ask about tomorrow.",
     "deliveryCue": "Use when you know they had something on today.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date"
     ],
@@ -1024,7 +1024,7 @@
     ],
     "shareBack": "Share one change you've noticed yourself, briefly, then ask what they'd add to the street.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "neighbor"
     ],
@@ -1049,7 +1049,7 @@
     ],
     "shareBack": "Offer one thing filling your own time, in a sentence with a detail, then hand it back.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "neighbor"
     ],
@@ -1653,7 +1653,7 @@
     ],
     "shareBack": "Offer one surprising craze from your own house, in a sentence, then ask how long theirs has lasted.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "other-parent"
     ],
@@ -1710,7 +1710,7 @@
     ],
     "shareBack": "Share one thing that caught you off guard, in a sentence, then ask what they're enjoying most.",
     "deliveryCue": "For a quiet corner, not in front of the kids.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "other-parent"
     ],
@@ -2767,7 +2767,7 @@
     ],
     "shareBack": "Offer a short story of yours in two sentences, then ask about another one of theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date",
       "community"
@@ -2793,7 +2793,7 @@
     ],
     "shareBack": "Offer one small thing you changed your mind on, in a sentence, then ask what else surprised them.",
     "deliveryCue": "Keep it light. Food and music answers count.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date"
     ],
@@ -2817,7 +2817,7 @@
     ],
     "shareBack": "Share one small win of your own in a sentence, then ask what else is going well for them.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "date",
       "community"
@@ -2900,7 +2900,7 @@
     ],
     "shareBack": "Share one kind thing a neighbor did for you, in a sentence, then ask what they like most about this street.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "neighbor"
     ],
@@ -2925,7 +2925,7 @@
     ],
     "shareBack": "Name one thing you love about the street, then ask about their favorite spot nearby.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "neighbor"
     ],
@@ -3157,7 +3157,7 @@
     ],
     "shareBack": "If they pick distraction, offer one light story from your week, then let them steer.",
     "deliveryCue": "Either answer is fine. Follow their lead.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "neighbor",
       "other-parent",
@@ -3184,7 +3184,7 @@
     ],
     "shareBack": "Don't match it with your own hard story. Say you're around, then offer one specific help.",
     "deliveryCue": "Say it, then leave room. No need to fill the silence.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "neighbor",
       "other-parent",
@@ -3210,7 +3210,7 @@
     ],
     "shareBack": "If you knew them, add one small, kind memory of your own, then listen again.",
     "deliveryCue": "For a loss. Use the person's name if you know it.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "neighbor",
       "other-parent",
@@ -3382,7 +3382,7 @@
     ],
     "shareBack": "Say plainly what you will do differently, with no \"but\", then ask if that works for them.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "neighbor"
     ],
@@ -3896,7 +3896,7 @@
     ],
     "shareBack": "Say what keeps you coming, in one sentence, then ask what they would like the group to try.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "community"
     ],
@@ -4065,7 +4065,7 @@
     ],
     "shareBack": "Say what has been filling your own time, in a sentence, then ask what they are looking forward to.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "community"
     ],
@@ -4090,7 +4090,7 @@
     ],
     "shareBack": "If they open up, listen. If not, mention something light about your week and leave the door open.",
     "deliveryCue": "Say it privately, and accept whatever answer they give.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "community"
     ],

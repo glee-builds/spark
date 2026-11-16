@@ -162,7 +162,7 @@
     ],
     "shareBack": "Tonight, say in one sentence what was going on for you, then let them respond or not.",
     "deliveryCue": "Don't add 'but'. Send it and let it land.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen"
     ],
@@ -339,7 +339,7 @@
     ],
     "shareBack": "If they open up, mention one time you felt the same, in a sentence, then go back to them.",
     "deliveryCue": "Only if you've noticed it. Say it once, then leave a long pause.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "teen"
     ],
@@ -415,7 +415,7 @@
     ],
     "shareBack": "Offer one short, true story from that age, then let them decide whether to add theirs.",
     "deliveryCue": "Say it and stop. Let the silence do the work.",
-    "depth": "deep",
+    "depth": "personal",
     "who": [
       "teen"
     ],
@@ -491,7 +491,7 @@
     ],
     "shareBack": "Mention one small hard thing from your day and what you did, then give them a hug.",
     "deliveryCue": "Bedtime, lights low. Listen; don't fix it.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "child"
     ],
@@ -845,7 +845,7 @@
     ],
     "shareBack": "Mention a time you felt quiet as a kid, in one sentence, then let them lead.",
     "deliveryCue": "Only if you've noticed it. Sit beside them and wait; silence is fine.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "child"
     ],
@@ -898,7 +898,7 @@
     ],
     "shareBack": "Mention something small that felt tricky for you today and what you did, then ask if they want a hug.",
     "deliveryCue": "Bedtime, lights low. Listen and name the feeling; skip the \"why.\"",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "child"
     ],
@@ -925,7 +925,7 @@
     ],
     "shareBack": "Name a rule you'd change too, then talk about whether you could try one of theirs.",
     "deliveryCue": "Take the answer seriously, even a silly one.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -951,7 +951,7 @@
     ],
     "shareBack": "Mention something you were good at as a kid that nobody saw, then ask for a demonstration.",
     "deliveryCue": "One-on-one, when you have time to watch whatever they show you.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -976,7 +976,7 @@
     ],
     "shareBack": "Mention one thing a good friend once did for you, then ask what they would add.",
     "deliveryCue": "At bedtime or on a walk. A short answer is fine.",
-    "depth": "deep",
+    "depth": "personal",
     "who": [
       "child"
     ],
@@ -1001,7 +1001,7 @@
     ],
     "shareBack": "Share one thing that scared you as a kid and how it stopped, then ask what they would tell a younger kid.",
     "deliveryCue": "Keep it light at bedtime; let them decide how far to go.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "child"
     ],
@@ -1026,7 +1026,7 @@
     ],
     "shareBack": "Name your own favorite thing you do together, then pick when to do it next.",
     "deliveryCue": "At bedtime, or at the end of a good day together.",
-    "depth": "deep",
+    "depth": "personal",
     "who": [
       "child"
     ],
@@ -1050,7 +1050,7 @@
     ],
     "shareBack": "If they talk, mention a time you had a hard day too, in a sentence, then stay close.",
     "deliveryCue": "Then stay close. No fixing, and no more questions for a while.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -1075,7 +1075,7 @@
     ],
     "shareBack": "If they ask, say you've had big feelings too and they passed, then stay with them.",
     "deliveryCue": "Name the feeling if you can; skip the \"why.\"",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -1125,7 +1125,7 @@
     ],
     "shareBack": "Mention one time you felt sad about something like it, briefly, then let them talk or not.",
     "deliveryCue": "Say it calmly and stay nearby. Don't rush to cheer them up.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -1175,7 +1175,7 @@
     ],
     "shareBack": "Say in one sentence what you'll try next time you're upset, then offer a hug if they want one.",
     "deliveryCue": "Get down to their level. Don't add \"but you…\"",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -1200,7 +1200,7 @@
     ],
     "shareBack": "Name the mistake simply, in kid words, then let them choose the do-over.",
     "deliveryCue": "Keep it short and calm, once everyone has settled down.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -1225,7 +1225,7 @@
     ],
     "shareBack": "Say one thing you'll do differently, then ask what they could try too.",
     "deliveryCue": "Wait until you are both calm, then sit close.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -1251,7 +1251,7 @@
     ],
     "shareBack": "Say what got in the way, in a sentence, then put the new day somewhere they can see it.",
     "deliveryCue": "Swap in the real promise, and only offer a day you can keep.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "child"
     ],
@@ -1504,7 +1504,7 @@
     ],
     "shareBack": "Give your own number for the week and one reason, then ask if there is anything you can do.",
     "deliveryCue": "Keep it light. Whatever number they give, don't lecture.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "teen",
       "grown-child"
@@ -1530,7 +1530,7 @@
     ],
     "shareBack": "If they open up, mention a time you went quiet at their age, in a sentence, then go back to them.",
     "deliveryCue": "Only if you've noticed it. Say it once, then drop it.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "teen"
     ],
@@ -1607,7 +1607,7 @@
     ],
     "shareBack": "Offer one thing you'd tell your younger self, in a sentence, then let them add or not.",
     "deliveryCue": "Best side by side: a drive, a walk, the dishes.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "teen"
     ],
@@ -1632,7 +1632,7 @@
     ],
     "shareBack": "Give your own view in a sentence or two, and say so if theirs changes your mind.",
     "deliveryCue": "Pick a real topic, not a lesson in disguise. Send the link if texting.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen",
       "grown-child"
@@ -1658,7 +1658,7 @@
     ],
     "shareBack": "Mention one time you handled something like it badly, briefly, then let them talk.",
     "deliveryCue": "Only if it is true. Swap in what you actually saw.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen"
     ],
@@ -1760,7 +1760,7 @@
     ],
     "shareBack": "If they talk, mention a rough day you had at their age, in one sentence, then go back to listening.",
     "deliveryCue": "Say it once, then leave it. Being nearby is enough.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen"
     ],
@@ -1785,7 +1785,7 @@
     ],
     "shareBack": "Hold your own story unless they ask; if they do, keep it to a sentence.",
     "deliveryCue": "Then really just listen. No advice unless they ask.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen",
       "grown-child"
@@ -1860,7 +1860,7 @@
     ],
     "shareBack": "Only if they want it, mention a time something similar happened to you, briefly.",
     "deliveryCue": "Say it before anything else. No \"at least\" and no lesson.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen",
       "grown-child"
@@ -1885,7 +1885,7 @@
     ],
     "shareBack": "Say in a sentence what was going on with you, without turning it into a \"but.\"",
     "deliveryCue": "Don't add \"but.\" Say it once and let them respond, or not.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen"
     ],
@@ -1910,7 +1910,7 @@
     ],
     "shareBack": "Name the part you got wrong plainly, then listen to the rest without defending.",
     "deliveryCue": "Wait a few hours. A text is fine if face to face feels like too much.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "teen"
     ],
@@ -1934,7 +1934,7 @@
     ],
     "shareBack": "Say one thing you'll do differently, then ask if they'll meet you halfway.",
     "deliveryCue": "Keep it short. Offer a snack or a drive to go with it.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen"
     ],
@@ -1958,7 +1958,7 @@
     ],
     "shareBack": "Explain in a sentence what worried you, then really consider their idea.",
     "deliveryCue": "For when you still mean the rule but regret the tone.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "teen"
     ],
@@ -2306,7 +2306,7 @@
     ],
     "shareBack": "Mention a time you were overloaded at their stage, in a sentence, then go back to them.",
     "deliveryCue": "Ask once. Take \"fine\" at face value and leave the door open.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "grown-child"
     ],
@@ -2357,7 +2357,7 @@
     ],
     "shareBack": "Mention a time you felt that way at their stage, briefly, then let them lead.",
     "deliveryCue": "Only if you noticed it. Accept \"just a long week.\"",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "grown-child"
     ],
@@ -2383,7 +2383,7 @@
     ],
     "shareBack": "Share the hardest part of your own first year away, in a sentence, then hand it back.",
     "deliveryCue": "Ask when there is time for a real answer, not in between other things.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "grown-child"
     ],
@@ -2564,7 +2564,7 @@
     ],
     "shareBack": "Share one thing you are still figuring out at your age, then hand it back.",
     "deliveryCue": "Better on a long call or a walk than in a quick text.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "grown-child"
     ],
@@ -2614,7 +2614,7 @@
     ],
     "shareBack": "Explain what's pulling you each way in a sentence or two, then really consider their view.",
     "deliveryCue": "Swap in the real decision, and only ask if you will weigh the answer.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "grown-child"
     ],
@@ -2863,7 +2863,7 @@
     ],
     "shareBack": "If it helps, mention a time you went through something similar, in a sentence, then go back to them.",
     "deliveryCue": "No \"at least,\" and no advice unless they ask.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "grown-child"
     ],
@@ -2938,7 +2938,7 @@
     ],
     "shareBack": "Mention a time you didn't have it figured out at their age, then hand it back.",
     "deliveryCue": "After a setback: a rejection, a breakup, a hard semester.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "grown-child"
     ],
@@ -3154,5 +3154,53 @@
     ],
     "riskTags": [],
     "basis": "research-backed"
+  },
+  {
+    "id": "ki-095",
+    "line": "I was out of line earlier. I'm sorry. Can we start over at dinner?",
+    "form": "statement",
+    "followUps": [
+      "Anything you want to say about it?",
+      "What should we have tonight?"
+    ],
+    "shareBack": "Say once what you will try to do differently, then talk about something else.",
+    "deliveryCue": "Say it side by side, then drop it. Don't ask for an apology back.",
+    "depth": "casual",
+    "who": [
+      "teen"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "ki-096",
+    "line": "I'd like to hear what's been on your mind lately, not just the schedule stuff. No rush.",
+    "form": "statement",
+    "followUps": [
+      "What's been taking up the most space?",
+      "Is that a good thing or a hard thing right now?"
+    ],
+    "shareBack": "Offer one thing that's been on your own mind, in a sentence, then leave room.",
+    "deliveryCue": "Text it or say it in the car; let a short answer be enough.",
+    "depth": "personal",
+    "who": [
+      "teen"
+    ],
+    "purposes": [
+      "deeper"
+    ],
+    "medium": "any",
+    "topics": [
+      "feelings"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
   }
 ]

@@ -34,7 +34,7 @@
     ],
     "shareBack": "Mention one thing that has weighed on you lately, briefly, then hand the turn back.",
     "deliveryCue": "Only if you've noticed it. Then listen; don't fix.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner"
     ],
@@ -61,7 +61,7 @@
     ],
     "shareBack": "Once they have finished, offer what is filling your own head in a sentence, then ask what would help.",
     "deliveryCue": "Listen; don't fix unless they ask.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner"
     ],
@@ -162,7 +162,7 @@
     ],
     "shareBack": "Keep your part to a minute, then give them the longer turn.",
     "deliveryCue": "When it's their turn, listen; don't fix.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner"
     ],
@@ -188,7 +188,7 @@
     ],
     "shareBack": "Mention one thing you could use a hand with too, then agree on one small change.",
     "deliveryCue": "Take the answer as given; don't defend.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "partner"
     ],
@@ -263,7 +263,7 @@
     ],
     "shareBack": "Offer the moment you remember best, in a sentence, then ask what they'd do again.",
     "deliveryCue": "Let them tell it their way; don't correct the details.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "partner"
     ],
@@ -339,7 +339,7 @@
     ],
     "shareBack": "After they have told it all, mention one thing from your day, then go back to theirs.",
     "deliveryCue": "Tonight, ask and listen; don't fix.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "partner"
     ],
@@ -468,7 +468,7 @@
     ],
     "shareBack": "Mention one thing you find heavy too, briefly, then return to what they need.",
     "deliveryCue": "Thank them first; don't explain or defend.",
-    "depth": "deep",
+    "depth": "personal",
     "who": [
       "partner"
     ],
@@ -494,7 +494,7 @@
     ],
     "shareBack": "Mention how you feel about your name now, then ask about another family name.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent"
     ],
@@ -519,7 +519,7 @@
     ],
     "shareBack": "Offer your own earliest memory of this holiday, then ask what they'd bring back.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent",
       "in-law"
@@ -576,7 +576,7 @@
     ],
     "shareBack": "Offer one detail about your own first job, then ask what they did next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent"
     ],
@@ -603,7 +603,7 @@
     ],
     "shareBack": "Mention one thing you remember about your own childhood home, then ask about the street.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent",
       "in-law"
@@ -630,7 +630,7 @@
     ],
     "shareBack": "Mention who you think you take after, then ask who they take after.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent",
       "relative"
@@ -655,7 +655,7 @@
     ],
     "shareBack": "Offer a short family story you love, then ask if they remember it the same way.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent",
       "relative",
@@ -683,7 +683,7 @@
     ],
     "shareBack": "Lay the choice out in two sentences, then listen to the whole answer before replying.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "parent",
       "relative"
@@ -791,7 +791,7 @@
     ],
     "shareBack": "Mention one thing from your own year in a sentence, then ask another question about theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "parent",
       "relative"
@@ -818,7 +818,7 @@
     ],
     "shareBack": "Offer the one dish or moment you remember best, then ask what else you've forgotten.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent"
     ],
@@ -844,7 +844,7 @@
     ],
     "shareBack": "Mention a gathering you remember from childhood, then ask how today compares.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent",
       "in-law"
@@ -921,7 +921,7 @@
     ],
     "shareBack": "Offer the story you tell most, in a few sentences, then ask if you've got it right.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "relative"
     ],
@@ -1082,7 +1082,7 @@
     ],
     "shareBack": "Say which song it was and where it took you, in a sentence, then ask about theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "relative",
       "partner"
@@ -1110,7 +1110,7 @@
     ],
     "shareBack": "Mention one thing that has stretched you lately, briefly, then go back to theirs.",
     "deliveryCue": "Only if you've noticed it. Listen; don't jump in with fixes.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "relative",
       "parent"
@@ -1137,7 +1137,7 @@
     ],
     "shareBack": "Offer your own highlight in a sentence, then ask what's coming up next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent",
       "relative",
@@ -1384,7 +1384,7 @@
     ],
     "shareBack": "Offer one childhood story of your own, briefly, then ask for another of theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "in-law"
     ],
@@ -1462,7 +1462,7 @@
     ],
     "shareBack": "Offer one detail about the home you grew up in, then ask what they miss about those years.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "in-law"
     ],
@@ -1544,7 +1544,7 @@
     ],
     "shareBack": "Offer one tradition you'd like to keep going, then ask how you can help with theirs.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "in-law"
     ],
@@ -1786,7 +1786,7 @@
     ],
     "shareBack": "Mention the story you remember best in a line, then let them pick where to start.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent"
     ],
@@ -2105,7 +2105,7 @@
     ],
     "shareBack": "If it helps, say in one sentence what was going on for you, with no 'but', then let them respond.",
     "deliveryCue": "Don't add 'but'. Say it and let it land.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "partner",
       "parent",
@@ -2132,7 +2132,7 @@
     ],
     "shareBack": "Once they've finished, say the one thing you'll do differently, then ask if that works for them.",
     "deliveryCue": "Listen all the way through before you explain.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner",
       "parent",
@@ -2159,7 +2159,7 @@
     ],
     "shareBack": "Name your own part in one sentence, with no 'but', then hand the turn back.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner",
       "parent",
@@ -2185,7 +2185,7 @@
     ],
     "shareBack": "When you talk, say your part first in a sentence, then ask for theirs and listen.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner"
     ],
@@ -2210,7 +2210,7 @@
     ],
     "shareBack": "Say plainly what you'll do next time, then ask if that would help.",
     "deliveryCue": "Name the specific time if you can.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner",
       "parent",
@@ -2237,7 +2237,7 @@
     ],
     "shareBack": "Offer one small thing you'd like to do together tonight, then let them pick.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner"
     ],
@@ -2262,7 +2262,7 @@
     ],
     "shareBack": "When you talk, own your part in a sentence, then ask how it landed for them.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "parent",
       "relative",
@@ -2315,7 +2315,7 @@
     ],
     "shareBack": "If they reply, say in a line what's been keeping you away, then ask about them.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "parent",
       "relative"
@@ -2502,7 +2502,7 @@
     ],
     "shareBack": "Once they've finished, offer one specific thing you'll take on, then do it.",
     "deliveryCue": "Listen. Don't fix unless they ask.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner"
     ],
@@ -2680,7 +2680,7 @@
     ],
     "shareBack": "If it fits, share one short memory of your own, then let them keep talking.",
     "deliveryCue": "For a loss. Use their name if you know it.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "partner",
       "parent",
@@ -3675,7 +3675,7 @@
     ],
     "shareBack": "Offer a short one you love if no one starts, then ask if it's right.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "group-family"
     ],
@@ -3701,7 +3701,7 @@
     ],
     "shareBack": "Offer your own answer in a sentence, then ask someone who hasn't spoken.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "group-family"
     ],
@@ -3783,7 +3783,7 @@
     ],
     "shareBack": "Offer the best advice you were given in a sentence, then ask someone else.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "group-family"
     ],
@@ -3862,7 +3862,7 @@
     ],
     "shareBack": "Go first with short ones of your own, then pass it on.",
     "deliveryCue": "Let people pass if they want to.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "group-family"
     ],
@@ -4000,6 +4000,83 @@
     "medium": "any",
     "topics": [
       "week"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-184",
+    "line": "I didn't handle that well earlier. I'm sorry, and I'm not going to make excuses for it.",
+    "form": "statement",
+    "followUps": [
+      "How did it land on your end?",
+      "Is there anything you want me to know about it?"
+    ],
+    "shareBack": "Say in one sentence what you will do differently next time, then let them respond.",
+    "deliveryCue": "Say it plainly, with no \"but\" after it.",
+    "depth": "casual",
+    "who": [
+      "partner",
+      "parent",
+      "relative"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-185",
+    "line": "Sorry I snapped at you earlier. That one's on me, and you didn't deserve it.",
+    "form": "statement",
+    "followUps": [
+      "Are we okay?",
+      "Anything you want to say about it?"
+    ],
+    "shareBack": "If they ask, say what was going on for you in a sentence, with no excuse, then ask about their day.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "partner",
+      "parent",
+      "relative"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "connection"
+    ],
+    "riskTags": [],
+    "basis": "expert-opinion"
+  },
+  {
+    "id": "fa-186",
+    "line": "Sorry about this morning. I was out of line. Can I bring home your favorite tonight?",
+    "form": "statement",
+    "followUps": [
+      "Still the usual order?",
+      "Want to talk about it later, or let it go?"
+    ],
+    "shareBack": "Say briefly that you want to do better, then hand the evening back to them.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "partner"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "message",
+    "topics": [
+      "connection",
+      "food"
     ],
     "riskTags": [],
     "basis": "expert-opinion"
