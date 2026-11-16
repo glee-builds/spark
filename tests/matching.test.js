@@ -3,7 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  depthCeiling, depthTop, defaultLevel, availableLevels, isRiskBlocked, fits, candidates, pickSet,
+  depthCeiling, depthTop, defaultLevel, availableLevels, startLevel, isRiskBlocked, fits, candidates, pickSet,
 } from '../src/matching.js';
 
 function starter(overrides = {}) {
@@ -133,4 +133,10 @@ test('Deeper only offers levels that add starters at that depth', () => {
   assert.deepEqual(availableLevels(library, sel), [0, 1]);
   library.push(starter({ id: 'te-003', depth: 'personal' }));
   assert.deepEqual(availableLevels(library, sel), [0, 1, 2]);
+});
+
+test('a set starts at the nearest level that has starters of its own', () => {
+  const sel = { who: 'close-friend', purpose: 'checkin', medium: 'in-person' };
+  assert.equal(startLevel([starter({ id: 'te-001', depth: 'light' })], sel), 0);
+  assert.equal(startLevel([starter({ id: 'te-001', depth: 'light' }), starter({ id: 'te-002', depth: 'casual' })], sel), 1);
 });

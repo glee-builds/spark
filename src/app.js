@@ -7,7 +7,7 @@
 import {
   WHO, GROUPS, DEPTHS, COMFORT, PLACES, findWho, findGroup, purposeLabel,
 } from './config.js';
-import { pickSet, defaultLevel, availableLevels } from './matching.js';
+import { pickSet, startLevel, availableLevels } from './matching.js';
 import { pickExits, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
 import {
@@ -395,7 +395,7 @@ function newSet() {
 // A fresh person or purpose starts again at the purpose's depth.
 function startResults() {
   state.medium = 'in-person';
-  state.level = defaultLevel(selection());
+  state.level = startLevel(state.library, selection());
   newSet();
   addRecent({ who: state.who, purpose: state.purpose });
 }
