@@ -509,7 +509,7 @@
     ],
     "shareBack": "Offer one thing you have picked up lately, with a detail, then ask what they want to try next.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "someone-new"
     ],
@@ -534,7 +534,7 @@
     ],
     "shareBack": "Say in a sentence how your own last few months have gone, then go back to what they told you.",
     "deliveryCue": "Only if they mentioned being busy. Say it warmly, then give them time.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "someone-new"
     ],
@@ -639,7 +639,7 @@
     ],
     "shareBack": "Offer one short memory of a gathering from your own family, then ask what today reminds them of.",
     "deliveryCue": "At a wedding or family party, once you have talked a few minutes.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "someone-new"
     ],
@@ -1309,7 +1309,7 @@
     ],
     "shareBack": "Reply with the choice you are facing, in one line, and thank them for the steer.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "mentor"
     ],
@@ -1334,7 +1334,7 @@
     ],
     "shareBack": "Say in a sentence what you are weighing in your own work, then ask what they would look at first.",
     "deliveryCue": "Once you know their line of work.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "mentor",
       "someone-new"
@@ -1362,7 +1362,7 @@
     ],
     "shareBack": "Offer one thing you have already learned the hard way, in a sentence, then hand the turn back.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "mentor"
     ],
@@ -1389,7 +1389,7 @@
     ],
     "shareBack": "Mention one decision of your own you are unsure about, briefly, then ask how they would look at it.",
     "deliveryCue": "Ask with curiosity, not as a test.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "mentor"
     ],
@@ -1416,7 +1416,7 @@
     ],
     "shareBack": "Lay out your two options in a sentence each, then ask what they would want to know before choosing.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "mentor"
     ],
@@ -1444,7 +1444,7 @@
     ],
     "shareBack": "Say what first drew you to the work, in a sentence, then ask what they would explore in your place.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "mentor"
     ],
@@ -1981,7 +1981,7 @@
     ],
     "shareBack": "Say in a sentence what finally won you over, then go back to theirs.",
     "deliveryCue": "Swap in your own small example; keep it small so they keep it small too.",
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "someone-new",
       "mentor"
@@ -2109,7 +2109,7 @@
     ],
     "shareBack": "Offer one skill of your own that surprised you, in a sentence, then hand the turn back.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "someone-new",
       "mentor"
@@ -2135,7 +2135,7 @@
     ],
     "shareBack": "Offer one moment from your own year you'd repeat, in a sentence, then hand the turn back.",
     "deliveryCue": null,
-    "depth": "medium",
+    "depth": "casual",
     "who": [
       "someone-new"
     ],
@@ -2159,7 +2159,7 @@
     ],
     "shareBack": "Say in a sentence what matters to you in the same way, then hand the turn back.",
     "deliveryCue": "Only if it is true. Then pause and let them choose how much to say.",
-    "depth": "medium",
+    "depth": "personal",
     "who": [
       "someone-new",
       "mentor"

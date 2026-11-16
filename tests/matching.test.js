@@ -18,21 +18,22 @@ function starter(overrides = {}) {
 const COLLEAGUE = { who: 'colleague', purpose: 'checkin', medium: 'in-person' };
 
 test('the person sets the depth ceiling', () => {
-  assert.equal(depthCeiling({ who: 'partner' }), 2);
-  assert.equal(depthCeiling({ who: 'colleague' }), 1);
+  assert.equal(depthCeiling({ who: 'partner' }), 3);
+  assert.equal(depthCeiling({ who: 'colleague' }), 2);
   assert.equal(depthCeiling({ who: 'recruiter' }), 0);
 });
 
 test('"More reserved" lowers the ceiling except for family and close friends', () => {
-  assert.equal(depthCeiling({ who: 'friend', comfort: 'reserved' }), 0);
-  assert.equal(depthCeiling({ who: 'close-friend', comfort: 'reserved' }), 2);
+  assert.equal(depthCeiling({ who: 'friend', comfort: 'reserved' }), 1);
+  assert.equal(depthCeiling({ who: 'close-friend', comfort: 'reserved' }), 3);
 });
 
-test('the purpose sets where a set starts', () => {
+test('the purpose sets where a set starts, and deep is never the start', () => {
   assert.equal(defaultLevel({ who: 'partner', purpose: 'ice' }), 0);
   assert.equal(defaultLevel({ who: 'partner', purpose: 'checkin' }), 1);
   assert.equal(defaultLevel({ who: 'partner', purpose: 'deeper' }), 2);
-  assert.equal(defaultLevel({ who: 'colleague', purpose: 'deeper' }), 1);
+  assert.equal(defaultLevel({ who: 'colleague', purpose: 'deeper' }), 2);
+  assert.equal(defaultLevel({ who: 'colleague', purpose: 'deeper', comfort: 'reserved' }), 1);
   assert.equal(defaultLevel({ who: 'recruiter', purpose: 'revive' }), 0);
 });
 
@@ -83,12 +84,12 @@ test('starters seen recently come last', () => {
 test('a deeper set opens with an easy light starter, then the chosen level', () => {
   const library = [
     starter({ id: 'te-001', depth: 'light', topics: ['plans'] }),
-    starter({ id: 'te-002', depth: 'medium', topics: ['work'] }),
-    starter({ id: 'te-003', depth: 'medium', topics: ['hobbies'] }),
+    starter({ id: 'te-002', depth: 'casual', topics: ['work'] }),
+    starter({ id: 'te-003', depth: 'casual', topics: ['hobbies'] }),
     starter({ id: 'te-004', depth: 'light', topics: ['food'] }),
   ];
   const set = pickSet(library, COLLEAGUE, { level: 1, count: 3 });
-  assert.deepEqual(set.map((s) => s.depth), ['light', 'medium', 'medium']);
+  assert.deepEqual(set.map((s) => s.depth), ['light', 'casual', 'casual']);
 });
 
 test('starters marked "fell flat" come last', () => {

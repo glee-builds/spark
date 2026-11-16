@@ -3,9 +3,9 @@
 
 import { DEPTHS, PURPOSES, findWho } from './config.js';
 
-const LEVEL = { light: 0, medium: 1, deep: 2 };
+const LEVEL = { light: 0, casual: 1, personal: 2, deep: 3 };
 
-// The deepest level (0 light, 1 medium, 2 deep) allowed for this selection.
+// The deepest level (0 light, 1 casual, 2 personal, 3 deep) allowed for this selection.
 // The person sets it. "More reserved" lowers it one step for anyone who
 // isn't family or a close friend.
 export function depthCeiling({ who, comfort }) {
@@ -16,12 +16,13 @@ export function depthCeiling({ who, comfort }) {
 }
 
 // The level shown first, set by the purpose: "Break the ice" starts light,
-// "Go deeper" starts as deep as allowed, most others start at medium.
+// "Check in" and most others start casual, "Go deeper" starts personal.
+// Deep is never the starting point; it is one tap of "Deeper" away.
 export function defaultLevel(selection) {
   const ceiling = depthCeiling(selection);
   const start = (PURPOSES[selection.purpose] || {}).level;
-  if (start === 'max') return ceiling;
-  if (start === 'medium') return Math.min(1, ceiling);
+  if (start === 'max') return Math.min(LEVEL.personal, ceiling);
+  if (start === 'casual') return Math.min(LEVEL.casual, ceiling);
   return 0;
 }
 
