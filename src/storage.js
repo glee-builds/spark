@@ -39,3 +39,18 @@ export function getFlag(key) {
 export function setFlag(key) {
   write(key, true);
 }
+
+// The last few person / closeness / place choices, newest first, so a repeat
+// situation is one tap from the first screen. Only category ids are stored.
+const RECENT_KEY = 'spark.recent';
+const RECENT_LIMIT = 2;
+
+export function getRecent() {
+  return read(RECENT_KEY, []);
+}
+
+export function addRecent(choice) {
+  const same = (r) => r.who === choice.who && r.closeness === choice.closeness && r.where === choice.where;
+  const recent = [choice, ...getRecent().filter((r) => !same(r))];
+  write(RECENT_KEY, recent.slice(0, RECENT_LIMIT));
+}
