@@ -34,6 +34,11 @@ export function pickExit(support, selection, random = Math.random) {
   return options.length ? pickOne(options, random) : null;
 }
 
+// Up to three lines for wrapping up, so there is a choice.
+export function pickExits(support, selection, random = Math.random) {
+  return shuffled(exitsFor(support, selection), random).slice(0, 3);
+}
+
 export function hardTimeFor(support, { who, closeness, where }) {
   return support.hardTime.filter((h) => placeFits(h, where)
     && (h.who === 'any' ? !OWN_HARD_TIME.includes(who) : h.who.includes(who))

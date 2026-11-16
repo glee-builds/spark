@@ -5,7 +5,7 @@ Shared rules for all coding projects are in `../CLAUDE.md`, and they apply here.
 ## Workflow
 
 - **Never commit directly to `main`.** The first commit was the only exception. All work goes on a branch and reaches `main` through a pull request.
-- **Who merges:** for Phases 1 to 3 the owner asked Claude to merge each pull request once the tests pass, so the live link stays current (see `docs/decisions.md`). After Phase 3, the owner merges unless they say otherwise.
+- **Who merges:** for Phases 1 to 5 the owner asked Claude to merge each pull request once the tests pass, so the live link stays current (see `docs/decisions.md`). For later work, the owner merges unless they say otherwise.
 - **A new file the app loads must be added to the `FILES` list in `sw.js`**, or it will be missing offline. A test checks this.
 - **Starters and code go in separate pull requests.** A pull request that adds starters adds one group at a time, so the owner can read the lines out loud.
 
@@ -34,7 +34,8 @@ Nothing that identifies the owner or any other person is stored anywhere public.
 ## Design rules
 
 - **Phone first:** portrait layout. Choices and main actions sit in the lower two-thirds of the screen. Tap targets at least 48px.
-- **Glanceable:** large type on the results screen. A starter must be readable in one look.
+- **No scrolling:** every choice screen and the starters list fit on one phone screen. The list drops starters from the end until it fits; details open on tap.
+- **Glanceable:** each starter in the list is one short label (Ask, Observe, Share...) and the line. Everything else is on the detail screen.
 - **Discreet:** plain appearance, no sound, no attention-grabbing animation. Dark mode supported.
 - **Not color alone:** depth and state use a label or icon as well as color.
 - **Original:** original visuals, colors, and starter wording.

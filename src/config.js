@@ -81,7 +81,14 @@ export const WHO = [
     where: ['kids-activity', 'party', 'out-about', 'text'] },
 ];
 
-export const GROUPS = ['Family', 'Friends', 'Work', 'Networking', 'Other'];
+// The first screen: five groups, each opening a short list of people.
+export const GROUPS = [
+  { id: 'Family', hint: 'Partner, parents, relatives, kids' },
+  { id: 'Friends', hint: 'Old friends and new ones' },
+  { id: 'Work', hint: 'Colleagues, bosses, clients' },
+  { id: 'Networking', hint: 'New contacts, people to learn from' },
+  { id: 'Other', hint: 'Dates, neighbors, other parents' },
+];
 
 export const FORMS = ['question', 'statement', 'compliment', 'share', 'advice', 'reachout'];
 export const GOALS = ['break-ice', 'deeper', 'fun', 'silence', 'learn', 'reconnect'];
