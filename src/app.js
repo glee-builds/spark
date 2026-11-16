@@ -9,7 +9,7 @@ import { pickSet, defaultLevel, depthCeiling } from './matching.js';
 import { pickExits, pickHardTime, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
 import { getSeen, addSeen, getRecent, addRecent } from './storage.js';
-import { startOffline, installHint, dismissHint, install } from './install.js';
+import { startOffline, installHint, dismissHint, install, updateReady } from './install.js';
 
 const root = document.getElementById('app');
 
@@ -325,6 +325,12 @@ function startResults() {
 // Each screen gets its own entry in the browser history, so the phone's
 // back gesture and the Back button both step back one screen.
 function go(step) {
+  // A new version is ready: load it now, at the start, where nothing is lost.
+  if (step === 'group' && updateReady()) {
+    location.replace(`${location.pathname}#group`);
+    location.reload();
+    return;
+  }
   state.step = step;
   history.pushState(null, '', `#${step}`);
   render();
