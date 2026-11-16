@@ -8,13 +8,13 @@ import { WHO, GROUPS, CLOSENESS, WHERE, DEPTHS, GOAL_LABELS, findWho, findWhere,
 import { pickSet, defaultLevel, depthCeiling, availableGoals } from './matching.js';
 import { pickExits, pickHardTime, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
-import { getSeen, addSeen, getRecent, addRecent } from './storage.js';
+import { getSeen, addSeen, getRecent, addRecent, getSaved, toggleSaved } from './storage.js';
 import { startOffline, installHint, dismissHint, install, updateReady } from './install.js';
 
 const root = document.getElementById('app');
 
 const state = {
-  step: 'group',     // group | who | how | where | results | aim | detail
+  step: 'group',     // group | who | how | where | results | aim | detail | saved
   group: null,
   who: null,
   closeness: null,
@@ -25,7 +25,8 @@ const state = {
   starters: [],
   supportLines: [],  // shown instead of starters when hardTime is on
   exits: [],
-  detail: null,      // { kind: 'starter' | 'support' | 'exit', index }
+  detail: null,      // { kind: 'starter' | 'support' | 'exit', index, from: 'results' | 'saved' }
+  savedView: [],     // the saved starters, as they were when the Saved screen opened
   freshSet: false,   // true until a new set has been fitted and marked as seen
   library: [],
   support: null,
@@ -112,6 +113,11 @@ function recentRows() {
   return `<div class="recents"><p class="label">Again</p>${rows}</div>`;
 }
 
+function topLinks() {
+  const saved = getSaved().length;
+  return saved ? `<button class="top-link" data-action="saved">&#9733; Saved (${saved})</button>` : '';
+}
+
 function groupScreen() {
   const tiles = GROUPS.map((g) => `
     <button class="tile" data-action="group" data-id="${esc(g.id)}">
@@ -119,7 +125,7 @@ function groupScreen() {
       <span class="tile-hint">${esc(g.hint)}</span>
       <span class="chev" aria-hidden="true">&#8250;</span>
     </button>`).join('');
-  return `${header({ title: 'Who are you talking to?', back: false })}
+  return `${header({ title: 'Who are you talking to?', back: false, right: topLinks() })}
     ${installCard()}
     <div class="choices">${recentRows()}${tiles}</div>`;
 }
@@ -150,8 +156,8 @@ function whereScreen() {
 
 // ---------- The starters list ----------
 
-function row(kind, index, label, text) {
-  return `<button class="row" data-action="open" data-kind="${kind}" data-index="${index}">
+function row(kind, index, label, text, from = 'results') {
+  return `<button class="row" data-action="open" data-kind="${kind}" data-index="${index}" data-from="${from}">
     <span class="row-text">
       <span class="row-label">${esc(label)}</span>
       <span class="row-line">${esc(text)}</span>
@@ -160,9 +166,9 @@ function row(kind, index, label, text) {
   </button>`;
 }
 
-function starterLabel(s, index) {
+function starterLabel(s, index, from = 'results') {
   // pickSet puts one light line first when the set is deeper: call it out.
-  if (index === 0 && s.depth === 'light' && state.level > 0) return 'Easy opener';
+  if (from === 'results' && index === 0 && s.depth === 'light' && state.level > 0) return 'Easy opener';
   return FORM_LABEL[s.form];
 }
 
@@ -219,7 +225,28 @@ function aimScreen() {
     <div class="choices">${options.join('')}</div>`;
 }
 
+// ---------- Saved starters ----------
+
+function savedScreen() {
+  const rows = state.savedView.map((s, i) => row('starter', i, FORM_LABEL[s.form], s.line, 'saved'));
+  const empty = rows.length ? ''
+    : '<p class="empty">Nothing saved yet. Open a starter and tap &#9734; Save to keep it here.</p>';
+  return `${header({ title: 'Saved' })}
+    <div class="rows">${rows.join('')}${empty}</div>`;
+}
+
 // ---------- One starter, in full ----------
+
+// The list the open detail belongs to, for the arrows.
+function currentList() {
+  if (state.detail.kind === 'support') return state.supportLines;
+  if (state.detail.from === 'saved') return state.savedView;
+  return state.starters;
+}
+
+function detailSub() {
+  return state.detail.from === 'saved' ? 'Saved' : summary();
+}
 
 function detailBar(count) {
   const { index } = state.detail;
@@ -258,12 +285,16 @@ function supportDetail() {
 }
 
 function starterDetail() {
-  const s = state.starters[state.detail.index];
+  const { index, from } = state.detail;
+  const s = currentList()[index];
+  const isSaved = getSaved().includes(s.id);
+  const save = `<button class="top-link save" data-action="save" aria-pressed="${isSaved}">
+    ${isSaved ? '&#9733; Saved' : '&#9734; Save'}</button>`;
   const tip = s.deliveryCue ? `<p class="tipbox"><strong>Tip</strong> ${esc(s.deliveryCue)}</p>` : '';
   const follows = s.followUps.map((f) => `<li>${esc(f)}</li>`).join('');
-  return `${header({ sub: summary() })}
+  return `${header({ sub: detailSub(), right: save })}
     <div class="detail">
-      <p class="row-label">${esc(starterLabel(s, state.detail.index))}</p>
+      <p class="row-label">${esc(starterLabel(s, index, from))}</p>
       <p class="say">${esc(s.line)}</p>
       ${tip}
       <p class="label">Then ask</p>
@@ -272,7 +303,7 @@ function starterDetail() {
       <p class="plain">${esc(s.shareBack)}</p>
       <p class="depth">${depthDots(DEPTHS.indexOf(s.depth))} ${levelName(DEPTHS.indexOf(s.depth))}</p>
     </div>
-    ${detailBar(state.starters.length)}`;
+    ${detailBar(currentList().length)}`;
 }
 
 function detailScreen() {
@@ -301,7 +332,7 @@ function fitToScreen() {
 function render() {
   const screens = {
     group: groupScreen, who: whoScreen, how: howScreen, where: whereScreen,
-    results: resultsScreen, aim: aimScreen, detail: detailScreen,
+    results: resultsScreen, aim: aimScreen, detail: detailScreen, saved: savedScreen,
   };
   root.innerHTML = screens[state.step]();
   root.dataset.step = state.step;
@@ -367,13 +398,23 @@ function chooseWho(id) {
   }
 }
 
-function openDetail(kind, index) {
-  state.detail = { kind, index };
+function openDetail(kind, index, from) {
+  state.detail = { kind, index, from };
   go('detail');
 }
 
+function openSavedView() {
+  const byId = new Map(state.library.map((s) => [s.id, s]));
+  state.savedView = getSaved().map((id) => byId.get(id)).filter(Boolean);
+}
+
+function openSaved() {
+  openSavedView();
+  go('saved');
+}
+
 function stepDetail(delta) {
-  const list = state.detail.kind === 'support' ? state.supportLines : state.starters;
+  const list = currentList();
   const index = state.detail.index + delta;
   if (index < 0 || index >= list.length) return;
   state.detail.index = index;
@@ -414,7 +455,12 @@ root.addEventListener('click', (event) => {
     newSet();
     history.back();
   } else if (action === 'open') {
-    openDetail(button.dataset.kind, Number(button.dataset.index));
+    openDetail(button.dataset.kind, Number(button.dataset.index), button.dataset.from);
+  } else if (action === 'saved') {
+    openSaved();
+  } else if (action === 'save') {
+    toggleSaved(currentList()[state.detail.index].id);
+    render();
   } else if (action === 'prev' || action === 'next') {
     stepDetail(action === 'next' ? 1 : -1);
   } else if (action === 'shuffle') {
@@ -452,9 +498,12 @@ window.addEventListener('popstate', () => {
     where: Boolean(state.who && state.closeness),
     results: Boolean(chosen),
     aim: Boolean(chosen),
-    detail: Boolean(chosen && state.detail),
+    saved: true,
+    detail: Boolean(state.detail && (state.detail.from === 'saved' ? state.savedView.length : chosen)),
   };
   state.step = ready[step] ? step : 'group';
+  // Coming back to Saved: show the list as it is now.
+  if (state.step === 'saved') openSavedView();
   if (state.step === 'results' && !state.starters.length && !state.supportLines.length) startResults();
   render();
 });
