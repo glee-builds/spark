@@ -1,5 +1,5 @@
 // The rules that decide which starters fit. Plain rules, no AI.
-// A "selection" is { who, purpose, medium, comfort } using ids from config.js.
+// A "selection" is { who, purpose, medium, comfort, place } using ids from config.js.
 
 import { DEPTHS, PURPOSES, findWho } from './config.js';
 
@@ -39,12 +39,14 @@ export function isRiskBlocked(starter, { who, comfort }) {
   });
 }
 
-// True when the starter is tagged for this person, purpose, and medium.
-// medium "any" works both said and sent.
-export function fits(starter, { who, purpose, medium }) {
+// True when the starter is tagged for this person, purpose, and medium, and
+// suits where the user lives. medium "any" works both said and sent; a starter
+// with no "places" works anywhere.
+export function fits(starter, { who, purpose, medium, place = 'city' }) {
   return starter.who.includes(who)
     && starter.purposes.includes(purpose)
-    && (starter.medium === 'any' || starter.medium === medium);
+    && (starter.medium === 'any' || starter.medium === medium)
+    && (!starter.places || starter.places.includes(place));
 }
 
 // Every starter that may be shown for this selection, up to the given level.

@@ -107,3 +107,10 @@ test('"Direct" puts plain questions ahead of guesses about feelings', () => {
   const set = pickSet(library, { ...COLLEAGUE, comfort: 'direct' }, { level: 0, count: 2 });
   assert.ok(set.every((s) => s.form === 'question'));
 });
+
+test('a starter tagged for some places shows only there; untagged starters show everywhere', () => {
+  const yard = starter({ places: ['suburb', 'rural'] });
+  assert.equal(fits(yard, { ...COLLEAGUE, place: 'city' }), false);
+  assert.equal(fits(yard, { ...COLLEAGUE, place: 'suburb' }), true);
+  assert.equal(fits(starter(), { ...COLLEAGUE, place: 'city' }), true);
+});

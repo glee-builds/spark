@@ -6,7 +6,7 @@
 // One "state" object holds the choices; render() draws the current screen.
 
 import {
-  WHO, GROUPS, MEDIA, DEPTHS, COMFORT, findWho, findGroup, purposeLabel,
+  WHO, GROUPS, MEDIA, DEPTHS, COMFORT, PLACES, findWho, findGroup, purposeLabel,
 } from './config.js';
 import { pickSet, defaultLevel, depthCeiling } from './matching.js';
 import { pickExits, pickReassurance } from './support.js';
@@ -14,7 +14,7 @@ import { loadLibrary, loadSupport } from './library.js';
 import {
   getSeen, addSeen, getRecent, addRecent, getSaved, toggleSaved,
   getComfort, setComfort, clearSeen, clearRecent, getFeedback, markFeedback, clearFeedback,
-  getMedium, setMedium,
+  getMedium, setMedium, getPlace, setPlace,
 } from './storage.js';
 import {
   startOffline, installHint, dismissHint, install, updateReady, checkForUpdate,
@@ -54,7 +54,9 @@ function esc(text) {
 }
 
 function selection() {
-  return { who: state.who, purpose: state.purpose, medium: state.medium, comfort: getComfort() };
+  return {
+    who: state.who, purpose: state.purpose, medium: state.medium, comfort: getComfort(), place: getPlace(),
+  };
 }
 
 function summary() {
@@ -251,7 +253,12 @@ function notesScreen() {
 function settingsScreen() {
   const current = getComfort();
   const comfort = COMFORT.map((c) => choice('comfort', c.id, c.label, c.hint, c.id === current)).join('');
+  const place = getPlace();
+  const places = PLACES.map((p) => `<button class="seg" data-action="place" data-id="${p.id}"
+    aria-pressed="${p.id === place}">${esc(p.label)}</button>`).join('');
   return `${header({ title: 'Settings' })}
+    <p class="label">Where I live</p>
+    <div class="segs" role="group" aria-label="Where I live">${places}</div>
     <p class="label">Comfort</p>
     <div class="settings-group">${comfort}</div>
     <p class="label">Start fresh</p>
@@ -509,6 +516,10 @@ root.addEventListener('click', (event) => {
   } else if (action === 'comfort') {
     setComfort(id);
     state.notice = 'Saved. New starters will follow this setting.';
+    render();
+  } else if (action === 'place') {
+    setPlace(id);
+    state.notice = `Saved. Starters now fit ${PLACES.find((p) => p.id === id).label.toLowerCase()} life.`;
     render();
   } else if (action === 'notes') {
     openNotesView();

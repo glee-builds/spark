@@ -1,7 +1,7 @@
 // Checks that a starter bundle follows docs/starter-format.md.
 // Used by the tests and tools/check-library.mjs, so a typo is caught before it ships.
 
-import { WHO, PURPOSES, DEPTHS, FORMS, TOPICS, RISK_TAGS, BASES } from './config.js';
+import { WHO, PURPOSES, PLACES, DEPTHS, FORMS, TOPICS, RISK_TAGS, BASES } from './config.js';
 
 const WHO_IDS = WHO.map((w) => w.id);
 const PURPOSE_IDS = Object.keys(PURPOSES);
@@ -35,6 +35,7 @@ export function problems(s) {
   if (!Array.isArray(s.topics) || s.topics.length < 1 || s.topics.length > 2 || !s.topics.every((t) => TOPICS.includes(t))) say('topics needs one or two known topics');
   if (!Array.isArray(s.riskTags) || !s.riskTags.every((t) => RISK_TAGS.includes(t))) say('riskTags has an unknown tag');
   if (!BASES.includes(s.basis)) say(`basis "${s.basis}" is not allowed`);
+  if (s.places !== undefined && !allIn(s.places, PLACES.map((p) => p.id))) say('places has an unknown place or is empty');
   if (s.form === 'reachout' && s.medium !== 'message') say('reachout starters must be medium "message"');
   if (Array.isArray(s.who) && (s.who.includes('child') || s.who.includes('teen')) && !s.deliveryCue) say('child and teen starters need a deliveryCue');
   if (Array.isArray(s.who) && s.who.includes('child') && s.medium === 'message') say('young children are in person only');

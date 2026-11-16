@@ -120,3 +120,14 @@ export function getMedium() {
 export function setMedium(value) {
   write(MEDIUM_KEY, value);
 }
+
+// "Where I live": 'city', 'suburb', or 'rural'. Kept on this phone only.
+const PLACE_KEY = 'spark.place';
+
+export function getPlace() {
+  return read(PLACE_KEY, 'city');
+}
+
+export function setPlace(value) {
+  write(PLACE_KEY, value);
+}

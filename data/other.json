@@ -719,7 +719,11 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "untested"
+    "basis": "untested",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-029",
@@ -745,17 +749,21 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "untested"
+    "basis": "untested",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-030",
-    "line": "I don't think we've properly met. I'm a few doors down. How long have you been on the street?",
+    "line": "I don't think we've properly met. I live just nearby. How long have you been here?",
     "form": "share",
     "followUps": [
       "What do you like most about living here?",
       "Has it changed much in that time?"
     ],
-    "shareBack": "Say how long you've been here in a few words, then ask what you should know about the street.",
+    "shareBack": "Say how long you've been here in a few words, then ask what you should know about the neighborhood.",
     "deliveryCue": null,
     "depth": "light",
     "who": [
@@ -854,13 +862,13 @@
   },
   {
     "id": "ot-034",
-    "line": "Do you know what they're building down the road? I keep wondering.",
+    "line": "Do you know what they're building around the corner? I keep wondering.",
     "form": "question",
     "followUps": [
       "What would you like to see go in there?",
       "Has much else changed around here lately?"
     ],
-    "shareBack": "Share your own guess or hope for it in a sentence, then ask what the street is missing.",
+    "shareBack": "Share your own guess or hope for it in a sentence, then ask what the neighborhood is missing.",
     "deliveryCue": null,
     "depth": "light",
     "who": [
@@ -907,7 +915,7 @@
   },
   {
     "id": "ot-036",
-    "line": "We finally tried that new place up the road. Have you been yet?",
+    "line": "We finally tried that new place around the corner. Have you been yet?",
     "form": "share",
     "followUps": [
       "What did you think of it?",
@@ -1012,17 +1020,21 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "untested"
+    "basis": "untested",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-040",
-    "line": "What's changed most on the street since you moved in?",
+    "line": "What's changed most around here since you moved in?",
     "form": "question",
     "followUps": [
       "Is that for better or worse, do you think?",
       "What do you hope stays the same?"
     ],
-    "shareBack": "Share one change you've noticed yourself, briefly, then ask what they'd add to the street.",
+    "shareBack": "Share one change you've noticed yourself, briefly, then ask what they'd add to the neighborhood.",
     "deliveryCue": null,
     "depth": "casual",
     "who": [
@@ -1088,11 +1100,15 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "untested"
+    "basis": "untested",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-043",
-    "line": "It's been so quiet on the street this week. I'm not complaining.",
+    "line": "It's been so quiet around here this week. I'm not complaining.",
     "form": "statement",
     "followUps": [
       "Has your week been quiet too, or the opposite?",
@@ -1145,7 +1161,7 @@
   },
   {
     "id": "ot-045",
-    "line": "Hi, it's your neighbor from across the street. A package of yours landed on our step. Should I drop it over?",
+    "line": "Hi, it's your neighbor. A package of yours ended up at our door. Should I drop it over?",
     "form": "statement",
     "followUps": [
       "When's a good time to bring it by?",
@@ -1243,7 +1259,11 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "untested"
+    "basis": "untested",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-049",
@@ -1274,13 +1294,13 @@
   },
   {
     "id": "ot-050",
-    "line": "Haven't seen you out front in a while and thought of you. Hope all's well over there.",
+    "line": "Haven't run into you in a while and thought of you. Hope all's well over there.",
     "form": "reachout",
     "followUps": [
       "Are you around this weekend?",
       "Anything we can help with right now?"
     ],
-    "shareBack": "If they reply, add one line of your own news and suggest a quick catch-up over the fence.",
+    "shareBack": "If they reply, add one line of your own news and suggest a quick catch-up.",
     "deliveryCue": "Needs no answer; don't follow up if they stay quiet.",
     "depth": "light",
     "who": [
@@ -1303,7 +1323,7 @@
     "form": "question",
     "followUps": [
       "Does Saturday or Sunday suit you better?",
-      "Is there anyone on the street we should make sure to ask?"
+      "Is there anyone nearby we should make sure to ask?"
     ],
     "shareBack": "Say it'll be easy and informal in a few words, and ask what they like to drink.",
     "deliveryCue": null,
@@ -2888,7 +2908,11 @@
       "hobbies"
     ],
     "riskTags": [],
-    "basis": "research-backed"
+    "basis": "research-backed",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-112",
@@ -2898,7 +2922,7 @@
       "Where was that?",
       "Do you still keep in touch?"
     ],
-    "shareBack": "Share one kind thing a neighbor did for you, in a sentence, then ask what they like most about this street.",
+    "shareBack": "Share one kind thing a neighbor did for you, in a sentence, then ask what they like most about living here.",
     "deliveryCue": null,
     "depth": "casual",
     "who": [
@@ -2917,13 +2941,13 @@
   },
   {
     "id": "ot-113",
-    "line": "What do you love most about living on this street?",
+    "line": "What do you love most about living around here?",
     "form": "question",
     "followUps": [
       "What would you change if you could?",
       "What did you notice first when you moved in?"
     ],
-    "shareBack": "Name one thing you love about the street, then ask about their favorite spot nearby.",
+    "shareBack": "Name one thing you love about the neighborhood, then ask about their favorite spot nearby.",
     "deliveryCue": null,
     "depth": "casual",
     "who": [
@@ -2964,7 +2988,11 @@
       "neighborhood"
     ],
     "riskTags": [],
-    "basis": "expert-opinion"
+    "basis": "expert-opinion",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-115",
@@ -3249,7 +3277,11 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "expert-opinion"
+    "basis": "expert-opinion",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-126",
@@ -3346,7 +3378,11 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "expert-opinion"
+    "basis": "expert-opinion",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-130",
@@ -3370,7 +3406,11 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "expert-opinion"
+    "basis": "expert-opinion",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-131",
@@ -3421,7 +3461,11 @@
       "plans"
     ],
     "riskTags": [],
-    "basis": "expert-opinion"
+    "basis": "expert-opinion",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-133",
@@ -3450,7 +3494,7 @@
   },
   {
     "id": "ot-134",
-    "line": "A few of us are organizing a street cleanup some Saturday morning. Would you want in?",
+    "line": "A few of us are organizing a neighborhood cleanup some Saturday morning. Would you want in?",
     "form": "question",
     "followUps": [
       "Is there a spot that needs it most?",
@@ -3497,7 +3541,11 @@
       "home"
     ],
     "riskTags": [],
-    "basis": "expert-opinion"
+    "basis": "expert-opinion",
+    "places": [
+      "suburb",
+      "rural"
+    ]
   },
   {
     "id": "ot-136",
@@ -4283,7 +4331,7 @@
   },
   {
     "id": "ot-167",
-    "line": "A few of us on the street are doing a potluck next month. Would you want to bring something?",
+    "line": "A few of us nearby are doing a potluck next month. Would you want to bring something?",
     "form": "question",
     "followUps": [
       "Do you have a dish you like to make?",
@@ -4381,5 +4429,589 @@
     ],
     "riskTags": [],
     "basis": "research-backed"
+  },
+  {
+    "id": "ot-171",
+    "line": "I think we're on the same floor. I keep meaning to say hi properly.",
+    "form": "share",
+    "followUps": [
+      "How long have you been in the building?",
+      "Do you like it so far?"
+    ],
+    "shareBack": "Say how long you've lived here in a few words, then ask what they'd tell a newcomer.",
+    "deliveryCue": "In the elevator or hallway.",
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "ice",
+      "quick"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "home",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-172",
+    "line": "This elevator is taking its time today. Heading anywhere good?",
+    "form": "question",
+    "followUps": [
+      "Is that a regular thing for you?",
+      "Any place nearby you'd recommend?"
+    ],
+    "shareBack": "Say where you're off to in a few words, then ask what they'd recommend nearby.",
+    "deliveryCue": "Only for the ride; let it end at your floor.",
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "community"
+    ],
+    "purposes": [
+      "quick",
+      "ice"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "setting",
+      "plans"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-173",
+    "line": "Have you figured out the trick to the mailroom? I can never find my packages.",
+    "form": "advice",
+    "followUps": [
+      "Has a package of yours ever gone missing?",
+      "Is there someone in the building who keeps track?"
+    ],
+    "shareBack": "Share your own package mishap in a sentence, then ask how long they've lived here.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "home",
+      "setting"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-174",
+    "line": "I caught your package before it walked off. Want me to leave it at your door?",
+    "form": "statement",
+    "followUps": [
+      "What time are you usually home?",
+      "Do you get a lot of deliveries too?"
+    ],
+    "shareBack": "Say which door is yours in a few words, then offer to do it again any time.",
+    "deliveryCue": "Swap in where you actually found it.",
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "quick",
+      "ice"
+    ],
+    "medium": "message",
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-175",
+    "line": "Is the laundry room always this busy on Sundays, or did I pick the worst time?",
+    "form": "question",
+    "followUps": [
+      "When do you usually go?",
+      "Any machines I should avoid?"
+    ],
+    "shareBack": "Say when you usually do laundry in a few words, then ask their best tip for the building.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "home",
+      "week"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-176",
+    "line": "Your dog is always so calm in the elevator. What's their name?",
+    "form": "compliment",
+    "followUps": [
+      "How long have you had them?",
+      "Where do you two usually walk?"
+    ],
+    "shareBack": "Mention a dog you know or love in a sentence, then ask where the best walk around here is.",
+    "deliveryCue": "Only if they have a dog.",
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "community"
+    ],
+    "purposes": [
+      "ice",
+      "quick"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "neighborhood",
+      "hobbies"
+    ],
+    "riskTags": [],
+    "basis": "research-backed",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-177",
+    "line": "Have you found a good coffee place around here yet? I'm still testing them all.",
+    "form": "advice",
+    "followUps": [
+      "What do you usually order?",
+      "Is there anywhere you'd avoid?"
+    ],
+    "shareBack": "Name your current favorite and one detail, then ask where else they like nearby.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "community",
+      "other-parent"
+    ],
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
+    ],
+    "medium": "any",
+    "topics": [
+      "food",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-178",
+    "line": "What's the best thing about living in the building, in your opinion?",
+    "form": "question",
+    "followUps": [
+      "What would you change if you could?",
+      "Have you lived anywhere else in the city?"
+    ],
+    "shareBack": "Share one thing you like about the building, then ask about their favorite spot nearby.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "deeper",
+      "revive"
+    ],
+    "medium": "any",
+    "topics": [
+      "home",
+      "opinions"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-179",
+    "line": "What made you pick this neighborhood?",
+    "form": "question",
+    "followUps": [
+      "Is it what you expected?",
+      "What's your favorite spot nearby?"
+    ],
+    "shareBack": "Say what drew you here in a sentence, then ask what they'd show a visitor.",
+    "deliveryCue": null,
+    "depth": "casual",
+    "who": [
+      "neighbor",
+      "community"
+    ],
+    "purposes": [
+      "deeper",
+      "revive"
+    ],
+    "medium": "any",
+    "topics": [
+      "neighborhood",
+      "stories"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-180",
+    "line": "Sorry if my music came through the wall last night. I didn't realize how loud it was. Tell me if it happens again.",
+    "form": "statement",
+    "followUps": [
+      "Does sound carry much at your end?",
+      "What time works for you as a cutoff?"
+    ],
+    "shareBack": "Say you'll keep it down after a set time, then thank them for being easygoing.",
+    "deliveryCue": "Swap in whatever it actually was.",
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-181",
+    "line": "I think our wires got crossed about the noise. Could we start over? I'd like to sort out something that works for both of us.",
+    "form": "statement",
+    "followUps": [
+      "What would help most on your side?",
+      "Are there times that matter most to you?"
+    ],
+    "shareBack": "Offer one concrete change you can make, then ask what they'd suggest.",
+    "deliveryCue": "Keep it calm and brief; no blame.",
+    "depth": "casual",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "repair"
+    ],
+    "medium": "any",
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-182",
+    "line": "Sorry the dog got a bit excited in the hallway earlier. Hope it didn't startle you.",
+    "form": "statement",
+    "followUps": [
+      "Are you okay with dogs, or would you rather I keep my distance?",
+      "Do you have pets yourself?"
+    ],
+    "shareBack": "Say you'll keep a shorter leash in the hall, then ask if there's anything else that would help.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "repair",
+      "quick"
+    ],
+    "medium": "any",
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-183",
+    "line": "I'm heading to the store on the corner. Need anything while I'm out?",
+    "form": "statement",
+    "followUps": [
+      "Is there anything you're running low on?",
+      "Do you have a go-to shop around here?"
+    ],
+    "shareBack": "Say when you'll be back in a few words, and tell them it's no trouble.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "support",
+      "quick"
+    ],
+    "medium": "any",
+    "topics": [
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-184",
+    "line": "I heard you've had a rough few days. I'm two doors down if you need anything at all.",
+    "form": "statement",
+    "followUps": [
+      "Is there an errand I can take off your hands?",
+      "Would some food help this week?"
+    ],
+    "shareBack": "Offer one specific thing you can do, and say there's no need to reply.",
+    "deliveryCue": "No questions about what happened.",
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "support"
+    ],
+    "medium": "any",
+    "topics": [
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-185",
+    "line": "A few of us are getting together on the roof Friday evening. Come up for a bit if you're around.",
+    "form": "statement",
+    "followUps": [
+      "What time works for you?",
+      "Anyone else on your floor we should ask?"
+    ],
+    "shareBack": "Say it's casual and short, then ask if they'd bring a friend.",
+    "deliveryCue": "Swap in your building's shared space.",
+    "depth": "light",
+    "who": [
+      "neighbor"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "plans",
+      "home"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-186",
+    "line": "Want to grab a coffee at the place downstairs sometime this week?",
+    "form": "statement",
+    "followUps": [
+      "Mornings or evenings?",
+      "Have you tried their pastries?"
+    ],
+    "shareBack": "Suggest a day in a few words and give an easy out.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "neighbor",
+      "community"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "plans",
+      "food"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-187",
+    "line": "Is the playground on the corner always this busy after school?",
+    "form": "question",
+    "followUps": [
+      "Which park do you usually go to?",
+      "Do the kids have a favorite spot?"
+    ],
+    "shareBack": "Say which park your family likes in a sentence, then ask about their go-to rainy day place.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "purposes": [
+      "ice",
+      "quick"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "kids",
+      "neighborhood"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-188",
+    "line": "Do you walk to school or take the train? We're still working out the best route.",
+    "form": "advice",
+    "followUps": [
+      "How long does it take you?",
+      "Any shortcuts I should know?"
+    ],
+    "shareBack": "Say how you get there in a few words, then ask if they'd want to walk together sometime.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "purposes": [
+      "ice",
+      "quick",
+      "revive"
+    ],
+    "medium": "any",
+    "topics": [
+      "kids",
+      "neighborhood"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-189",
+    "line": "We're heading to the park after pickup if you want to walk over together.",
+    "form": "statement",
+    "followUps": [
+      "Which park do yours like best?",
+      "How long do you usually stay?"
+    ],
+    "shareBack": "Say how long you'll be there, and give an easy out.",
+    "deliveryCue": null,
+    "depth": "light",
+    "who": [
+      "other-parent"
+    ],
+    "purposes": [
+      "plans"
+    ],
+    "medium": "any",
+    "topics": [
+      "kids",
+      "plans"
+    ],
+    "riskTags": [
+      "children"
+    ],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
+  },
+  {
+    "id": "ot-190",
+    "line": "I see you here at this hour most days. Is this your regular spot too?",
+    "form": "question",
+    "followUps": [
+      "What do you usually get?",
+      "How long have you been coming here?"
+    ],
+    "shareBack": "Say how long you've been a regular in a few words, then ask what else they like nearby.",
+    "deliveryCue": "At a gym, cafe, or class you both go to.",
+    "depth": "light",
+    "who": [
+      "community"
+    ],
+    "purposes": [
+      "ice",
+      "quick"
+    ],
+    "medium": "in-person",
+    "topics": [
+      "setting",
+      "neighborhood"
+    ],
+    "riskTags": [],
+    "basis": "untested",
+    "places": [
+      "city"
+    ]
   }
 ]

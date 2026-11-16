@@ -6,7 +6,7 @@
 // Coverage is checked only for the people whose starters live in the given files.
 
 import { readFileSync } from 'node:fs';
-import { WHO, LIBRARY_FILES, allCombinations, purposeLabel } from '../src/config.js';
+import { WHO, PLACES, LIBRARY_FILES, allCombinations, purposeLabel } from '../src/config.js';
 import { candidates, defaultLevel } from '../src/matching.js';
 import { problems } from '../src/validate.js';
 
@@ -28,11 +28,14 @@ for (const s of library) {
 }
 
 const people = new Set(WHO.filter((w) => names.includes(w.file)).map((w) => w.id));
-for (const combo of allCombinations().filter((c) => people.has(c.who))) {
+// Every combination is checked for each "Where I live" setting.
+const combos = allCombinations().filter((c) => people.has(c.who))
+  .flatMap((c) => PLACES.map((p) => ({ ...c, place: p.id })));
+for (const combo of combos) {
   const n = candidates(library, combo, defaultLevel(combo)).length;
   const reserved = { ...combo, comfort: 'reserved' };
   const r = candidates(library, reserved, defaultLevel(reserved)).length;
-  const name = `${combo.who} / ${purposeLabel(combo.who, combo.purpose).label} (${combo.purpose}) / ${combo.medium}`;
+  const name = `${combo.who} / ${purposeLabel(combo.who, combo.purpose).label} (${combo.purpose}) / ${combo.medium} / ${combo.place}`;
   if (n < MIN_STARTERS) { console.log(`COVERAGE  ${name}: ${n} (need ${MIN_STARTERS})`); bad += 1; }
   else if (r < MIN_RESERVED) { console.log(`RESERVED  ${name}: ${r} under "More reserved" (need ${MIN_RESERVED})`); bad += 1; }
 }
