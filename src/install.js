@@ -13,6 +13,28 @@ export function updateReady() {
   return updateWaiting;
 }
 
+// Ask the server whether a new version of sw.js exists. If it does, the new
+// version downloads in the background and 'spark-update' fires when it's ready.
+// Resolves to 'ready', 'current', or 'offline'.
+export async function checkForUpdate() {
+  if (updateWaiting) return 'ready';
+  if (!('serviceWorker' in navigator)) return 'current';
+  try {
+    const registration = await navigator.serviceWorker.getRegistration();
+    if (!registration) return 'current';
+    await registration.update();
+    if (!registration.installing && !registration.waiting) return 'current';
+    // A new version is downloading: wait (up to 15 seconds) for it to take over.
+    await new Promise((resolve) => {
+      document.addEventListener('spark-update', resolve, { once: true });
+      setTimeout(resolve, 15000);
+    });
+    return updateWaiting ? 'ready' : 'current';
+  } catch {
+    return 'offline';
+  }
+}
+
 // Start the service worker (sw.js), which saves the app for offline use.
 export function startOffline() {
   if ('serviceWorker' in navigator) {
@@ -20,11 +42,19 @@ export function startOffline() {
     // Any change after that means a new version has been saved.
     let controlled = Boolean(navigator.serviceWorker.controller);
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (controlled) updateWaiting = true;
+      if (controlled) {
+        updateWaiting = true;
+        document.dispatchEvent(new Event('spark-update'));
+      }
       controlled = true;
     });
     navigator.serviceWorker.register('sw.js').catch(() => {
       // No service worker (private mode, old browser). The app still works online.
+    });
+    // A home-screen app is often resumed rather than reopened, and a resume
+    // doesn't check for updates by itself. So check each time Spark comes back.
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') checkForUpdate();
     });
   }
   window.addEventListener('beforeinstallprompt', (event) => {

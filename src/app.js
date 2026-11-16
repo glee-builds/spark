@@ -16,7 +16,9 @@ import {
   getComfort, setComfort, clearSeen, clearRecent, getFeedback, markFeedback, clearFeedback,
   getMedium, setMedium,
 } from './storage.js';
-import { startOffline, installHint, dismissHint, install, updateReady } from './install.js';
+import {
+  startOffline, installHint, dismissHint, install, updateReady, checkForUpdate,
+} from './install.js';
 
 const root = document.getElementById('app');
 
@@ -104,6 +106,15 @@ function installCard() {
     </div></aside>`;
 }
 
+// Shown on the first screen when a new version has been saved.
+function updateCard() {
+  if (!updateReady()) return '';
+  return `<aside class="hint update" role="status">
+    <p class="hint-text">A new version of Spark is ready.</p>
+    <div class="hint-row"><button class="hint-button strong" data-action="refresh">Refresh</button></div>
+  </aside>`;
+}
+
 // ---------- Choosing who ----------
 
 function topLinks() {
@@ -132,7 +143,7 @@ function groupScreen() {
       <span class="tile-hint">${esc(g.hint)}</span>
     </button>`).join('');
   return `${header({ title: 'Who are you talking to?', back: false, right: topLinks() })}
-    ${installCard()}
+    ${updateCard() || installCard()}
     <div class="choices">${recentRows()}<div class="tiles">${tiles}</div></div>`;
 }
 
@@ -247,6 +258,13 @@ function settingsScreen() {
     <div class="settings-group">
       <button class="chip" data-action="clear-seen"><span class="chip-label">Show starters I've seen again</span></button>
       <button class="chip" data-action="clear-recent"><span class="chip-label">Clear the "Again" list</span></button>
+    </div>
+    <p class="label">Updates</p>
+    <div class="settings-group">
+      <button class="chip" data-action="check-update">
+        <span class="chip-label">${updateReady() ? 'Refresh to the new version' : 'Check for updates'}</span>
+        <span class="chip-hint">Spark also checks each time you open it</span>
+      </button>
     </div>
     <p class="label">Review</p>
     <div class="settings-group">
@@ -510,6 +528,25 @@ root.addEventListener('click', (event) => {
     clearRecent();
     state.notice = 'Done. The "Again" list is empty.';
     render();
+  } else if (action === 'refresh') {
+    location.replace(`${location.pathname}#group`);
+    location.reload();
+  } else if (action === 'check-update') {
+    if (updateReady()) {
+      location.replace(`${location.pathname}#group`);
+      location.reload();
+      return;
+    }
+    state.notice = 'Checking…';
+    render();
+    checkForUpdate().then((result) => {
+      state.notice = {
+        ready: 'A new version is ready. Tap the button above to refresh.',
+        current: "You're on the latest version.",
+        offline: "Couldn't check: no connection. Spark still works offline.",
+      }[result];
+      if (state.step === 'settings') render();
+    });
   } else if (action === 'dismiss-hint') {
     dismissHint();
     render();
@@ -543,6 +580,11 @@ window.addEventListener('popstate', () => {
   if (state.step === 'notes') openNotesView();
   if (state.step === 'results' && !state.starters.length) startResults();
   render();
+});
+
+// A new version finished downloading: show the Refresh note if on the first screen.
+document.addEventListener('spark-update', () => {
+  if (state.step === 'group' || state.step === 'settings') render();
 });
 
 // Android tells us a moment after loading that the app can be installed.
