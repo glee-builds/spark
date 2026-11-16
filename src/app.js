@@ -8,7 +8,7 @@ import { WHO, GROUPS, CLOSENESS, WHERE, DEPTHS, findWho, findWhere, findClosenes
 import { pickSet, defaultLevel, depthCeiling } from './matching.js';
 import { pickExits, pickHardTime, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
-import { getSeen, addSeen } from './storage.js';
+import { getSeen, addSeen, getRecent, addRecent } from './storage.js';
 import { startOffline, installHint, dismissHint, install } from './install.js';
 
 const root = document.getElementById('app');
@@ -99,6 +99,18 @@ function installCard() {
 
 // ---------- The choice screens ----------
 
+// Up to two recent situations, each one tap from the starters.
+function recentRows() {
+  const recent = getRecent().filter((r) => findWho(r.who) && findWhere(r.where) && findCloseness(r.closeness));
+  if (!recent.length) return '';
+  const rows = recent.map((r, i) => `
+    <button class="recent" data-action="recent" data-index="${i}">
+      <span>${esc(findWho(r.who).label)} · ${esc(findWhere(r.where).label)}</span>
+      <span class="chev" aria-hidden="true">&#8250;</span>
+    </button>`).join('');
+  return `<div class="recents"><p class="label">Again</p>${rows}</div>`;
+}
+
 function groupScreen() {
   const tiles = GROUPS.map((g) => `
     <button class="tile" data-action="group" data-id="${esc(g.id)}">
@@ -108,7 +120,7 @@ function groupScreen() {
     </button>`).join('');
   return `${header({ title: 'Who are you talking to?', back: false })}
     ${installCard()}
-    <div class="choices">${tiles}</div>`;
+    <div class="choices">${recentRows()}${tiles}</div>`;
 }
 
 function whoScreen() {
@@ -361,6 +373,13 @@ root.addEventListener('click', (event) => {
     go('where');
   } else if (action === 'where') {
     state.where = id;
+    addRecent(selection());
+    startResults();
+    go('results');
+  } else if (action === 'recent') {
+    const r = getRecent()[Number(button.dataset.index)];
+    Object.assign(state, { group: findWho(r.who).group, who: r.who, closeness: r.closeness, where: r.where });
+    addRecent(selection());
     startResults();
     go('results');
   } else if (action === 'open') {
