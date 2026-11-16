@@ -1,6 +1,6 @@
 # spark
 
-Spark is a conversation-starter app for a phone. Tap who you are about to talk to and what you want from the conversation, and it shows a few things you could say, each with a follow-up question. It is built with plain HTML, CSS, and JavaScript, with no build step, no accounts, and no tracking. Nothing you tap leaves your phone.
+Spark is a conversation-starter app for a phone, for in-person conversations. Tap who you are about to talk to and what you want from the conversation, and it shows a few things you could say, each with a follow-up question. It is built with plain HTML, CSS, and JavaScript, with no build step, no accounts, and no tracking. Nothing you tap leaves your phone.
 
 **Live:** https://glee-builds.github.io/spark/
 

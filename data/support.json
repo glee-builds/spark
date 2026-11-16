@@ -7,10 +7,6 @@
     "You don't need a clever line. A real question and real interest are enough.",
     "A short conversation counts. You can leave whenever it feels right."
   ],
-  "reassuranceText": [
-    "Hearing from you out of the blue is appreciated more than people expect.",
-    "A short message is enough. It doesn't need to be perfect."
-  ],
   "exits": [
     {
       "id": "ex-001",
@@ -132,22 +128,6 @@
       ]
     },
     {
-      "id": "ex-015",
-      "line": "I'll let you get on with your day. Talk soon.",
-      "who": "any",
-      "medium": [
-        "message"
-      ]
-    },
-    {
-      "id": "ex-016",
-      "line": "No need to reply to this one. Good to hear from you.",
-      "who": "any",
-      "medium": [
-        "message"
-      ]
-    },
-    {
       "id": "ex-017",
       "line": "Thanks for telling me that. I'm glad I asked.",
       "who": [
@@ -173,16 +153,6 @@
       ]
     },
     {
-      "id": "ex-019",
-      "line": "No need to reply. See you tonight.",
-      "who": [
-        "partner"
-      ],
-      "medium": [
-        "message"
-      ]
-    },
-    {
       "id": "ex-020",
       "line": "Thanks for telling me. That's all from me.",
       "who": [
@@ -190,16 +160,6 @@
       ],
       "medium": [
         "in-person"
-      ]
-    },
-    {
-      "id": "ex-021",
-      "line": "No need to reply. See you later.",
-      "who": [
-        "teen"
-      ],
-      "medium": [
-        "message"
       ]
     },
     {
@@ -220,16 +180,6 @@
       ],
       "medium": [
         "in-person"
-      ]
-    },
-    {
-      "id": "ex-024",
-      "line": "I'll let you go. Looking forward to seeing you.",
-      "who": [
-        "date"
-      ],
-      "medium": [
-        "message"
       ]
     }
   ]

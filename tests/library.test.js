@@ -6,7 +6,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { LIBRARY_FILES, PLACES, allCombinations as everyCombination } from '../src/config.js';
 import { problems } from '../src/validate.js';
-import { candidates, defaultLevel, pickSet } from '../src/matching.js';
+import { candidates, defaultLevel, depthTop, pickSet } from '../src/matching.js';
+import { DEPTHS } from '../src/config.js';
 
 function load(name) {
   return JSON.parse(readFileSync(new URL(`../data/${name}.json`, import.meta.url), 'utf8'));
@@ -49,4 +50,15 @@ test('every combination shows a full set', () => {
 
 test('at least a third of the library is not a plain question', () => {
   assert.ok(library.filter((s) => s.form !== 'question').length / library.length >= 1 / 3);
+});
+
+test('every level Deeper can reach has at least three starters at exactly that depth', () => {
+  const thin = [];
+  for (const c of allCombinations()) {
+    for (let level = defaultLevel(c) + 1; level <= depthTop(c); level += 1) {
+      const exact = candidates(library, c, level).filter((s) => DEPTHS.indexOf(s.depth) === level).length;
+      if (exact < 3) thin.push(`${c.who} / ${c.purpose} / ${c.place} at ${DEPTHS[level]}: ${exact}`);
+    }
+  }
+  assert.deepEqual(thin, []);
 });

@@ -20,7 +20,8 @@ test('every file the app loads is in the offline list', () => {
   const needed = [
     'index.html', 'styles.css', 'manifest.webmanifest',
     ...readdirSync(new URL('src/', root)).filter((f) => f !== 'validate.js').map((f) => `src/${f}`),
-    ...readdirSync(new URL('data/', root)).map((f) => `data/${f}`),
+    // data/archive/ holds retired starters the app never loads.
+    ...readdirSync(new URL('data/', root)).filter((f) => f.endsWith('.json')).map((f) => `data/${f}`),
     ...readdirSync(new URL('assets/', root)).map((f) => `assets/${f}`),
   ];
   const forgotten = needed.filter((f) => !listed.includes(f));

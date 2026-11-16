@@ -9,7 +9,7 @@
 //   - The open app switches to the new version the next time it returns to
 //     the first screen (see src/install.js).
 
-const VERSION = '285c2fbde1f5';
+const VERSION = 'a776946dcc5b';
 const CACHE = `spark-${VERSION}`;
 
 // Everything the app needs to run. tests/offline.test.js checks this list

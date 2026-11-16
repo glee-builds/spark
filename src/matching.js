@@ -19,11 +19,38 @@ export function depthCeiling({ who, comfort }) {
 // "Check in" and most others start casual, "Go deeper" starts personal.
 // Deep is never the starting point; it is one tap of "Deeper" away.
 export function defaultLevel(selection) {
-  const ceiling = depthCeiling(selection);
+  const ceiling = depthTop(selection);
   const start = (PURPOSES[selection.purpose] || {}).level;
   if (start === 'max') return Math.min(LEVEL.personal, ceiling);
   if (start === 'casual') return Math.min(LEVEL.casual, ceiling);
   return 0;
+}
+
+// The deepest level for this person AND this purpose: a quick hello stays
+// light even with a partner; only "Go deeper" can reach deep.
+export function depthTop(selection) {
+  const cap = LEVEL[(PURPOSES[selection.purpose] || {}).cap || 'deep'];
+  return Math.min(depthCeiling(selection), cap);
+}
+
+// The levels the Lighter / Deeper buttons can move between. A level counts
+// only if it has starters at exactly that depth, so a tap always changes
+// what's shown.
+export function availableLevels(library, selection) {
+  const levels = [];
+  for (let level = 0; level <= depthTop(selection); level += 1) {
+    const exact = candidates(library, selection, level).filter((s) => DEPTHS.indexOf(s.depth) === level);
+    if (exact.length > 0) levels.push(level);
+  }
+  return levels.length ? levels : [0];
+}
+
+// Where a set starts: the purpose's starting level, or the nearest lighter
+// level that actually has starters of its own.
+export function startLevel(library, selection) {
+  const levels = availableLevels(library, selection);
+  const wanted = defaultLevel(selection);
+  return levels.filter((l) => l <= wanted).pop() ?? levels[0];
 }
 
 // True when the starter touches a topic that is too risky for this person.
@@ -50,8 +77,8 @@ export function fits(starter, { who, purpose, medium, place = 'city' }) {
 }
 
 // Every starter that may be shown for this selection, up to the given level.
-export function candidates(library, selection, level = depthCeiling(selection)) {
-  const max = Math.min(level, depthCeiling(selection));
+export function candidates(library, selection, level = depthTop(selection)) {
+  const max = Math.min(level, depthTop(selection));
   return library.filter((s) => fits(s, selection)
     && !isRiskBlocked(s, selection)
     && DEPTHS.indexOf(s.depth) <= max);
@@ -69,40 +96,48 @@ function shuffled(list, random) {
 // Choose a small, varied set to show.
 // - the first starter is an easy, light one when the set is deeper, so there
 //   is always a low-effort way in
-// - the rest prefer the chosen level, then lighter ones
-// - prefers starters not seen recently
-// - no two starters on the same main topic, when there are enough to choose from
+// - then starters at exactly the chosen level, even if seen recently, so
+//   Deeper always brings deeper lines; lighter ones only fill what's left
+// - within each depth: not seen recently first, different topics first
 // - at least one that is not a plain question, when one exists
-// - starters marked "fell flat" come last; ones that "worked" get a small lift
+// - starters marked "fell flat" never come back; ones that "worked" get a small lift
 // - "Direct" comfort: plain questions first, fewer guesses about feelings
 export function pickSet(library, selection, options = {}) {
   const {
     level = defaultLevel(selection), seen = [], count = 4, random = Math.random, feedback = {},
   } = options;
-  const pool = shuffled(candidates(library, selection, level), random);
+  const all = shuffled(candidates(library, selection, level), random);
+  // Fell-flat starters are left out, unless that would leave too few to show.
+  const kept = all.filter((s) => feedback[s.id] !== 'flat');
+  const pool = kept.length >= count ? kept : all;
   const marked = (s) => ({ flat: 200, worked: -4 }[feedback[s.id]] || 0);
   const indirect = (s) => (selection.comfort === 'direct'
     && (s.form === 'statement' || s.topics.includes('feelings')) ? 8 : 0);
   const base = (s) => (seen.includes(s.id) ? 100 : 0) + marked(s) + indirect(s);
-  const rank = (s) => base(s) + (level - DEPTHS.indexOf(s.depth)) * 10;
-  pool.sort((a, b) => rank(a) - rank(b));
+  const byRank = (a, b) => base(a) - base(b);
+  const atLevel = pool.filter((s) => DEPTHS.indexOf(s.depth) === level).sort(byRank);
+  const lighter = pool.filter((s) => DEPTHS.indexOf(s.depth) < level)
+    .sort((a, b) => base(a) - base(b) + (DEPTHS.indexOf(b.depth) - DEPTHS.indexOf(a.depth)) * 10);
 
   const picked = [];
   const topics = new Set();
   const add = (s) => { picked.push(s); topics.add(s.topics[0]); };
 
   if (level > 0) {
-    const easy = pool.filter((s) => s.depth === 'light').sort((a, b) => base(a) - base(b))[0];
+    const easy = pool.filter((s) => s.depth === 'light').sort(byRank)[0];
     if (easy) add(easy);
   }
-  for (const s of pool) {
-    if (picked.length === count) break;
-    if (picked.includes(s) || topics.has(s.topics[0])) continue;
-    add(s);
-  }
-  for (const s of pool) {
-    if (picked.length === count) break;
-    if (!picked.includes(s)) picked.push(s);
+  // Fill from the chosen level first, then lighter levels; different topics first.
+  for (const tier of [atLevel, lighter]) {
+    for (const s of tier) {
+      if (picked.length === count) break;
+      if (picked.includes(s) || topics.has(s.topics[0])) continue;
+      add(s);
+    }
+    for (const s of tier) {
+      if (picked.length === count) break;
+      if (!picked.includes(s)) add(s);
+    }
   }
 
   // (Skipped for "Direct", which asks for plain questions.)
