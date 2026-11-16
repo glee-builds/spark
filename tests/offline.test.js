@@ -4,6 +4,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { fingerprint, stampedVersion } from '../tools/stamp.mjs';
 
 const root = new URL('../', import.meta.url);
 const sw = readFileSync(new URL('sw.js', root), 'utf8');
@@ -31,4 +32,8 @@ test('the manifest points at icons that exist', () => {
   const missing = manifest.icons.filter((icon) => !existsSync(new URL(icon.src, root)));
   assert.deepEqual(missing, []);
   assert.equal(manifest.display, 'standalone');
+});
+
+test('sw.js is stamped with the current version (run: node tools/stamp.mjs)', () => {
+  assert.equal(stampedVersion(), fingerprint());
 });

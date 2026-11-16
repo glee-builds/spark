@@ -7,6 +7,7 @@ Shared rules for all coding projects are in `../CLAUDE.md`, and they apply here.
 - **Never commit directly to `main`.** The first commit was the only exception. All work goes on a branch and reaches `main` through a pull request.
 - **Who merges:** for Phases 1 to 5 the owner asked Claude to merge each pull request once the tests pass, so the live link stays current (see `docs/decisions.md`). For later work, the owner merges unless they say otherwise.
 - **A new file the app loads must be added to the `FILES` list in `sw.js`**, or it will be missing offline. A test checks this.
+- **After changing any app file, run `node tools/stamp.mjs`.** It updates the version in `sw.js` so phones fetch the update. A test fails if you forget.
 - **Starters and code go in separate pull requests.** A pull request that adds starters adds one group at a time, so the owner can read the lines out loud.
 
 ## Privacy rule (applies to everything public)
@@ -48,6 +49,7 @@ index.html        the one page of the app
 manifest.webmanifest  name, colors, and icons for the home-screen app
 sw.js             the service worker: saves the app's files for offline use
 assets/           the app icons
+tools/stamp.mjs   stamps sw.js with a fingerprint of the app files
 styles.css        all styling
 src/
   app.js          the screens and what happens on each tap
