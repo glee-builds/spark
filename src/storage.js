@@ -40,17 +40,18 @@ export function setFlag(key) {
   write(key, true);
 }
 
-// The last few person / closeness / place choices, newest first, so a repeat
+// The last few person / purpose choices, newest first, so a repeat
 // situation is one tap from the first screen. Only category ids are stored.
+// (Entries saved by the older flow have no purpose; they are ignored.)
 const RECENT_KEY = 'spark.recent';
 const RECENT_LIMIT = 2;
 
 export function getRecent() {
-  return read(RECENT_KEY, []);
+  return read(RECENT_KEY, []).filter((r) => r && r.who && r.purpose);
 }
 
 export function addRecent(choice) {
-  const same = (r) => r.who === choice.who && r.closeness === choice.closeness && r.where === choice.where;
+  const same = (r) => r.who === choice.who && r.purpose === choice.purpose;
   const recent = [choice, ...getRecent().filter((r) => !same(r))];
   write(RECENT_KEY, recent.slice(0, RECENT_LIMIT));
 }
@@ -107,4 +108,15 @@ export function markFeedback(id, mark) {
 
 export function clearFeedback() {
   write(FEEDBACK_KEY, {});
+}
+
+// The last "In person or call / Message" choice, used as the starting point.
+const MEDIUM_KEY = 'spark.medium';
+
+export function getMedium() {
+  return read(MEDIUM_KEY, 'in-person');
+}
+
+export function setMedium(value) {
+  write(MEDIUM_KEY, value);
 }

@@ -1,16 +1,18 @@
 // Checks that a starter bundle follows docs/starter-format.md.
-// Used by the tests, so a typo in the library is caught before it ships.
+// Used by the tests and tools/check-library.mjs, so a typo is caught before it ships.
 
-import { WHO, WHERE, CLOSENESS, DEPTHS, FORMS, GOALS, TOPICS, RISK_TAGS, BASES } from './config.js';
+import { WHO, PURPOSES, DEPTHS, FORMS, TOPICS, RISK_TAGS, BASES } from './config.js';
 
-const ids = (list) => list.map((x) => x.id);
+const WHO_IDS = WHO.map((w) => w.id);
+const PURPOSE_IDS = Object.keys(PURPOSES);
+const MEDIUMS = ['in-person', 'message', 'any'];
 const BANNED = [/how are you\??$/i, /what'?s new\??$/i, /how was your day\??$/i,
   /how was school\??$/i, /what do you do\??$/i, /where are you from\??$/i,
-  /passionate about/i, /tell me about yourself/i, /what'?s your story/i,
-  /\b(he|him|his|she|her|hers)\b/i];
+  /passionate about/i, /tell me about yourself/i, /what'?s your story/i];
+const PRONOUN = /\b(he|him|his|she|her|hers)\b/i;
 
 function allIn(values, allowed) {
-  return Array.isArray(values) && values.every((v) => allowed.includes(v));
+  return Array.isArray(values) && values.length > 0 && values.every((v) => allowed.includes(v));
 }
 
 // Returns a list of problems with one starter. An empty list means it is fine.
@@ -27,20 +29,19 @@ export function problems(s) {
   else if (s.shareBack.length > 140) say('shareBack is over 140 characters');
   if (s.deliveryCue !== null && (typeof s.deliveryCue !== 'string' || s.deliveryCue.length > 90)) say('deliveryCue must be null or at most 90 characters');
   if (!DEPTHS.includes(s.depth)) say(`depth "${s.depth}" is not allowed`);
-  if (!allIn(s.who, ids(WHO)) || s.who.length === 0) say('who has an unknown id or is empty');
-  if (!allIn(s.closeness, ids(CLOSENESS)) || s.closeness.length === 0) say('closeness has an unknown id or is empty');
-  if (!allIn(s.where, [...ids(WHERE), 'any']) || s.where.length === 0) say('where has an unknown id or is empty');
-  if (!allIn(s.goals, GOALS) || s.goals.length === 0) say('goals has an unknown id or is empty');
-  if (!allIn(s.topics, TOPICS) || s.topics.length < 1 || s.topics.length > 2) say('topics needs one or two known topics');
-  if (!allIn(s.riskTags, RISK_TAGS)) say('riskTags has an unknown tag');
+  if (!allIn(s.who, WHO_IDS)) say('who has an unknown id or is empty');
+  if (!allIn(s.purposes, PURPOSE_IDS)) say('purposes has an unknown id or is empty');
+  if (!MEDIUMS.includes(s.medium)) say(`medium "${s.medium}" is not allowed`);
+  if (!Array.isArray(s.topics) || s.topics.length < 1 || s.topics.length > 2 || !s.topics.every((t) => TOPICS.includes(t))) say('topics needs one or two known topics');
+  if (!Array.isArray(s.riskTags) || !s.riskTags.every((t) => RISK_TAGS.includes(t))) say('riskTags has an unknown tag');
   if (!BASES.includes(s.basis)) say(`basis "${s.basis}" is not allowed`);
-  if (s.form === 'reachout' && !(s.where.length === 1 && s.where[0] === 'text')) say('reachout starters must be where: ["text"]');
+  if (s.form === 'reachout' && s.medium !== 'message') say('reachout starters must be medium "message"');
   if (Array.isArray(s.who) && (s.who.includes('child') || s.who.includes('teen')) && !s.deliveryCue) say('child and teen starters need a deliveryCue');
-  const text = [s.line, ...(s.followUps || []), s.shareBack || '', s.deliveryCue || ''].join(' | ');
+  if (Array.isArray(s.who) && s.who.includes('child') && s.medium === 'message') say('young children are in person only');
   for (const pattern of BANNED) {
-    if (pattern.test(s.line || '') || (pattern.source.includes('him') && pattern.test(text))) {
-      say(`uses a banned phrase or a gendered pronoun (${pattern.source})`);
-    }
+    if (pattern.test(s.line || '')) say(`uses a banned phrase (${pattern.source})`);
   }
+  const text = [s.line, ...(s.followUps || []), s.shareBack || '', s.deliveryCue || ''].join(' | ');
+  if (PRONOUN.test(text)) say('uses a gendered pronoun; use they / them');
   return out;
 }

@@ -1,9 +1,8 @@
-// Picks the extra lines shown around the starters: a way to wrap up,
-// what to say when someone is having a hard time, and a short reassurance.
+// Picks the extra lines shown around the starters: ways to wrap up, and a
+// short reassurance before the conversation.
 
-// People whose lines need their own wording, so general lines skip them.
+// People whose wrap-up lines need their own wording, so general lines skip them.
 const OWN_EXITS = ['partner', 'teen', 'child', 'date'];
-const OWN_HARD_TIME = ['partner', 'teen', 'child'];
 
 function pickOne(list, random) {
   return list[Math.floor(random() * list.length)];
@@ -18,20 +17,9 @@ function shuffled(list, random) {
   return copy;
 }
 
-function placeFits(item, where) {
-  if (item.where.includes(where)) return true;
-  return item.where.includes('any') && where !== 'text';
-}
-
-export function exitsFor(support, { who, where }) {
-  return support.exits.filter((e) => e.where.includes(where)
+export function exitsFor(support, { who, medium }) {
+  return support.exits.filter((e) => e.medium.includes(medium)
     && (e.who === 'any' ? !OWN_EXITS.includes(who) : e.who.includes(who)));
-}
-
-// One line for wrapping up the conversation.
-export function pickExit(support, selection, random = Math.random) {
-  const options = exitsFor(support, selection);
-  return options.length ? pickOne(options, random) : null;
 }
 
 // Up to three lines for wrapping up, so there is a choice.
@@ -39,28 +27,9 @@ export function pickExits(support, selection, random = Math.random) {
   return shuffled(exitsFor(support, selection), random).slice(0, 3);
 }
 
-export function hardTimeFor(support, { who, closeness, where }) {
-  return support.hardTime.filter((h) => placeFits(h, where)
-    && (h.who === 'any' ? !OWN_HARD_TIME.includes(who) : h.who.includes(who))
-    && (h.closeness === 'any' || h.closeness.includes(closeness)));
-}
-
-// Up to four lines for someone having a hard time: being present first,
-// then an invitation to talk, then one specific offer of help.
-export function pickHardTime(support, selection, random = Math.random) {
-  const options = shuffled(hardTimeFor(support, selection), random);
-  const ofKind = (kind) => options.filter((h) => h.kind === kind);
-  const picked = [
-    ...ofKind('presence').slice(0, 2),
-    ...ofKind('listen').slice(0, 1),
-    ...ofKind('offer').slice(0, 1),
-  ];
-  return picked;
-}
-
-// A short, true reassurance shown above the starters.
-export function pickReassurance(support, selection, random = Math.random) {
-  const list = selection.where === 'text' || selection.closeness === 'lost-touch'
+// A short, true reassurance, shown while choosing what to do.
+export function pickReassurance(support, { purpose } = {}, random = Math.random) {
+  const list = purpose === 'reconnect'
     ? support.reassurance.concat(support.reassuranceText)
     : support.reassurance;
   return pickOne(list, random);

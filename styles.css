@@ -132,24 +132,32 @@ button:disabled { opacity: 0.35; cursor: default; }
   gap: 8px;
 }
 
-.tile {
-  min-height: 68px;
-  padding: 10px 16px;
+.tiles {
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  column-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.tile {
+  min-height: 76px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
   text-align: left;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
 
-.tile-label { font-size: 19px; font-weight: 700; }
+.tile:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
-.tile-hint { grid-column: 1; font-size: 14px; color: var(--muted); }
+.tile-label { font-size: 17px; font-weight: 700; line-height: 1.2; }
 
-.tile .chev { grid-column: 2; grid-row: 1 / span 2; }
+.tile-hint { font-size: 13px; line-height: 1.25; color: var(--muted); }
+
+.chev { grid-column: 2; grid-row: 1 / span 2; }
 
 .chev { color: var(--muted); font-size: 24px; line-height: 1; }
 
@@ -210,55 +218,40 @@ button:disabled { opacity: 0.35; cursor: default; }
 
 /* ---------- The starters list ---------- */
 
-.tools { display: flex; flex-wrap: wrap; gap: 8px; }
+/* On the starters screen the summary stays on one line, to leave room for starters. */
+[data-step="results"] .sub {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-.aim {
+[data-step="results"] .top-row { min-height: 44px; }
+
+/* "In person or call / Message" switch */
+.segs {
+  display: flex;
+  padding: 3px;
+  gap: 3px;
+  background: var(--line);
+  border-radius: var(--radius);
+}
+
+.seg {
   flex: 1;
-  min-height: 48px;
-  padding: 0 12px 0 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  text-align: left;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  font-size: 15px;
-}
-
-.aim strong { flex: 1; }
-
-.toggle {
-  min-height: 48px;
-  padding: 0 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  min-height: 42px;
+  border: 0;
+  border-radius: 11px;
   background: none;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
   font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
 }
 
-.toggle-box {
-  width: 20px;
-  height: 20px;
-  flex: none;
-  display: grid;
-  place-items: center;
-  border: 2px solid var(--muted);
-  border-radius: 5px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.toggle[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
-
-.toggle[aria-pressed="true"] .toggle-box {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
+.seg[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .note { margin: 0; color: var(--muted); font-size: 15px; }
@@ -272,7 +265,7 @@ button:disabled { opacity: 0.35; cursor: default; }
 .row {
   width: 100%;
   min-height: 56px;
-  padding: 10px 12px 10px 14px;
+  padding: 8px 10px 8px 12px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -300,8 +293,8 @@ button:disabled { opacity: 0.35; cursor: default; }
 }
 
 .row-line {
-  font-size: 18px;
-  line-height: 1.28;
+  font-size: 17px;
+  line-height: 1.27;
   font-weight: 600;
 }
 
