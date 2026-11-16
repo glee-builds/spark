@@ -78,16 +78,20 @@ function shuffled(list, random) {
 // - no two starters on the same main topic, when there are enough to choose from
 // - at least one that is not a plain question, when one exists
 // - with an aim (goal), starters tagged for that aim come first
+// - starters marked "fell flat" come last; ones that "worked" get a small lift
 export function pickSet(library, selection, options = {}) {
   const {
     level = defaultLevel(selection), seen = [], count = 4, random = Math.random, goal = null,
+    feedback = {},
   } = options;
+  const marked = (s) => ({ flat: 200, worked: -4 }[feedback[s.id]] || 0);
   const pool = shuffled(candidates(library, selection, level), random);
   const offGoal = (s) => (goal && !s.goals.includes(goal) ? 20 : 0);
   // "Direct" comfort: plain questions first, fewer guesses about how someone feels.
   const indirect = (s) => (selection.comfort === 'direct'
     && (s.form === 'statement' || s.topics.includes('feelings')) ? 8 : 0);
   const rank = (s) => (seen.includes(s.id) ? 100 : 0)
+    + marked(s)
     + offGoal(s)
     + indirect(s)
     + (level - DEPTHS.indexOf(s.depth)) * 10
@@ -100,6 +104,7 @@ export function pickSet(library, selection, options = {}) {
 
   if (level > 0) {
     const easyRank = (s) => (seen.includes(s.id) ? 100 : 0)
+      + marked(s)
       + offGoal(s)
       + (s.where.includes(selection.where) ? 0 : 3);
     const easy = pool.filter((s) => s.depth === 'light')

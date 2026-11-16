@@ -145,3 +145,10 @@ test('"Direct" puts plain questions ahead of guesses about feelings', () => {
   const set = pickSet(library, { who: 'colleague', closeness: 'well', where: 'party', comfort: 'direct' }, { level: 0, count: 2 });
   assert.ok(set.every((s) => s.form === 'question'));
 });
+
+test('starters marked "fell flat" come last', () => {
+  const library = ['plans', 'food', 'work'].map((topic, i) => starter({ id: `te-00${i}`, topics: [topic] }));
+  const set = pickSet(library, { who: 'colleague', closeness: 'well', where: 'party' },
+    { level: 0, count: 2, feedback: { 'te-000': 'flat' } });
+  assert.ok(set.every((s) => s.id !== 'te-000'));
+});

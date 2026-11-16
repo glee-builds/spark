@@ -393,6 +393,29 @@ button:disabled { opacity: 0.35; cursor: default; }
 
 .depth { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 
+.marks { display: flex; gap: 8px; }
+
+.mark {
+  flex: 1;
+  min-height: 48px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.mark[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+
+.link {
+  min-height: 48px;
+  align-self: center;
+  padding: 0 16px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  text-decoration: underline;
+}
+
 /* ---------- "Add to home screen" hint ---------- */
 
 .hint {

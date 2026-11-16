@@ -12,14 +12,14 @@ import { pickExits, pickHardTime, pickReassurance } from './support.js';
 import { loadLibrary, loadSupport } from './library.js';
 import {
   getSeen, addSeen, getRecent, addRecent, getSaved, toggleSaved,
-  getComfort, setComfort, clearSeen, clearRecent,
+  getComfort, setComfort, clearSeen, clearRecent, getFeedback, markFeedback, clearFeedback,
 } from './storage.js';
 import { startOffline, installHint, dismissHint, install, updateReady } from './install.js';
 
 const root = document.getElementById('app');
 
 const state = {
-  step: 'group',     // group | who | how | where | results | aim | detail | saved | settings
+  step: 'group',     // group | who | how | where | results | aim | detail | saved | settings | notes
   group: null,
   who: null,
   closeness: null,
@@ -30,8 +30,9 @@ const state = {
   starters: [],
   supportLines: [],  // shown instead of starters when hardTime is on
   exits: [],
-  detail: null,      // { kind: 'starter' | 'support' | 'exit', index, from: 'results' | 'saved' }
+  detail: null,      // { kind: 'starter' | 'support' | 'exit', index, from: 'results' | 'saved' | 'notes' }
   savedView: [],     // the saved starters, as they were when the Saved screen opened
+  notesView: [],     // starters marked worked, then fell flat, as they were when Your notes opened
   freshSet: false,   // true until a new set has been fitted and marked as seen
   notice: '',        // a short confirmation on the settings screen
   library: [],
@@ -243,6 +244,22 @@ function savedScreen() {
     <div class="rows">${rows.join('')}${empty}</div>`;
 }
 
+// ---------- Your notes (what worked, what fell flat) ----------
+
+function notesScreen() {
+  const feedback = getFeedback();
+  const section = (mark, title) => {
+    const rows = state.notesView.map((s, i) => [s, i]).filter(([s]) => feedback[s.id] === mark)
+      .map(([s, i]) => row('starter', i, FORM_LABEL[s.form], s.line, 'notes'));
+    return rows.length ? `<p class="label">${title} (${rows.length})</p><div class="rows">${rows.join('')}</div>` : '';
+  };
+  const body = state.notesView.length
+    ? `${section('worked', 'Worked')}${section('flat', 'Fell flat')}
+       <button class="link" data-action="clear-feedback">Clear all marks</button>`
+    : '<p class="empty">After a conversation, open the starter you used and tap Worked or Fell flat. They collect here.</p>';
+  return `${header({ title: 'Your notes' })}${body}`;
+}
+
 // ---------- Settings ----------
 
 function settingsScreen() {
@@ -261,6 +278,10 @@ function settingsScreen() {
       <button class="chip" data-action="clear-recent"><span class="chip-label">Clear the "Again" list</span></button>
     </div>
     ${state.notice ? `<p class="note" role="status">${esc(state.notice)}</p>` : ''}
+    <p class="label">Review</p>
+    <div class="settings-group">
+      <button class="chip" data-action="notes"><span class="chip-label">Your notes: what worked and what fell flat</span></button>
+    </div>
     <p class="about">Starters follow published conversation research and coaching advice.
       Nothing you tap leaves this phone.</p>`;
 }
@@ -271,11 +292,12 @@ function settingsScreen() {
 function currentList() {
   if (state.detail.kind === 'support') return state.supportLines;
   if (state.detail.from === 'saved') return state.savedView;
+  if (state.detail.from === 'notes') return state.notesView;
   return state.starters;
 }
 
 function detailSub() {
-  return state.detail.from === 'saved' ? 'Saved' : summary();
+  return { saved: 'Saved', notes: 'Your notes' }[state.detail.from] || summary();
 }
 
 function detailBar(count) {
@@ -314,6 +336,15 @@ function supportDetail() {
     ${detailBar(state.supportLines.length)}`;
 }
 
+// After using a line: mark how it went. Fell-flat lines stop coming up.
+function feedbackButtons(s) {
+  const mark = getFeedback()[s.id];
+  const button = (value, label) => `<button class="mark" data-action="mark" data-id="${value}"
+    aria-pressed="${mark === value}">${mark === value ? '&#10003; ' : ''}${label}</button>`;
+  return `<p class="label">Used it? How did it go?</p>
+    <div class="marks">${button('worked', 'Worked')}${button('flat', 'Fell flat')}</div>`;
+}
+
 function starterDetail() {
   const { index, from } = state.detail;
   const s = currentList()[index];
@@ -331,6 +362,7 @@ function starterDetail() {
       <ul class="follows">${follows}</ul>
       <p class="label">Your turn</p>
       <p class="plain">${esc(s.shareBack)}</p>
+      ${feedbackButtons(s)}
       <p class="depth">${depthDots(DEPTHS.indexOf(s.depth))} ${levelName(DEPTHS.indexOf(s.depth))}</p>
     </div>
     ${detailBar(currentList().length)}`;
@@ -363,7 +395,7 @@ function render() {
   const screens = {
     group: groupScreen, who: whoScreen, how: howScreen, where: whereScreen,
     results: resultsScreen, aim: aimScreen, detail: detailScreen, saved: savedScreen,
-    settings: settingsScreen,
+    settings: settingsScreen, notes: notesScreen,
   };
   root.innerHTML = screens[state.step]();
   root.dataset.step = state.step;
@@ -388,7 +420,7 @@ function newSet() {
     state.supportLines = pickHardTime(state.support, selection());
   } else {
     state.starters = pickSet(state.library, selection(), {
-      level: state.level, seen: getSeen(), goal: state.goal,
+      level: state.level, seen: getSeen(), goal: state.goal, feedback: getFeedback(),
     });
     state.freshSet = true;
   }
@@ -437,6 +469,14 @@ function openDetail(kind, index, from) {
 function openSavedView() {
   const byId = new Map(state.library.map((s) => [s.id, s]));
   state.savedView = getSaved().map((id) => byId.get(id)).filter(Boolean);
+}
+
+function openNotesView() {
+  const byId = new Map(state.library.map((s) => [s.id, s]));
+  const feedback = getFeedback();
+  const ids = Object.keys(feedback);
+  state.notesView = ['worked', 'flat'].flatMap((mark) => ids.filter((id) => feedback[id] === mark))
+    .map((id) => byId.get(id)).filter(Boolean);
 }
 
 function openSaved() {
@@ -496,6 +536,16 @@ root.addEventListener('click', (event) => {
     setComfort(id);
     state.notice = 'Saved. New starters will follow this setting.';
     render();
+  } else if (action === 'notes') {
+    openNotesView();
+    go('notes');
+  } else if (action === 'mark') {
+    markFeedback(currentList()[state.detail.index].id, id);
+    render();
+  } else if (action === 'clear-feedback') {
+    clearFeedback();
+    openNotesView();
+    render();
   } else if (action === 'clear-seen') {
     clearSeen();
     state.notice = 'Done. Starters you have seen can come up again.';
@@ -546,11 +596,14 @@ window.addEventListener('popstate', () => {
     aim: Boolean(chosen),
     saved: true,
     settings: true,
-    detail: Boolean(state.detail && (state.detail.from === 'saved' ? state.savedView.length : chosen)),
+    notes: true,
+    detail: Boolean(state.detail && ({ saved: state.savedView.length, notes: state.notesView.length }[state.detail.from]
+      ?? chosen)),
   };
   state.step = ready[step] ? step : 'group';
   // Coming back to Saved: show the list as it is now.
   if (state.step === 'saved') openSavedView();
+  if (state.step === 'notes') openNotesView();
   if (state.step === 'results' && !state.starters.length && !state.supportLines.length) startResults();
   render();
 });
