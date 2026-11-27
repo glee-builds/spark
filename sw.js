@@ -10,7 +10,8 @@
 //     the first screen (see src/install.js).
 
 const VERSION = 'a776946dcc5b';
-const CACHE = `spark-${VERSION}`;
+const PREFIX = 'spark-';
+const CACHE = `${PREFIX}${VERSION}`;
 
 // Everything the app needs to run. tests/offline.test.js checks this list
 // against the files in the repo, so a new file can't be forgotten.
@@ -49,7 +50,7 @@ self.addEventListener('install', (event) => {
 // Delete the caches of older versions.
 self.addEventListener('activate', (event) => {
   event.waitUntil(caches.keys()
-    .then((names) => Promise.all(names.filter((n) => n !== CACHE).map((n) => caches.delete(n))))
+    .then((names) => Promise.all(names.filter((n) => n.startsWith(PREFIX) && n !== CACHE).map((n) => caches.delete(n))))
     .then(() => self.clients.claim()));
 });
 
